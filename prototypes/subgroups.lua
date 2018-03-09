@@ -3,19 +3,19 @@ data:extend(
   {
     type = "item-subgroup",
     name = "warehouses-2",
-	group = "resource-refining",
+	group = "logistics",
 	order = "ze",
   },
   {
     type = "item-subgroup",
     name = "warehouses-3",
-	group = "resource-refining",
+	group = "logistics",
 	order = "zf",
   },
   {
     type = "item-subgroup",
     name = "warehouses-4",
-	group = "resource-refining",
+	group = "logistics",
 	order = "zg",
   },
   }

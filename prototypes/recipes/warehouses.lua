@@ -47,6 +47,24 @@ data:extend(
 {
 	
 	{
+	type = "recipe",
+	name = "warehouse-mk2",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"angels-warehouse", 1},
+	{"invar-alloy", 400},
+	{"brass-gear-wheel", 150},
+	{"steel-bearing", 100},
+	},
+	result= "warehouse-mk2",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+	icon_size = 32,
+	subgroup = "warehouses-2",
+	order = "a"
+	},
+
+	{
     type = "recipe",
     name = "warehouse-passive-provider-mk2",
     energy_required = 20,
@@ -119,6 +137,23 @@ data:extend(
     },
 	
 	{
+	type = "recipe",
+	name = "warehouse-mk3",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"warehouse-mk2", 1},
+	{"titanium-plate", 800},
+	{"ceramic-bearing", 200},
+	},
+	result= "warehouse-mk3",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+	icon_size = 32,
+	subgroup = "warehouses-3",
+	order = "a"
+	},
+
+	{
     type = "recipe",
     name = "warehouse-passive-provider-mk3",
     energy_required = 20,
@@ -190,6 +225,23 @@ data:extend(
 	order = "e"
     },
 	
+	{
+	type = "recipe",
+	name = "warehouse-mk4",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"warehouse-mk3", 1},
+	{"tungsten-plate", 1000},
+	{"nitinol-bearing", 250},
+	},
+	result= "warehouse-mk4",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+	icon_size = 32,
+	subgroup = "warehouses-4",
+	order = "a"
+	},
+
 	{
     type = "recipe",
     name = "warehouse-passive-provider-mk4",
