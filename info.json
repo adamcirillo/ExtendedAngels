@@ -1,5 +1,5 @@
 {
-  "name": "AgnelsExtras",
+  "name": "AngelsExtras",
   "version": "0.1.0",
   "factorio_version": "0.16",
   "title": "Angel's Extras",
@@ -7,5 +7,5 @@
   "contact": "",
   "homepage": "",
   "description": "Adds extra buildings and recipes to Angel's Mods",
-  "dependencies": ["base >= 0.16.0", "angelssmelting >= 0.4.3", " bobplates >= 0.16.0", "? angelsaddons-warehouses >= 0.3.0"]
+  "dependencies": ["base >= 0.16.0", "angelssmelting >= 0.4.3", "bobplates >= 0.16.0", "? angelsaddons-warehouses >= 0.3.0"]
 }
