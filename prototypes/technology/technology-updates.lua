@@ -6,6 +6,11 @@ if angelsmods.addons.warehouses then
 end
 
 local OV = angelsmods.functions.OV
+OV.add_unlock("water-treatment-4", "hydro-plant-3")
+
+if mods["Clowns-Extended-Minerals"] then 
+OV.add_unlock("water-washing-3", "washing-plant-3")
+end
 
 if angelsmods.bioprocessing then
     OV.add_unlock("bio-processing-red", "algae-farm-3")
