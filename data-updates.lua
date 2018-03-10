@@ -9,6 +9,8 @@ require("prototypes.recipes.petrochem")
 
 -- For Angel's Bio Processing
 require("prototypes.buildings.bioprocessing")
+require("prototypes.recipes.bioprocessing")
+require("prototypes.technology.bioprocessing-technology")
 
 -- For Bob's Logistics Pack
 require("prototypes.technology.technology-updates")
