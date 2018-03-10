@@ -5,3 +5,6 @@ require("prototypes.technology.warehouses-technology")
 
 -- For Bob's Logistics Pack
 require("prototypes.technology.technology-updates")
+
+-- For changing technologies
+require("prototypes.technology-overrides")

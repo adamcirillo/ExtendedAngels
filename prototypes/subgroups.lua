@@ -2,6 +2,20 @@ data:extend(
 {
   {
     type = "item-subgroup",
+    name = "angels-copper-tungsten",
+	group = "angels-smelting",
+	order = "t",
+  },
+  
+  {
+    type = "item-subgroup",
+    name = "angels-copper-tungsten-casting",
+    group = "angels-casting",
+    order = "u",
+  },
+
+  {
+    type = "item-subgroup",
     name = "warehouses-2",
 	group = "logistics",
 	order = "ze",
