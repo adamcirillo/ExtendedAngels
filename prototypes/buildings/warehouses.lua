@@ -1,3 +1,5 @@
+if angelsmods.addons.warehouses then
+
 -- ** INVENTORY SIZES ** --
 
 inv_ware = 1728
@@ -21,8 +23,6 @@ then data.raw["logistic-container"]["angels-warehouse-storage"].inventory_size =
 
 if data.raw["logistic-container"]["angels-warehouse-requester"] 
 then data.raw["logistic-container"]["angels-warehouse-requester"].inventory_size = inv_mk1 end
-
-if  data.raw["item"]["titanium-plate"] then
 
 -- *** ITEMS *** --
 

@@ -1,4 +1,4 @@
-if  data.raw["item"]["titanium-plate"] then
+if angelsmods.addons.warehouses then
 
 recipe = data.raw["recipe"]["angels-warehouse"]
 recipe.energy_required = 20

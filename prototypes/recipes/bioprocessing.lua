@@ -1,6 +1,8 @@
 local buildingmulti = angelsmods.marathon.buildingmulti
 local buildingtime = angelsmods.marathon.buildingtime
 
+if angelsmods.bioprocessing then
+
 angelsmods.functions.RB.build({
         {
         type = "recipe",
@@ -68,3 +70,5 @@ angelsmods.functions.RB.build({
                },
     }
     )
+
+  end

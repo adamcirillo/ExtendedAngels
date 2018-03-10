@@ -1,3 +1,5 @@
+if angelsmods.bioprocessing then
+
 data:extend(
 {
     {
@@ -218,3 +220,5 @@ data:extend(
   },
 }
 )
+
+end

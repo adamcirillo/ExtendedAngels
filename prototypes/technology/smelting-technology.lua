@@ -3,7 +3,7 @@ data:extend(
     {
         type = "technology",
         name = "angels-copper-tungsten-smelting-1",
-        icon = "__angelsextras__/graphics/technology/smelting-copper-tungsten.png",
+        icon = "__extendedangels__/graphics/technology/smelting-copper-tungsten.png",
         icon_size = 128,
         prerequisites =
         {

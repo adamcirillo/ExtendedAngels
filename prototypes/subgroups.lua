@@ -13,7 +13,11 @@ data:extend(
     group = "angels-casting",
     order = "u",
   },
-
+}
+)
+  if angelsmods.addons.warehouses then
+    data:extend(
+      {  
   {
     type = "item-subgroup",
     name = "warehouses-2",
@@ -32,5 +36,6 @@ data:extend(
 	group = "logistics",
 	order = "zg",
   },
-  }
-  )
+}
+)
+end

@@ -1,4 +1,4 @@
-# AngelsExtras
+# ExtendedAngels
 Extra buildings/recipies for angels mods
 Includes Copper Tungsten and Tungsten Carbide smelting using Angels Smelting
 Added Adv Gas Refineray MK4

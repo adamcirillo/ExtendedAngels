@@ -1,3 +1,4 @@
+if angelsmods.addons.warehouses then
 data:extend(
 {
 
@@ -233,4 +234,6 @@ data:extend(
     }
 
 })
+
+end
 
