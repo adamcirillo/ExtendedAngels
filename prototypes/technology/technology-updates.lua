@@ -7,6 +7,7 @@ end
 
 local OV = angelsmods.functions.OV
 OV.add_unlock("water-treatment-4", "hydro-plant-3")
+OV.add_unlock("angels-advanced-chemistry-4", "advanced-chemical-plant-3")
 
 if mods["Clowns-Extended-Minerals"] then 
 OV.add_unlock("water-washing-3", "washing-plant-3")

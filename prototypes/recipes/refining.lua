@@ -303,5 +303,72 @@ angelsmods.functions.RB.build({
     subgroup = "ore-crusher",
 	order = "i"
     },
+--CRYSTALLIZER
+{
+    type = "recipe",
+    name = "crystallizer-3",
+	normal =
+    {
+	  energy_required = 5,
+	  enabled = "false",
+      ingredients =
+      {
+		{"crystallizer-2", 1},
+		{"t5-plate", 10},
+		{"t5-circuit", 5},
+		{"t5-pipe", 5},	
+		{"t5-brick", 10},
+      },
+      result="crystallizer-3",
+    },
+    expensive =
+    {
+	  energy_required = 5 * buildingtime,
+	  enabled = "false",
+      ingredients =
+      {
+		{"crystallizer-2", 1},
+		{"t5-plate", 10 * buildingmulti},
+		{"t5-circuit", 5 * buildingmulti},
+		{"t5-pipe", 5 * buildingmulti},	
+		{"t5-brick", 10 * buildingmulti},
+      },
+      result="crystallizer-3",
+    },
+    },
+--FILTRATION UNIT
+        {
+        type = "recipe",
+        name = "filtration-unit-3",
+        normal =
+        {
+          energy_required = 5,
+          enabled = "false",
+          ingredients =
+          {
+            {"filtration-unit-2", 1},
+            {"t5-plate", 2},
+            {"t5-circuit", 5},
+            {"t5-pipe", 8},	
+            {"t5-brick", 5},
+          },
+          result="filtration-unit-3",
+        },
+        expensive =
+        {
+          energy_required = 5 * buildingtime,
+          enabled = "false",
+          ingredients =
+          {
+            {"filtration-unit-2", 1},
+            {"t5-plate", 2 * buildingmulti},
+            {"t5-circuit", 5 * buildingmulti},
+            {"t5-pipe", 8 * buildingmulti},	
+            {"t5-brick", 5 * buildingmulti},
+          },
+          result="filtration-unit-3",
+        },
+        },
+
 }
 )
