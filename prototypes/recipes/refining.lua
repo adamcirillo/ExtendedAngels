@@ -34,6 +34,7 @@ angelsmods.functions.RB.build({
       },
       result= "hydro-plant-3",
     },
+    order = "c"
     },
 	{
     type = "recipe",
@@ -66,6 +67,7 @@ angelsmods.functions.RB.build({
       },
       result= "hydro-plant-4",
     },
+    order = "d"
     },
 --SALINATION PLANT
 	{
@@ -99,6 +101,7 @@ angelsmods.functions.RB.build({
       },
       result= "salination-plant-3",
     },
+    order = "h"
     },
 --WASHING PLANT
     {

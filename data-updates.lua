@@ -18,9 +18,8 @@ require("prototypes.buildings.refining")
 require("prototypes.recipes.refining")
 require("prototypes.technology.refining-technology")
 
-
--- For Bob's Logistics Pack
-require("prototypes.technology.technology-updates")
-
--- For changing technologies
+-- For Changing Technologies
 require("prototypes.technology-overrides")
+
+-- For Chaning Recipes
+require("prototypes.recipes-overrides")

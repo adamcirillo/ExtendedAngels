@@ -47,7 +47,7 @@ data:extend(
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     module_specification =
     {
-      module_slots = 3
+      module_slots = 4
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"chemistry", "advanced-chemistry"},
