@@ -36,5 +36,26 @@ data:extend(
         icon_size = 32,
         order = "ac",
         },
+
+        {
+            type = "recipe",
+            name = "copper-tungsten-smelting-2",
+            category = "chemical-smelting",
+            subgroup = "angels-copper-tungsten",
+            energy_required = 8,
+            enabled = "false",
+            ingredients ={
+                {type="item", name="ingot-copper", amount=8},
+                {type="item", name="ingot-silver", amount=8},
+                {type="item", name="powder-tungsten", amount=12},
+                {type="fluid", name="gas-hydrogen", amount=60},
+            },
+            results=
+            {
+                {type="fluid", name="liquid-molten-copper-tungsten", amount=120},
+            },
+                icon_size = 32,
+                order = "ad",
+            },
 }
 )
