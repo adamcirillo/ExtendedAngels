@@ -14,5 +14,21 @@ data:extend(
     flow_to_energy_ratio = 0.59,
 	auto_barrel = false
     },
+    {
+        type = "item",
+        name = "titanium-concrete-brick",
+        icon = "__extendedangels__/graphics/icons/brick-titanium.png",
+        icon_size = 32,
+        flags = {"goes-to-main-inventory"},
+        subgroup = "angels-stone",
+        order = "i",
+        stack_size = 1000,
+        place_as_tile =
+        {
+          result = "concrete",
+          condition_size = 4,
+          condition = { "water-tile" }
+        }
+      },
 }
 )

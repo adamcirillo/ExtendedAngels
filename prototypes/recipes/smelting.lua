@@ -57,5 +57,23 @@ data:extend(
                 icon_size = 32,
                 order = "ad",
             },
+            {
+                type = "recipe",
+                name = "angels-titanium-concrete-brick",
+                category = "crafting-with-fluid",
+                subgroup = "angels-stone-casting",
+                energy_required = 4,
+                enabled = "false",
+                ingredients ={
+                  {type="fluid", name="liquid-concrete", amount=40},
+                  {type="item", name="angels-plate-titanium", amount=4},
+                },
+                results=
+                {
+                  {type="item", name="titanium-concrete-brick", amount=4},
+                },
+                icon_size = 32,
+                order = "j",
+                },
 }
 )

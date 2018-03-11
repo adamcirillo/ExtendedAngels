@@ -63,5 +63,36 @@ data:extend(
       },
       order = "c-a"
   },
+  {
+    type = "technology",
+    name = "angels-stone-smelting-4",
+    icon = "__angelssmelting__/graphics/technology/cement-tech.png",
+	icon_size = 128,
+	upgrade = true,
+	prerequisites =
+    {
+	"angels-stone-smelting-3",
+    },
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "angels-titanium-concrete-brick"
+      },
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+	  {"science-pack-1", 1},
+	  {"science-pack-2", 1},
+    {"science-pack-3", 1},
+    {"production-science-pack", 1},
+	  },
+      time = 30
+    },
+    order = "c-a"
+    },
+
 }
 )

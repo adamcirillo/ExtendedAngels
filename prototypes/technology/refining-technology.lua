@@ -105,6 +105,49 @@ data:extend(
             },
             order = "c-a"
             },    
+            {
+              type = "technology",
+              name = "advanced-ore-refining-5",
+              icon = "__angelsrefining__/graphics/technology/ore-sorting.png",
+            icon_size = 128,
+            prerequisites =
+              {
+            "advanced-ore-refining-4",
+              },
+              effects =
+              {
+                {
+                  type = "unlock-recipe",
+                  recipe = "ore-crusher-4"
+                },
+                {
+                  type = "unlock-recipe",
+                  recipe = "ore-floatation-cell-4"
+                },
+                {
+                  type = "unlock-recipe",
+                  recipe = "ore-leaching-plant-4"
+                },
+                {
+                  type = "unlock-recipe",
+                  recipe = "ore-refinery-3"
+                },
+              },
+              unit =
+              {
+                count = 150,
+                ingredients = {
+              {"science-pack-1", 1},
+              {"science-pack-2", 1},
+              {"science-pack-3", 1},
+              {"production-science-pack", 1},
+              {"high-tech-science-pack", 1},
+              },
+                time = 15
+              },
+              order = "c-a"
+              },             
+  
 }
 )
 
