@@ -8,9 +8,19 @@ end
 
 OV.add_unlock("water-treatment-4", "hydro-plant-3")
 OV.add_unlock("angels-advanced-chemistry-4", "advanced-chemical-plant-3")
+OV.add_unlock("angels-tungsten-smelting-3", "pellet-tungsten-smelting-2")
+OV.add_unlock("angels-tungsten-smelting-3", "solid-sodium-tungstate-smelting")
+OV.add_unlock("angels-tungsten-smelting-3", "casting-powder-tungsten-3")
+OV.add_unlock("angels-zinc-smelting-2", "powder-zinc")
+
 
 if mods["Clowns-Extended-Minerals"] then 
 OV.add_unlock("water-washing-3", "washing-plant-3")
+end
+
+if mods["Clowns-Processing"] then
+    OV.add_unlock("phosphorus-processing-2", "solid-disodium-phosphate")
+    OV.add_unlock("phosphorus-processing-2", "solid-tetrasodium-pyrophosphate")
 end
 
 if angelsmods.bioprocessing then

@@ -70,3 +70,90 @@ angelsmods.functions.RB.build({
     },
 }
 )
+
+data:extend(
+{
+    {
+        type = "recipe",
+        name = "solid-sodium-floride-1",
+        category = "chemistry",
+        subgroup = "petrochem-sodium",
+        energy_required = 2,
+        enabled = "false",
+        ingredients ={
+            {type="item", name="solid-sodium-hydroxide", amount=5},
+            {type="fluid", name="liquid-hydrofluoric-acid", amount=50},
+        },
+        results=
+        {
+            {type="item", name="solid-sodium-floride", amount=5},
+            {type="fluid", name="water-purified", amount=50},
+        },
+        icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
+        icon_size = 32,
+        order = "k",
+        },
+    
+    {
+        type = "recipe",
+        name = "solid-sodium-floride-2",
+        category = "chemistry",
+        subgroup = "petrochem-sodium",
+        energy_required = 2,
+        enabled = "false",
+        ingredients ={
+            {type="item", name="solid-sodium-carbonate", amount=5},
+            {type="fluid", name="liquid-hexafluorosilicic-acid", amount=25},
+        },
+        results=
+        {
+            {type="item", name="solid-sodium-floride", amount=5},
+            {type="fluid", name="water-purified", amount=25},
+        },
+        icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
+        icon_size = 32,
+        order = "l",
+        },
+
+    }
+)
+
+
+if mods["Clowns-Processing"] then 
+    data:extend(
+        {
+            {
+                type = "recipe",
+                name = "solid-disodium-phosphate",
+                category = "chemistry",
+                subgroup = "petrochem-sodium",
+                energy_required = 2,
+                enabled = "false",
+                ingredients ={
+                    {type="item", name="solid-sodium-carbonate", amount=5},
+                    {type="fluid", name="liquid-phosphoric-acid", amount=50},
+                },
+                results=
+                {
+                    {type="item", name="solid-disodium-phosphate", amount=5},
+                },
+                icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png",
+                icon_size = 32,
+                order = "m",
+                },
+
+                {
+                    type = "recipe",
+                    name = "solid-tetrasodium-pyrophosphate",
+                    category = "smelting",
+                    subgroup = "petrochem-sodium",
+                    energy_required = 3.5,
+                    ingredients ={
+                        {"solid-disodium-phosphate", 1}
+                    },
+                    result = "solid-tetrasodium-pyrophosphate",
+                    order = "n",
+                  },
+        }
+    )
+end

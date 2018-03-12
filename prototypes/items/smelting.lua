@@ -14,6 +14,57 @@ data:extend(
     flow_to_energy_ratio = 0.59,
 	auto_barrel = false
     },
+
+    {
+        type = "fluid",
+        name = "gas-tungsten-hexachloride",
+        icon = "__extendedangels__/graphics/icons/gas-tungsten-hexachloride.png",
+        icon_size = 32,
+        default_temperature = 100,
+        heat_capacity = "0KJ",
+        base_color = {r = 138/255, g = 20/255, b = 230/255},
+        flow_color = {r = 138/255, g = 20/255, b = 230/255},
+        max_temperature = 100,
+        pressure_to_speed_ratio = 0.4,
+        flow_to_energy_ratio = 0.59,
+      },
+
+      {
+        type = "item",
+        name = "solid-sodium-tungstate",
+        icon = "__extendedangels__/graphics/icons/solid-sodium-tungstate.png",
+        icon_size = 32,
+        flags = {"goes-to-main-inventory"},
+        subgroup = "angels-tungsten",
+        order = "f",
+        stack_size = 200
+      },
+
+      {
+        type = "fluid",
+        name = "gas-argon",
+        icon = "__extendedangels__/graphics/icons/gas-argon.png",
+        icon_size = 32,
+        default_temperature = 100,
+        heat_capacity = "0KJ",
+        base_color = {r = 0/255, g = 0/255, b = 0/255},
+        flow_color = {r = 30/255, g = 143/255, b = 216/255},
+        max_temperature = 100,
+        pressure_to_speed_ratio = 0.4,
+        flow_to_energy_ratio = 0.59,
+      },
+
+      {
+        type = "item",
+        name = "powder-zinc",
+        icon = "__angelssmelting__/graphics/icons/powder-zinc.png",
+        icon_size = 32,
+        flags = {"goes-to-main-inventory"},
+        subgroup = "angels-zinc",
+        order = "i",
+        stack_size = 200
+      },
+
     {
         type = "item",
         name = "titanium-concrete-brick",
@@ -30,5 +81,6 @@ data:extend(
           condition = { "water-tile" }
         }
       },
+
 }
 )

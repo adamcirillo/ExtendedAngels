@@ -4,6 +4,8 @@ Date: N/A
   Changes:
     - Initial Release
     - Includes Copper Tungsten and Tungsten Carbide smelting using Angels Smelting
+    - Redone Tungsten Smelting 3
+    - Adds Tetrasodium Pyrophosphate to Tungsten Smelting 3 if MadClown01's processing is present
     - Added Titanium Reinforced Brick
     - Added Advanced Chemical Plant MK3
     - Added Adv Gas Refineray MK4
