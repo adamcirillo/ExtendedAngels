@@ -16,6 +16,6 @@ Ported the Warehouse Addon Mod and added MK2-MK4 normal warhouses and tech chang
 Credits to Angels for his mods and for letting me have the graphics recoloured </br>
 Zombiee for recolouring the graphics for me </br>
 KorGgenT for his warehouse addon mod from 0.15 </br>
-Thanks to MadClown01 with some brainstorming </br>
+Thanks to MadClown01 with some brainstorming and for using some icons </br>
 License for code is MIT </br>
 License for grahpics is CC BY-NC-ND 4.0 </br>
