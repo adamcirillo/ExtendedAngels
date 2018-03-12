@@ -1,3 +1,4 @@
+local intermediatemulti = angelsmods.marathon.intermediatemulti
 data:extend(
 {
     {
@@ -263,6 +264,13 @@ data:extend(
                           energy_required = 4,
                           ingredients ={{type="item", name="powder-tungsten-carbide", amount=12}},
                           results={{type="item", name="tungsten-carbide", amount=12}},
+                        },
+                        expensive =
+                        {
+                    	  enabled = "false",
+	                        energy_required = 4,
+	                        ingredients ={{type="item", name="powder-tungsten-carbide", amount=15 * intermediatemulti}},
+	                        results={{type="item", name="tungsten-carbide", amount=12}},
                         },
                         icon_size = 32,
                         order = "ad",
