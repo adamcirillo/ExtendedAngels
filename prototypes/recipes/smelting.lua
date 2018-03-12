@@ -1,6 +1,27 @@
 local intermediatemulti = angelsmods.marathon.intermediatemulti
 data:extend(
 {
+
+    {
+        type = "recipe",
+        name = "solid-tungsten-trioxide-smelting",
+        category = "chemical-smelting",
+        subgroup = "angels-tungsten",
+        energy_required = 4,
+        enabled = "false",
+        ingredients ={
+          {type="item", name="pellet-tungsten", amount=4},
+          {type="fluid", name="gas-oxygen", amount=60},
+        },
+        results=
+        {
+          {type="item", name="solid-tungsten-trioxide", amount=12},
+        },
+        icon_size = 32,
+        order = "i",
+    },
+
+
     {
         type = "recipe",
         name = "pellet-tungsten-smelting-2",
@@ -10,7 +31,7 @@ data:extend(
         enabled = "false",
         ingredients ={
             {type="item", name="solid-salt", amount=50},
-            {type="item", name="solid-tungsten-oxide", amount=12},
+            {type="item", name="solid-tungsten-trioxide", amount=12},
             {type="item", name="solid-sodium-floride", amount=6},                          
         },
         results=
@@ -18,7 +39,7 @@ data:extend(
             {type="item", name="solid-sodium-tungstate", amount=12},
         },
             icon_size = 32,
-            order = "i",
+            order = "j",
         },
 
     {
@@ -72,7 +93,7 @@ data:extend(
           {type="item", name="casting-powder-tungsten", amount=24},
         },
         icon_size = 32,
-        order = "j",
+        order = "k",
     },     
 
     {
@@ -133,24 +154,6 @@ data:extend(
             icon_size = 32,
             order = "ad",
         },
-        {
-            type = "recipe",
-            name = "angels-titanium-concrete-brick",
-            category = "crafting-with-fluid",
-            subgroup = "angels-stone-casting",
-            energy_required = 4,
-            enabled = "false",
-            ingredients ={
-              {type="fluid", name="liquid-concrete", amount=40},
-              {type="item", name="angels-plate-titanium", amount=4},
-            },
-            results=
-            {
-              {type="item", name="titanium-concrete-brick", amount=4},
-            },
-            icon_size = 32,
-            order = "j",
-            },
 
             {
                 type = "recipe",
@@ -275,6 +278,26 @@ data:extend(
                         icon_size = 32,
                         order = "ad",
                         },
+
+                        {
+                            type = "recipe",
+                            name = "angels-titanium-concrete-brick",
+                            category = "crafting-with-fluid",
+                            subgroup = "angels-stone-casting",
+                            energy_required = 4,
+                            enabled = "false",
+                            ingredients ={
+                              {type="fluid", name="liquid-concrete", amount=40},
+                              {type="item", name="angels-plate-titanium", amount=4},
+                            },
+                            results=
+                            {
+                              {type="item", name="titanium-concrete-brick", amount=4},
+                            },
+                            icon_size = 32,
+                            order = "j",
+                            },
+                
             }
 )
 

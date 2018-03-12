@@ -16,6 +16,17 @@ data:extend(
     },
 
     {
+      type = "item",
+      name = "solid-tungsten-trioxide",
+      icon = "__angelssmelting__/graphics/icons/solid-tungsten-oxide.png",
+    icon_size = 32,
+      flags = {"goes-to-main-inventory"},
+      subgroup = "angels-tungsten",
+      order = "e",
+      stack_size = 200
+    },
+
+    {
         type = "fluid",
         name = "gas-tungsten-hexachloride",
         icon = "__extendedangels__/graphics/icons/gas-tungsten-hexachloride.png",
