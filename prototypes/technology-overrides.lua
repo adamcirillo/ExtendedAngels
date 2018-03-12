@@ -12,7 +12,8 @@ OV.add_unlock("angels-tungsten-smelting-3", "pellet-tungsten-smelting-2")
 OV.add_unlock("angels-tungsten-smelting-3", "solid-sodium-tungstate-smelting")
 OV.add_unlock("angels-tungsten-smelting-3", "casting-powder-tungsten-3")
 OV.add_unlock("angels-zinc-smelting-2", "powder-zinc")
-
+OV.add_unlock("angels-nitrogen-processing-3", "angels-air-filter-3")
+OV.add_unlock("angels-nitrogen-processing-4","angels-air-filter-4")
 
 if mods["Clowns-Extended-Minerals"] then 
 OV.add_unlock("water-washing-3", "washing-plant-3")

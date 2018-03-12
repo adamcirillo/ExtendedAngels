@@ -68,6 +68,72 @@ angelsmods.functions.RB.build({
       result= "advanced-chemical-plant-3",
     },
     },
+--AIR FILTER
+{
+    type = "recipe",
+    name = "angels-air-filter-3",
+	normal =
+    {
+	  energy_required = 5,
+	  enabled = false,
+      ingredients =
+      {
+		{"angels-air-filter-2", 1},
+		{"t3-plate", 4},
+		{"t3-circuit", 5},
+		{"t3-brick", 5},
+		{"t3-pipe", 8},
+      },
+      result= "angels-air-filter-3",
+    },
+    expensive =
+    {
+	  energy_required = 5 * buildingtime,
+	  enabled = false,
+      ingredients =
+      {
+		{"angels-air-filter-2", 1},
+		{"t3-plate", 4 * buildingmulti},
+		{"t3-circuit", 5 * buildingmulti},
+		{"t3-brick", 5 * buildingmulti},
+		{"t3-pipe", 8 * buildingmulti},
+      },
+      result= "angels-air-filter-3",
+    },
+    },
+    {
+        type = "recipe",
+        name = "angels-air-filter-4",
+        normal =
+        {
+          energy_required = 5,
+          enabled = false,
+          ingredients =
+          {
+            {"angels-air-filter-3", 1},
+            {"t4-plate", 4},
+            {"t4-circuit", 5},
+            {"t4-brick", 5},
+            {"t4-pipe", 8},
+          },
+          result= "angels-air-filter-4",
+        },
+        expensive =
+        {
+          energy_required = 5 * buildingtime,
+          enabled = false,
+          ingredients =
+          {
+            {"angels-air-filter-3", 1},
+            {"t4-plate", 4 * buildingmulti},
+            {"t4-circuit", 5 * buildingmulti},
+            {"t4-brick", 5 * buildingmulti},
+            {"t4-pipe", 8 * buildingmulti},
+          },
+          result= "angels-air-filter-4",
+        },
+        },
+
 }
 )
 
