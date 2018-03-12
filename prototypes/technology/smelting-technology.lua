@@ -7,7 +7,8 @@ data:extend(
         icon_size = 128,
         prerequisites =
         {
-        "angels-tungsten-smelting-1",       
+          "angels-copper-smelting-1",
+          "angels-tungsten-smelting-1",       
         },
         effects =
         {
@@ -33,6 +34,7 @@ data:extend(
         },
         order = "c-a"
     },
+
     {
       type = "technology",
       name = "angels-copper-tungsten-smelting-2",
@@ -63,6 +65,7 @@ data:extend(
       },
       order = "c-a"
   },
+
   {
     type = "technology",
     name = "angels-stone-smelting-4",
@@ -127,6 +130,40 @@ data:extend(
       },
       order = "a-a-a1"
       },
+
+      {
+        type = "technology",
+        name = "tungsten-carbide-smelting-1",
+        icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
+        icon_size = 128,
+        prerequisites =
+        {
+        "angels-tungsten-smelting-1",       
+        },
+        effects =
+        {
+          {
+            type = "unlock-recipe",
+            recipe = "tungsten-carbide-smelting-1"
+          },
+          {
+            type = "unlock-recipe",
+            recipe = "angels-plate-tungsten-carbide"
+          },
+        },
+        unit =
+        {
+          count = 75,
+          ingredients = {
+          {"science-pack-1", 1},
+          {"science-pack-2", 1},
+          {"science-pack-3", 1},
+          {"production-science-pack", 1},
+          },
+          time = 30
+        },
+        order = "c-a"
+    },
 
 }
 )

@@ -71,7 +71,7 @@ data:extend(
           {type="item", name="casting-powder-tungsten", amount=24},
         },
         icon_size = 32,
-        order = "i",
+        order = "j",
     },     
 
     {
@@ -169,7 +169,41 @@ data:extend(
                 order = "ac",
                 },
             
+                {
+                    type = "recipe",
+                    name = "tungsten-carbide-smelting-1",
+                    category = "chemical-smelting",
+                    subgroup = "angels-tungsten-carbide",
+                    energy_required = 8,
+                    enabled = "false",
+                    ingredients ={                        
+                        {type="item", name="solid-tungsten-oxide", amount=12},
+                        {type="fluid", name="gas-hydrogen", amount=60},
+                        {type="fluid", name="gas-argon", amount=30},
+                    },
+                    results=
+                    {
+                        {type="item", name="powder-tungsten-carbide", amount=12},
+                    },
+                        icon_size = 32,
+                        order = "aa",
+                    },
 
+                    {
+                        type = "recipe",
+                        name = "angels-plate-tungsten-carbide",
+                        category = "sintering",
+                        subgroup = "angels-tungsten-carbide-casting",
+                        normal =
+                        {
+                          enabled = "false",
+                          energy_required = 4,
+                          ingredients ={{type="item", name="powder-tungsten-carbide", amount=12}},
+                          results={{type="item", name="tungsten-carbide", amount=12}},
+                        },
+                        icon_size = 32,
+                        order = "ad",
+                        },
             }
 )
 

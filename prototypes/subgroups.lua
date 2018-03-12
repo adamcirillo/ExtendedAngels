@@ -13,6 +13,24 @@ data:extend(
     group = "angels-casting",
     order = "u",
   },
+  {
+    type = "item-subgroup",
+    name = "petrochem-argon",
+    group = "petrochem-refining",
+    order = "cab",
+  },
+  {
+    type = "item-subgroup",
+    name = "angels-tungsten-carbide",
+	  group = "angels-smelting",
+	  order = "v",
+  },
+  {
+    type = "item-subgroup",
+    name = "angels-tungsten-carbide-casting",
+	  group = "angels-casting",
+	  order = "w",
+  },
 }
 )
   if angelsmods.addons.warehouses then

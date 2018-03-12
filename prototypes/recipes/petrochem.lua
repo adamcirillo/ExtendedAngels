@@ -181,6 +181,24 @@ data:extend(
         order = "l",
         },
 
+        {
+            type = "recipe",
+            name = "gas-argon",
+            category = "chemistry",
+            subgroup = "petrochem-argon",
+            energy_required = 2,
+            enabled = "false",
+            ingredients ={
+                {type="fluid", name="gas-compressed-air", amount=100}
+            },
+            results=
+            {
+                {type="fluid", name="gas-argon", amount=50},
+            },
+            icon = "__extendedangels__/graphics/icons/gas-argon.png",
+            icon_size = 32,
+            order = "a",
+            },
     }
 )
 
