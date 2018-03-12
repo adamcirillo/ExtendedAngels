@@ -133,7 +133,7 @@ data:extend(
 
       {
         type = "technology",
-        name = "tungsten-carbide-smelting-1",
+        name = "angels-tungsten-carbide-smelting-1",
         icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
         icon_size = 128,
         prerequisites =
@@ -165,5 +165,72 @@ data:extend(
         order = "c-a"
     },
 
+    {
+      type = "technology",
+      name = "angels-tungsten-carbide-smelting-2",
+      icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
+      icon_size = 128,
+      prerequisites =
+      {
+      "angels-tungsten-smelting-2",    
+      "angels-tungsten-carbide-smelting-1",  
+      },
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "tungsten-carbide-smelting-2"
+        },
+      },
+      unit =
+      {
+        count = 100,
+        ingredients = {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1},
+        {"production-science-pack", 1},
+        {"high-tech-science-pack", 1},
+        },
+        time = 30
+      },
+      order = "c-a"
+  },
+
+  {
+    type = "technology",
+    name = "angels-tungsten-carbide-smelting-3",
+    icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
+    icon_size = 128,
+    prerequisites =
+    {
+    "angels-tungsten-smelting-3",    
+    "angels-tungsten-carbide-smelting-2",  
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "tungsten-carbide-smelting-3"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "solid-tungsten-oxide-smelting-2"
+      },
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+      {"science-pack-1", 1},
+      {"science-pack-2", 1},
+      {"science-pack-3", 1},
+      {"production-science-pack", 1},
+      {"high-tech-science-pack", 1},
+      },
+      time = 30
+    },
+    order = "c-a"
+  },
 }
 )

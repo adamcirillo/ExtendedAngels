@@ -168,6 +168,23 @@ data:extend(
                 icon_size = 32,
                 order = "ac",
                 },
+
+                {
+                    type = "recipe",
+                    name = "solid-tungsten-oxide-smelting-2",
+                    category = "liquifying",
+                    subgroup = "angels-tungsten-carbide",
+                    energy_required = 6,
+                    enabled = "false",
+                    ingredients ={
+                      {type="item", name="solid-tungsten-oxide", amount=12},
+                      {type="fluid", name="gas-hydrogen-chloride", amount=30},
+                    },
+                    results=
+                    {
+                      {type="fluid", name="gas-tungsten-hexachloride", amount=60},
+                    },
+                },
             
                 {
                     type = "recipe",
@@ -185,9 +202,55 @@ data:extend(
                     {
                         {type="item", name="powder-tungsten-carbide", amount=12},
                     },
+                        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
                         icon_size = 32,
                         order = "aa",
                     },
+
+                    {
+                        type = "recipe",
+                        name = "tungsten-carbide-smelting-2",
+                        category = "chemical-smelting",
+                        subgroup = "angels-tungsten-carbide",
+                        energy_required = 8,
+                        enabled = "false",
+                        ingredients ={                        
+                            {type="fluid", name="gas-tungsten-hexafluoride", amount=80},
+                            {type="fluid", name="gas-hydrogen", amount=60},
+                            {type="fluid", name="gas-methanol", amount=30},
+                        },
+                        results=
+                        {
+                            {type="item", name="powder-tungsten-carbide", amount=12},
+                            {type="fluid", name="liquid-hydrofluoric-acid", amount=60},
+                            {type="fluid", name="water-purified", amount=20},
+                        },
+                            icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
+                            icon_size = 32,
+                            order = "ab",
+                        },
+
+                        {
+                            type = "recipe",
+                            name = "tungsten-carbide-smelting-3",
+                            category = "chemical-smelting",
+                            subgroup = "angels-tungsten-carbide",
+                            energy_required = 8,
+                            enabled = "false",
+                            ingredients ={                        
+                                {type="fluid", name="gas-tungsten-hexachloride", amount=60},
+                                {type="fluid", name="gas-hydrogen", amount=50},
+                                {type="fluid", name="gas-methane", amount=30},
+                            },
+                            results=
+                            {
+                                {type="item", name="powder-tungsten-carbide", amount=12},
+                                {type="fluid", name="gas-hydrogen-chloride", amount=40},
+                            },
+                            icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
+                                icon_size = 32,
+                                order = "ac",
+                            },                
 
                     {
                         type = "recipe",

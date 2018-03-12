@@ -63,7 +63,6 @@ data:extend(
         stack_size = 200
       },
 
-
     {
         type = "item",
         name = "titanium-concrete-brick",
