@@ -45,7 +45,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-2", 1},
+		{"hydro-plant-3", 1},
 		{"t5-plate", 4},
 		{"t5-circuit", 12},
 		{"t5-pipe", 16},	
@@ -59,7 +59,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-2", 1},
+		{"hydro-plant-3", 1},
 		{"t5-plate", 4 * buildingmulti},
 		{"t5-circuit", 12 * buildingmulti},
 		{"t5-pipe", 16 * buildingmulti},	
