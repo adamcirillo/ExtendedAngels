@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: N/A
+  Changes:
+    - Updated some building recipes to use Titanium Reinforced Brick
+    - Fixed a typo
+    - Fixed some issues with adding the mod to an exisiting playthoourgh with recipes not being updated
+    - Reblanced Tungsten Smelting 3
+    - Adjusted Tungsten Powder to use 1 solid and 2 fluids instead of 3 fluids as the chemical furnace has only 2 fluid inputs
+    - Fixed angels warehouse optinal dependecy not working
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: N/A
+  Changes:
+    - Changed Tungsten Hexachloride to use Tungsten Trioxide
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: N/A
+  Changes:
+    - Made it so if you set the icon scaling for Angel's Warehouse in the Mod Settings it works on mk2-mk4 warehouses
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: N/A
   Changes:

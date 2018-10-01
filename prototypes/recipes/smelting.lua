@@ -50,12 +50,12 @@ data:extend(
         energy_required = 4,
         enabled = "false",
         ingredients ={
-          {type="item", name="solid-sodium-tungstate", amount=12},
-          {type="item", name="pellet-manganese", amount=12},
+          {type="item", name="solid-sodium-tungstate", amount=16},
+          {type="item", name="pellet-manganese", amount=4},
         },
         results=
         {
-          {type="item", name="powder-tungsten", amount=24},
+          {type="item", name="powder-tungsten", amount=30},
         },
     },
     
@@ -181,7 +181,7 @@ data:extend(
                     energy_required = 6,
                     enabled = "false",
                     ingredients ={
-                      {type="item", name="solid-tungsten-oxide", amount=12},
+                      {type="item", name="solid-tungsten-trioxide", amount=12},
                       {type="fluid", name="gas-hydrogen-chloride", amount=30},
                     },
                     results=
@@ -221,7 +221,7 @@ data:extend(
                         ingredients ={                        
                             {type="fluid", name="gas-tungsten-hexafluoride", amount=80},
                             {type="fluid", name="gas-hydrogen", amount=60},
-                            {type="fluid", name="gas-methanol", amount=30},
+                            {type="item", name="solid-carbon", amount=5},
                         },
                         results=
                         {
@@ -244,7 +244,7 @@ data:extend(
                             ingredients ={                        
                                 {type="fluid", name="gas-tungsten-hexachloride", amount=60},
                                 {type="fluid", name="gas-hydrogen", amount=50},
-                                {type="fluid", name="gas-methane", amount=30},
+                                {type="item", name="solid-carbon", amount=5},
                             },
                             results=
                             {

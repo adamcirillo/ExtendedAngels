@@ -1,5 +1,3 @@
-if angelsmods.addons.warehouses then
-
 recipe = data.raw["recipe"]["angels-warehouse"]
 recipe.energy_required = 20
 recipe.ingredients = {
@@ -314,5 +312,3 @@ data:extend(
 	order = "e"
     },
 })
-
-end
