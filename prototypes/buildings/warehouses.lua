@@ -44,7 +44,7 @@ data:extend(
   {
     type = "item",
     name = "warehouse-passive-provider-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -68,7 +68,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -80,7 +80,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -104,7 +104,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-passive-provider-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -128,7 +128,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -140,7 +140,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -164,7 +164,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-passive-provider-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -188,7 +188,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
@@ -200,7 +200,7 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
     icon_size = 32,
 	flags = {"goes-to-quickbar"},
     subgroup = "angels-warehouses",
