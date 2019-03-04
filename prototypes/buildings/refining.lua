@@ -16,7 +16,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,
-	flags = {"goes-to-quickbar"},
     subgroup = "water-treatment-building",
     order = "a[hydro-plant3]",
     place_result = "hydro-plant-3",
@@ -133,7 +132,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,
-	flags = {"goes-to-quickbar"},
     subgroup = "water-treatment-building",
     order = "b[hydro-plant4-]",
     place_result = "hydro-plant-4",
@@ -251,7 +249,6 @@ data:extend(
             }
         },
         icon_size = 32,
-        flags = {"goes-to-quickbar"},
         subgroup = "water-treatment-building",
         order = "d[salination-plant3]",
         place_result = "salination-plant-3",
@@ -348,7 +345,6 @@ data:extend(
                 }
             },
             icon_size = 32,
-            flags = {"goes-to-quickbar"},
             subgroup = "washing-building",
             order = "c",
             place_result = "washing-plant-3",
@@ -458,7 +454,6 @@ data:extend(
                 }
             },
             icon_size = 32,
-            flags = {"goes-to-quickbar"},
             subgroup = "washing-building",
             order = "c",
             place_result = "washing-plant-4",
@@ -569,7 +564,6 @@ data:extend(
                     }
                 },
                 icon_size = 32,
-                flags = {"goes-to-quickbar"},
                 subgroup = "ore-crusher",
                 order = "d[ore-crusher-4]",
                 place_result = "ore-crusher-4",
@@ -661,7 +655,6 @@ data:extend(
                     }
                 },
                 icon_size = 32,
-                flags = {"goes-to-quickbar"},
                 subgroup = "ore-floatation",
                 order = "c[ore-floatation-cell-4]",
                 place_result = "ore-floatation-cell-4",
@@ -772,7 +765,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,
-	flags = {"goes-to-quickbar"},
     subgroup = "ore-leaching",
     order = "c[ore-leaching-plant-4]",
     place_result = "ore-leaching-plant-4",
@@ -879,7 +871,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
     subgroup = "ore-refining",
     order = "b[ore-refinery-3]",
     place_result = "ore-refinery-3",
@@ -970,7 +961,6 @@ data:extend(
 		    }
 	    },
 	    icon_size = 32,
-        flags = {"goes-to-quickbar"},
         subgroup = "refining-buildings",
         order = "e[crystallizer-3]",
         place_result = "crystallizer-3",
@@ -1076,7 +1066,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
     subgroup = "refining-buildings",
     order = "c[filtration-unit-3]",
     place_result = "filtration-unit-3",

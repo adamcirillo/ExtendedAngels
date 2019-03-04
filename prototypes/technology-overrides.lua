@@ -31,9 +31,10 @@ if angelsmods.bioprocessing then
 end
 
 if mods["angelsaddons-warehouses"] then
-    if data.raw.tool["logistic-science-pack"] then
-        bobmods.lib.tech.replace_science_pack("logistic-warehouses-3", "production-science-pack", "logistic-science-pack")
-        bobmods.lib.tech.replace_science_pack("logistic-warehouses-4", "production-science-pack", "logistic-science-pack")
+    if data.raw.tool["advanced-logistic-science-pack"] then
+        bobmods.lib.tech.replace_science_pack("logistic-warehouses-3", "production-science-pack", "advanced-logistic-science-pack")
+        bobmods.lib.tech.replace_science_pack("logistic-warehouses-4", "production-science-pack", "advanced-logistic-science-pack")
+        bobmods.lib.tech.replace_science_pack("warehouses-4", "production-science-pack", "advanced-logistic-science-pack")
     end
 end
 

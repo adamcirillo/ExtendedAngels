@@ -16,7 +16,6 @@ data:extend(
 		}
 	},
 	icon_size = 32,	
-    flags = {"goes-to-quickbar"},
     subgroup = "petrochem-steam-cracker-advanced-chemical-plant",
     order = "j",
     place_result = "advanced-chemical-plant-3",
@@ -157,7 +156,6 @@ data:extend(
                 }
             },
             icon_size = 32,	
-            flags = {"goes-to-quickbar"},
             subgroup = "petrochem-electrolyser",
             order = "k",
             place_result = "angels-air-filter-3",
@@ -253,7 +251,6 @@ data:extend(
                         }
                     },
                     icon_size = 32,	
-                    flags = {"goes-to-quickbar"},
                     subgroup = "petrochem-electrolyser",
                     order = "l",
                     place_result = "angels-air-filter-4",

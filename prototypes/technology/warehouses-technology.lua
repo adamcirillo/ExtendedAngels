@@ -24,8 +24,8 @@ data:extend(
     {
       count = 125,
       ingredients = {
-    {"science-pack-1", 1},
-    {"science-pack-2", 1},
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
     },
       time = 20
     },
@@ -54,9 +54,9 @@ data:extend(
       {
         count = 200,
         ingredients = {
-      {"science-pack-1", 1},
-      {"science-pack-2", 1},
-      {"science-pack-3", 1},
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"chemical-science-pack", 1},
       },
         time = 20
       },
@@ -85,9 +85,9 @@ data:extend(
         {
           count = 200,
           ingredients = {
-        {"science-pack-1", 1},
-        {"science-pack-2", 1},
-        {"science-pack-3", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
         {"production-science-pack", 1},
         },
           time = 20
@@ -126,14 +126,19 @@ data:extend(
         type = "unlock-recipe",
         recipe = "warehouse-requester-mk2"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "warehouse-buffer-mk2"
+      },
+      
     },
     unit =
     {
       count = 125,
       ingredients = {
-	  {"science-pack-1", 1},
-	  {"science-pack-2", 1},
-	  {"science-pack-3", 1},
+	  {"automation-science-pack", 1},
+	  {"logistic-science-pack", 1},
+	  {"chemical-science-pack", 1},
 	  },
       time = 20
     },
@@ -171,14 +176,19 @@ data:extend(
         type = "unlock-recipe",
         recipe = "warehouse-requester-mk3"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "warehouse-buffer-mk3"
+      },
+
     },
     unit =
     {
       count = 200,
       ingredients = {
-	  {"science-pack-1", 1},
-	  {"science-pack-2", 1},
-	  {"science-pack-3", 1},
+	  {"automation-science-pack", 1},
+	  {"logistic-science-pack", 1},
+	  {"chemical-science-pack", 1},
 	  {"production-science-pack", 1},
 	  },
       time = 25
@@ -217,16 +227,21 @@ data:extend(
         type = "unlock-recipe",
         recipe = "warehouse-requester-mk4"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "warehouse-buffer-mk4"
+      },
+
     },
     unit =
     {
       count = 300,
       ingredients = {
-	  {"science-pack-1", 1},
-	  {"science-pack-2", 1},
-	  {"science-pack-3", 1},
+	  {"automation-science-pack", 1},
+	  {"logistic-science-pack", 1},
+	  {"chemical-science-pack", 1},
     {"production-science-pack", 1},
-    {"high-tech-science-pack", 1},
+    {"utility-science-pack", 1},
 	  },
       time = 30
     },

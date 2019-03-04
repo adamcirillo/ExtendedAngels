@@ -23,9 +23,9 @@ if not mods["Clowns-Extended-Minerals"] then
         {
           count = 100,
           ingredients = {
-          {"science-pack-1", 1},
-          {"science-pack-2", 1},
-          {"science-pack-3", 1},
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
           {"production-science-pack", 1},          
           },
           time = 15
@@ -64,11 +64,11 @@ data:extend(
         {
           count = 100,
           ingredients = {
-          {"science-pack-1", 1},
-          {"science-pack-2", 1},
-          {"science-pack-3", 1},
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"chemical-science-pack", 1},
           {"production-science-pack", 1},
-          {"high-tech-science-pack", 1},
+          {"utility-science-pack", 1},
           },
           time = 15
         },
@@ -95,11 +95,11 @@ data:extend(
             {
               count = 150,
               ingredients = {
-              {"science-pack-1", 1},
-              {"science-pack-2", 1},
-              {"science-pack-3", 1},
+              {"automation-science-pack", 1},
+              {"logistic-science-pack", 1},
+              {"chemical-science-pack", 1},
               {"production-science-pack", 1},
-              {"high-tech-science-pack", 1},
+              {"utility-science-pack", 1},
               },
               time = 15
             },
@@ -137,11 +137,11 @@ data:extend(
               {
                 count = 150,
                 ingredients = {
-              {"science-pack-1", 1},
-              {"science-pack-2", 1},
-              {"science-pack-3", 1},
+              {"automation-science-pack", 1},
+              {"logistic-science-pack", 1},
+              {"chemical-science-pack", 1},
               {"production-science-pack", 1},
-              {"high-tech-science-pack", 1},
+              {"utility-science-pack", 1},
               },
                 time = 15
               },

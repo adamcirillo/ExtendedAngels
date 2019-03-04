@@ -41,6 +41,15 @@ recipe.ingredients = {
 	{"angels-warehouse", 1},
 	}
 
+	recipe = data.raw["recipe"]["angels-warehouse-buffer"]
+	recipe.energy_required = 20
+	recipe.ingredients = {
+		{"steel-plate", 250},
+		{"electronic-circuit", 100},
+		{"advanced-circuit", 40},
+		{"angels-warehouse", 1},
+		}	
+
 data:extend(
 {
 	
@@ -132,7 +141,25 @@ data:extend(
 	icon_size = 32,
     subgroup = "warehouses-2",
 	order = "e"
-    },
+	},
+	
+	{
+	type = "recipe",
+	name = "warehouse-buffer-mk2",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"invar-alloy", 400},
+	{"brass-gear-wheel", 150},
+	{"steel-bearing", 100},
+	{"angels-warehouse-buffer", 1},
+	},
+	result= "warehouse-buffer-mk2",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+	icon_size = 32,
+	subgroup = "warehouses-2",
+	order = "f"
+	},
 	
 	{
 	type = "recipe",
@@ -225,6 +252,24 @@ data:extend(
 	
 	{
 	type = "recipe",
+	name = "warehouse-buffer-mk3",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"titanium-plate", 800},
+	{"ceramic-bearing", 200},
+	{"processing-unit", 200},
+	{"warehouse-buffer-mk2", 1}
+	},
+	result= "warehouse-buffer-mk3",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+	icon_size = 32,
+	subgroup = "warehouses-3",
+	order = "f"
+	},
+
+	{
+	type = "recipe",
 	name = "warehouse-mk4",
 	energy_required = 20,
 	enabled = "false",
@@ -310,5 +355,24 @@ data:extend(
 	icon_size = 32,
     subgroup = "warehouses-4",
 	order = "e"
-    },
+	},
+	
+	{
+	type = "recipe",
+	name = "warehouse-buffer-mk4",
+	energy_required = 20,
+	enabled = "false",
+	ingredients ={
+	{"tungsten-plate", 1000},
+	{"nitinol-bearing", 250},
+	{"advanced-processing-unit", 200},
+	{"warehouse-buffer-mk3", 1}
+	},
+	result= "warehouse-buffer-mk4",
+	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+	icon_size = 32,
+	subgroup = "warehouses-4",
+	order = "f"
+	},
+	
 })

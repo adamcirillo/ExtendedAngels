@@ -10,17 +10,20 @@ if mods["angelsaddons-warehouses"] then
 		data.raw["logistic-container"]["warehouse-passive-provider-mk2"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-active-provider-mk2"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-storage-mk2"].scale_info_icons = true
-    	data.raw["logistic-container"]["warehouse-requester-mk2"].scale_info_icons = true
+		data.raw["logistic-container"]["warehouse-requester-mk2"].scale_info_icons = true
+		data.raw["logistic-container"]["warehouse-buffer-mk2"].scale_info_icons = true
 		data.raw["container"]["warehouse-mk3"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-passive-provider-mk3"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-active-provider-mk3"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-storage-mk3"].scale_info_icons = true
-   		data.raw["logistic-container"]["warehouse-requester-mk3"].scale_info_icons = true
+		data.raw["logistic-container"]["warehouse-requester-mk3"].scale_info_icons = true
+		data.raw["logistic-container"]["warehouse-buffer-mk3"].scale_info_icons = true
     	data.raw["container"]["warehouse-mk4"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-passive-provider-mk4"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-active-provider-mk4"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-storage-mk4"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-requester-mk4"].scale_info_icons = true
+		data.raw["logistic-container"]["warehouse-buffer-mk4"].scale_info_icons = true
 	end
 end
 

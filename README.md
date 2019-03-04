@@ -12,7 +12,7 @@ Added Salation Plant MK3 </br>
 Added Ore Washing Plant MK3 & MK4 </br>
 Added Ore Crusher MK4, Floation Cell MK4, Leaching Plant MK4 & Ore Refineray MK3 </br>
 Added Crystallizer and Filitration Unit MK3 </br>
-Ported the Warehouse Addon Mod and added MK2-MK4 normal warhouses and tech changes </br>
+Ported the Warehouse Addon Mod and added MK2-MK4 normal warhouses, buffer warehouses MK2-MK4 and tech changes </br>
 Credits to Angels for his mods and for letting me have the graphics recoloured </br>
 Zombiee for recolouring the graphics for me </br>
 KorGgenT for his warehouse addon mod from 0.15 </br>

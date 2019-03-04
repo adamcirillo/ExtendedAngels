@@ -20,7 +20,6 @@ data:extend(
       name = "solid-tungsten-trioxide",
       icon = "__angelssmelting__/graphics/icons/solid-tungsten-oxide.png",
     icon_size = 32,
-      flags = {"goes-to-main-inventory"},
       subgroup = "angels-tungsten",
       order = "e",
       stack_size = 200
@@ -45,7 +44,6 @@ data:extend(
         name = "solid-sodium-tungstate",
         icon = "__extendedangels__/graphics/icons/solid-sodium-tungstate.png",
         icon_size = 32,
-        flags = {"goes-to-main-inventory"},
         subgroup = "angels-tungsten",
         order = "f",
         stack_size = 200
@@ -57,7 +55,6 @@ data:extend(
         name = "powder-zinc",
         icon = "__angelssmelting__/graphics/icons/powder-zinc.png",
         icon_size = 32,
-        flags = {"goes-to-main-inventory"},
         subgroup = "angels-zinc",
         order = "i",
         stack_size = 200
@@ -68,7 +65,6 @@ data:extend(
         name = "powder-tungsten-carbide",
         icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
         icon_size = 32,
-        flags = {"goes-to-main-inventory"},
         subgroup = "angels-tungsten-carbide",
         order = "a",
         stack_size = 200
@@ -79,7 +75,6 @@ data:extend(
         name = "titanium-concrete-brick",
         icon = "__extendedangels__/graphics/icons/brick-titanium.png",
         icon_size = 32,
-        flags = {"goes-to-main-inventory"},
         subgroup = "angels-stone",
         order = "i",
         stack_size = 1000,
