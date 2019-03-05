@@ -225,7 +225,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"ore-floatation-cell-4", 1},
+		{"ore-floatation-cell-3", 1},
 		{"t5-plate", 4 * buildingmulti},
 		{"t5-circuit", 8 * buildingmulti},
 		{"t5-pipe", 4 * buildingmulti},	
