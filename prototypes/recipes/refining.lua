@@ -3,39 +3,6 @@ local buildingtime = angelsmods.marathon.buildingtime
 
 angelsmods.functions.RB.build({
 --HYDRO PLANT
-{
-    type = "recipe",
-    name = "hydro-plant-3",
-	normal =
-    {
-	  energy_required = 5,
-	  enabled = "false",
-      ingredients =
-      {
-		{"hydro-plant-2", 1},
-		{"t4-plate", 4},
-		{"t4-circuit", 12},
-		{"t4-pipe", 16},	
-		{"t4-brick", 12},
-      },
-      result= "hydro-plant-3",
-    },
-    expensive =
-    {
-	  energy_required = 5 * buildingtime,
-	  enabled = "false",
-      ingredients =
-      {
-		{"hydro-plant-2", 1},
-		{"t4-plate", 4 * buildingmulti},
-		{"t4-circuit", 12 * buildingmulti},
-		{"t4-pipe", 16 * buildingmulti},	
-		{"t4-brick", 12 * buildingmulti},
-      },
-      result= "hydro-plant-3",
-    },
-    order = "c"
-    },
 	{
     type = "recipe",
     name = "hydro-plant-4",

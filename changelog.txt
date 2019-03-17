@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: N/A
+  Changes:
+    - Removed Hydro Plank Mk3 as angels added it
+    - Added Aboretum & Seed Generators Mk2 & Mk3
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: N/A
   Changes:

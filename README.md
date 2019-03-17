@@ -7,7 +7,7 @@ Added Titanium Reinforced Brick </br>
 Added Advanced Chemical Plant MK3 </br>
 Added Adv Gas Refineray MK4 </br>
 Added Agle Farm Mk3 & MK4 </br>
-Added Hydro Plant MK2 & MK3 </br>
+Added Hydro Plant MK3 (0.16 Only) & MK4 </br>
 Added Salation Plant MK3 </br>
 Added Ore Washing Plant MK3 & MK4 </br>
 Added Ore Crusher MK4, Floation Cell MK4, Leaching Plant MK4 & Ore Refineray MK3 </br>

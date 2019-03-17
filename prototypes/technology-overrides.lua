@@ -6,7 +6,6 @@ OV.disable_recipe({ "tungsten-carbide" })
 OV.disable_recipe({ "tungsten-carbide-2" })
 OV.disable_recipe({ "pellet-tungsten-smelting" })
 
-OV.add_unlock("water-treatment-4", "hydro-plant-3")
 OV.add_unlock("angels-advanced-chemistry-4", "advanced-chemical-plant-3")
 OV.add_unlock("angels-tungsten-smelting-3", "solid-tungsten-trioxide-smelting")
 OV.add_unlock("angels-tungsten-smelting-3", "pellet-tungsten-smelting-2")
@@ -28,6 +27,14 @@ end
 
 if angelsmods.bioprocessing then
     OV.add_unlock("bio-processing-red", "algae-farm-3")
+    OV.add_unlock("bio-aboretum-2", "bio-generator-temperate-2")
+    OV.add_unlock("bio-aboretum-2", "bio-generator-swamp-2")
+    OV.add_unlock("bio-aboretum-2", "bio-generator-desert-2")
+    OV.add_unlock("bio-aboretum-2", "bio-arboretum-2")
+    OV.add_unlock("bio-aboretum-3", "bio-generator-temperate-3")
+    OV.add_unlock("bio-aboretum-3", "bio-generator-swamp-3")
+    OV.add_unlock("bio-aboretum-3", "bio-generator-desert-3")
+    OV.add_unlock("bio-aboretum-3", "bio-arboretum-3")
 end
 
 if mods["angelsaddons-warehouses"] then

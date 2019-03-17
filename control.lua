@@ -5,7 +5,6 @@ for index, force in pairs(game.forces) do
   
 
     recipes["washing-plant-3"].enabled = technologies["water-washing-3"].researched
-    recipes["hydro-plant-3"].enabled = technologies["water-treatment-4"].researched
     recipes["advanced-chemical-plant-3"].enabled = technologies["angels-advanced-chemistry-4"].researched
     recipes["powder-zinc"].enabled = technologies["angels-zinc-smelting-2"].researched
     recipes["gas-argon"].enabled = technologies["angels-nitrogen-processing-1"].researched
@@ -15,6 +14,21 @@ for index, force in pairs(game.forces) do
     if technologies["bio-processing-red"] then 
     recipes["algae-farm-3"].enabled = technologies["bio-processing-red"].researched
     end
+
+    if technologies["bio-aboretum-2"] then 
+      recipes["bio-generator-temperate-2"].enabled = technologies["bio-aboretum-2"].researched
+      recipes["bio-generator-swamp-2"].enabled = technologies["bio-aboretum-2"].researched
+      recipes["bio-generator-desert-2"].enabled = technologies["bio-aboretum-2"].researched
+      recipes["bio-arboretum-2"].enabled = technologies["bio-aboretum-2"].researched
+      end
+
+    if technologies["bio-aboretum-3"] then 
+      recipes["bio-generator-temperate-3"].enabled = technologies["bio-aboretum-3"].researched
+      recipes["bio-generator-swamp-3"].enabled = technologies["bio-aboretum-3"].researched
+      recipes["bio-generator-desert-3"].enabled = technologies["bio-aboretum-3"].researched
+      recipes["bio-arboretum-3"].enabled = technologies["bio-aboretum-3"].researched
+      end
+
 
     if technologies["phosphorus-processing-2"] then 
     recipes["solid-disodium-phosphate"].enabled = technologies["phosphorus-processing-2"].researched
