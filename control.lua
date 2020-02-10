@@ -35,6 +35,11 @@ for index, force in pairs(game.forces) do
     recipes["solid-tetrasodium-pyrophosphate"].enabled = technologies["phosphorus-processing-2"].researched
     end
     
+    if technologies["water-treatment-5"] then 
+      recipes["hydro-plant-4"].enabled = technologies["water-treatment-5"].researched
+      recipes["salination-plant-3"].enabled = technologies["water-treatment-5"].researched
+      end
+
     if technologies["angels-tungsten-smelting-3"].researched then
         recipes["solid-tungsten-trioxide-smelting"].enabled = true
         recipes["pellet-tungsten-smelting-2"].enabled = true

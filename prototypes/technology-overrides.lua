@@ -23,18 +23,20 @@ end
 if mods["Clowns-Processing"] then
     OV.add_unlock("phosphorus-processing-2", "solid-disodium-phosphate")
     OV.add_unlock("phosphorus-processing-2", "solid-tetrasodium-pyrophosphate")
+    OV.add_unlock("water-treatment-5", "hydro-plant-4")
+    OV.add_unlock("water-treatment-5", "salination-plant-3")
 end
 
 if angelsmods.bioprocessing then
     OV.add_unlock("bio-processing-red", "algae-farm-3")
-    OV.add_unlock("bio-aboretum-2", "bio-generator-temperate-2")
-    OV.add_unlock("bio-aboretum-2", "bio-generator-swamp-2")
-    OV.add_unlock("bio-aboretum-2", "bio-generator-desert-2")
-    OV.add_unlock("bio-aboretum-2", "bio-arboretum-2")
-    OV.add_unlock("bio-aboretum-3", "bio-generator-temperate-3")
-    OV.add_unlock("bio-aboretum-3", "bio-generator-swamp-3")
-    OV.add_unlock("bio-aboretum-3", "bio-generator-desert-3")
-    OV.add_unlock("bio-aboretum-3", "bio-arboretum-3")
+    OV.add_unlock("bio-arboretum-2", "bio-generator-temperate-2")
+    OV.add_unlock("bio-arboretum-2", "bio-generator-swamp-2")
+    OV.add_unlock("bio-arboretum-2", "bio-generator-desert-2")
+    OV.add_unlock("bio-arboretum-2", "bio-arboretum-2")
+    OV.add_unlock("bio-arboretum-3", "bio-generator-temperate-3")
+    OV.add_unlock("bio-arboretum-3", "bio-generator-swamp-3")
+    OV.add_unlock("bio-arboretum-3", "bio-generator-desert-3")
+    OV.add_unlock("bio-arboretum-3", "bio-arboretum-3")
 end
 
 if mods["angelsaddons-warehouses"] then

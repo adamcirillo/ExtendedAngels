@@ -38,8 +38,10 @@ if not mods["Clowns-Extended-Minerals"] then
 
 end
 
+if not mods["Clowns-Processing"] then 
+
 data:extend(
-{
+  {
     {
         type = "technology",
         name = "water-treatment-5",
@@ -74,7 +76,13 @@ data:extend(
         },
         order = "c-a"
         },
+  }
+)
 
+end
+
+  data:extend(
+    {
     	{
             type = "technology",
             name = "water-washing-4",
@@ -147,7 +155,7 @@ data:extend(
               },
               order = "c-a"
               },             
-  
-}
+            }
+
 )
 

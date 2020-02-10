@@ -16,7 +16,7 @@ data:extend(
 		}
 	},
 	icon_size = 32,	
-    subgroup = "petrochem-steam-cracker-advanced-chemical-plant",
+    subgroup = "petrochem-buildings-chemical-plant",
     order = "j",
     place_result = "advanced-chemical-plant-3",
     stack_size = 10,
@@ -156,7 +156,7 @@ data:extend(
                 }
             },
             icon_size = 32,	
-            subgroup = "petrochem-electrolyser",
+            subgroup = "petrochem-buildings-electrolyser",
             order = "k",
             place_result = "angels-air-filter-3",
             stack_size = 10,
@@ -251,7 +251,7 @@ data:extend(
                         }
                     },
                     icon_size = 32,	
-                    subgroup = "petrochem-electrolyser",
+                    subgroup = "petrochem-buildings-electrolyser",
                     order = "l",
                     place_result = "angels-air-filter-4",
                     stack_size = 10,
