@@ -9,13 +9,13 @@ data:extend(
 			icon = "__angelspetrochem__/graphics/icons/advanced-chemical-plant.png",
 		},
 		{
-			icon = "__angelspetrochem__/graphics/icons/num_3.png",
+			icon = "__angelsrefining__/graphics/icons/num_3.png",
 			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 			scale = 0.32,
 			shift = {-12, -12},
 		}
 	},
-	icon_size = 32,	
+	icon_size = 32,
     subgroup = "petrochem-buildings-chemical-plant",
     order = "j",
     place_result = "advanced-chemical-plant-3",
@@ -29,13 +29,13 @@ data:extend(
 			icon = "__angelspetrochem__/graphics/icons/advanced-chemical-plant.png",
 		},
 		{
-			icon = "__angelspetrochem__/graphics/icons/num_3.png",
+			icon = "__angelsrefining__/graphics/icons/num_3.png",
 			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 			scale = 0.32,
 			shift = {-12, -12},
 		}
 	},
-	icon_size = 32,	
+	icon_size = 32,
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 1, result = "advanced-chemical-plant-3"},
 	fast_replaceable_group = "advanced-chemical-plant",
@@ -140,7 +140,7 @@ data:extend(
       apparent_volume = 2.5,
     },
     },
---AIR FILTER  
+--AIR FILTER
         {
             type = "item",
             name = "angels-air-filter-3",
@@ -149,13 +149,13 @@ data:extend(
                     icon = "__angelspetrochem__/graphics/icons/air-filter.png",
                 },
                 {
-                    icon = "__angelspetrochem__/graphics/icons/num_3.png",
+                    icon = "__angelsrefining__/graphics/icons/num_3.png",
                     tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
                     scale = 0.32,
                     shift = {-12, -12},
                 }
             },
-            icon_size = 32,	
+            icon_size = 32,
             subgroup = "petrochem-buildings-electrolyser",
             order = "k",
             place_result = "angels-air-filter-3",
@@ -169,13 +169,13 @@ data:extend(
                         icon = "__angelspetrochem__/graphics/icons/air-filter.png",
                     },
                     {
-                        icon = "__angelspetrochem__/graphics/icons/num_3.png",
+                        icon = "__angelsrefining__/graphics/icons/num_3.png",
                         tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
                         scale = 0.32,
                         shift = {-12, -12},
                     }
                 },
-                icon_size = 32,	
+                icon_size = 32,
                 flags = {"placeable-neutral","player-creation"},
                 minable = {mining_time = 1, result = "angels-air-filter-3"},
                 fast_replaceable_group = "angels-air-filter",
@@ -235,7 +235,7 @@ data:extend(
                   },
                 },
                 pipe_covers = pipecoverspictures()
-                },   
+                },
                 {
                     type = "item",
                     name = "angels-air-filter-4",
@@ -244,13 +244,13 @@ data:extend(
                             icon = "__angelspetrochem__/graphics/icons/air-filter.png",
                         },
                         {
-                            icon = "__angelspetrochem__/graphics/icons/num_4.png",
+                            icon = "__angelsrefining__/graphics/icons/num_4.png",
                             tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
                             scale = 0.32,
                             shift = {-12, -12},
                         }
                     },
-                    icon_size = 32,	
+                    icon_size = 32,
                     subgroup = "petrochem-buildings-electrolyser",
                     order = "l",
                     place_result = "angels-air-filter-4",
@@ -264,13 +264,13 @@ data:extend(
                                 icon = "__angelspetrochem__/graphics/icons/air-filter.png",
                             },
                             {
-                                icon = "__angelspetrochem__/graphics/icons/num_4.png",
+                                icon = "__angelsrefining__/graphics/icons/num_4.png",
                                 tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
                                 scale = 0.32,
                                 shift = {-12, -12},
                             }
                         },
-                        icon_size = 32,	
+                        icon_size = 32,
                         flags = {"placeable-neutral","player-creation"},
                         minable = {mining_time = 1, result = "angels-air-filter-4"},
                         fast_replaceable_group = "angels-air-filter",
