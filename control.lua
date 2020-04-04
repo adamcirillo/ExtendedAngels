@@ -11,9 +11,6 @@ for index, force in pairs(game.forces) do
     recipes["angels-air-filter-3"].enabled = technologies["angels-nitrogen-processing-3"].researched
     recipes["angels-air-filter-4"].enabled = technologies["angels-nitrogen-processing-4"].researched
     
-    if technologies["bio-processing-red"] then 
-    recipes["algae-farm-3"].enabled = technologies["bio-processing-red"].researched
-    end
 
     if technologies["bio-aboretum-2"] then 
       recipes["bio-generator-temperate-2"].enabled = technologies["bio-aboretum-2"].researched

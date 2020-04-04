@@ -1,9 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: N/A
+  Changes:
+      - Added Support for Angels Componets in Angels Industiries tanks to Pezzawinkle
+      - Fixed icons issues from lastest angel's update thanks to Pezzawinkle
+      - Fixed Angel's Liquifying recipes not showing up in Adv Chem Plant Mk3
+      - Fixed Warehouse icorn sorting when Angel's Industries present thanks to triktor
+      - Fixed Buffer Mk2-4 appearing before requester when it should be after
+      - Fixed fast replace on some warehouses being container instead of angels-warhouses
+      - Removed Alage Farm Mk3 as Angels has added it
+      - Fixed squeakthrough not working on buildings
+      - Alage Farm mk4 now haves the number 4 icon on it instead of 3
+      - Added upgrade planner support for all buildings
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: N/A
   Changes:
       - Update to 0.18
-      - Fixed overwing Madclown's Processing Water Treament 5 Tech
+      - Fixed overwrting Madclown's Processing Water Treament 5 Tech
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: N/A

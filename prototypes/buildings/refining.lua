@@ -252,6 +252,7 @@ data:extend(
             flags = {"placeable-neutral","player-creation"},
             minable = {mining_time = 1, result = "washing-plant-3"},
             fast_replaceable_group = "washing-plant",
+            next_upgrade = "washing-plant-4",
             max_health = 300,
             corpse = "big-remnants",
             dying_explosion = "medium-explosion",

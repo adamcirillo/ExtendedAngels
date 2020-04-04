@@ -16,7 +16,7 @@ OV.add_unlock("angels-nitrogen-processing-1", "gas-argon")
 OV.add_unlock("angels-nitrogen-processing-3", "angels-air-filter-3")
 OV.add_unlock("angels-nitrogen-processing-4","angels-air-filter-4")
 
-if mods["Clowns-Extended-Minerals"] then 
+if mods["Clowns-Extended-Minerals"] then
 OV.add_unlock("water-washing-3", "washing-plant-3")
 end
 
@@ -28,7 +28,6 @@ if mods["Clowns-Processing"] then
 end
 
 if angelsmods.bioprocessing then
-    OV.add_unlock("bio-processing-red", "algae-farm-3")
     OV.add_unlock("bio-arboretum-2", "bio-generator-temperate-2")
     OV.add_unlock("bio-arboretum-2", "bio-generator-swamp-2")
     OV.add_unlock("bio-arboretum-2", "bio-generator-desert-2")
@@ -46,5 +45,3 @@ if mods["angelsaddons-warehouses"] then
         bobmods.lib.tech.replace_science_pack("warehouses-4", "production-science-pack", "advanced-logistic-science-pack")
     end
 end
-
-

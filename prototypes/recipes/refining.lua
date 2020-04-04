@@ -165,8 +165,8 @@ angelsmods.functions.RB.build({
       },
       result= "ore-crusher-4",
     },
-    subgroup = "ore-sorter",
-	order = "e"
+    subgroup = "ore-crusher",
+	order = "e[ore-crusher-4]"
     },
 --ORE FLOATATION CELL
 {
@@ -200,8 +200,8 @@ angelsmods.functions.RB.build({
       },
       result= "ore-floatation-cell-4",
     },
-    subgroup = "ore-crusher",
-	order = "d"
+    subgroup = "ore-floatation",
+	order = "d[ore-floatation-cell-4]"
     },
 --ORE LEACHING PLANT
 {
@@ -235,8 +235,8 @@ angelsmods.functions.RB.build({
       },
       result= "ore-leaching-plant-4",
     },
-    subgroup = "ore-crusher",
-	order = "g"
+    subgroup = "ore-leaching",
+	order = "d[ore-leaching-plant-43]"
     },   
  --ORE REFINERY
  {
@@ -270,8 +270,8 @@ angelsmods.functions.RB.build({
       },
       result= "ore-refinery-3",
     },
-    subgroup = "ore-crusher",
-	order = "i"
+    subgroup = "ore-refining",
+	order = "c[ore-refinery-3]"
     },
 --CRYSTALLIZER
 {
