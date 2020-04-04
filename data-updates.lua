@@ -19,7 +19,6 @@ require("prototypes.recipes-overrides")
 
 -- For Angel's Extra Warehouses
 if mods["angelsaddons-warehouses"] then
-	require("prototypes.buildings.warehouses")
 	require("prototypes.recipes.warehouses")
 	require("prototypes.technology.warehouses-technology")
 	if mods["angelsindustries"] and settings.startup["angels-enable-tech"].value==true then

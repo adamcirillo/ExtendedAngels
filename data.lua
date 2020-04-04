@@ -19,3 +19,8 @@ require("prototypes.buildings.petrochem")
 -- For Angel's Refining
 require("prototypes.buildings.refining")
 
+-- For Angel's Extra Warehouses
+if mods["angelsaddons-warehouses"] then
+    require("prototypes.buildings.warehouses")
+end
+

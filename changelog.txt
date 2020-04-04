@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 2020-04-04
+  Changes:
+      - Fixed bounding box issues with Warehouse forget to do this
+---------------------------------------------------------------------------------------------------
 Version: 0.3.1
-Date: N/A
+Date: 2020-04-04
   Changes:
       - Added Support for Angels Componets in Angels Industiries tanks to Pezzawinkle
       - Fixed icons issues from lastest angel's update thanks to Pezzawinkle
