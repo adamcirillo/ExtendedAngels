@@ -26,12 +26,12 @@ end
 
 --angels component updates
 if mods["angelsindustries"] then
-  if settings.startup["angels-enable-components"] or settings.startup["angels-enable-tech"] then
+  if settings.startup["angels-enable-components"].value or settings.startup["angels-enable-tech"].value then
     require("prototypes.recipes.angels-components")
     local OV = angelsmods.functions.OV
     rep_con_mats()
     OV.execute()
-    if settings.startup["angels-return-ingredients"] then
+    if settings.startup["angels-return-ingredients"].value then
       add_minable_results()
       OV.execute()
     end
