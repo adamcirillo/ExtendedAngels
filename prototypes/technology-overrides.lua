@@ -28,7 +28,6 @@ if mods["Clowns-Processing"] then
 end
 
 if angelsmods.bioprocessing then
-    OV.add_unlock("bio-processing-red", "algae-farm-3")
     OV.add_unlock("bio-arboretum-2", "bio-generator-temperate-2")
     OV.add_unlock("bio-arboretum-2", "bio-generator-swamp-2")
     OV.add_unlock("bio-arboretum-2", "bio-generator-desert-2")

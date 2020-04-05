@@ -158,7 +158,7 @@ data:extend(
         icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
         icon_size = 32,
         order = "k",
-        },
+    },
     
     {
         type = "recipe",
