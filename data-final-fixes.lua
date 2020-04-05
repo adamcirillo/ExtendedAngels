@@ -61,7 +61,7 @@ if mods["angelsindustries"] then
       table.remove(data.raw["recipe"][_]["normal"].ingredients,1); 
       table.remove(data.raw["recipe"][_]["expensive"].ingredients,1); 
     end
-    if settings.startup["angels-return-ingredients"].value the
+    if settings.startup["angels-return-ingredients"].value then
       add_minable_results()
       OV.execute()
     end

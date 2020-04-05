@@ -97,7 +97,7 @@ if angelsmods.refining then
 	data.raw["assembling-machine"]["filtration-unit-3"].next_upgrade = "filtration-unit-3"
 end
 
-if angelsmods.addons.warehouses then
+if mods["angelsaddons-warehouses"] then
 	data.raw["container"]["angels-warehouse"].next_upgrade = "warehouse-mk2"
 	data.raw["logistic-container"]["angels-warehouse-passive-provider"].next_upgrade = "warehouse-passive-provider-mk2"
 	data.raw["logistic-container"]["angels-warehouse-active-provider"].next_upgrade = "warehouse-active-provider-mk2"

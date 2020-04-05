@@ -1,4 +1,4 @@
-if angelsmods.addons.warehouses then
+if mods["angelsaddons-warehouses"] then
 data:extend(
 {
 
