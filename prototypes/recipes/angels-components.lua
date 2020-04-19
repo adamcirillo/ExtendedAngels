@@ -68,7 +68,8 @@ local change_con_block_ingredients=function()
         ing_list[n].name = list.new
       end
     end
-    log(serpent.block(ing_list))
+   -- For Logging
+   -- log(serpent.block(ing_list))
   end
 end
 

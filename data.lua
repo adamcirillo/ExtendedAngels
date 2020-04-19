@@ -1,26 +1,25 @@
 require("prototypes.subgroups")
 
 -- For Angel's Petrochem
+require("prototypes.buildings.petrochem")
 require("prototypes.items.petrochem")
+require("prototypes.technology.petrochem-technology")
 
 -- For Angel's Smelting
 require("prototypes.items.smelting")
-require("prototypes.recipes.smelting")
 require("prototypes.technology.smelting-technology")
 
 -- For Angel's Bio Processing
 require("prototypes.buildings.bioprocessing")
-
-
--- For Angel's Petrochem
-require("prototypes.buildings.petrochem")
-
+require("prototypes.technology.bioprocessing-technology")
 
 -- For Angel's Refining
 require("prototypes.buildings.refining")
+require("prototypes.technology.refining-technology")
 
 -- For Angel's Extra Warehouses
 if mods["angelsaddons-warehouses"] then
     require("prototypes.buildings.warehouses")
+    require("prototypes.technology.warehouses-technology")
 end
 

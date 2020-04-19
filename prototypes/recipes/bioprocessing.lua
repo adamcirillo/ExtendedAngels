@@ -48,6 +48,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-temperate-1", 1},
+        {"temperate-tree", 1},
         {"t2-plate", 2},
         {"t2-circuit", 2},
         {"t2-brick", 1},
@@ -62,6 +63,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-temperate-1", 1},
+        {"temperate-tree", 1 * buildingmulti},
         {"t2-plate", 2 * buildingmulti},
         {"t2-circuit", 2 * buildingmulti},
         {"t2-brick", 1 * buildingmulti},
@@ -80,6 +82,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-swamp-1", 1},
+        {"swamp-tree", 1},
         {"t2-plate", 2},
         {"t2-circuit", 2},
         {"t2-brick", 1},
@@ -94,6 +97,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-swamp-1", 2},
+        {"swamp-tree", 1 * buildingmulti},
         {"t2-plate", 2 * buildingmulti},
         {"t2-circuit", 2 * buildingmulti},
         {"t2-brick", 1 * buildingmulti},
@@ -112,6 +116,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-desert-1", 1},
+        {"desert-tree", 1},
         {"t2-plate", 2},
         {"t2-circuit", 2},
         {"t2-brick", 1},
@@ -126,6 +131,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-desert-1", 1},
+        {"desert-tree", 1 * buildingmulti},
         {"t2-plate", 2 * buildingmulti},
         {"t2-circuit", 2 * buildingmulti},
         {"t2-brick", 1 * buildingmulti},
@@ -179,6 +185,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-temperate-2", 1},
+        {"temperate-tree", 1},
         {"t3-plate", 2},
         {"t3-circuit", 2},
         {"t3-brick", 1},
@@ -193,6 +200,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-temperate-2", 1},
+        {"temperate-tree", 1 * buildingmulti},
         {"t3-plate", 2 * buildingmulti},
         {"t3-circuit", 2 * buildingmulti},
         {"t3-brick", 1 * buildingmulti},
@@ -211,6 +219,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-swamp-2", 1},
+        {"swamp-tree", 1},
         {"t3-plate", 2},
         {"t3-circuit", 2},
         {"t3-brick", 1},
@@ -225,6 +234,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-swamp-2", 1},
+        {"swamp-tree", 1 * buildingmulti},
         {"t3-plate", 2 * buildingmulti},
         {"t3-circuit", 2 * buildingmulti},
         {"t3-brick", 1 * buildingmulti},
@@ -243,6 +253,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-desert-2", 1},
+        {"desert-tree", 1},
         {"t3-plate", 2},
         {"t3-circuit", 2},
         {"t3-brick", 1},
@@ -257,6 +268,7 @@ angelsmods.functions.RB.build({
       ingredients =
       {
         {"bio-generator-desert-2", 1},
+        {"desert-tree", 1 * buildingmulti},
         {"t3-plate", 2 * buildingmulti},
         {"t3-circuit", 2 * buildingmulti},
         {"t3-brick", 1 * buildingmulti},

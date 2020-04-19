@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 2020-04-19
+  Changes:
+    - Removed logging for Angels Componets support
+    - Fixed missing Bob's Logistics pack missing from Logistics warehoue 3 & 4
+    - Added tress to Mk2 & Mk3 Seed Generators
+---------------------------------------------------------------------------------------------------
 Version: 0.3.3
-Date: ????
+Date: 2020-04-05
   Changes:
       -The ingredient return on mining was being called no matter the setting thanks to Pezzawinkle
       -Fixed dependecny checking for angels warehouse to work if no angels addon mods are loaded

@@ -1,14 +1,15 @@
 -- For Angel's Bio Processing
 require("prototypes.recipes.bioprocessing")
-require("prototypes.technology.bioprocessing-technology")
+
+-- For Angel's Smelting
+require("prototypes.recipes.smelting")
 
 -- For Angel's Petrochem
 require("prototypes.recipes.petrochem")
-require("prototypes.technology.petrochem-technology")
+
 
 -- For Angel's Refining
 require("prototypes.recipes.refining")
-require("prototypes.technology.refining-technology")
 
 -- For Changing Technologies
 require("prototypes.technology-overrides")
@@ -19,8 +20,7 @@ require("prototypes.recipes-overrides")
 
 -- For Angel's Extra Warehouses
 if mods["angelsaddons-warehouses"] then
-	require("prototypes.recipes.warehouses")
-	require("prototypes.technology.warehouses-technology")
+	require("prototypes.recipes.warehouses")	
 	if mods["angelsindustries"] and settings.startup["angels-enable-tech"].value==true then
 		bobmods.lib.recipe.replace_ingredient_in_all("brass-gear-wheel","angels-roller-chain")
 		bobmods.lib.recipe.replace_ingredient_in_all("advanced-processing-unit","circuit-yellow-loaded")
