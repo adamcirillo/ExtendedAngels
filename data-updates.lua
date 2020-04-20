@@ -1,12 +1,8 @@
 -- For Angel's Bio Processing
 require("prototypes.recipes.bioprocessing")
 
--- For Angel's Smelting
-require("prototypes.recipes.smelting")
-
 -- For Angel's Petrochem
 require("prototypes.recipes.petrochem")
-
 
 -- For Angel's Refining
 require("prototypes.recipes.refining")

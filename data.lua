@@ -6,6 +6,7 @@ require("prototypes.items.petrochem")
 require("prototypes.technology.petrochem-technology")
 
 -- For Angel's Smelting
+require("prototypes.recipes.smelting")
 require("prototypes.items.smelting")
 require("prototypes.technology.smelting-technology")
 
