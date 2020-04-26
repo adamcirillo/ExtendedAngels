@@ -65,7 +65,6 @@ data:extend(
 	{"steel-bearing", 100},
 	},
 	result= "warehouse-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-2",
 	order = "a"
@@ -83,7 +82,6 @@ data:extend(
 	{"steel-bearing", 100},
 	},
     result= "warehouse-passive-provider-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-2",
 	order = "b"
@@ -101,7 +99,6 @@ data:extend(
 	{"angels-warehouse-active-provider", 1},
 	},
     result= "warehouse-active-provider-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-2",
 	order = "c"
@@ -119,7 +116,6 @@ data:extend(
 	{"angels-warehouse-storage", 1},
 	},
     result= "warehouse-storage-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-2",
 	order = "d"
@@ -137,7 +133,6 @@ data:extend(
 	{"angels-warehouse-requester", 1},
 	},
     result= "warehouse-requester-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-2",
 	order = "f"
@@ -155,7 +150,6 @@ data:extend(
 	{"angels-warehouse-buffer", 1},
 	},
 	result= "warehouse-buffer-mk2",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-2",
 	order = "e"
@@ -172,7 +166,6 @@ data:extend(
 	{"ceramic-bearing", 200},
 	},
 	result= "warehouse-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-3",
 	order = "a"
@@ -190,7 +183,6 @@ data:extend(
 	{"warehouse-passive-provider-mk2", 1}
 	},
     result= "warehouse-passive-provider-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-3",
 	order = "b"
@@ -208,7 +200,6 @@ data:extend(
 	{"warehouse-active-provider-mk2", 1},
 	},
     result= "warehouse-active-provider-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-3",
 	order = "c"
@@ -226,7 +217,6 @@ data:extend(
 	{"warehouse-storage-mk2", 1}
 	},
     result= "warehouse-storage-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-3",
 	order = "d"
@@ -244,7 +234,6 @@ data:extend(
 	{"warehouse-requester-mk2", 1}
 	},
     result= "warehouse-requester-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-3",
 	order = "f"
@@ -262,7 +251,6 @@ data:extend(
 	{"warehouse-buffer-mk2", 1}
 	},
 	result= "warehouse-buffer-mk3",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-3",
 	order = "e"
@@ -279,7 +267,6 @@ data:extend(
 	{"nitinol-bearing", 250},
 	},
 	result= "warehouse-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-4",
 	order = "a"
@@ -297,7 +284,6 @@ data:extend(
 	{"warehouse-passive-provider-mk3", 1}
 	},
     result= "warehouse-passive-provider-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-4",
 	order = "b"
@@ -315,7 +301,6 @@ data:extend(
 	{"warehouse-active-provider-mk3", 1}
 	},
     result= "warehouse-active-provider-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-4",
 	order = "c"
@@ -333,7 +318,6 @@ data:extend(
 	{"warehouse-storage-mk3", 1}
 	},
     result= "warehouse-storage-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-4",
 	order = "d"
@@ -351,7 +335,6 @@ data:extend(
 	{"warehouse-requester-mk3", 1}
 	},
     result= "warehouse-requester-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
 	icon_size = 32,
     subgroup = "angels-warehouses-4",
 	order = "f"
@@ -369,7 +352,6 @@ data:extend(
 	{"warehouse-buffer-mk3", 1}
 	},
 	result= "warehouse-buffer-mk4",
-	icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
 	icon_size = 32,
 	subgroup = "angels-warehouses-4",
 	order = "e"

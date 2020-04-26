@@ -239,6 +239,129 @@ data:extend(
                   time = 30
                 }
               },
+
+              {
+                type = "technology",
+                name = "bio-refugium-hatchery-2",
+                icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-hatchery-tech.png",
+                icon_size = 160,
+                order = "c-a",
+                prerequisites =
+                {
+                  "bio-refugium-hatchery"
+                },
+                effects =
+                {
+                  {
+                    type = "unlock-recipe",
+                    recipe = "bio-hatchery-2"
+                  },
+                  {
+                    type = "unlock-recipe",
+                    recipe = "bio-hatchery-3"
+                  },
+                },
+                unit =
+                {
+                  count = 100,
+                  ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"token-bio", 1}
+                  },
+                  time = 30
+                },
+              },
+
+              {
+                type = "technology",
+                name = "bio-nutrient-paste-2",
+                icon = "__angelsbioprocessing__/graphics/technology/nutrient-extractor-tech.png",
+                icon_size = 128,
+                order = "c-a",
+                prerequisites = {
+                  "bio-nutrient-paste"
+                },
+                effects = {
+                  {
+                    type = "unlock-recipe",
+                    recipe = "nutrient-extractor-2"
+                  },
+                  {
+                    type = "unlock-recipe",
+                    recipe = "nutrient-extractor-3"
+                  }
+                },
+                unit = {
+                  count = 80,
+                  ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                  },
+                  time = 30
+                }
+              },
+
+              {
+                type = "technology",
+                name = "bio-refugium-fish-3",
+                icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-fish-tech.png",
+                icon_size = 128,
+                order = "c-a",
+                prerequisites =
+                {
+                  "bio-refugium-fish-2",
+                },
+                effects =
+                {
+                  {
+                    type = "unlock-recipe",
+                    recipe = "bio-refugium-fish-3"
+                  },
+                },
+                unit =
+                {
+                  count = 100,
+                  ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                  },
+                  time = 30
+                },
+              },
+
+              {
+                type = "technology",
+                name = "bio-refugium-puffer-3",
+                icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-breeding-tech.png",
+                icon_size = 128,
+                order = "c-a",
+                prerequisites =
+                {
+                  "bio-refugium-puffer-2",
+                },
+                effects =
+                {
+                  {
+                    type = "unlock-recipe",
+                    recipe = "bio-refugium-puffer-3"
+                  },
+                },
+                unit =
+                {
+                  count = 150,
+                  ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1}
+                  },
+                  time = 30
+                },
+              },
+            
 }
 )
 

@@ -125,7 +125,7 @@ data:extend(
     },
     icon_size = 32,
     subgroup = "bio-processing-buildings-nauvis-a",
-    order = "e",
+    order = "c[arboretum]-a",
     place_result = "bio-arboretum-2",
     stack_size = 10,
   },
@@ -254,7 +254,7 @@ data:extend(
   },
   icon_size = 32,
   subgroup = "bio-processing-buildings-nauvis-a",
-  order = "e",
+  order = "c[arboretum]-a",
   place_result = "bio-arboretum-3",
   stack_size = 10,
 },
@@ -382,7 +382,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-a",
 place_result = "bio-generator-temperate-2",
 stack_size = 10,
 },
@@ -514,7 +514,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-b",
 place_result = "bio-generator-swamp-2",
 stack_size = 10,
 },
@@ -646,7 +646,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-c",
 place_result = "bio-generator-desert-2",
 stack_size = 10,
 },
@@ -779,7 +779,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-a",
 place_result = "bio-generator-temperate-3",
 stack_size = 10,
 },
@@ -910,7 +910,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-b",
 place_result = "bio-generator-swamp-3",
 stack_size = 10,
 },
@@ -1041,7 +1041,7 @@ icons = {
 },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
-order = "e",
+order = "b[generator]-c",
 place_result = "bio-generator-desert-3",
 stack_size = 10,
 },
@@ -1179,7 +1179,7 @@ working_sound =
 },
   icon_size = 32,
   subgroup = "bio-processing-buildings-vegetabilis-b",
-  order = "db",
+  order = "d",
   place_result = "bio-press-2",
   stack_size = 10,
 },
@@ -1255,7 +1255,7 @@ working_sound =
 },
   icon_size = 32,
   subgroup = "bio-processing-buildings-vegetabilis-b",
-  order = "dc",
+  order = "d",
   place_result = "bio-press-3",
   stack_size = 10,
 },
@@ -2661,6 +2661,1070 @@ working_sound =
       },
     },
   },
+
+  {
+    type = "item",
+    name = "bio-hatchery-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "c",
+    place_result = "bio-hatchery-2",
+    stack_size = 10,
+  },
+  {
+    type = "furnace",
+    name = "bio-hatchery-2",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png",
+    icon_size = 32,
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 1, result = "bio-hatchery-2"},
+    max_health = 100,
+    fast_replaceable_group = "bio-hatchery",
+    corpse = "small-remnants",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    drawing_box = {{-1.5, -1.75}, {1.5, 1.5}},
+    crafting_categories = {"bio-hatchery"},
+    next_upgrade = "bio-hatchery-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "pollution"},
+    result_inventory_size = 1,
+    crafting_speed = 3,
+    source_inventory_size = 1,
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 80
+      },
+      {
+        type = "explosion",
+        percent = 30
+      }
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.02 * 60
+    },
+    energy_usage = "190kW",
+    animation =
+    {
+      layers = {
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-shadow.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+        },
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-off.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+        },
+      },
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-animation.png",
+          width = 160,
+          height = 160,
+          line_length = 5,
+          frame_count = 25,
+          shift = {0, 0},
+          animation_speed = 0.35
+        },
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+  },
+
+  {
+    type = "item",
+    name = "bio-hatchery-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "c",
+    place_result = "bio-hatchery-3",
+    stack_size = 10,
+  },
+  {
+    type = "furnace",
+    name = "bio-hatchery-3",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png",
+    icon_size = 32,
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 1, result = "bio-hatchery-3"},
+    max_health = 100,
+    fast_replaceable_group = "bio-hatchery",
+    corpse = "small-remnants",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    drawing_box = {{-1.5, -1.75}, {1.5, 1.5}},
+    crafting_categories = {"bio-hatchery"},
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "pollution"},
+    result_inventory_size = 1,
+    crafting_speed = 4,
+    source_inventory_size = 1,
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 80
+      },
+      {
+        type = "explosion",
+        percent = 30
+      }
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.03 * 60
+    },
+    energy_usage = "225kW",
+    animation =
+    {
+      layers = {
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-shadow.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+        },
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-off.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+        },
+      },
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-hatchery/bio-hatchery-animation.png",
+          width = 160,
+          height = 160,
+          line_length = 5,
+          frame_count = 25,
+          shift = {0, 0},
+          animation_speed = 0.35
+        },
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+  },
+
+  {
+    type = "item",
+    name = "nutrient-extractor-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-b",
+    order = "d",
+    place_result = "nutrient-extractor-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "nutrient-extractor-2",
+    icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "nutrient-extractor-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    fast_replaceable_group= "nutrient-extractor",
+    next_upgrade = "nutrient-extractor-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"nutrient-extractor",},
+    crafting_speed = 1.5,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.04 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation=
+    {
+        filename = "__angelsbioprocessing__/graphics/entity/nutrient-extractor/nutrient-extractor.png",
+        width = 160,
+        height = 160,
+        line_length = 5,
+        frame_count = 25,
+        shift = {0, 0},
+        animation_speed = 0.5,
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ position = {0, 2} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "nutrient-extractor-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-b",
+    order = "d",
+    place_result = "nutrient-extractor-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "nutrient-extractor-3",
+    icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "nutrient-extractor-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    fast_replaceable_group= "nutrient-extractor",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"nutrient-extractor",},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.05 * 60
+    },
+    energy_usage = "225kW",
+    --ingredient_count = 4,
+    animation=
+    {
+        filename = "__angelsbioprocessing__/graphics/entity/nutrient-extractor/nutrient-extractor.png",
+        width = 160,
+        height = 160,
+        line_length = 5,
+        frame_count = 25,
+        shift = {0, 0},
+        animation_speed = 0.5,
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        base_level = 1,
+        pipe_connections = {{ position = {0, 2} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-fish-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "a",
+    place_result = "bio-refugium-fish-2",
+    stack_size = 10,
+  },
+
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-fish-2",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-fish-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    --drawing_box = {{-2.5, -3}, {2.5, 2.5}},
+    fast_replaceable_group= "bio-refugium",
+    next_upgrade = "bio-refugium-fish-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-fish"},
+    crafting_speed = 1.25,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.03 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation=
+    {
+      layers = {
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish-shadow.png",
+          width = 288,
+          height = 288,
+          line_length = 1,
+          frame_count = 1,
+          shift = {0, 0},
+        },
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish-off.png",
+          width = 288,
+          height = 288,
+          line_length = 1,
+          frame_count = 1,
+          shift = {0, 0},
+        },
+      }
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish.png",
+          width = 288,
+          height = 288,
+          line_length = 7,
+          frame_count = 49,
+          shift = {0, 0},
+          animation_speed = 49/90,
+        }
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__angelsbioprocessing__/sound/aquarium.ogg", volume = 0.8 },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {1, 4} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {-1, 4} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {0, -4} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-fish-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "a",
+    place_result = "bio-refugium-fish-3",
+    stack_size = 10,
+  },
+
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-fish-3",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-fish-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    --drawing_box = {{-2.5, -3}, {2.5, 2.5}},
+    fast_replaceable_group= "bio-refugium",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-fish"},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.04 * 60
+    },
+    energy_usage = "225kW",
+    --ingredient_count = 4,
+    animation=
+    {
+      layers = {
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish-shadow.png",
+          width = 288,
+          height = 288,
+          line_length = 1,
+          frame_count = 1,
+          shift = {0, 0},
+        },
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish-off.png",
+          width = 288,
+          height = 288,
+          line_length = 1,
+          frame_count = 1,
+          shift = {0, 0},
+        },
+      }
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-fish.png",
+          width = 288,
+          height = 288,
+          line_length = 7,
+          frame_count = 49,
+          shift = {0, 0},
+          animation_speed = 49/90,
+        }
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__angelsbioprocessing__/sound/aquarium.ogg", volume = 0.8 },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {1, 4} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {-1, 4} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {0, -4} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-puffer-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "d",
+    place_result = "bio-refugium-puffer-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-puffer-2",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-puffer-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    drawing_box = {{-2.5, -3.5}, {2.5, 2.5}},
+    fast_replaceable_group= "bio-refugium",
+    next_upgrade = "bio-refugium-puffer-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-puffer"},
+    crafting_speed = 1.25,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.03 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation =
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-puffer-off.png",
+      width = 224,
+      height = 256,
+      line_length = 1,
+      frame_count = 1,
+      shift = {0, -0.5},
+      animation_speed = 0.5,
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-puffer.png",
+          width = 224,
+          height = 256,
+          line_length = 6,
+          frame_count = 36,
+          shift = {0, -0.5},
+          animation_speed = 36/60,
+        }
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__angelsbioprocessing__/sound/fart_1.ogg",
+          volume = 1
+        },
+        {
+          filename = "__angelsbioprocessing__/sound/fart_2.ogg",
+          volume = 1
+        },
+      },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, 3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {2, 3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {-2, 3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {1, -3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {-1, -3} }}
+      }
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-puffer-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "d",
+    place_result = "bio-refugium-puffer-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-puffer-3",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-puffer-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    drawing_box = {{-2.5, -3.5}, {2.5, 2.5}},
+    fast_replaceable_group= "bio-refugium",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-puffer"},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.04 * 60
+    },
+    energy_usage = "225kW",
+    --ingredient_count = 4,
+    animation =
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-puffer-off.png",
+      width = 224,
+      height = 256,
+      line_length = 1,
+      frame_count = 1,
+      shift = {0, -0.5},
+      animation_speed = 0.5,
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-puffer.png",
+          width = 224,
+          height = 256,
+          line_length = 6,
+          frame_count = 36,
+          shift = {0, -0.5},
+          animation_speed = 36/60,
+        }
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__angelsbioprocessing__/sound/fart_1.ogg",
+          volume = 1
+        },
+        {
+          filename = "__angelsbioprocessing__/sound/fart_2.ogg",
+          volume = 1
+        },
+      },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, 3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {2, 3} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {-2, 3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {1, -3} }}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        -- base_area = 10,
+        base_level = 1,
+        pipe_connections = {{ type="output", position = {-1, -3} }}
+      }
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-biter-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "e",
+    place_result = "bio-refugium-biter-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-biter-2",
+    icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-biter-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    fast_replaceable_group= "bio-refugium",
+    next_upgrade = "bio-refugium-biter-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-biter"},
+    crafting_speed = 1.25,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.03 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation=
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-biter-off.png",
+      width = 288,
+      height = 288,
+      line_length = 1,
+      frame_count = 1,
+      shift = {0, 0},
+      --animation_speed = 0.5,
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-biter.png",
+          width = 288,
+          height = 288,
+          line_length = 4,
+          frame_count = 16,
+          shift = {0, 0},
+          animation_speed = 0.5 * 0.75/2,
+        },
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -4} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, 4} }}
+      }
+    },
+  },
+
+  {
+    type = "item",
+    name = "bio-refugium-biter-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-alien-a",
+    order = "e",
+    place_result = "bio-refugium-biter-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "bio-refugium-biter-3",
+    icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-refugium-biter-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    fast_replaceable_group= "bio-refugium",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-refugium-biter"},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.04 * 60
+    },
+    energy_usage = "225kW",
+    --ingredient_count = 4,
+    animation=
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-biter-off.png",
+      width = 288,
+      height = 288,
+      line_length = 1,
+      frame_count = 1,
+      shift = {0, 0},
+      --animation_speed = 0.5,
+    },
+    working_visualisations =
+    {
+      {
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-refugium/bio-refugium-biter.png",
+          width = 288,
+          height = 288,
+          line_length = 4,
+          frame_count = 16,
+          shift = {0, 0},
+          animation_speed = 0.5 * 0.75/2,
+        },
+      },
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -4} }}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, 4} }}
+      }
+    },
+  },
+
 
   }
   )

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: N/A
+  Changes:
+      - Fixed Icon Ordering issues with Angels Bio Buildings
+      - Added Hatchery MK2 & MK3
+      - Added Nutrient Extractor MK2 & MK3
+      - Added Biter and Puffer Refugiume MK2 & MK3
+      - Added Mk Icons to Warehouses
+---------------------------------------------------------------------------------------------------
 Version: 0.3.6
 Date: 2020-04-26
   Changes:

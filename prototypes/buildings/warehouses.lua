@@ -36,7 +36,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "b[warehouse-mk2]",
@@ -47,7 +57,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-passive-provider-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "b[warehouse-passive-provider-mk2]",
@@ -58,7 +78,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-active-provider-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "c[warehouse-active-provider-mk2]",
@@ -69,7 +99,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "d[warehouse-storage-mk2]",
@@ -80,7 +120,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "f[warehouse-requester-mk2]",
@@ -91,7 +141,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-buffer-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "e[warehouse-buffer-mk2]",
@@ -102,7 +162,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "b[warehouse-mk3]",
@@ -113,7 +183,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-passive-provider-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "b[warehouse-passive-provider-mk3]",
@@ -124,7 +204,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-active-provider-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "c[warehouse-active-provider-mk3]",
@@ -135,7 +225,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "d[warehouse-storage-mk3]",
@@ -146,7 +246,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "f[warehouse-requester-mk3]",
@@ -157,7 +267,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-buffer-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "e[warehouse-buffer-mk3]",
@@ -168,7 +288,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "b[warehouse-mk4]",
@@ -179,7 +309,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-passive-provider-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "a[warehouse-passive-provider-mk4]",
@@ -190,7 +330,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-active-provider-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
 	  subgroup = "angels-warehouses",
     order = "b[warehouse-active-provider-mk4]",
@@ -201,7 +351,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-storage-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "d[warehouse-storage-mk4]",
@@ -212,7 +372,17 @@ data:extend(
 	{
     type = "item",
     name = "warehouse-requester-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "f[warehouse-requester-mk4]",
@@ -223,7 +393,17 @@ data:extend(
   {
     type = "item",
     name = "warehouse-buffer-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icons = {
+      {
+        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_4.png",
+      tint = angelsmods.addons.warehouses.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "angels-warehouses",
     order = "e[warehouse-buffer-mk4]",

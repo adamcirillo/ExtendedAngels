@@ -792,6 +792,302 @@ angelsmods.functions.RB.build({
     }
   },
 
+  --Hatchery
+
+  {
+    type = "recipe",
+    name = "bio-hatchery-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-hatchery", 1},
+        {"t2-plate", 2},
+        {"t2-circuit", 4},
+        {"t2-brick", 2}
+      },
+      result = "bio-hatchery-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-hatchery", 1},
+        {"t2-plate", 2 * buildingmulti},
+        {"t2-circuit", 4 * buildingmulti},
+        {"t2-brick", 2 * buildingmulti}
+      },
+      result = "bio-hatchery-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-hatchery-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-hatchery-2", 1},
+        {"t3-plate", 2},
+        {"t3-circuit", 4},
+        {"t3-brick", 2}
+      },
+      result = "bio-hatchery-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-hatchery-2", 1},
+        {"t3-plate", 2 * buildingmulti},
+        {"t3-circuit", 4 * buildingmulti},
+        {"t3-brick", 2 * buildingmulti}
+      },
+      result = "bio-hatchery-3"
+    }
+  },
+
+  --NUTRIENT EXTRACTOR
+  {
+    type = "recipe",
+    name = "nutrient-extractor-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"nutrient-extractor", 1},
+        {"t2-plate", 1},
+        {"t2-circuit", 2},
+        {"t2-brick", 1},
+        {"t2-pipe", 2},
+        {"t2-gears", 2}
+      },
+      result = "nutrient-extractor-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"nutrient-extractor", 1},
+        {"t2-plate", 1 * buildingmulti},
+        {"t2-circuit", 2 * buildingmulti},
+        {"t2-brick", 1 * buildingmulti},
+        {"t2-pipe", 2 * buildingmulti},
+        {"t2-gears", 2 * buildingmulti}
+      },
+      result = "nutrient-extractor-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "nutrient-extractor-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"nutrient-extractor-2", 1},
+        {"t3-plate", 1},
+        {"t3-circuit", 2},
+        {"t3-brick", 1},
+        {"t3-pipe", 2},
+        {"t3-gears", 2}
+      },
+      result = "nutrient-extractor-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"nutrient-extractor-2", 1},
+        {"t3-plate", 1 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 1 * buildingmulti},
+        {"t3-pipe", 2 * buildingmulti},
+        {"t3-gears", 2 * buildingmulti}
+      },
+      result = "nutrient-extractor-3"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-refugium-fish-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-fish", 1},
+        {"t2-plate", 2},
+        {"t2-circuit", 5},
+        {"t2-brick", 4},
+        {"t2-pipe", 25}
+      },
+      result = "bio-refugium-fish-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-fish", 1},
+        {"t2-plate", 10 * buildingmulti},
+        {"t2-circuit", 5 * buildingmulti},
+        {"t2-brick", 4 * buildingmulti},
+        {"t2-pipe", 25 * buildingmulti}
+      },
+      result = "bio-refugium-fish-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-refugium-fish-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-fish-2", 1},
+        {"t3-plate", 2},
+        {"t3-circuit", 5},
+        {"t3-brick", 4},
+        {"t3-pipe", 25}
+      },
+      result = "bio-refugium-fish-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-fish", 1},
+        {"t3-plate", 10 * buildingmulti},
+        {"t3-circuit", 5 * buildingmulti},
+        {"t3-brick", 4 * buildingmulti},
+        {"t3-pipe", 25 * buildingmulti}
+      },
+      result = "bio-refugium-fish-3"
+    }
+  },
+
+  --PUFFER REFUGIUM
+  {
+    type = "recipe",
+    name = "bio-refugium-puffer-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-puffer", 1},
+        {"t2-plate", 4},
+        {"t2-circuit", 4},
+        {"t2-brick", 3},
+        {"t2-pipe", 11}
+      },
+      result = "bio-refugium-puffer-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-puffer", 1},
+        {"t2-plate", 4 * buildingmulti},
+        {"t2-circuit", 4 * buildingmulti},
+        {"t2-brick", 3 * buildingmulti},
+        {"t2-pipe", 11 * buildingmulti}
+      },
+      result = "bio-refugium-puffer-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-refugium-puffer-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-puffer-2", 1},
+        {"t3-plate", 4},
+        {"t3-circuit", 4},
+        {"t3-brick", 3},
+        {"t3-pipe", 11}
+      },
+      result = "bio-refugium-puffer-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-puffer-2", 1},
+        {"t3-plate", 4 * buildingmulti},
+        {"t3-circuit", 4 * buildingmulti},
+        {"t3-brick", 3 * buildingmulti},
+        {"t3-pipe", 11 * buildingmulti}
+      },
+      result = "bio-refugium-puffer-3"
+    }
+  },
+
+  --Biter REFUGIUM
+
+  {
+    type = "recipe",
+    name = "bio-refugium-biter-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-biter", 1},
+        {"t2-plate", 10},
+        {"t2-circuit", 4},
+        {"t2-brick", 19},
+        {"t2-pipe", 11}
+      },
+      result = "bio-refugium-biter-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-biter", 1},
+        {"t2-plate", 10 * buildingmulti},
+        {"t2-circuit", 4 * buildingmulti},
+        {"t2-brick", 19 * buildingmulti},
+        {"t2-pipe", 11 * buildingmulti}
+      },
+      result = "bio-refugium-biter-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-refugium-biter-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-biter-2", 1},
+        {"t3-plate", 10},
+        {"t3-circuit", 4},
+        {"t3-brick", 19},
+        {"t3-pipe", 11}
+      },
+      result = "bio-refugium-biter-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-refugium-biter-2", 1},
+        {"t3-plate", 10 * buildingmulti},
+        {"t3-circuit", 4 * buildingmulti},
+        {"t3-brick", 19 * buildingmulti},
+        {"t3-pipe", 11 * buildingmulti}
+      },
+      result = "bio-refugium-biter-3"
+    }
+  },
+
 }
     )
 
