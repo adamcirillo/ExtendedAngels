@@ -24,6 +24,8 @@ local perviousbuilding = {
   "ore-refinery-3",
   "crystallizer-3",
   "filtration-unit-3",
+  "bio-press-2",
+  "bio-press-3",
 }
 
 data.raw.recipe["pellet-tungsten-smelting"]=nil

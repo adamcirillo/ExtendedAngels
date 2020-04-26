@@ -2,6 +2,12 @@
 Version: 0.3.6
 Date: ????
   Changes:
+      - Fixed buildings not generation pollution
+      - Added Press MK2 & MK3
+      - Added Bio Processor MK2 & MK3
+      - Added Butchery MK2 & MK3
+      - Added Composter MK2 & MK3
+      - Added Crop, Desert, Swamp & Temperate Farms MK2 & MK3
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 2020-04-20

@@ -310,6 +310,488 @@ angelsmods.functions.RB.build({
       result= "bio-arboretum-3",
     },
   },
+  --Bio Press
+  {
+    type = "recipe",
+    name = "bio-press-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-press", 1},
+        {"t2-plate", 2},
+        {"t2-circuit", 2},
+        {"t2-brick", 1},
+        {"t2-pipe", 1},
+        {"t2-gears", 2}
+      },
+      result = "bio-press-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-press", 1},
+        {"t2-plate", 2 * buildingmulti},
+        {"t2-circuit", 2 * buildingmulti},
+        {"t2-brick", 1 * buildingmulti},
+        {"t2-pipe", 1 * buildingmulti},
+        {"t2-gears", 2 * buildingmulti}
+      },
+      result = "bio-press-2"
+    }
+  },
+  {
+    type = "recipe",
+    name = "bio-press-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-press-2", 1},
+        {"t3-plate", 2},
+        {"t3-circuit", 2},
+        {"t3-brick", 1},
+        {"t3-pipe", 1},
+        {"t3-gears", 2}
+      },
+      result = "bio-press-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-press-2", 1},
+        {"t3-plate", 2 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 1 * buildingmulti},
+        {"t3-pipe", 1 * buildingmulti},
+        {"t3-gears", 2 * buildingmulti}
+      },
+      result = "bio-press-3"
+    }
+  },
+  -- Bio Processor
+  {
+    type = "recipe",
+    name = "bio-processor-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-processor", 1},
+        {"t2-plate", 5},
+        {"t2-circuit", 8},
+        {"t2-brick", 5},
+        {"t2-gears", 4}
+      },
+      result = "bio-processor-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-processor", 1},
+        {"t2-plate", 5 * buildingmulti},
+        {"t2-circuit", 8 * buildingmulti},
+        {"t2-brick", 5 * buildingmulti},
+        {"t2-gears", 4 * buildingmulti}
+      },
+      result = "bio-processor-2"
+    }
+  },
+  {
+    type = "recipe",
+    name = "bio-processor-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-processor-2", 1},
+        {"t3-plate", 5},
+        {"t3-circuit", 8},
+        {"t3-brick", 5},
+        {"t3-gears", 4}
+      },
+      result = "bio-processor-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-processor-2", 1},
+        {"t3-plate", 5 * buildingmulti},
+        {"t3-circuit", 8 * buildingmulti},
+        {"t3-brick", 5 * buildingmulti},
+        {"t3-gears", 4 * buildingmulti}
+      },
+      result = "bio-processor-3"
+    }
+  },
+
+    -- Butchery
+  {
+    type = "recipe",
+    name = "bio-butchery-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-butchery", 1},
+        {"t2-plate", 3},
+        {"t2-circuit", 1},
+        {"t2-brick", 2},
+        {"t2-gears", 2}
+      },
+      result = "bio-butchery-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-butchery", 1},
+        {"t2-plate", 3 * buildingmulti},
+        {"t2-circuit", 1 * buildingmulti},
+        {"t2-brick", 2 * buildingmulti},
+        {"t2-gears", 2 * buildingmulti}
+      },
+      result = "bio-butchery-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "bio-butchery-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"bio-butchery-2", 1},
+        {"t3-plate", 3},
+        {"t3-circuit", 1},
+        {"t3-brick", 2},
+        {"t3-gears", 2}
+      },
+      result = "bio-butchery-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"bio-butchery-2", 1},
+        {"t3-plate", 3 * buildingmulti},
+        {"t3-circuit", 1 * buildingmulti},
+        {"t3-brick", 2 * buildingmulti},
+        {"t3-gears", 2 * buildingmulti}
+      },
+      result = "bio-butchery-3"
+    }
+  },
+
+  --COMPOSTER
+  {
+    type = "recipe",
+    name = "composter-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"composter", 1},
+        {"t2-plate", 2},
+        {"t2-circuit", 2},
+        {"t2-brick", 2},
+        {"t2-gears", 2}
+      },
+      result = "composter-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"composter", 1},
+        {"t2-plate", 2 * buildingmulti},
+        {"t2-circuit", 2 * buildingmulti},
+        {"t2-brick", 2 * buildingmulti},
+        {"t2-gears", 2 * buildingmulti}
+      },
+      result = "composter-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "composter-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"composter-2", 1},
+        {"t3-plate", 2},
+        {"t3-circuit", 2},
+        {"t3-brick", 2},
+        {"t3-gears", 2}
+      },
+      result = "composter-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"composter-2", 1},
+        {"t3-plate", 2 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 2 * buildingmulti},
+        {"t3-gears", 2 * buildingmulti}
+      },
+      result = "composter-3"
+    }
+  },
+  
+  --CROP FARM
+  {
+    type = "recipe",
+    name = "crop-farm-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"crop-farm", 1},
+        {"t1-plate", 8},
+        {"t1-circuit", 2},
+        {"t1-brick", 9},
+        {"t1-pipe", 3}
+      },
+      result = "crop-farm-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"crop-farm", 1},
+        {"t1-plate", 8 * buildingmulti},
+        {"t1-circuit", 2 * buildingmulti},
+        {"t1-brick", 9 * buildingmulti},
+        {"t1-pipe", 3 * buildingmulti}
+      },
+      result = "crop-farm-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "crop-farm-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"crop-farm-2", 1},
+        {"t2-plate", 8},
+        {"t2-circuit", 2},
+        {"t2-brick", 9},
+        {"t2-pipe", 3}
+      },
+      result = "crop-farm-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"crop-farm-2", 1},
+        {"t2-plate", 8 * buildingmulti},
+        {"t2-circuit", 2 * buildingmulti},
+        {"t2-brick", 9 * buildingmulti},
+        {"t2-pipe", 3 * buildingmulti}
+      },
+      result = "crop-farm-3"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "temperate-farm-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"temperate-farm", 1},
+        {"temperate-upgrade", 1},
+        {"t3-plate", 8},
+        {"t3-circuit", 2},
+        {"t3-brick", 9},
+        {"t3-pipe", 3}
+      },
+      result = "temperate-farm-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"temperate-farm", 1},
+        {"temperate-upgrade", 1},
+        {"t3-plate", 8 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 9 * buildingmulti},
+        {"t3-pipe", 3 * buildingmulti}
+      },
+      result = "temperate-farm-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "temperate-farm-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"temperate-farm-2", 1},
+        {"temperate-upgrade", 1},
+        {"t4-plate", 8},
+        {"t4-circuit", 2},
+        {"t4-brick", 9},
+        {"t4-pipe", 3}
+      },
+      result = "temperate-farm-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"temperate-farm-2", 1},
+        {"temperate-upgrade", 1},
+        {"t4-plate", 8 * buildingmulti},
+        {"t4-circuit", 2 * buildingmulti},
+        {"t4-brick", 9 * buildingmulti},
+        {"t4-pipe", 3 * buildingmulti}
+      },
+      result = "temperate-farm-3"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "desert-farm-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"desert-farm", 1},
+        {"desert-upgrade", 1},
+        {"t3-plate", 8},
+        {"t3-circuit", 2},
+        {"t3-brick", 9},
+        {"t3-pipe", 3}
+      },
+      result = "desert-farm-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"desert-farm", 1},
+        {"desert-upgrade", 1},
+        {"t3-plate", 8 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 9 * buildingmulti},
+        {"t3-pipe", 3 * buildingmulti}
+      },
+      result = "desert-farm-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "desert-farm-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"desert-farm-2", 1},
+        {"desert-upgrade", 1},
+        {"t4-plate", 8},
+        {"t4-circuit", 2},
+        {"t4-brick", 9},
+        {"t4-pipe", 3}
+      },
+      result = "desert-farm-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"desert-farm-2", 1},
+        {"desert-upgrade", 1},
+        {"t4-plate", 8 * buildingmulti},
+        {"t4-circuit", 2 * buildingmulti},
+        {"t4-brick", 9 * buildingmulti},
+        {"t4-pipe", 3 * buildingmulti}
+      },
+      result = "desert-farm-3"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "swamp-farm-2",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"swamp-farm", 1},
+        {"swamp-upgrade", 1},
+        {"t3-plate", 8},
+        {"t3-circuit", 2},
+        {"t3-brick", 9},
+        {"t3-pipe", 3}
+      },
+      result = "swamp-farm-2"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"swamp-farm", 1},
+        {"swamp-upgrade", 1},
+        {"t3-plate", 8 * buildingmulti},
+        {"t3-circuit", 2 * buildingmulti},
+        {"t3-brick", 9 * buildingmulti},
+        {"t3-pipe", 3 * buildingmulti}
+      },
+      result = "swamp-farm-2"
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "swamp-farm-3",
+    normal = {
+      energy_required = 5,
+      enabled = false,
+      ingredients = {
+        {"swamp-farm-2", 1},
+        {"swamp-upgrade", 1},
+        {"t4-plate", 8},
+        {"t4-circuit", 2},
+        {"t4-brick", 9},
+        {"t4-pipe", 3}
+      },
+      result = "swamp-farm-3"
+    },
+    expensive = {
+      energy_required = 5 * buildingtime,
+      enabled = false,
+      ingredients = {
+        {"swamp-farm-2", 1},
+        {"swamp-upgrade", 1},
+        {"t4-plate", 8 * buildingmulti},
+        {"t4-circuit", 2 * buildingmulti},
+        {"t4-brick", 9 * buildingmulti},
+        {"t4-pipe", 3 * buildingmulti}
+      },
+      result = "swamp-farm-3"
+    }
+  },
+
 }
     )
 

@@ -2,6 +2,15 @@ if angelsmods.bioprocessing then
 
 data:extend(
 {
+  --Algae Farm
+  --[[
+  BuildGen:import("alage-farm-3"):
+    setName("algae-farm-4"):
+    setSpeed("3.0"):
+    setModSlots("4"):
+    addSmallIcon("__angelsrefining__/graphics/icons/num_4.png",3):
+    extend()
+--]]
     {
       type = "item",
       name = "algae-farm-4",
@@ -46,7 +55,7 @@ data:extend(
       {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = -0.02 / 2
+        emissions_per_minute = -0.05 * 60
       },
       energy_usage = "250kW",
       ingredient_count = 4,
@@ -149,7 +158,7 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.02 / 2
+      emissions_per_minute = -0.03 * 60
     },
     energy_usage = "200kW",
     ingredient_count = 4,
@@ -277,7 +286,7 @@ data:extend(
   {
     type = "electric",
     usage_priority = "secondary-input",
-    emissions = -0.02 / 2
+    emissions_per_minute = -0.04 * 60
   },
   energy_usage = "400kW",
   ingredient_count = 4,
@@ -407,7 +416,7 @@ energy_source =
 {
   type = "electric",
   usage_priority = "secondary-input",
-  emissions = -0.02 / 2
+  emissions_per_minute = 0.05 * 60
 },
 energy_usage = "200kW",
 ingredient_count = 4,
@@ -539,7 +548,7 @@ energy_source =
 {
   type = "electric",
   usage_priority = "secondary-input",
-  emissions = -0.02 / 2
+  emissions_per_minute = -0.03 * 60
 },
 energy_usage = "200kW",
 ingredient_count = 4,
@@ -671,7 +680,7 @@ energy_source =
 {
   type = "electric",
   usage_priority = "secondary-input",
-  emissions = -0.02 / 2
+  emissions_per_minute = -0.03 * 60
 },
 energy_usage = "200kW",
 ingredient_count = 4,
@@ -803,7 +812,7 @@ energy_source =
 {
   type = "electric",
   usage_priority = "secondary-input",
-  emissions = -0.02 / 2
+  emissions_per_minute = -0.04 * 60
 },
 energy_usage = "400kW",
 ingredient_count = 4,
@@ -934,7 +943,7 @@ energy_source =
 {
   type = "electric",
   usage_priority = "secondary-input",
-  emissions = -0.02 / 2
+  emissions_per_minute = -0.04 * 60
 },
 energy_usage = "400kW",
 ingredient_count = 4,
@@ -1153,7 +1162,1507 @@ working_sound =
   apparent_volume = 2.5,
 },
 },
-}
+  --Bio Press
+{
+  type = "item",
+  name = "bio-press-2",
+  icons = {
+    {
+      icon = "__angelsbioprocessing__/graphics/icons/bio-press.png"
+  },
+  {
+    icon = "__angelsrefining__/graphics/icons/num_2.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+},
+  icon_size = 32,
+  subgroup = "bio-processing-buildings-vegetabilis-b",
+  order = "db",
+  place_result = "bio-press-2",
+  stack_size = 10,
+},
+{
+  type = "assembling-machine",
+  name = "bio-press-2",
+  icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
+  icon_size = 32,
+  flags = {"placeable-neutral","player-creation"},
+  minable = {mining_time = 1, result = "bio-press-2"},
+  max_health = 300,
+  corpse = "big-remnants",
+  dying_explosion = "medium-explosion",
+  collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+  selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+  fast_replaceable_group= "bio-press",
+  next_upgrade = "bio-press-3",
+  module_specification =
+  {
+    module_slots = 3
+  },
+  allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+  crafting_categories = {"bio-pressing"},
+  crafting_speed = 1.5,
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = 0.03 * 60
+  },
+  energy_usage = "190kW",
+  --ingredient_count = 4,
+  animation=
+  {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-press/bio-press.png",
+      width = 160,
+      height = 160,
+      line_length = 5,
+      frame_count = 25,
+      shift = {0, 0},
+      animation_speed = 0.5,
+   },
+  vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+  working_sound =
+  {
+    sound = { filename = "__base__/sound/chemical-plant.ogg" },
+    idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+    apparent_volume = 2.5,
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      base_level = 1,
+      pipe_connections = {{ position = {0, 2} }}
+    },
+  },
+},
+{
+  type = "item",
+  name = "bio-press-3",
+  icons = {
+    {
+      icon = "__angelsbioprocessing__/graphics/icons/bio-press.png"
+  },
+  {
+    icon = "__angelsrefining__/graphics/icons/num_3.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+},
+  icon_size = 32,
+  subgroup = "bio-processing-buildings-vegetabilis-b",
+  order = "dc",
+  place_result = "bio-press-3",
+  stack_size = 10,
+},
+{
+  type = "assembling-machine",
+  name = "bio-press-3",
+  icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
+  icon_size = 32,
+  flags = {"placeable-neutral","player-creation"},
+  minable = {mining_time = 1, result = "bio-press-3"},
+  max_health = 300,
+  corpse = "big-remnants",
+  dying_explosion = "medium-explosion",
+  collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+  selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+  fast_replaceable_group= "bio-press",
+  module_specification =
+  {
+    module_slots = 4
+  },
+  allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+  crafting_categories = {"bio-pressing"},
+  crafting_speed = 2,
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = 0.03 * 60
+  },
+  energy_usage = "225kW",
+  --ingredient_count = 4,
+  animation=
+  {
+      filename = "__angelsbioprocessing__/graphics/entity/bio-press/bio-press.png",
+      width = 160,
+      height = 160,
+      line_length = 5,
+      frame_count = 25,
+      shift = {0, 0},
+      animation_speed = 0.5,
+   },
+  vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+  working_sound =
+  {
+    sound = { filename = "__base__/sound/chemical-plant.ogg" },
+    idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+    apparent_volume = 2.5,
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      base_level = 1,
+      pipe_connections = {{ position = {0, 2} }}
+    },
+  },
+},
+
+--Bio Processor
+
+  {
+    type = "item",
+    name = "bio-processor-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-b",
+    order = "cb",
+    place_result = "bio-processor-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "bio-processor-2",
+    icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "bio-processor-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "bio-processor",
+    next_upgradge = "bio-processor-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"bio-processor"},
+    crafting_speed = 1.5,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.03 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation={
+        filename = "__angelsbioprocessing__/graphics/entity/bio-processor/bio-processor.png",
+        width = 224,
+        height = 224,
+        line_length = 5,
+        frame_count = 25,
+        shift = {0, 0},
+        animation_speed = 0.5,
+    },
+    working_visualisations =
+    {
+      {
+        --apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/bio-processor/bio-processor-ani.png",
+          line_length = 5,
+          frame_count = 25,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.5,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+  },
+
+    {
+      type = "item",
+      name = "bio-processor-3",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_3.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-vegetabilis-b",
+      order = "cc",
+      place_result = "bio-processor-3",
+      stack_size = 10,
+    },
+    {
+      type = "assembling-machine",
+      name = "bio-processor-3",
+      icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png",
+      icon_size = 32,
+      flags = {"placeable-neutral","player-creation"},
+      minable = {mining_time = 1, result = "bio-processor-3"},
+      max_health = 300,
+      corpse = "big-remnants",
+      dying_explosion = "medium-explosion",
+      collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+      selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+      fast_replaceable_group= "bio-processor",
+      module_specification =
+      {
+        module_slots = 4
+      },
+      allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+      crafting_categories = {"bio-processor"},
+      crafting_speed = 2,
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 0.03 * 60
+      },
+      energy_usage = "225kW",
+      --ingredient_count = 4,
+      animation={
+          filename = "__angelsbioprocessing__/graphics/entity/bio-processor/bio-processor.png",
+          width = 224,
+          height = 224,
+          line_length = 5,
+          frame_count = 25,
+          shift = {0, 0},
+          animation_speed = 0.5,
+      },
+      working_visualisations =
+      {
+        {
+          --apply_recipe_tint = "primary",
+          animation =
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/bio-processor/bio-processor-ani.png",
+            line_length = 5,
+            frame_count = 25,
+            width = 224,
+            height = 224,
+            shift = {0, 0},
+            animation_speed = 0.5,
+          },
+        },
+       },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      working_sound =
+      {
+        sound = { filename = "__base__/sound/chemical-plant.ogg" },
+        idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+        apparent_volume = 2.5,
+      },
+    },
+      --Bucthery
+    {
+      type = "item",
+      name = "bio-butchery-2",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_2.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-alien-a",
+      order = "bb",
+      place_result = "bio-butchery-2",
+      stack_size = 10,
+    },
+    {
+      type = "furnace",
+      name = "bio-butchery-2",
+      icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png",
+      icon_size = 32,
+      flags = {"placeable-neutral", "placeable-player", "player-creation"},
+      minable = {mining_time = 1, result = "bio-butchery-2"},
+      max_health = 100,
+      fast_replaceable_group = "bio-butchery",
+      next_upgrade = "bio-butchery-3",
+      corpse = "small-remnants",
+      collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+      selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+      drawing_box = {{-1.5, -1.75}, {1.5, 1.5}},
+      crafting_categories = {"bio-butchery"},
+      module_specification =
+      {
+        module_slots = 3
+      },
+      allowed_effects = {"consumption", "speed", "pollution"},
+      result_inventory_size = 3,
+      crafting_speed = 3,
+      source_inventory_size = 1,
+      resistances =
+      {
+        {
+          type = "fire",
+          percent = 80
+        },
+        {
+          type = "explosion",
+          percent = 30
+        }
+      },
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 0.02 * 60
+      },
+      energy_usage = "190kW",
+      animation =
+      {
+        layers = {
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/bio-butchery/bio-butchery.png",
+            width = 160,
+            height = 160,
+            frame_count = 36,
+            line_length = 6,
+            shift = {0, 0},
+            animation_speed = 0.5
+          },
+        },
+      },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+      open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+      close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    },
+
+    {
+      type = "item",
+      name = "bio-butchery-3",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_3.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-alien-a",
+      order = "bc",
+      place_result = "bio-butchery-3",
+      stack_size = 10,
+    },
+    {
+      type = "furnace",
+      name = "bio-butchery-3",
+      icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png",
+      icon_size = 32,
+      flags = {"placeable-neutral", "placeable-player", "player-creation"},
+      minable = {mining_time = 1, result = "bio-butchery-3"},
+      max_health = 100,
+      fast_replaceable_group = "bio-butchery",
+      corpse = "small-remnants",
+      collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+      selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+      drawing_box = {{-1.5, -1.75}, {1.5, 1.5}},
+      crafting_categories = {"bio-butchery"},
+      module_specification =
+      {
+        module_slots = 4
+      },
+      allowed_effects = {"consumption", "speed", "pollution"},
+      result_inventory_size = 3,
+      crafting_speed = 4,
+      source_inventory_size = 1,
+      resistances =
+      {
+        {
+          type = "fire",
+          percent = 80
+        },
+        {
+          type = "explosion",
+          percent = 30
+        }
+      },
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 0.03 * 60
+      },
+      energy_usage = "225kW",
+      animation =
+      {
+        layers = {
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/bio-butchery/bio-butchery.png",
+            width = 160,
+            height = 160,
+            frame_count = 36,
+            line_length = 6,
+            shift = {0, 0},
+            animation_speed = 0.5
+          },
+        },
+      },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+      open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+      close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    },
+    {
+      type = "item",
+      name = "composter-2",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/composter.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_2.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-vegetabilis-b",
+      order = "bb",
+      place_result = "composter-2",
+      stack_size = 10,
+      },
+      {
+      type = "furnace",
+      name = "composter-2",
+      icon = "__angelsbioprocessing__/graphics/icons/composter.png",
+      icon_size = 32,
+      flags = {"placeable-neutral", "placeable-player", "player-creation"},
+      minable = {mining_time = 1, result = "composter-2"},
+      max_health = 100,
+      fast_replaceable_group = "composter",
+      next_upgrade = "composter-3",
+      corpse = "small-remnants",
+      collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+      selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+      crafting_categories = {"angels-bio-void"},
+      module_specification =
+      {
+        module_slots = 3
+      },
+      allowed_effects = {"consumption", "speed", "pollution"},
+      result_inventory_size = 1,
+      crafting_speed = 3,
+      source_inventory_size = 1,
+      resistances =
+      {
+        {
+          type = "fire",
+          percent = 80
+        },
+        {
+          type = "explosion",
+          percent = 30
+        }
+      },
+      -- fluid_boxes =
+      -- {
+        -- {
+          -- production_type = "input",
+          -- pipe_covers = pipecoverspictures(),
+          -- base_area = 10,
+          -- base_level = -1,
+          -- pipe_connections = {{ type="input", position = {0, 3} }}
+        -- },
+      -- },
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 0.02 * 60
+      },
+      energy_usage = "40kW",
+      animation =
+      {
+          filename = "__angelsbioprocessing__/graphics/entity/composter/composter.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+      },
+      working_visualisations =
+      {
+          filename = "__angelsbioprocessing__/graphics/entity/composter/composter-animation.png",
+          width = 128,
+          height = 32,
+          frame_count = 25,
+          line_length = 5,
+          shift = {0, 1},
+          animation_speed = 0.5
+      },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+      open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+      close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    },
+    {
+      type = "item",
+      name = "composter-3",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/composter.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_3.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-vegetabilis-b",
+      order = "bc",
+      place_result = "composter-3",
+      stack_size = 10,
+      },
+      {
+      type = "furnace",
+      name = "composter-3",
+      icon = "__angelsbioprocessing__/graphics/icons/composter.png",
+      icon_size = 32,
+      flags = {"placeable-neutral", "placeable-player", "player-creation"},
+      minable = {mining_time = 1, result = "composter-3"},
+      max_health = 100,
+      fast_replaceable_group = "composter",
+      corpse = "small-remnants",
+      collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+      selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+      crafting_categories = {"angels-bio-void"},
+      module_specification =
+      {
+        module_slots = 4
+      },
+      allowed_effects = {"consumption", "speed", "pollution"},
+      result_inventory_size = 1,
+      crafting_speed = 4,
+      source_inventory_size = 1,
+      resistances =
+      {
+        {
+          type = "fire",
+          percent = 80
+        },
+        {
+          type = "explosion",
+          percent = 30
+        }
+      },
+      -- fluid_boxes =
+      -- {
+        -- {
+          -- production_type = "input",
+          -- pipe_covers = pipecoverspictures(),
+          -- base_area = 10,
+          -- base_level = -1,
+          -- pipe_connections = {{ type="input", position = {0, 3} }}
+        -- },
+      -- },
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 0.03 * 60
+      },
+      energy_usage = "45kW",
+      animation =
+      {
+          filename = "__angelsbioprocessing__/graphics/entity/composter/composter.png",
+          width = 160,
+          height = 160,
+          frame_count = 1,
+          line_length = 1,
+          shift = {0, 0},
+          --animation_speed = 0.5
+      },
+      working_visualisations =
+      {
+          filename = "__angelsbioprocessing__/graphics/entity/composter/composter-animation.png",
+          width = 128,
+          height = 32,
+          frame_count = 25,
+          line_length = 5,
+          shift = {0, 1},
+          animation_speed = 0.5
+      },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+      open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+      close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    },
+    {
+      type = "item",
+      name = "crop-farm-2",
+      icons = {
+        {
+          icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png"
+      },
+      {
+        icon = "__angelsrefining__/graphics/icons/num_2.png",
+        tint = angelsmods.bioprocessing.number_tint,
+        scale = 0.32,
+        shift = {-12, -12}
+      }
+    },
+      icon_size = 32,
+      subgroup = "bio-processing-buildings-vegetabilis-a",
+      order = "ab",
+      place_result = "crop-farm-2",
+      stack_size = 10,
+    },
+    {
+      type = "assembling-machine",
+      name = "crop-farm-2",
+      icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png",
+      icon_size = 32,
+      flags = {"placeable-neutral","player-creation"},
+      minable = {mining_time = 1, result = "crop-farm-2"},
+      max_health = 300,
+      corpse = "big-remnants",
+      dying_explosion = "medium-explosion",
+      collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+      selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+      fast_replaceable_group= "crop-farm",
+      next_upgrade= "crop-farm-3",
+      module_specification =
+      {
+        module_slots = 3
+      },
+      allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+      crafting_categories = {"temperate-farming", "desert-farming", "swamp-farming"},
+      crafting_speed = 1.5,
+      energy_source =
+      {
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = -0.03 * 60
+      },
+      energy_usage = "125kW",
+      --ingredient_count = 4,
+      animation={
+          layers={
+            {
+              filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+              width = 224,
+              height = 224,
+              line_length = 1,
+              frame_count = 1,
+              shift = {0, 0},
+            },
+            {
+              filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-basic.png",
+              width = 224,
+              height = 224,
+              line_length = 1,
+              frame_count = 1,
+              shift = {0, 0},
+            },
+          }
+      },
+      working_visualisations =
+      {
+        {
+          apply_recipe_tint = "primary",
+          animation =
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-1.png",
+            line_length = 6,
+            frame_count = 36,
+            width = 224,
+            height = 224,
+            shift = {0, 0},
+            animation_speed = 0.005,
+          },
+        },
+       },
+      vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+      working_sound =
+      {
+        sound = { filename = "__base__/sound/chemical-plant.ogg" },
+        idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+        apparent_volume = 2.5,
+      },
+      fluid_boxes =
+      {
+        {
+          production_type = "input",
+          pipe_covers = pipecoverspictures(),
+          base_area = 10,
+          base_level = -1,
+          pipe_connections = {{ type="input", position = {0, -3} }}
+        },
+      },
+    },
+    {
+    type = "item",
+    name = "crop-farm-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "ac",
+    place_result = "crop-farm-3",
+    stack_size = 10,
+  },
+
+  {
+    type = "assembling-machine",
+    name = "crop-farm-3",
+    icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "crop-farm-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"temperate-farming", "desert-farming", "swamp-farming"},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.04 * 60
+    },
+    energy_usage = "150kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-basic.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-1.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.005,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "temperate-farm-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "bb",
+    place_result = "temperate-farm-2",
+    stack_size = 10,
+  },
+  
+  {
+    type = "assembling-machine",
+    name = "temperate-farm-2",
+    icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "temperate-farm-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    next_upgrade = "temperate-farm-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"temperate-farming"},
+    crafting_speed = 3,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.05 * 60
+    },
+    energy_usage = "155kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-temperate.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-2.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "temperate-farm-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "bc",
+    place_result = "temperate-farm-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "temperate-farm-3",
+    icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "temperate-farm-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"temperate-farming"},
+    crafting_speed = 4,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.06 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-temperate.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-2.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "desert-farm-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "be",
+    place_result = "desert-farm-2",
+    stack_size = 10,
+  },
+
+  {
+    type = "assembling-machine",
+    name = "desert-farm-2",
+    icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "desert-farm-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    next_upgrade= "desert-farm-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"desert-farming"},
+    crafting_speed = 3,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.05 * 60
+    },
+    energy_usage = "155kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-desert.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-3.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "desert-farm-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "bf",
+    place_result = "desert-farm-3",
+    stack_size = 10,
+  },
+
+  {
+    type = "assembling-machine",
+    name = "desert-farm-3",
+    icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "desert-farm-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"desert-farming"},
+    crafting_speed = 4,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.06 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-desert.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-3.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "swamp-farm-2",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "bh",
+    place_result = "swamp-farm-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "swamp-farm-2",
+    icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "swamp-farm-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    next_upgrade = "swamp-farm-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"swamp-farming"},
+    crafting_speed = 3,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.05 * 60
+    },
+    energy_usage = "155kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-water.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-4.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  {
+    type = "item",
+    name = "swamp-farm-3",
+    icons = {
+      {
+        icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-a",
+    order = "bi",
+    place_result = "swamp-farm-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "swamp-farm-3",
+    icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "swamp-farm-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    fast_replaceable_group= "crop-farm",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"swamp-farming"},
+    crafting_speed = 4,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = -0.06 * 60
+    },
+    energy_usage = "190kW",
+    --ingredient_count = 4,
+    animation={
+        layers={
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/farm-base.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+          {
+            filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-water.png",
+            width = 224,
+            height = 224,
+            line_length = 1,
+            frame_count = 1,
+            shift = {0, 0},
+          },
+        }
+    },
+    working_visualisations =
+    {
+      {
+        apply_recipe_tint = "primary",
+        animation =
+        {
+          filename = "__angelsbioprocessing__/graphics/entity/crop-farm/field-animation-4.png",
+          line_length = 6,
+          frame_count = 36,
+          width = 224,
+          height = 224,
+          shift = {0, 0},
+          animation_speed = 0.01,
+        },
+      },
+     },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound =
+    {
+      sound = { filename = "__base__/sound/chemical-plant.ogg" },
+      idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+      apparent_volume = 2.5,
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        base_area = 10,
+        base_level = -1,
+        pipe_connections = {{ type="input", position = {0, -3} }}
+      },
+    },
+  },
+
+  }
   )
 
 end

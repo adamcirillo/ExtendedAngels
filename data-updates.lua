@@ -74,7 +74,18 @@ if angelsmods.bioprocessing then
 	data.raw["assembling-machine"]["bio-generator-temperate-1"].next_upgrade = "bio-generator-temperate-2"
 	data.raw["assembling-machine"]["bio-generator-swamp-1"].next_upgrade = "bio-generator-swamp-2"
 	data.raw["assembling-machine"]["bio-generator-desert-1"].next_upgrade = "bio-generator-desert-2"
+	data.raw["assembling-machine"]["bio-press"].next_upgrade = "bio-press-2"
+	data.raw["assembling-machine"]["bio-processor"].next_upgrade = "bio-processor-2"
+	data.raw["assembling-machine"]["crop-farm"].next_upgrade = "crop-farm-2"
+	data.raw["assembling-machine"]["temperate-farm"].next_upgrade = "temperate-farm-2"
+	data.raw["assembling-machine"]["desert-farm"].next_upgrade = "desert-farm-2"
+	data.raw["assembling-machine"]["desert-farm"].order = "bd"
+	data.raw["assembling-machine"]["swamp-farm"].next_upgrade = "swamp-farm-2"
+	data.raw["assembling-machine"]["swamp-farm"].order = "bg"
+	data.raw["furnace"]["bio-butchery"].next_upgrade = "bio-butchery-2"
+	data.raw["furnace"]["composter"].next_upgrade = "composter-2"
 end
+
 if angelsmods.petrochem then
 	data.raw["assembling-machine"]["advanced-chemical-plant-2"].next_upgrade = "advanced-chemical-plant-3"
 	data.raw["assembling-machine"]["angels-air-filter-2"].next_upgrade = "angels-air-filter-3"
