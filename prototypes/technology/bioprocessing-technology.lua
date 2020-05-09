@@ -361,6 +361,35 @@ data:extend(
                   time = 30
                 },
               },
+
+              {
+                type = "technology",
+                name = "adv-seed-extraction",
+                icon = "__angelsbioprocessing__/graphics/technology/seed-extractor-tech.png",
+                icon_size = 128,
+                order = "c-a",
+                prerequisites = {
+                  "gardens",
+                },
+                effects = {
+                  {
+                    type = "unlock-recipe",
+                    recipe = "seed-extractor-2"
+                  },
+                  {
+                    type = "unlock-recipe",
+                    recipe = "seed-extractor-3"
+                  }
+                },
+                unit = {
+                  count = 100,
+                  ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1}
+                  },
+                  time = 30
+                }
+              },
             
 }
 )

@@ -77,6 +77,7 @@ if angelsmods.bioprocessing then
 	data.raw["assembling-machine"]["bio-press"].next_upgrade = "bio-press-2"
 	data.raw["assembling-machine"]["bio-processor"].next_upgrade = "bio-processor-2"
 	data.raw["assembling-machine"]["crop-farm"].next_upgrade = "crop-farm-2"
+	data.raw["assembling-machine"]["seed-extractor"].next_upgrade = "seed-extractor-2"
 	data.raw["assembling-machine"]["temperate-farm"].next_upgrade = "temperate-farm-2"
 	data.raw["assembling-machine"]["desert-farm"].next_upgrade = "desert-farm-2"
 	data.raw["recipe"]["desert-farm"].order = "bd"

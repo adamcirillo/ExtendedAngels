@@ -287,8 +287,9 @@ data:extend(
                             energy_required = 4,
                             enabled = "false",
                             ingredients ={
-                              {type="fluid", name="liquid-concrete", amount=40},
+                              {type="item", name="stone-brick", amount=4},
                               {type="item", name="angels-plate-titanium", amount=4},
+                              {type="fluid", name="liquid-concrete", amount=40},
                             },
                             results=
                             {

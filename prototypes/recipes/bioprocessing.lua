@@ -1088,6 +1088,65 @@ angelsmods.functions.RB.build({
     }
   },
 
+      --SEED EXTRACTOR
+      {
+        type = "recipe",
+        name = "seed-extractor-2",
+        normal = {
+          energy_required = 5,
+          enabled = false,
+          ingredients = {
+            {"seed-extractor", 1},
+            {"t2-plate", 1},
+            {"t2-circuit", 4},
+            {"t2-brick", 1},
+            {"t2-gears", 2}
+          },
+          result = "seed-extractor-2"
+        },
+        expensive = {
+          energy_required = 5 * buildingtime,
+          enabled = false,
+          ingredients = {
+            {"seed-extractor", 1},
+            {"t2-plate", 1 * buildingmulti},
+            {"t2-circuit", 4 * buildingmulti},
+            {"t2-brick", 1 * buildingmulti},
+            {"t2-gears", 2 * buildingmulti}
+          },
+          result = "seed-extractor-2"
+        }
+      },
+
+      {
+        type = "recipe",
+        name = "seed-extractor-3",
+        normal = {
+          energy_required = 5,
+          enabled = false,
+          ingredients = {
+            {"seed-extractor-2", 1},
+            {"t3-plate", 1},
+            {"t3-circuit", 4},
+            {"t3-brick", 1},
+            {"t3-gears", 2}
+          },
+          result = "seed-extractor-3"
+        },
+        expensive = {
+          energy_required = 5 * buildingtime,
+          enabled = false,
+          ingredients = {
+            {"seed-extractor-2", 1},
+            {"t3-plate", 1 * buildingmulti},
+            {"t3-circuit", 4 * buildingmulti},
+            {"t3-brick", 1 * buildingmulti},
+            {"t3-gears", 2 * buildingmulti}
+          },
+          result = "seed-extractor-3"
+        }
+      },
+
 }
     )
 

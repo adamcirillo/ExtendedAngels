@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 2020-05-09
+  Changes:
+      - Fixed locale for Tungsten Hexachloride Gas
+      - Added stone brick to Titanium Concrete Brick
+      - Fixed Crafting speed on Fish & Biter Refugium
+      - Fixed missing mk icons on arboretum and seed generators
+      - Added Seed Extractor MK2 & MK3
+---------------------------------------------------------------------------------------------------
 Version: 0.3.7
-Date: N/A
+Date: 2020-04-26
   Changes:
       - Fixed Icon Ordering issues with Angels Bio Buildings
       - Added Hatchery MK2 & MK3

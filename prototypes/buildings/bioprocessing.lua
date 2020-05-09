@@ -122,7 +122,13 @@ data:extend(
       {
         icon = "__angelsbioprocessing__/graphics/icons/bio-arboretum.png",
       },
-    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
     icon_size = 32,
     subgroup = "bio-processing-buildings-nauvis-a",
     order = "c[arboretum]-a",
@@ -251,6 +257,12 @@ data:extend(
     {
       icon = "__angelsbioprocessing__/graphics/icons/bio-arboretum.png",
     },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
   },
   icon_size = 32,
   subgroup = "bio-processing-buildings-nauvis-a",
@@ -379,7 +391,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-temperate-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_2.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-a",
@@ -511,7 +529,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-swamp-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_2.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-b",
@@ -643,7 +667,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-desert-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_2.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-c",
@@ -776,7 +806,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-temperate-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_3.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-a",
@@ -907,7 +943,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-swamp-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_3.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-b",
@@ -1038,7 +1080,13 @@ icons = {
   {
     icon = "__angelsbioprocessing__/graphics/icons/bio-desert-generator.png",
   },
-},
+  {
+    icon = "__angelsrefining__/graphics/icons/num_3.png",
+    tint = angelsmods.bioprocessing.number_tint,
+    scale = 0.32,
+    shift = {-12, -12}
+  }
+  },
 icon_size = 32,
 subgroup = "bio-processing-buildings-nauvis-a",
 order = "b[generator]-c",
@@ -2911,7 +2959,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"nutrient-extractor",},
-    crafting_speed = 1.5,
+    crafting_speed = 3,
     energy_source =
     {
       type = "electric",
@@ -3185,7 +3233,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-fish"},
-    crafting_speed = 2,
+    crafting_speed = 4,
     energy_source =
     {
       type = "electric",
@@ -3304,7 +3352,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-puffer"},
-    crafting_speed = 1.25,
+    crafting_speed = 3,
     energy_source =
     {
       type = "electric",
@@ -3665,7 +3713,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-biter"},
-    crafting_speed = 2,
+    crafting_speed = 4,
     energy_source =
     {
       type = "electric",
@@ -3725,6 +3773,136 @@ working_sound =
     },
   },
 
+  {
+    type = "item",
+    name = "seed-extractor-2",
+    icons = 
+    {
+    {
+      icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_2.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-b",
+    order = "a",
+    place_result = "seed-extractor-2",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "seed-extractor-2",
+    icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "seed-extractor-2"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    fast_replaceable_group= "seed-extractor",
+    next_upgrade = "seed-extractor-3",
+    module_specification =
+    {
+      module_slots = 3
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"seed-extractor"},
+    crafting_speed = 1.25,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.04 * 60
+    },
+    energy_usage = "180kW",
+    ingredient_count = 4,
+    animation =
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/seed-extractor/seed-extractor.png",
+      width = 160,
+      height = 160,
+      frame_count = 25,
+      line_length = 5,
+      shift = {0, 0},
+      animation_speed = 0.5,
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+  },
+
+  {
+    type = "item",
+    name = "seed-extractor-3",
+    icons = 
+    {
+    {
+      icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png"
+    },
+    {
+      icon = "__angelsrefining__/graphics/icons/num_3.png",
+      tint = angelsmods.bioprocessing.number_tint,
+      scale = 0.32,
+      shift = {-12, -12}
+    }
+  },
+    icon_size = 32,
+    subgroup = "bio-processing-buildings-vegetabilis-b",
+    order = "a",
+    place_result = "seed-extractor-3",
+    stack_size = 10,
+  },
+  {
+    type = "assembling-machine",
+    name = "seed-extractor-3",
+    icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png",
+    icon_size = 32,
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 1, result = "seed-extractor-3"},
+    max_health = 300,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    fast_replaceable_group= "seed-extractor",
+    module_specification =
+    {
+      module_slots = 4
+    },
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"seed-extractor"},
+    crafting_speed = 2,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = 0.05 * 60
+    },
+    energy_usage = "220kW",
+    ingredient_count = 4,
+    animation =
+    {
+      filename = "__angelsbioprocessing__/graphics/entity/seed-extractor/seed-extractor.png",
+      width = 160,
+      height = 160,
+      frame_count = 25,
+      line_length = 5,
+      shift = {0, 0},
+      animation_speed = 0.5,
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+    open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+  },
 
   }
   )
