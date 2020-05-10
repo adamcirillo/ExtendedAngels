@@ -2959,7 +2959,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"nutrient-extractor",},
-    crafting_speed = 3,
+    crafting_speed = 1.5,
     energy_source =
     {
       type = "electric",
@@ -3233,7 +3233,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-fish"},
-    crafting_speed = 4,
+    crafting_speed = 2,
     energy_source =
     {
       type = "electric",
@@ -3352,7 +3352,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-puffer"},
-    crafting_speed = 3,
+    crafting_speed = 1.25,
     energy_source =
     {
       type = "electric",
@@ -3614,7 +3614,7 @@ working_sound =
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"bio-refugium-biter"},
-    crafting_speed = 1.25,
+    crafting_speed = 3,
     energy_source =
     {
       type = "electric",
