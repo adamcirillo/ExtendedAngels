@@ -65,42 +65,6 @@ data:extend(
             time = 15
           },
           },
-  
-          {
-            type = "technology",
-            name = "bio-farm-2",
-            icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
-            icon_size = 128,
-            prerequisites =
-            {
-            "bio-farm",
-    
-            },
-            effects =
-            {
-              {
-                type = "unlock-recipe",
-                recipe = "crop-farm-2"
-              },
-              {
-                type = "unlock-recipe",
-                recipe = "composter-2"
-              },
-              {
-                type = "unlock-recipe",
-                recipe = "bio-processor-2"
-              },
-            },
-            unit =
-            {
-              count = 100,
-              ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-              },
-              time = 15
-            },
-            },
 
             {
               type = "technology",

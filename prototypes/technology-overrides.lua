@@ -41,6 +41,9 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-refugium-puffer-2", "bio-refugium-puffer-2")
     OV.add_unlock("bio-refugium-biter-2", "bio-refugium-biter-2")
     OV.add_unlock("bio-refugium-biter-3", "bio-refugium-biter-3")
+    OV.add_unlock("bio-farm-2", "crop-farm-2")
+    OV.add_unlock("bio-farm-2", "composter-2")
+    OV.add_unlock("bio-farm-2", "bio-processor-2")
 end
 
 if mods["angelsaddons-warehouses"] then

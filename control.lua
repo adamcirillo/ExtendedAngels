@@ -11,28 +11,14 @@ for index, force in pairs(game.forces) do
     recipes["angels-air-filter-3"].enabled = technologies["angels-nitrogen-processing-3"].researched
     recipes["angels-air-filter-4"].enabled = technologies["angels-nitrogen-processing-4"].researched
 
-    if technologies["bio-aboretum-2"] then 
-      recipes["bio-generator-temperate-2"].enabled = technologies["bio-aboretum-2"].researched
-      recipes["bio-generator-swamp-2"].enabled = technologies["bio-aboretum-2"].researched
-      recipes["bio-generator-desert-2"].enabled = technologies["bio-aboretum-2"].researched
-      recipes["bio-arboretum-2"].enabled = technologies["bio-aboretum-2"].researched
-      end
-
-    if technologies["bio-aboretum-3"] then 
-      recipes["bio-generator-temperate-3"].enabled = technologies["bio-aboretum-3"].researched
-      recipes["bio-generator-swamp-3"].enabled = technologies["bio-aboretum-3"].researched
-      recipes["bio-generator-desert-3"].enabled = technologies["bio-aboretum-3"].researched
-      recipes["bio-arboretum-3"].enabled = technologies["bio-aboretum-3"].researched
-      end
-
-    if technologies["phosphorus-processing-2"] then 
-      recipes["solid-disodium-phosphate"].enabled = technologies["phosphorus-processing-2"].researched
-      recipes["solid-tetrasodium-pyrophosphate"].enabled = technologies["phosphorus-processing-2"].researched
+    if technologies["phosphorus-processing-2"].researched then 
+      recipes["solid-disodium-phosphate"].enabled = true
+      recipes["solid-tetrasodium-pyrophosphate"].enabled = true
     end
     
-    if technologies["water-treatment-5"] then 
-      recipes["hydro-plant-4"].enabled = technologies["water-treatment-5"].researched
-      recipes["salination-plant-3"].enabled = technologies["water-treatment-5"].researched
+    if technologies["water-treatment-5"].researched then 
+      recipes["hydro-plant-4"].enabled = true
+      recipes["salination-plant-3"].enabled = true
       end
 
     if technologies["angels-tungsten-smelting-3"].researched then
@@ -40,6 +26,20 @@ for index, force in pairs(game.forces) do
       recipes["pellet-tungsten-smelting-2"].enabled = true
       recipes["solid-sodium-tungstate-smelting"].enabled = true
       recipes["casting-powder-tungsten-3"].enabled = true
+    end
+  if game.active_mods["angelsbioprocessing"] then
+    if technologies["bio-arboretum-2"].researched then 
+      recipes["bio-generator-temperate-2"].enabled = true
+      recipes["bio-generator-swamp-2"].enabled = true
+      recipes["bio-generator-desert-2"].enabled = true
+      recipes["bio-arboretum-2"].enabled = true
+      end
+  
+    if technologies["bio-arboretum-3"].researched then 
+      recipes["bio-generator-temperate-3"].enabled = true
+      recipes["bio-generator-swamp-3"].enabled = true
+      recipes["bio-generator-desert-3"].enabled = true
+      recipes["bio-arboretum-3"].enabled = true
     end
 
     if technologies["bio-refugium-butchery-2"].researched then
@@ -62,7 +62,12 @@ for index, force in pairs(game.forces) do
     if technologies["bio-refugium-biter-3"].researched then
       recipes["bio-refugium-biter-3"].enabled = true
     end
+      if technologies["bio-refugium-biter-3"].researched then
+        recipes["crop-farm-2"].enabled = true
+        recipes["composter-2"].enabled = true
+        recipes["bio-processor-2"].enabled = true
 
-
+    end
+  end
   end
 end)
