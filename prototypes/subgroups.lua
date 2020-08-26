@@ -6,7 +6,7 @@ data:extend(
 	group = "angels-smelting",
 	order = "t",
   },
-  
+
   {
     type = "item-subgroup",
     name = "angels-copper-tungsten-casting",
@@ -35,9 +35,9 @@ data:extend(
 )
 
 -- Angel Industries Warehouse Icons
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-warehouses"] or mods["angelsaddons-storage"] then
        data:extend(
-        {  
+        {
     {
       type = "item-subgroup",
       name = "angels-warehouses-2",
@@ -60,5 +60,5 @@ if mods["angelsaddons-warehouses"] then
   )
   end
 
-  
-  
+
+

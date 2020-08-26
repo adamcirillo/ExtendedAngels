@@ -15,13 +15,13 @@ require("prototypes.recipes-overrides")
 
 
 -- For Angel's Extra Warehouses
-if mods["angelsaddons-warehouses"] then
-	require("prototypes.recipes.warehouses")	
+if mods["angelsaddons-warehouses"] or mods["angelsaddons-storage"] then
+	require("prototypes.recipes.warehouses")
 	if mods["angelsindustries"] and settings.startup["angels-enable-tech"].value==true then
 		bobmods.lib.recipe.replace_ingredient_in_all("brass-gear-wheel","angels-roller-chain")
 		bobmods.lib.recipe.replace_ingredient_in_all("advanced-processing-unit","circuit-yellow-loaded")
 		end
-		
+
 	if angelsmods and angelsmods.refining then
 		if angelsmods.logistics then
 			  data.raw["item-subgroup"]["angels-warehouses"-2].group = "angels-logistics"
@@ -43,7 +43,7 @@ if mods["angelsaddons-warehouses"] then
 			data.raw["item-subgroup"]["angels-warehouses-4"].order = "ad[chests-warehouse]"
 		  end
 
-	if angelsmods.addons.warehouse_icon then
+	if angelsmods.addons.warehouse_icon or angelsmods.addons.storage.icon_scaling then
 		data.raw["container"]["warehouse-mk2"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-passive-provider-mk2"].scale_info_icons = true
 		data.raw["logistic-container"]["warehouse-active-provider-mk2"].scale_info_icons = true
@@ -110,11 +110,11 @@ if angelsmods.refining then
 	data.raw["assembling-machine"]["filtration-unit-3"].next_upgrade = "filtration-unit-3"
 end
 
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-warehouses"] or mods["angelsaddons-storage"] then
 	data.raw["container"]["angels-warehouse"].next_upgrade = "warehouse-mk2"
 	data.raw["logistic-container"]["angels-warehouse-passive-provider"].next_upgrade = "warehouse-passive-provider-mk2"
 	data.raw["logistic-container"]["angels-warehouse-active-provider"].next_upgrade = "warehouse-active-provider-mk2"
 	data.raw["logistic-container"]["angels-warehouse-storage"].next_upgrade = "warehouse-storage-mk2"
 	data.raw["logistic-container"]["angels-warehouse-requester"].next_upgrade = "warehouse-requester-mk2"
-	data.raw["logistic-container"]["angels-warehouse-buffer"].next_upgrade = "warehouse-buffer-mk2"	
+	data.raw["logistic-container"]["angels-warehouse-buffer"].next_upgrade = "warehouse-buffer-mk2"
 end

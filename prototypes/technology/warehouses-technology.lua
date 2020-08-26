@@ -1,11 +1,12 @@
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-warehouses"] or mods["angelsaddons-storage"] then
+local icon_base = mods["angelsaddons-storage"] and "__angelsaddons-storage__" or "__angelsaddons-warehouses__"
 data:extend(
 {
 
   {
     type = "technology",
     name = "warehouses-2",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+    icon = icon_base .. "/graphics/technology/warehouses.png",
   icon_size = 128,
   prerequisites =
     {
@@ -30,12 +31,12 @@ data:extend(
       time = 20
     },
     order = "c-a"
-    },  
+    },
 
     {
       type = "technology",
       name = "warehouses-3",
-      icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+      icon = icon_base .. "/graphics/technology/warehouses.png",
     icon_size = 128,
     prerequisites =
       {
@@ -61,17 +62,17 @@ data:extend(
         time = 20
       },
       order = "c-a"
-      },  
-  
+      },
+
       {
         type = "technology",
         name = "warehouses-4",
-        icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+        icon = icon_base .. "/graphics/technology/warehouses.png",
       icon_size = 128,
       prerequisites =
         {
           "warehouses-3",
-          "angels-tungsten-smelting-1",         
+          "angels-tungsten-smelting-1",
           "nitinol-processing",
         },
         effects =
@@ -93,20 +94,20 @@ data:extend(
           time = 20
         },
         order = "c-a"
-        },  
-    
-      
+        },
+
+
 	{
     type = "technology",
     name = "logistic-warehouses-2",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = icon_base .. "/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {
   "angels-logistic-warehouses",
   "warehouses-2",
   "zinc-processing",
-  "angels-invar-smelting-1",  
+  "angels-invar-smelting-1",
     },
     effects =
     {
@@ -130,7 +131,7 @@ data:extend(
         type = "unlock-recipe",
         recipe = "warehouse-buffer-mk2"
       },
-      
+
     },
     unit =
     {
@@ -144,11 +145,11 @@ data:extend(
     },
     order = "c-a"
     },
- 
+
 	{
     type = "technology",
     name = "logistic-warehouses-3",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = icon_base .. "/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {
@@ -195,17 +196,17 @@ data:extend(
     },
     order = "c-a"
     },
-	
+
 	{
     type = "technology",
     name = "logistic-warehouses-4",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = icon_base .. "/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {
   "logistic-warehouses-3",
   "warehouses-4",
-  "angels-tungsten-smelting-1",         
+  "angels-tungsten-smelting-1",
   "nitinol-processing",
   "advanced-electronics-3",
     },
