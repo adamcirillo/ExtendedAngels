@@ -15,18 +15,18 @@ require("prototypes.recipes-overrides")
 
 
 -- For Angel's Extra Warehouses
-if mods["angelsaddons-warehouses"] then
-	require("prototypes.recipes.warehouses")	
+require("prototypes.recipes.warehouses")
+if mods["angelsaddons-storage"] then
 	if mods["angelsindustries"] and settings.startup["angels-enable-tech"].value==true then
 		bobmods.lib.recipe.replace_ingredient_in_all("brass-gear-wheel","angels-roller-chain")
 		bobmods.lib.recipe.replace_ingredient_in_all("advanced-processing-unit","circuit-yellow-loaded")
 		end
 		
 	if angelsmods and angelsmods.refining then
-		if angelsmods.logistics then
-			  data.raw["item-subgroup"]["angels-warehouses"-2].group = "angels-logistics"
-			  data.raw["item-subgroup"]["angels-warehouses"-3].group = "angels-logistics"
-			  data.raw["item-subgroup"]["angels-warehouses"-4].group = "angels-logistics"
+		if angelsmods.logistics then --didn't this get depricated in 0.16?
+			  data.raw["item-subgroup"]["angels-warehouses-2"].group = "angels-logistics"
+			  data.raw["item-subgroup"]["angels-warehouses-3"].group = "angels-logistics"
+			  data.raw["item-subgroup"]["angels-warehouses-4"].group = "angels-logistics"
 			else
 			  data.raw["item-subgroup"]["angels-warehouses-2"].group = "resource-refining"
 			  data.raw["item-subgroup"]["angels-warehouses-3"].group = "resource-refining"
@@ -110,7 +110,7 @@ if angelsmods.refining then
 	data.raw["assembling-machine"]["filtration-unit-3"].next_upgrade = "filtration-unit-3"
 end
 
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
 	data.raw["container"]["angels-warehouse"].next_upgrade = "warehouse-mk2"
 	data.raw["logistic-container"]["angels-warehouse-passive-provider"].next_upgrade = "warehouse-passive-provider-mk2"
 	data.raw["logistic-container"]["angels-warehouse-active-provider"].next_upgrade = "warehouse-active-provider-mk2"

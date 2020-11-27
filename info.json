@@ -1,19 +1,18 @@
 {
   "name": "extendedangels",
-  "version": "0.3.11",
-  "factorio_version": "0.18",
+  "version": "0.3.13",
+  "factorio_version": "1.1",
   "title": "Extended Angels",
   "author": "AdamCirillo",
   "contact": "",
   "homepage": "",
   "description": "Adds extra buildings and recipes to Angel's Mods",
-  "dependencies": 
+  "dependencies":
     [
-    "base >= 0.18.0",
     "angelssmelting >= 0.6.4",
-    "bobplates >= 0.18.0", 
-    "? angelsaddons-warehouses >= 0.5.0", 
-    "? bobtech >= 0.18.0", 
-    "? angelsbioprocessing >= 0.7.9", 
+    "bobplates >= 0.18.0",
+    "? angelsaddons-storage >= 0.0.1",
+    "? bobtech >= 0.18.0",
+    "? angelsbioprocessing >= 0.7.9",
     "? Clowns-Processing >= 1.3.8"]
 }

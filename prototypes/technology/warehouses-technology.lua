@@ -1,11 +1,11 @@
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
 data:extend(
 {
 
   {
     type = "technology",
     name = "warehouses-2",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+    icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
   icon_size = 128,
   prerequisites =
     {
@@ -35,7 +35,7 @@ data:extend(
     {
       type = "technology",
       name = "warehouses-3",
-      icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+      icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
     icon_size = 128,
     prerequisites =
       {
@@ -66,7 +66,7 @@ data:extend(
       {
         type = "technology",
         name = "warehouses-4",
-        icon = "__angelsaddons-warehouses__/graphics/technology/warehouses.png",
+        icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
       icon_size = 128,
       prerequisites =
         {
@@ -99,7 +99,7 @@ data:extend(
 	{
     type = "technology",
     name = "logistic-warehouses-2",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {
@@ -148,7 +148,7 @@ data:extend(
 	{
     type = "technology",
     name = "logistic-warehouses-3",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {
@@ -199,7 +199,7 @@ data:extend(
 	{
     type = "technology",
     name = "logistic-warehouses-4",
-    icon = "__angelsaddons-warehouses__/graphics/technology/warehouses-logistics.png",
+    icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
 	icon_size = 128,
 	prerequisites =
     {

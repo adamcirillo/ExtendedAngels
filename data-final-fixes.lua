@@ -79,9 +79,10 @@ for _,recipe in pairs(recipeList) do
   end
 end
 
+require("prototypes.recipes.angels-components")
+
 if mods["angelsindustries"] then
   if settings.startup["angels-enable-components"].value or settings.startup["angels-enable-tech"].value then
-    require("prototypes.recipes.angels-components")
     local OV = angelsmods.functions.OV
     rep_con_mats()
     OV.execute()

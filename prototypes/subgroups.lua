@@ -35,7 +35,7 @@ data:extend(
 )
 
 -- Angel Industries Warehouse Icons
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
        data:extend(
         {  
     {
