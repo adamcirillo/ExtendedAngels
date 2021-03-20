@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 2020-11-27
+  Changes:
+        - Patched for factorio 1.1
+        - Updated to work with angels storage options instead of the depricated warehouse mod
+        - removed conditional requires
+---------------------------------------------------------------------------------------------------
 Version: 0.3.12
 Date: 2020-06-07
   Changes:

@@ -46,7 +46,7 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-farm-2", "bio-processor-2")
 end
 
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
     if data.raw.tool["advanced-logistic-science-pack"] then
         bobmods.lib.tech.replace_science_pack("logistic-warehouses-3", "production-science-pack", "advanced-logistic-science-pack")
         bobmods.lib.tech.replace_science_pack("logistic-warehouses-4", "production-science-pack", "advanced-logistic-science-pack")

@@ -1,4 +1,4 @@
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
 
 -- ** INVENTORY SIZES ** --
 
@@ -38,17 +38,17 @@ data:extend(
     name = "warehouse-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+        icon = "__angelsaddons-storage__/graphics/icons/warehouse.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "b[warehouse-mk2]",
     place_result = "warehouse-mk2",
     stack_size = 10,
@@ -59,17 +59,17 @@ data:extend(
     name = "warehouse-passive-provider-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "b[warehouse-passive-provider-mk2]",
     place_result = "warehouse-passive-provider-mk2",
     stack_size = 10,
@@ -80,17 +80,17 @@ data:extend(
     name = "warehouse-active-provider-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "c[warehouse-active-provider-mk2]",
     place_result = "warehouse-active-provider-mk2",
     stack_size = 10,
@@ -101,17 +101,17 @@ data:extend(
     name = "warehouse-storage-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "d[warehouse-storage-mk2]",
     place_result = "warehouse-storage-mk2",
     stack_size = 10,
@@ -122,17 +122,17 @@ data:extend(
     name = "warehouse-requester-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "f[warehouse-requester-mk2]",
     place_result = "warehouse-requester-mk2",
     stack_size = 10,
@@ -143,17 +143,17 @@ data:extend(
     name = "warehouse-buffer-mk2",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_2.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "e[warehouse-buffer-mk2]",
     place_result = "warehouse-buffer-mk2",
     stack_size = 10,
@@ -164,17 +164,17 @@ data:extend(
     name = "warehouse-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+        icon = "__angelsaddons-storage__/graphics/icons/warehouse.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "b[warehouse-mk3]",
     place_result = "warehouse-mk3",
     stack_size = 10,
@@ -185,17 +185,17 @@ data:extend(
     name = "warehouse-passive-provider-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "b[warehouse-passive-provider-mk3]",
     place_result = "warehouse-passive-provider-mk3",
     stack_size = 10,
@@ -206,17 +206,17 @@ data:extend(
     name = "warehouse-active-provider-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "c[warehouse-active-provider-mk3]",
     place_result = "warehouse-active-provider-mk3",
     stack_size = 10,
@@ -227,17 +227,17 @@ data:extend(
     name = "warehouse-storage-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "d[warehouse-storage-mk3]",
     place_result = "warehouse-storage-mk3",
     stack_size = 10,
@@ -248,17 +248,17 @@ data:extend(
     name = "warehouse-requester-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "f[warehouse-requester-mk3]",
     place_result = "warehouse-requester-mk3",
     stack_size = 10,
@@ -269,17 +269,17 @@ data:extend(
     name = "warehouse-buffer-mk3",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_3.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "e[warehouse-buffer-mk3]",
     place_result = "warehouse-buffer-mk3",
     stack_size = 10,
@@ -290,17 +290,17 @@ data:extend(
     name = "warehouse-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png"
+        icon = "__angelsaddons-storage__/graphics/icons/warehouse.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "b[warehouse-mk4]",
     place_result = "warehouse-mk4",
     stack_size = 10,
@@ -311,17 +311,17 @@ data:extend(
     name = "warehouse-passive-provider-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "a[warehouse-passive-provider-mk4]",
     place_result = "warehouse-passive-provider-mk4",
     stack_size = 10,
@@ -332,17 +332,17 @@ data:extend(
     name = "warehouse-active-provider-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-	  subgroup = "angels-warehouses",
+	  subgroup = "angels-warehouse",
     order = "b[warehouse-active-provider-mk4]",
     place_result = "warehouse-active-provider-mk4",
     stack_size = 10,
@@ -353,17 +353,17 @@ data:extend(
     name = "warehouse-storage-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "d[warehouse-storage-mk4]",
     place_result = "warehouse-storage-mk4",
     stack_size = 10,
@@ -374,17 +374,17 @@ data:extend(
     name = "warehouse-requester-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "f[warehouse-requester-mk4]",
     place_result = "warehouse-requester-mk4",
     stack_size = 10,
@@ -395,17 +395,17 @@ data:extend(
     name = "warehouse-buffer-mk4",
     icons = {
       {
-        icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png"
+        icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png"
     },
     {
       icon = "__angelsrefining__/graphics/icons/num_4.png",
-      tint = angelsmods.addons.warehouses.number_tint,
+      tint = angelsmods.addons.storage.number_tint,
       scale = 0.32,
       shift = {-12, -12}
     }
   },
     icon_size = 32,
-    subgroup = "angels-warehouses",
+    subgroup = "angels-warehouse",
     order = "e[warehouse-buffer-mk4]",
     place_result = "warehouse-buffer-mk4",
     stack_size = 10,
@@ -414,7 +414,7 @@ data:extend(
   {
     type = "container",
     name = "warehouse-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icon = "__angelsaddons-storage__/graphics/icons/warehouse.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-mk2"},
@@ -430,7 +430,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -457,7 +457,7 @@ data:extend(
   {
     type = "container",
     name = "warehouse-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icon = "__angelsaddons-storage__/graphics/icons/warehouse.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-mk3"},
@@ -473,7 +473,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -500,7 +500,7 @@ data:extend(
   {
     type = "container",
     name = "warehouse-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse.png",
+    icon = "__angelsaddons-storage__/graphics/icons/warehouse.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-mk4"},
@@ -515,7 +515,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -542,7 +542,7 @@ data:extend(
 	{
     type = "logistic-container",
     name = "warehouse-passive-provider-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-passive-provider-mk2"},
@@ -559,7 +559,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-passive-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -586,7 +586,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-passive-provider-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-passive-provider-mk3"},
@@ -603,7 +603,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-passive-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -630,7 +630,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-passive-provider-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-passive-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-passive-provider-mk4"},
@@ -646,7 +646,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-passive-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-pprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -673,7 +673,7 @@ data:extend(
 	{
     type = "logistic-container",
     name = "warehouse-active-provider-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-active-provider-mk2"},
@@ -690,7 +690,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-active-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -717,7 +717,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-active-provider-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-active-provider-mk3"},
@@ -734,7 +734,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-active-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -761,7 +761,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-active-provider-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-active-provider.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-active-provider-mk4"},
@@ -777,7 +777,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-active-provider.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-aprovider.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -804,7 +804,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-storage-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-storage-mk2"},
@@ -816,12 +816,13 @@ data:extend(
     next_upgrade = "warehouse-storage-mk3",
     inventory_size = 3378,
     logistic_mode = "storage",
+    max_logistic_slots = 1,
     open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
     close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-storage.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -848,7 +849,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-storage-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-storage-mk3"},
@@ -860,12 +861,13 @@ data:extend(
     next_upgrade = "warehouse-storage-mk4",
     inventory_size = 4856,
     logistic_mode = "storage",
+    max_logistic_slots = 1,
     open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
     close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-storage.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -892,7 +894,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-storage-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-storage.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-storage-mk4"},
@@ -903,12 +905,13 @@ data:extend(
     fast_replaceable_group = "angels-warehouse",
     inventory_size = 6336,
     logistic_mode = "storage",
+    max_logistic_slots = 1,
     open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
     close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-storage.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-storage.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -935,7 +938,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-requester-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-requester-mk2"},
@@ -953,7 +956,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-requester.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -980,7 +983,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-requester-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-requester-mk3"},
@@ -998,7 +1001,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-requester.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -1025,7 +1028,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-requester-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-requester.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-requester-mk4"},
@@ -1042,7 +1045,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-requester.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-requester.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -1069,7 +1072,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-buffer-mk2",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
 	icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-buffer-mk2"},
@@ -1087,7 +1090,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-buffer.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -1100,7 +1103,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-buffer-mk3",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
 	icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-buffer-mk3"},
@@ -1118,7 +1121,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-buffer.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
       priority = "extra-high",
       width = 256,
       height = 288,
@@ -1131,7 +1134,7 @@ data:extend(
   {
     type = "logistic-container",
     name = "warehouse-buffer-mk4",
-    icon = "__angelsaddons-warehouses__/graphics/icons/warehouse-buffer.png",
+    icon = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
 	icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "warehouse-buffer-mk4"},
@@ -1148,7 +1151,7 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     picture =
     {
-      filename = "__angelsaddons-warehouses__/graphics/entity/warehouse-buffer.png",
+      filename = "__angelsaddons-storage__/graphics/entity/warehouse-log-buffer.png",
       priority = "extra-high",
       width = 256,
       height = 288,
