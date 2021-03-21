@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2021-03-21
+  Bugfixes:
+    - Fixed startup errors related to disabling warehouses while using Angel's Addons - Storage Options
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2021-03-20
   Features:

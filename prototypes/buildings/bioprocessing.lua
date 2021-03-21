@@ -487,10 +487,14 @@ local bioprocessing_buildings = {
 }
 
 for name, params in pairs(bioprocessing_buildings) do
+    -- Check for source entity
+    local source_entity = data.raw[params.type and params.type or "assembling-machine"][params.source]
+    if not source_entity then goto continue end
+
     -- Fetch the icon with numeral overlay
     local icons = extangels.numeral_tier({icon = params.icon, icon_size = params.icon_size or 32}, params.tier, params.tint or tint)
 
-    local extension = {
+    data:extend({
         -- Create the item
         {
             type = "item",
@@ -503,7 +507,7 @@ for name, params in pairs(bioprocessing_buildings) do
         },
 
         -- Create the entity
-        util.merge{data.raw[params.type and params.type or "assembling-machine"][params.source], {
+        util.merge{source_entity, {
             name = name,
             mineable = {result = name},
             next_upgrade = params.next_upgrade or nil,
@@ -512,12 +516,13 @@ for name, params in pairs(bioprocessing_buildings) do
             energy_source = params.emissions_per_minute and {emissions_per_minute = params.emissions_per_minute} or nil,
             energy_usage = params.energy_usage or nil,
         }},
-    }
-
-    data:extend(extension)
+    })
 
     -- Set entity icon
     data.raw[params.type and params.type or "assembling-machine"][name].icons = icons
+
+    -- Continue
+    ::continue::
 end
 
 -- Fix properties for Angel buildings

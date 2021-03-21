@@ -1,4 +1,4 @@
-if not mods["angelsaddons-storage"] then return end
+if not angelsmods.addons.storage.warehouses then return end
 
 -- Tech overhaul recipe adjustments
 if angelsmods.industries and settings.startup["angels-enable-tech"].value==true then

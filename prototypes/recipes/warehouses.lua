@@ -1,4 +1,4 @@
-if not mods["angelsaddons-storage"] then return end
+if not angelsmods.addons.storage.warehouses then return end
 
 local logistic_warehouses = {
 	"warehouse-passive-provider",
