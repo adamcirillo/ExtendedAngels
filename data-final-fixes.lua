@@ -79,7 +79,7 @@ local previous_building = {
 require("prototypes.recipes.angels-components")
 
 if mods["angelsindustries"] then
-    if settings.startup["angels-enable-components"].value or settings.startup["angels-enable-tech"].value then
+    if angelsmods.industries.components then
         local OV = angelsmods.functions.OV
 
         extangels.replace_construction_materials()
