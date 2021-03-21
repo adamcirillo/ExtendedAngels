@@ -11,6 +11,7 @@ Date: 2021-03-20
     - Adjusted pollution for several refining, petrochemical and bioprocessing buildings added by this mod to be in-line with Angel's pollution values
     - Addjusted energy usage for several refining, petrochemical buildings to correct some inconsistencies with scaling
     - Adjusted module slot count for bioprocessing buildings added by this mod to 2 (inherited) to be in line with changes to Angel's Bioprocessing regarding modules
+    - Corrected tier color progression for refining structures
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2021-03-20
