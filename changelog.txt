@@ -7,11 +7,12 @@ Date: 2021-03-20
     - Substantial code cleanup and rework of entity creation
     - Updated how Angel numerals are handled; supports upcoming numeral rework in Angel's mods
     - Technology `bio-pressing-2` now handles upcoming changes in Angel's Bioprocessing
-    - Locale updates to conform to locale changes in Angel's mods
+    - Locale updates to conform to upcoming locale changes in Angel's mods
     - Adjusted pollution for several refining, petrochemical and bioprocessing buildings added by this mod to be in-line with Angel's pollution values
     - Addjusted energy usage for several refining, petrochemical buildings to correct some inconsistencies with scaling
     - Adjusted module slot count for bioprocessing buildings added by this mod to 2 (inherited) to be in line with changes to Angel's Bioprocessing regarding modules
     - Corrected tier color progression for refining structures
+    - Removed version numbers from dependency
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2021-03-20
