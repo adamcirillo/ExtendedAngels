@@ -1,5 +1,5 @@
--- Sort petrochem buildings into more rows
-local petrochem_buildings = {
+-- Sort bioprocessing buildings into more rows
+local bioprocessing_buildings = {
     -- Nauvis
     ["bio-generator-temperate-1"] = "bio-processing-buildings-nauvis-b",
     ["bio-generator-temperate-2"] = "bio-processing-buildings-nauvis-b",
@@ -44,7 +44,7 @@ local petrochem_buildings = {
 }
 
 if settings.startup["extangels-adjust-ordering"].value then
-    for name, subgroup in pairs(petrochem_buildings) do
+    for name, subgroup in pairs(bioprocessing_buildings) do
         local item = data.raw.item[name]
         local entity = data.raw["assembling-machine"][name]
         local recipe = data.raw.recipe[name]
