@@ -125,7 +125,7 @@ local bioprocessing_buildings = {
         source = "bio-press",
         icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
         tier = 2,
-        order = "b[generator]-da",
+        order = "d[bio-press]-b[mk2]",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 3,
         next_upgrade = "bio-press-3",
@@ -138,7 +138,7 @@ local bioprocessing_buildings = {
         source = "bio-press",
         icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
         tier = 3,
-        order = "b[generator]-db",
+        order = "d[bio-press]-c[mk3]",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 4,
         crafting_speed = 2,
@@ -362,7 +362,7 @@ local bioprocessing_buildings = {
         source = "nutrient-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
         tier = 2,
-        order = "da",
+        order = "d[nutrient-extractor]-b[mk2]",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 3,
         next_upgrade = "nutrient-extractor-3",
@@ -375,7 +375,7 @@ local bioprocessing_buildings = {
         source = "nutrient-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
         tier = 3,
-        order = "db",
+        order = "d[nutrient-extractor]-c[mk3]",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 4,
         crafting_speed = 2,
@@ -520,7 +520,7 @@ for name, params in pairs(bioprocessing_buildings) do
     data.raw[params.type and params.type or "assembling-machine"][name].icons = icons
 end
 
--- Fix icons for first-tier buildings
+-- Fix properties for Angel buildings
 local buildings = {
     ["algae-farm"] = {prototype = "assembling-machine", tier = 1},
     ["algae-farm-2"] = {prototype = "assembling-machine", tier = 2},
@@ -529,7 +529,7 @@ local buildings = {
     ["bio-generator-temperate-1"] = {prototype = "assembling-machine", tier = 1},
     ["bio-generator-swamp-1"] = {prototype = "assembling-machine", tier = 1},
     ["bio-generator-desert-1"] = {prototype = "assembling-machine", tier = 1},
-    ["bio-press"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-press"] = {prototype = "assembling-machine", tier = 1, order = "d[bio-press]-a[mk1]"},
     ["bio-processor"] = {prototype = "assembling-machine", tier = 1},
     ["bio-butchery"] = {prototype = "furnace", tier = 1},
     ["composter"] = {prototype = "furnace", tier = 1},
@@ -538,7 +538,7 @@ local buildings = {
     ["swamp-farm"] = {prototype = "assembling-machine", tier = 1},
     ["desert-farm"] = {prototype = "assembling-machine", tier = 1},
     ["bio-hatchery"] = {prototype = "furnace", tier = 1},
-    ["nutrient-extractor"] = {prototype = "assembling-machine", tier = 1},
+    ["nutrient-extractor"] = {prototype = "assembling-machine", tier = 1, order = "d[nutrient-extractor]-a[mk1]"},
     ["bio-refugium-fish"] = {prototype = "assembling-machine", tier = 1},
     ["bio-refugium-puffer"] = {prototype = "assembling-machine", tier = 1},
     ["bio-refugium-biter"] = {prototype = "assembling-machine", tier = 1},
@@ -573,5 +573,9 @@ for name, params in pairs(buildings) do
         end
 
         entity.icons = extangels.numeral_tier({icon = entity_icon, icon_size = entity_icon_size}, params.tier, tint)
+    end
+
+    if item and params.order then
+        item.order = params.order
     end
 end
