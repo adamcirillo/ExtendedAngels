@@ -1,5 +1,5 @@
-data:extend(
-{
+data:extend({
+    -- Sodium flouride
     {
         type = "item",
         name = "solid-sodium-floride",
@@ -8,9 +8,10 @@ data:extend(
         subgroup = "petrochem-sodium",
         order = "j",
         stack_size = 200
-      },
-      
-      {
+    },
+
+    -- Argon
+    {
         type = "fluid",
         name = "gas-argon",
         icon = "__extendedangels__/graphics/icons/gas-argon.png",
@@ -22,37 +23,32 @@ data:extend(
         max_temperature = 100,
         pressure_to_speed_ratio = 0.4,
         flow_to_energy_ratio = 0.59,
-      },
-      
-    }
-)
+    },
+})
 
 
-if mods["Clowns-Processing"] then 
-
-    data:extend(
+if mods["Clowns-Processing"] then
+    data:extend({
+        -- Disodium phosphate
         {
-            {
-                type = "item",
-                name = "solid-disodium-phosphate",
-                icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png",
-                icon_size = 32,
-                subgroup = "petrochem-sodium",
-                order = "k",
-                stack_size = 200
+            type = "item",
+            name = "solid-disodium-phosphate",
+            icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png",
+            icon_size = 32,
+            subgroup = "petrochem-sodium",
+            order = "k",
+            stack_size = 200
+        },
 
-            },
-
-            {
-                type = "item",
-                name = "solid-tetrasodium-pyrophosphate",
-                icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png",
-                icon_size = 32,
-                subgroup = "petrochem-sodium",
-                order = "l",
-                stack_size = 200
-    
-            },
-        }
-    )
+        -- Tetrasodium pyrophosphate
+        {
+            type = "item",
+            name = "solid-tetrasodium-pyrophosphate",
+            icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png",
+            icon_size = 32,
+            subgroup = "petrochem-sodium",
+            order = "l",
+            stack_size = 200
+        },
+    })
 end

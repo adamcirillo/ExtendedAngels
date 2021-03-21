@@ -1,64 +1,77 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.13
-Date: 2020-11-27
+Version: 0.4.0
+Date: 2021-03-20
+  Features:
+    - Added setting "Adjust icon ordering" to improve sort order of buildings in Angel's Petrochemical Processing and Angel's Bioprocessing mods, default on
   Changes:
-        - Patched for factorio 1.1
-        - Updated to work with angels storage options instead of the depricated warehouse mod
-        - removed conditional requires
+    - Substantial code cleanup and rework of entity creation
+    - Updated how Angel numerals are handled; supports upcoming numeral rework in Angel's mods
+    - Technology `bio-pressing-2` now handles upcoming changes in Angel's Bioprocessing
+    - Locale updates to conform to locale changes in Angel's mods
+    - Adjusted pollution for several refining, petrochemical and bioprocessing buildings added by this mod to be in-line with Angel's pollution values
+    - Addjusted energy usage for several refining, petrochemical buildings to correct some inconsistencies with scaling
+    - Adjusted module slot count for bioprocessing buildings added by this mod to 2 (inherited) to be in line with changes to Angel's Bioprocessing regarding modules
+---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 2021-03-20
+  Changes:
+    - Patched for factorio 1.1
+    - Updated to work with Angels Storage Options instead of the deprecated Warehouse mod
+    - Removed conditional requires
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.12
 Date: 2020-06-07
   Changes:
-          - Changed Hatchery to have 3 output slots to match angels changes
+    - Changed Hatchery to have 3 output slots to match angels changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.11
 Date: 2020-06-07
   Changes:
-        - Fixed crash when loading without Madclowns processing loaded
+    - Fixed crash when loading without Madclowns processing loaded
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 2020-05-31
   Changes:
-      - Fixed error on loading save game without Angel's Bioprocessing
-      - Fixed error with tech name change in bio proessiong 0.7.9
+    - Fixed error on loading save game without Angel's Bioprocessing
+    - Fixed error with tech name change in bio proessiong 0.7.9
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.9
 Date: 2020-05-10
   Changes:
-      - Fixed crafting speed on bio buildings being wrong
+    - Fixed crafting speed on bio buildings being wrong
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8
 Date: 2020-05-09
   Changes:
-      - Fixed locale for Tungsten Hexachloride Gas
-      - Added stone brick to Titanium Concrete Brick
-      - Fixed Crafting speed on Fish & Biter Refugium
-      - Fixed missing mk icons on arboretum and seed generators
-      - Added Seed Extractor MK2 & MK3
+    - Fixed locale for Tungsten Hexachloride Gas
+    - Added stone brick to Titanium Concrete Brick
+    - Fixed Crafting speed on Fish & Biter Refugium
+    - Fixed missing mk icons on arboretum and seed generators
+    - Added Seed Extractor MK2 & MK3
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2020-04-26
   Changes:
-      - Fixed Icon Ordering issues with Angels Bio Buildings
-      - Added Hatchery MK2 & MK3
-      - Added Nutrient Extractor MK2 & MK3
-      - Added Biter and Puffer Refugiume MK2 & MK3
-      - Added Mk Icons to Warehouses
+    - Fixed Icon Ordering issues with Angels Bio Buildings
+    - Added Hatchery MK2 & MK3
+    - Added Nutrient Extractor MK2 & MK3
+    - Added Biter and Puffer Refugiume MK2 & MK3
+    - Added Mk Icons to Warehouses
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.6
 Date: 2020-04-26
   Changes:
-      - Fixed buildings not generation pollution
-      - Added Press MK2 & MK3
-      - Added Bio Processor MK2 & MK3
-      - Added Butchery MK2 & MK3
-      - Added Composter MK2 & MK3
-      - Added Crop, Desert, Swamp & Temperate Farms MK2 & MK3
+    - Fixed buildings not generation pollution
+    - Added Press MK2 & MK3
+    - Added Bio Processor MK2 & MK3
+    - Added Butchery MK2 & MK3
+    - Added Composter MK2 & MK3
+    - Added Crop, Desert, Swamp & Temperate Farms MK2 & MK3
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 2020-04-20
   Changes:
-      - Fixed Titanium Brick not working
+    - Fixed Titanium Brick not working
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 2020-04-19
@@ -70,38 +83,38 @@ Date: 2020-04-19
 Version: 0.3.3
 Date: 2020-04-05
   Changes:
-      -The ingredient return on mining was being called no matter the setting thanks to Pezzawinkle
-      -Fixed dependecny checking for angels warehouse to work if no angels addon mods are loaded
+    - The ingredient return on mining was being called no matter the setting thanks to Pezzawinkle
+    - Fixed dependecny checking for angels warehouse to work if no angels addon mods are loaded
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.2
 Date: 2020-04-04
   Changes:
-      - Fixed bounding box issues with Warehouse forget to do this
+    - Fixed bounding box issues with Warehouse forget to do this
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2020-04-04
   Changes:
-      - Added Support for Angels Componets in Angels Industiries tanks to Pezzawinkle
-      - Fixed icons issues from lastest angel's update thanks to Pezzawinkle
-      - Fixed Angel's Liquifying recipes not showing up in Adv Chem Plant Mk3
-      - Fixed Warehouse icorn sorting when Angel's Industries present thanks to triktor
-      - Fixed Buffer Mk2-4 appearing before requester when it should be after
-      - Fixed fast replace on some warehouses being container instead of angels-warhouses
-      - Removed Alage Farm Mk3 as Angels has added it
-      - Fixed squeakthrough not working on buildings
-      - Alage Farm mk4 now haves the number 4 icon on it instead of 3
-      - Added upgrade planner support for all buildings
+    - Added Support for Angels Componets in Angels Industiries tanks to Pezzawinkle
+    - Fixed icons issues from lastest angel's update thanks to Pezzawinkle
+    - Fixed Angel's Liquifying recipes not showing up in Adv Chem Plant Mk3
+    - Fixed Warehouse icorn sorting when Angel's Industries present thanks to triktor
+    - Fixed Buffer Mk2-4 appearing before requester when it should be after
+    - Fixed fast replace on some warehouses being container instead of angels-warhouses
+    - Removed Alage Farm Mk3 as Angels has added it
+    - Fixed squeakthrough not working on buildings
+    - Alage Farm mk4 now haves the number 4 icon on it instead of 3
+    - Added upgrade planner support for all buildings
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: N/A
   Changes:
-      - Update to 0.18
-      - Fixed overwrting Madclown's Processing Water Treament 5 Tech
+    - Update to 0.18
+    - Fixed overwrting Madclown's Processing Water Treament 5 Tech
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: N/A
   Changes:
-      - Fixed Aboretum missing from tech tree since Bio-Processing 0.6.2 changed the tech name
+    - Fixed Aboretum missing from tech tree since Bio-Processing 0.6.2 changed the tech name
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: N/A
