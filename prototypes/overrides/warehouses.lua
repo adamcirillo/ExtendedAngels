@@ -1,4 +1,4 @@
-if not angelsmods.addons.storage.warehouses then return end
+if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then return end
 
 -- Tech overhaul recipe adjustments
 if angelsmods.industries and settings.startup["angels-enable-tech"].value==true then
@@ -18,7 +18,7 @@ end
 
 -- Icon scaling
 if angelsmods.addons.storage.icon_scaling then
-    if angelsmods.addons.storage.warehouses then
+    if (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then
         data.raw["container"]["warehouse-mk2"].scale_info_icons = true
         data.raw["logistic-container"]["warehouse-passive-provider-mk2"].scale_info_icons = true
         data.raw["logistic-container"]["warehouse-active-provider-mk2"].scale_info_icons = true
