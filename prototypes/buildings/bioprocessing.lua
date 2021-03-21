@@ -522,35 +522,56 @@ end
 
 -- Fix icons for first-tier buildings
 local buildings = {
-    ["bio-arboretum-1"] = "assembling-machine",
-    ["bio-generator-temperate-1"] = "assembling-machine",
-    ["bio-generator-swamp-1"] = "assembling-machine",
-    ["bio-generator-desert-1"] = "assembling-machine",
-    ["bio-press"] = "assembling-machine",
-    ["bio-processor"] = "assembling-machine",
-    ["bio-butchery"] = "furnace",
-    ["composter"] = "furnace",
-    ["crop-farm"] = "assembling-machine",
-    ["temperate-farm"] = "assembling-machine",
-    ["swamp-farm"] = "assembling-machine",
-    ["desert-farm"] = "assembling-machine",
-    ["bio-hatchery"] = "furnace",
-    ["nutrient-extractor"] = "assembling-machine",
-    ["bio-refugium-fish"] = "assembling-machine",
-    ["bio-refugium-puffer"] = "assembling-machine",
-    ["bio-refugium-biter"] = "assembling-machine",
-    ["seed-extractor"] = "assembling-machine",
+    ["algae-farm"] = {prototype = "assembling-machine", tier = 1},
+    ["algae-farm-2"] = {prototype = "assembling-machine", tier = 2},
+    ["algae-farm-3"] = {prototype = "assembling-machine", tier = 3},
+    ["bio-arboretum-1"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-generator-temperate-1"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-generator-swamp-1"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-generator-desert-1"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-press"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-processor"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-butchery"] = {prototype = "furnace", tier = 1},
+    ["composter"] = {prototype = "furnace", tier = 1},
+    ["crop-farm"] = {prototype = "assembling-machine", tier = 1},
+    ["temperate-farm"] = {prototype = "assembling-machine", tier = 1},
+    ["swamp-farm"] = {prototype = "assembling-machine", tier = 1},
+    ["desert-farm"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-hatchery"] = {prototype = "furnace", tier = 1},
+    ["nutrient-extractor"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-refugium-fish"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-refugium-puffer"] = {prototype = "assembling-machine", tier = 1},
+    ["bio-refugium-biter"] = {prototype = "assembling-machine", tier = 1},
+    ["seed-extractor"] = {prototype = "assembling-machine", tier = 1},
 }
 
-for name, prototype in pairs(buildings) do
+for name, params in pairs(buildings) do
     local item = data.raw.item[name]
-    local entity = data.raw[prototype][name]
+    local entity = data.raw[params.prototype][name]
 
-    if item and item.icon then
-        item.icons = extangels.numeral_tier({icon = item.icon, icon_size = item.icon_size or 32}, 1, tint)
+    if item and (item.icons or item.icon) then
+        local item_icon, item_icon_size
+        if item.icons then
+            item_icon = item.icons[1].icon
+            item_icon_size = item.icons[1].icon_size or item.icon_size or 32
+        elseif item.icon then
+            item_icon = item.icon
+            item_icon_size = item.icon_size or 32
+        end
+
+        item.icons = extangels.numeral_tier({icon = item_icon, icon_size = item_icon_size}, params.tier, tint)
     end
 
-    if entity and entity.icon then
-        entity.icons = extangels.numeral_tier({icon = entity.icon, icon_size = entity.icon_size or 32}, 1, tint)
+    if entity and (entity.icons or entity.icon) then
+        local entity_icon, entity_icon_size
+        if entity.icons then
+            entity_icon = entity.icons[1].icon
+            entity_icon_size = entity.icons[1].icon_size or entity.icon_size or 32
+        elseif entity.icon then
+            entity_icon = entity.icon
+            entity_icon_size = entity.icon_size or 32
+        end
+
+        entity.icons = extangels.numeral_tier({icon = entity_icon, icon_size = entity_icon_size}, params.tier, tint)
     end
 end
