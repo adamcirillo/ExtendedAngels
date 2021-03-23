@@ -1,7 +1,7 @@
 if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then return end
 
 -- Check whether we're using legacy inventories
-local legacy = settings["extangels-legacy-inventory-sizes"].value
+local legacy = settings.startup["extangels-legacy-inventory-sizes"].value
 
 -- Inventory size adjustments
 local inventory_sizes = {
