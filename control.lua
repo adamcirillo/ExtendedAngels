@@ -81,9 +81,9 @@ script.on_configuration_changed(function(config)
     end
 
     -- Notify about inventory change if migrating from a version prior to the change
-    if data.mod_changes and data.mod_changes["extendedangels"] and data.mod_changes["extendedangels"].old_version then
+    if config.mod_changes and config.mod_changes["extendedangels"] and config.mod_changes["extendedangels"].old_version then
         -- 0.4.3 update
-        if not migration.is_newer_version("0.4.2", data.mod_changes["extendedangels"].old_version) then
+        if not migration.is_newer_version("0.4.2", config.mod_changes["extendedangels"].old_version) then
             game.print({"", "[", {"mod-name.extendedangels"}, "] ", {"extendedangels-notifications.legacy-inventory-sizes", {"extangels-legacy-inventory-sizes"}}})
         end
     end
