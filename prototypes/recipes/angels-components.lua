@@ -1,5 +1,5 @@
 if mods["angelsindustries"] then
-    if settings.startup["angels-enable-components"].value or settings.startup["angels-enable-tech"].value then
+    if angelsmods.industries.components then
         -- Final fixes of angels to squeeze in a new construction tier material
         local OV = angelsmods.functions.OV
 
