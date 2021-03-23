@@ -6,7 +6,7 @@ Date: ????
 Version: 0.4.2
 Date: 2021-03-21
   Bugfixes:
-    - FIxed startup error when no Angel's Addons mods are present.
+    - Fixed startup error when no Angel's Addons mods are present.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 2021-03-21
