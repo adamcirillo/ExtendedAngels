@@ -7,7 +7,6 @@ Date: ????
   Changes:
     - Adjusted the check for Angel's component mode to use the Angel's component mode trigger
     - Adjusted the warehouse inventory size defaults for performance reasons; new defaults correspond to a 15%, 30%, and 45% increase for each tier over the defaults from Angel's Addons - Storage Options, down from 147%, 340%, 532%, and 725%
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 Date: 2021-03-21
