@@ -1,4 +1,7 @@
+local migration = require("__flib__.migration")
+
 script.on_configuration_changed(function(config)
+    -- Check recipe and technology states and make corrections as needed
     for _, force in pairs(game.forces) do
         local technologies = force.technologies
         local recipes = force.recipes
@@ -74,6 +77,14 @@ script.on_configuration_changed(function(config)
                 recipes["bio-press-2"].enabled = true
                 recipes["bio-press-3"].enabled = true
             end
+        end
+    end
+
+    -- Notify about inventory change if migrating from a version prior to the change
+    if data.mod_changes and data.mod_changes["extendedangels"] and data.mod_changes["extendedangels"].old_version then
+        -- 0.4.3 update
+        if not migration.is_newer_version("0.4.2", data.mod_changes["extendedangels"].old_version) then
+            game.print({"", "[", {"mod-name.extendedangels"}, "] ", {"extendedangels-notifications.legacy-inventory-sizes", {"extangels-legacy-inventory-sizes"}}})
         end
     end
 end)

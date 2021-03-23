@@ -1,41 +1,67 @@
 if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then return end
 
--- INVENTORY SIZE CORRECTIONS
--- Standard
-local inventory_warehouse_1 = 1728
-local inventory_warehouse_2 = 3072
-local inventory_warehouse_3 = 4416
-local inventory_warehouse_4 = 6035
+-- Check whether we're using legacy inventories
+local legacy = settings["extangels-legacy-inventory-sizes"].value
 
--- Logistics
-local inventory_logistic_1 = 1900
-local inventory_logistic_2 = 3378
-local inventory_logistic_3 = 4856
-local inventory_logistic_4 = 6336
+-- Inventory size adjustments
+local inventory_sizes = {
+    [1] = {
+        warehouse = legacy and 1728 or 768,
+        passive_provider = legacy and 1900 or 418,
+        active_provider = legacy and 1900 or 512,
+        storage = legacy and 1900 or 768,
+        buffer = legacy and 1900 or 512,
+        requester = legacy and 1900 or 418,
+    },
+    [2] = {
+        warehouse = legacy and 3072 or 884,
+        passive_provider = legacy and 3378 or 480,
+        active_provider = legacy and 3378 or 588,
+        storage = legacy and 3378 or 884,
+        buffer = legacy and 3378 or 588,
+        requester = legacy and 3378 or 480,
+    },
+    [3] = {
+        warehouse = legacy and 4416 or 1148,
+        passive_provider = legacy and 4856 or 624,
+        active_provider = legacy and 4856 or 766,
+        storage = legacy and 4856 or 1148,
+        buffer = legacy and 4856 or 766,
+        requester = legacy and 4856 or 624,
+    },
+    [4] = {
+        warehouse = legacy and 6035 or 1664,
+        passive_provider = legacy and 6336 or 906,
+        active_provider = legacy and 6336 or 1110,
+        storage = legacy and 6336 or 1664,
+        buffer = legacy and 6336 or 1110,
+        requester = legacy and 6336 or 906,
+    }
+}
 
 -- Override the inventory size of the standard warehouses
 if data.raw["container"]["angels-warehouse"] then
-    data.raw["container"]["angels-warehouse"].inventory_size = inventory_warehouse_1
+    data.raw["container"]["angels-warehouse"].inventory_size = inventory_sizes[1].warehouse
 end
 
 if data.raw["logistic-container"]["angels-warehouse-passive-provider"] then
-    data.raw["logistic-container"]["angels-warehouse-passive-provider"].inventory_size = inventory_logistic_1
+    data.raw["logistic-container"]["angels-warehouse-passive-provider"].inventory_size = inventory_sizes[1].passive_provider
 end
 
 if data.raw["logistic-container"]["angels-warehouse-active-provider"] then
-    data.raw["logistic-container"]["angels-warehouse-active-provider"].inventory_size = inventory_logistic_1
+    data.raw["logistic-container"]["angels-warehouse-active-provider"].inventory_size = inventory_sizes[1].active_provider
 end
 
 if data.raw["logistic-container"]["angels-warehouse-storage"] then
-    data.raw["logistic-container"]["angels-warehouse-storage"].inventory_size = inventory_logistic_1
+    data.raw["logistic-container"]["angels-warehouse-storage"].inventory_size = inventory_sizes[1].storage
 end
 
 if data.raw["logistic-container"]["angels-warehouse-requester"] then
-    data.raw["logistic-container"]["angels-warehouse-requester"].inventory_size = inventory_logistic_1
+    data.raw["logistic-container"]["angels-warehouse-requester"].inventory_size = inventory_sizes[1].requester
 end
 
 if data.raw["logistic-container"]["angels-warehouse-buffer"] then
-    data.raw["logistic-container"]["angels-warehouse-buffer"].inventory_size = inventory_logistic_1
+    data.raw["logistic-container"]["angels-warehouse-buffer"].inventory_size = inventory_sizes[1].buffer
 end
 
 local tint = angelsmods.addons.storage.number_tint
@@ -51,7 +77,7 @@ local warehouse_buildings = {
         order = "b[warehouse-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-mk3",
-        inventory_size = inventory_warehouse_2,
+        inventory_size = inventory_sizes[2].warehouse,
     },
 
     -- Warehouse 3
@@ -63,7 +89,7 @@ local warehouse_buildings = {
         order = "b[warehouse-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-mk4",
-        inventory_size = inventory_warehouse_3,
+        inventory_size = inventory_sizes[3].warehouse,
     },
 
     -- Warehouse 4
@@ -74,7 +100,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "b[warehouse-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_warehouse_4,
+        inventory_size = inventory_sizes[4].warehouse,
     },
 
     -- LOGISTIC WAREHOUSES
@@ -87,7 +113,7 @@ local warehouse_buildings = {
         order = "b[warehouse-passive-provider-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-passive-provider-mk3",
-        inventory_size = inventory_logistic_2,
+        inventory_size = inventory_sizes[2].passive_provider,
     },
 
     -- Warehouse passive provider 3
@@ -99,7 +125,7 @@ local warehouse_buildings = {
         order = "b[warehouse-passive-provider-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-passive-provider-mk4",
-        inventory_size = inventory_logistic_3,
+        inventory_size = inventory_sizes[3].passive_provider,
     },
 
     -- Warehouse passive provider 4
@@ -110,7 +136,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "a[warehouse-passive-provider-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_logistic_4,
+        inventory_size = inventory_sizes[4].passive_provider,
     },
 
     -- Warehouse active provider 2
@@ -122,7 +148,7 @@ local warehouse_buildings = {
         order = "c[warehouse-active-provider-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-active-provider-mk3",
-        inventory_size = inventory_logistic_2,
+        inventory_size = inventory_sizes[2].active_provider,
     },
 
     -- Warehouse active provider 3
@@ -134,7 +160,7 @@ local warehouse_buildings = {
         order = "c[warehouse-active-provider-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-active-provider-mk4",
-        inventory_size = inventory_logistic_3,
+        inventory_size = inventory_sizes[3].active_provider,
     },
 
     -- Warehouse active provider 4
@@ -145,7 +171,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "b[warehouse-active-provider-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_logistic_4,
+        inventory_size = inventory_sizes[4].active_provider,
     },
 
     -- Warehouse storage 2
@@ -157,7 +183,7 @@ local warehouse_buildings = {
         order = "d[warehouse-storage-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-storage-mk3",
-        inventory_size = inventory_logistic_2,
+        inventory_size = inventory_sizes[2].storage,
     },
 
     -- Warehouse storage 3
@@ -169,7 +195,7 @@ local warehouse_buildings = {
         order = "d[warehouse-storage-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-storage-mk4",
-        inventory_size = inventory_logistic_3,
+        inventory_size = inventory_sizes[3].storage,
     },
 
     -- Warehouse storage 4
@@ -180,7 +206,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "d[warehouse-storage-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_logistic_4,
+        inventory_size = inventory_sizes[4].storage,
     },
 
     -- Warehouse requester 2
@@ -192,7 +218,7 @@ local warehouse_buildings = {
         order = "f[warehouse-requester-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-requester-mk3",
-        inventory_size = inventory_logistic_2,
+        inventory_size = inventory_sizes[2].requester,
     },
 
     -- Warehouse requester 3
@@ -204,7 +230,7 @@ local warehouse_buildings = {
         order = "f[warehouse-requester-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-requester-mk4",
-        inventory_size = inventory_logistic_3,
+        inventory_size = inventory_sizes[3].requester,
     },
 
     -- Warehouse requester 4
@@ -215,7 +241,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "f[warehouse-requester-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_logistic_4,
+        inventory_size = inventory_sizes[4].requester,
     },
 
     -- Warehouse buffer 2
@@ -227,7 +253,7 @@ local warehouse_buildings = {
         order = "e[warehouse-buffer-mk2]",
         subgroup = "angels-warehouses-2",
         next_upgrade = "warehouse-buffer-mk3",
-        inventory_size = inventory_logistic_2,
+        inventory_size = inventory_sizes[2].buffer,
     },
 
     -- Warehouse buffer 3
@@ -239,7 +265,7 @@ local warehouse_buildings = {
         order = "e[warehouse-buffer-mk3]",
         subgroup = "angels-warehouses-3",
         next_upgrade = "warehouse-buffer-mk4",
-        inventory_size = inventory_logistic_3,
+        inventory_size = inventory_sizes[3].buffer,
     },
 
     -- Warehouse buffer 4
@@ -250,7 +276,7 @@ local warehouse_buildings = {
         tier = 4,
         order = "e[warehouse-buffer-mk4]",
         subgroup = "angels-warehouses-4",
-        inventory_size = inventory_logistic_4,
+        inventory_size = inventory_sizes[4].buffer,
     },
 }
 
