@@ -303,7 +303,7 @@ for name, params in pairs(warehouse_buildings) do
         -- Create the entity
         util.merge{source_entity, {
             name = name,
-            mineable = {result = name},
+            minable = {result = name},
             next_upgrade = params.next_upgrade or nil,
             inventory_size = params.inventory_size,
             subgroup = params.subgroup,

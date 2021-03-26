@@ -509,7 +509,7 @@ for name, params in pairs(bioprocessing_buildings) do
         -- Create the entity
         util.merge{source_entity, {
             name = name,
-            mineable = {result = name},
+            minable = {result = name},
             next_upgrade = params.next_upgrade or nil,
             module_specification = params.module_slots and {module_slots = params.module_slots} or nil,
             crafting_speed = params.crafting_speed or nil,
