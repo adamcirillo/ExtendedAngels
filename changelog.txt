@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.4
-Date: ????
+Date: 2021-03-26
   Bugfixes:
     - Fixed that structures were not returning the correct item when deconstructed
   Locale:
