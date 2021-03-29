@@ -83,7 +83,7 @@ if mods["angelsindustries"] then
 
         -- Shifts the construction block ingredients down one tier
         local shift_block_ingredients = function(ingredients)
-            for n,_ in pairs(ingredients) do
+            for n, _ in pairs(ingredients) do
                 if ingredients[n].name == "block-construction-1" then
                     ingredients[n].name = "block-construction-0"
                 end

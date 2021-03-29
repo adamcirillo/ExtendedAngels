@@ -54,6 +54,8 @@ data:extend({
         results = {
             {type = "item", name = "powder-tungsten", amount = 30},
         },
+        icons = extangels.numeral_tier({icon = data.raw.item["powder-tungsten"].icon, icon_size = data.raw.item["powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["powder-tungsten"].icon_mipmaps}, 3, angelsmods.smelting.number_tint),
+        order = "h[powder-tungsten]-c"
     },
 
     -- Zinc powder
@@ -65,7 +67,7 @@ data:extend({
         energy_required = 0.5,
         enabled = "false",
         ingredients = {
-
+            {type = "item", name = "ingot-zinc", amount = 1}
         },
         results = {
             {type = "item", name = "powder-zinc", amount = 1},
@@ -180,8 +182,7 @@ data:extend({
         results = {
             {type = "item", name = "powder-tungsten-carbide", amount = 12},
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32}, 1, angelsmods.smelting.number_tint),
         order = "aa",
     },
 
@@ -191,7 +192,7 @@ data:extend({
         name = "tungsten-carbide-smelting-2",
         category = "chemical-smelting",
         subgroup = "angels-tungsten-carbide",
-        energy_required = 8,
+        energy_required = 16,
         enabled = "false",
         ingredients = {
             {type = "fluid", name = "gas-tungsten-hexafluoride", amount = 80},
@@ -199,12 +200,11 @@ data:extend({
             {type = "item", name = "solid-carbon", amount = 5},
         },
         results = {
-            {type = "item", name = "powder-tungsten-carbide", amount = 12},
+            {type = "item", name = "powder-tungsten-carbide", amount = 24},
             {type = "fluid", name = "liquid-hydrofluoric-acid", amount = 60},
             {type = "fluid", name = "water-purified", amount = 20},
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32}, 2, angelsmods.smelting.number_tint),
         order = "ab",
     },
 
@@ -225,8 +225,7 @@ data:extend({
             {type = "item", name = "powder-tungsten-carbide", amount = 12},
             {type = "fluid", name = "gas-hydrogen-chloride", amount = 40},
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32}, 3, angelsmods.smelting.number_tint),
         order = "ac",
     },
 
