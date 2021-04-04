@@ -54,7 +54,12 @@ data:extend({
         results = {
             {type = "item", name = "powder-tungsten", amount = 30},
         },
-        icons = extangels.numeral_tier({icon = data.raw.item["powder-tungsten"].icon, icon_size = data.raw.item["powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["powder-tungsten"].icon_mipmaps}, 3, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({
+            icon = data.raw.item["powder-tungsten"].icon,
+            icon_size = data.raw.item["powder-tungsten"].icon_size,
+            icon_mipmaps = data.raw.item["powder-tungsten"].icon_mipmaps,
+            scale = 32/data.raw.item["powder-tungsten"].icon_size
+        }, 3, angelsmods.smelting.number_tint),
         order = "h[powder-tungsten]-c"
     },
 
@@ -90,6 +95,12 @@ data:extend({
         results = {
             {type = "item", name = "casting-powder-tungsten", amount = 24},
         },
+        icons = extangels.numeral_tier({
+            icon = data.raw.item["casting-powder-tungsten"].icon,
+            icon_size = data.raw.item["casting-powder-tungsten"].icon_size,
+            icon_mipmaps = data.raw.item["casting-powder-tungsten"].icon_mipmaps,
+            scale = 32/data.raw.item["casting-powder-tungsten"].icon_size,
+        }, 3, angelsmods.smelting.number_tint),
         order = "k",
     },
 
@@ -97,8 +108,8 @@ data:extend({
     {
         type = "recipe",
         name = "copper-tungsten-smelting-1",
-        category = "chemical-smelting",
-        subgroup = "angels-copper-tungsten",
+        category = "induction-smelting",
+        subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
         ingredients = {
@@ -109,32 +120,16 @@ data:extend({
         results = {
             {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120},
         },
-        order = "ac",
-    },
-
-    -- Copper tungsten
-    {
-        type = "recipe",
-        name = "molten-copper-tungsten-smelting-1",
-        category = "casting",
-        subgroup = "angels-copper-tungsten-casting",
-        energy_required = 8,
-        enabled = "false",
-        ingredients = {
-            {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 40},
-        },
-        results = {
-            {type = "item", name = "copper-tungsten-alloy", amount = 4},
-        },
-        order = "ac",
+        icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32}, 1, angelsmods.smelting.number_tint),
+        order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
     },
 
     -- Molten copper tungsten 2
     {
         type = "recipe",
         name = "copper-tungsten-smelting-2",
-        category = "chemical-smelting",
-        subgroup = "angels-copper-tungsten",
+        category = "induction-smelting",
+        subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
         ingredients = {
@@ -146,7 +141,25 @@ data:extend({
         results = {
             {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120},
         },
-        order = "ad",
+        icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32}, 2, angelsmods.smelting.number_tint),
+        order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
+    },
+
+    -- Copper tungsten
+    {
+        type = "recipe",
+        name = "molten-copper-tungsten-smelting-1",
+        category = "casting",
+        subgroup = "angels-alloys-casting",
+        energy_required = 8,
+        enabled = "false",
+        ingredients = {
+            {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 40},
+        },
+        results = {
+            {type = "item", name = "copper-tungsten-alloy", amount = 4},
+        },
+        order = "g[copper-tungsten]-b[copper-tungsten-alloy]",
     },
 
     -- Tungsten hexachloride
