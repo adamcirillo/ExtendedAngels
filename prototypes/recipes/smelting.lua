@@ -101,7 +101,7 @@ data:extend({
             icon_mipmaps = data.raw.item["casting-powder-tungsten"].icon_mipmaps,
             scale = 32/data.raw.item["casting-powder-tungsten"].icon_size,
         }, 3, angelsmods.smelting.number_tint),
-        order = "k",
+        order = "i[casting-powder-tungsten]-c",
     },
 
     -- Molten copper tungsten 1
@@ -128,7 +128,7 @@ data:extend({
     {
         type = "recipe",
         name = "copper-tungsten-smelting-2",
-        category = "induction-smelting",
+        category = "induction-smelting-2",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
@@ -287,7 +287,7 @@ data:extend({
         results = {
             {type = "item", name = "titanium-concrete-brick", amount = 4},
         },
-        order = "j",
+        order = "k[titanium-concrete-brick]",
     },
 })
 

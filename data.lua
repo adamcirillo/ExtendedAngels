@@ -28,9 +28,3 @@ require("prototypes.technology.smelting")
 require("prototypes.technology.bioprocessing")
 require("prototypes.technology.refining")
 require("prototypes.technology.warehouses")
-
--- Ore crusher numeral rework adjustments
-if pcall(extangels.validate_numeral_function) then
-    data.raw.item["ore-crusher-4"].icons = extangels.numeral_tier({icon = "__angelsrefining__/graphics/icons/ore-crusher-3.png", icon_size = 32}, 4, angelsmods.refining.number_tint)
-    data.raw["assembling-machine"]["ore-crusher-4"].icons = extangels.numeral_tier({icon = "__angelsrefining__/graphics/icons/ore-crusher-3.png", icon_size = 32}, 4, angelsmods.refining.number_tint)
-end
