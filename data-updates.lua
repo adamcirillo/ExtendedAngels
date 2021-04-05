@@ -23,9 +23,9 @@ if pcall(extangels.validate_numeral_function) then
     data.raw.item["powder-tungsten-carbide"].icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png"
     data.raw.item["powder-tungsten-carbide"].icon_size = 64
     data.raw.item["powder-tungsten-carbide"].icon_mipmaps = 4
-    data.raw.recipe["tungsten-carbide-smelting-1"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4, scale = 0.5}, 1, angelsmods.smelting.number_tint)
-    data.raw.recipe["tungsten-carbide-smelting-2"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4, scale = 0.5}, 2, angelsmods.smelting.number_tint)
-    data.raw.recipe["tungsten-carbide-smelting-3"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4, scale = 0.5}, 3, angelsmods.smelting.number_tint)
+    data.raw.recipe["tungsten-carbide-smelting-1"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4}, 1, angelsmods.smelting.number_tint)
+    data.raw.recipe["tungsten-carbide-smelting-2"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4}, 2, angelsmods.smelting.number_tint)
+    data.raw.recipe["tungsten-carbide-smelting-3"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64, icon_mipmaps = 4}, 3, angelsmods.smelting.number_tint)
     data.raw.technology["angels-tungsten-carbide-smelting-1"].icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png"
     data.raw.technology["angels-tungsten-carbide-smelting-1"].icon_size = 256
     data.raw.technology["angels-tungsten-carbide-smelting-1"].icon_mipmaps = 4
@@ -40,8 +40,8 @@ if pcall(extangels.validate_numeral_function) then
     data.raw.fluid["liquid-molten-copper-tungsten"].icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png"
     data.raw.fluid["liquid-molten-copper-tungsten"].icon_size = 64
     data.raw.fluid["liquid-molten-copper-tungsten"].icon_mipmaps = 4
-    data.raw.recipe["copper-tungsten-smelting-1"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64, icon_mipmaps = 4, scale = 0.5}, 1, angelsmods.smelting.number_tint)
-    data.raw.recipe["copper-tungsten-smelting-2"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64, icon_mipmaps = 4, scale = 0.5}, 2, angelsmods.smelting.number_tint)
+    data.raw.recipe["copper-tungsten-smelting-1"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64, icon_mipmaps = 4}, 1, angelsmods.smelting.number_tint)
+    data.raw.recipe["copper-tungsten-smelting-2"].icons = extangels.numeral_tier({icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64, icon_mipmaps = 4}, 2, angelsmods.smelting.number_tint)
     data.raw.technology["angels-copper-tungsten-smelting-1"].icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png"
     data.raw.technology["angels-copper-tungsten-smelting-1"].icon_size = 256
     data.raw.technology["angels-copper-tungsten-smelting-1"].icon_mipmaps = 4
