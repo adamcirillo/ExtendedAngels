@@ -169,7 +169,7 @@ local warehouse_buildings = {
         type = "logistic-container",
         icon = "__angelsaddons-storage__/graphics/icons/warehouse-log-aprovider.png",
         tier = 4,
-        order = "b[warehouse-active-provider-mk4]",
+        order = "c[warehouse-active-provider-mk4]",
         subgroup = "angels-warehouses-4",
         inventory_size = inventory_sizes[4].active_provider,
     },
