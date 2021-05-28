@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: ????
-  Changes:
+  Bugfixes:
+    - Fixed that Filtration unit 3 was missing a crafting category available in Filtration unit 2
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.6
 Date: 2021-05-28
