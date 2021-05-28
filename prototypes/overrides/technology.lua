@@ -39,6 +39,7 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-refugium-butchery-2", "bio-butchery-2")
     OV.add_unlock("bio-refugium-fish-2", "bio-refugium-fish-2")
     OV.add_unlock("bio-refugium-puffer-2", "bio-refugium-puffer-2")
+    OV.add_unlock("bio-refugium-puffer-3", "bio-refugium-puffer-3")
     OV.add_unlock("bio-refugium-biter-2", "bio-refugium-biter-2")
     OV.add_unlock("bio-refugium-biter-3", "bio-refugium-biter-3")
     OV.add_unlock("bio-farm-2", "crop-farm-2")

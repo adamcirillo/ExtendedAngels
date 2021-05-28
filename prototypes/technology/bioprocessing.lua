@@ -256,31 +256,31 @@ data:extend({
     },
 
     -- Bio refugium puffer 3
-    {
-        type = "technology",
-        name = "bio-refugium-puffer-3",
-        icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-breeding-tech.png",
-        icon_size = 128,
-        order = "c-a",
-        prerequisites = {
-            "bio-refugium-puffer-2",
-        },
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "bio-refugium-puffer-3"
-            },
-        },
-        unit = {
-            count = 150,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
-            },
-            time = 30
-        },
-    },
+    -- {
+    --     type = "technology",
+    --     name = "bio-refugium-puffer-3",
+    --     icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-breeding-tech.png",
+    --     icon_size = 128,
+    --     order = "c-a",
+    --     prerequisites = {
+    --         "bio-refugium-puffer-2",
+    --     },
+    --     effects = {
+    --         {
+    --             type = "unlock-recipe",
+    --             recipe = "bio-refugium-puffer-3"
+    --         },
+    --     },
+    --     unit = {
+    --         count = 150,
+    --         ingredients = {
+    --             {"automation-science-pack", 1},
+    --             {"logistic-science-pack", 1},
+    --             {"chemical-science-pack", 1}
+    --         },
+    --         time = 30
+    --     },
+    -- },
 
     -- Advanced seed extraction
     {

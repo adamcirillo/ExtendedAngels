@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.6
 Date: ????
-  Changes:
+  Bugfixes:
+    - Fixed inconsistent sorting of Warehouses in interface
+    - Fixed overwrite clash in Puffer refugium 3 technology with Angel's Bioprocessing
   Locale:
     - Added localization for German, partial localization for Vietnamese
 ---------------------------------------------------------------------------------------------------
