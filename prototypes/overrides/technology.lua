@@ -45,11 +45,8 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-farm-2", "crop-farm-2")
     OV.add_unlock("bio-farm-2", "composter-2")
     OV.add_unlock("bio-farm-2", "bio-processor-2")
-
-    if not extangels.triggers["bio-pressing-2"] then
-        OV.add_unlock("bio-pressing-2", "bio-press-2")
-        OV.add_unlock("bio-pressing-2", "bio-press-3")
-    end
+    OV.add_unlock("bio-pressing-2", "bio-press-2")
+    OV.add_unlock("bio-pressing-2", "bio-press-3")
 end
 
 if mods["angelsaddons-storage"] then

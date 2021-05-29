@@ -313,38 +313,38 @@ data:extend({
     },
 })
 
-if not data.raw.technology["bio-pressing-2"] then
-    data:extend({
-    -- Bio pressing 2
-        {
-            type = "technology",
-            name = "bio-pressing-2",
-            icon = "__angelsbioprocessing__/graphics/technology/press-tech.png",
-            icon_size = 128,
-            prerequisites = {
-                "bio-pressing-1",
-            },
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "bio-press-2"
-                },
-                {
-                    type = "unlock-recipe",
-                    recipe = "bio-press-3"
-                },
-            },
-            unit = {
-                count = 150,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                },
-                time = 15
-            },
-        },
-    })
+-- if not data.raw.technology["bio-pressing-2"] then
+--     data:extend({
+--     -- Bio pressing 2
+--         {
+--             type = "technology",
+--             name = "bio-pressing-2",
+--             icon = "__angelsbioprocessing__/graphics/technology/press-tech.png",
+--             icon_size = 128,
+--             prerequisites = {
+--                 "bio-pressing-1",
+--             },
+--             effects = {
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "bio-press-2"
+--                 },
+--                 {
+--                     type = "unlock-recipe",
+--                     recipe = "bio-press-3"
+--                 },
+--             },
+--             unit = {
+--                 count = 150,
+--                 ingredients = {
+--                     {"automation-science-pack", 1},
+--                     {"logistic-science-pack", 1},
+--                     {"chemical-science-pack", 1},
+--                 },
+--                 time = 15
+--             },
+--         },
+--     })
 
-    extangels.triggers["bio-pressing-2"] = true
-end
+--     extangels.triggers["bio-pressing-2"] = true
+-- end

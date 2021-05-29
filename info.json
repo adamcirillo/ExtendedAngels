@@ -5,12 +5,12 @@
     "title": "Extended Angels",
     "author": "AdamCirillo",
     "dependencies":[
-        "angelssmelting",
+        "angelssmelting >= 0.6.15",
         "bobplates",
         "flib",
         "? angelsaddons-storage",
         "? bobtech",
-        "? angelsbioprocessing",
+        "? angelsbioprocessing >= 0.7.18",
         "? Clowns-Processing"
     ]
 }
