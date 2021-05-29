@@ -2,6 +2,8 @@
 Version: 0.4.8
 Date: ????
   Changes:
+  Bugfixes:
+    - Updated prerequisite reference from `bio-pressing` to `bio-pressing-1` to reflect changes in Angel's Bioprocessing
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 2021-05-28

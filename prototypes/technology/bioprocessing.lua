@@ -322,7 +322,7 @@ if not data.raw.technology["bio-pressing-2"] then
             icon = "__angelsbioprocessing__/graphics/technology/press-tech.png",
             icon_size = 128,
             prerequisites = {
-                "bio-pressing",
+                "bio-pressing-1",
             },
             effects = {
                 {
