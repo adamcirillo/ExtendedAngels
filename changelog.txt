@@ -5,6 +5,8 @@ Date: ????
     - Angel's Smelting minimum version set to 0.6.15
     - Angel's Bioprocessing minimum version set to 0.7.18
     - Removed now-redundant code bits related to support older versions of Angel's Smelting and Angel's Bioprocessing
+  Locale:
+    - Renamed Press 2 and Press 3 to Oil press 2 and Oil press 3 reflecting changes in Angel's Bioprocessing
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.7
 Date: 2021-05-28
