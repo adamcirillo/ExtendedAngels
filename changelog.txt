@@ -2,6 +2,7 @@
 Version: 0.4.9
 Date: ????
   Changes:
+    - Adjusted the recipe for the Algae farm 4 to align with ingredients and ratios in Angel's Bioprocessing
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
 Date: 2021-06-13
@@ -9,7 +10,6 @@ Date: 2021-06-13
     - Angel's Smelting minimum version set to 0.6.15
     - Angel's Bioprocessing minimum version set to 0.7.18
     - Removed now-redundant code bits related to supporting older versions of Angel's Smelting and Angel's Bioprocessing
-    - Moved Algae Farm 4 to Tier 5 & changed recipe ratios to match Angel's Bioprocessing
   Locale:
     - Renamed Press 2 and Press 3 to Oil press 2 and Oil press 3 reflecting changes in Angel's Bioprocessing
     - Updated German localization
