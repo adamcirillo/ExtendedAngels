@@ -3,6 +3,7 @@ Version: 0.4.9
 Date: ????
   Changes:
     - Adjusted the recipe for the Algae farm 4 to align with ingredients and ratios in Angel's Bioprocessing
+    - Balanced recipes to match base Angel's ratios
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
 Date: 2021-06-13
