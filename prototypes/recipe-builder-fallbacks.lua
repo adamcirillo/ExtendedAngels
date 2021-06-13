@@ -1,0 +1,1 @@
+angelsmods.functions.RB.set_fallback("item", "t6-brick", { { "titanium-concrete-brick", 5 }, { "stone-brick", 5 } })
