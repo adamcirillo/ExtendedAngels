@@ -5,19 +5,6 @@ local tint = angelsmods.bioprocessing.number_tint
 
 -- Create list of buildings with parameters different from source entity
 local bioprocessing_buildings = {
-    -- Algae Farm
-    ["algae-farm-4"] = {
-        source = "algae-farm-3",
-        icon = "__angelsbioprocessing__/graphics/icons/algae-farm.png",
-        tier = 4,
-        order = "a[algae]-d",
-        subgroup = "bio-processing-buildings-nauvis-a",
-        -- module_slots = 4,
-        crafting_speed = 3,
-        emissions_per_minute = -100/3 * 3,
-        energy_usage = "250kW",
-    },
-
     -- Arboretums
     ["bio-arboretum-2"] = {
         source = "bio-arboretum-1",
@@ -485,6 +472,24 @@ local bioprocessing_buildings = {
         energy_usage = "220kW",
     },
 }
+
+-- Angel's Bioprocessing 0.7.20 adds an algae farm 4, defer to Bioprocessing
+if not extangels.migration.is_newer_version("0.7.19", mods["angelsbioprocessing"]) then
+    table.insert(bioprocessing_buildings, {
+        -- Algae Farm
+        ["algae-farm-4"] = {
+            source = "algae-farm-3",
+            icon = "__angelsbioprocessing__/graphics/icons/algae-farm.png",
+            tier = 4,
+            order = "a[algae]-d",
+            subgroup = "bio-processing-buildings-nauvis-a",
+            -- module_slots = 4,
+            crafting_speed = 3,
+            emissions_per_minute = -100/3 * 3,
+            energy_usage = "250kW",
+        },
+    })
+end
 
 for name, params in pairs(bioprocessing_buildings) do
     -- Check for source entity

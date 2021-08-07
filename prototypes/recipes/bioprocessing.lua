@@ -5,36 +5,6 @@ local buildingmulti = angelsmods.marathon.buildingmulti
 local buildingtime = angelsmods.marathon.buildingtime
 
 angelsmods.functions.RB.build({
-    -- Algae farm 4
-    {
-        type = "recipe",
-        name = "algae-farm-4",
-        normal = {
-            energy_required = 5,
-            enabled = false,
-            ingredients = {
-                {"algae-farm-3", 1},
-                {"t4-plate", 2},
-                {"t4-circuit", 5},
-                {"t4-brick", 5},
-                {"t4-pipe", 10},
-            },
-            result= "algae-farm-4",
-        },
-        expensive = {
-            energy_required = 5 * buildingtime,
-            enabled = false,
-            ingredients = {
-                {"algae-farm-3", 1},
-                {"t4-plate", 10 * buildingmulti},
-                {"t4-circuit", 5 * buildingmulti},
-                {"t4-brick", 5 * buildingmulti},
-                {"t4-pipe", 10 * buildingmulti},
-            },
-            result= "algae-farm-4",
-        },
-    },
-
     -- Temperate tree seed generator 2
     {
         type = "recipe",
@@ -972,10 +942,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-puffer", 1},
-            {"t2-plate", 4},
-            {"t2-circuit", 4},
-            {"t2-brick", 3},
-            {"t2-pipe", 11}
+            {"t4-plate", 4},
+            {"t4-circuit", 4},
+            {"t4-brick", 3},
+            {"t4-pipe", 11}
         },
         result = "bio-refugium-puffer-2"
         },
@@ -984,10 +954,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-puffer", 1},
-            {"t2-plate", 4 * buildingmulti},
-            {"t2-circuit", 4 * buildingmulti},
-            {"t2-brick", 3 * buildingmulti},
-            {"t2-pipe", 11 * buildingmulti}
+            {"t4-plate", 4 * buildingmulti},
+            {"t4-circuit", 4 * buildingmulti},
+            {"t4-brick", 3 * buildingmulti},
+            {"t4-pipe", 11 * buildingmulti}
         },
         result = "bio-refugium-puffer-2"
         }
@@ -1002,10 +972,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-puffer-2", 1},
-            {"t3-plate", 4},
-            {"t3-circuit", 4},
-            {"t3-brick", 3},
-            {"t3-pipe", 11}
+            {"t5-plate", 4},
+            {"t5-circuit", 4},
+            {"t5-brick", 3},
+            {"t5-pipe", 11}
         },
         result = "bio-refugium-puffer-3"
         },
@@ -1032,10 +1002,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-biter", 1},
-            {"t2-plate", 10},
-            {"t2-circuit", 4},
-            {"t2-brick", 19},
-            {"t2-pipe", 11}
+            {"t5-plate", 10},
+            {"t5-circuit", 4},
+            {"t5-brick", 19},
+            {"t5-pipe", 11}
         },
         result = "bio-refugium-biter-2"
         },
@@ -1044,10 +1014,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-biter", 1},
-            {"t2-plate", 10 * buildingmulti},
-            {"t2-circuit", 4 * buildingmulti},
-            {"t2-brick", 19 * buildingmulti},
-            {"t2-pipe", 11 * buildingmulti}
+            {"t5-plate", 10 * buildingmulti},
+            {"t5-circuit", 4 * buildingmulti},
+            {"t5-brick", 19 * buildingmulti},
+            {"t5-pipe", 11 * buildingmulti}
         },
         result = "bio-refugium-biter-2"
         }
@@ -1062,10 +1032,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-biter-2", 1},
-            {"t3-plate", 10},
-            {"t3-circuit", 4},
-            {"t3-brick", 19},
-            {"t3-pipe", 11}
+            {"t6-plate", 10},
+            {"t5-circuit", 4},
+            {"t6-brick", 19},
+            {"t6-pipe", 11}
         },
         result = "bio-refugium-biter-3"
         },
@@ -1074,10 +1044,10 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             {"bio-refugium-biter-2", 1},
-            {"t3-plate", 10 * buildingmulti},
-            {"t3-circuit", 4 * buildingmulti},
-            {"t3-brick", 19 * buildingmulti},
-            {"t3-pipe", 11 * buildingmulti}
+            {"t6-plate", 10 * buildingmulti},
+            {"t5-circuit", 4 * buildingmulti},
+            {"t6-brick", 19 * buildingmulti},
+            {"t6-pipe", 11 * buildingmulti}
         },
         result = "bio-refugium-biter-3"
         }
@@ -1143,3 +1113,38 @@ angelsmods.functions.RB.build({
         }
     },
 })
+
+-- Angel's Bioprocessing 0.7.20 adds an algae farm 4, defer to Bioprocessing
+if not extangels.migration.is_newer_version("0.7.19", mods["angelsbioprocessing"]) then
+    angelsmods.functions.RB.build({
+        -- Algae farm 4
+        {
+            type = "recipe",
+            name = "algae-farm-4",
+            normal = {
+                energy_required = 5,
+                enabled = false,
+                ingredients = {
+                    {"algae-farm-3", 1},
+                    {"t5-plate", 11},
+                    {"t5-circuit", 4},
+                    {"t5-brick", 11},
+                    {"t5-pipe", 18},
+                },
+                result= "algae-farm-4",
+            },
+            expensive = {
+                energy_required = 5 * buildingtime,
+                enabled = false,
+                ingredients = {
+                    {"algae-farm-3", 1},
+                    {"t5-plate", 11 * buildingmulti},
+                    {"t5-circuit", 4 * buildingmulti},
+                    {"t5-brick", 11 * buildingmulti},
+                    {"t5-pipe", 18 * buildingmulti},
+                },
+                result= "algae-farm-4",
+            },
+        },
+    })
+end
