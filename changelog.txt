@@ -3,6 +3,7 @@ Version: 0.4.9
 Date: ????
   Changes:
     - Algae farm 4 being native to Angel's Bioprocessing 0.7.20, this mod no longer tweaks the recipe for that version and higher
+    - Balanced recipes to match base Angel's ratios
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.8
 Date: 2021-06-13
