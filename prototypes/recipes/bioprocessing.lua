@@ -5,36 +5,6 @@ local buildingmulti = angelsmods.marathon.buildingmulti
 local buildingtime = angelsmods.marathon.buildingtime
 
 angelsmods.functions.RB.build({
-    -- Algae farm 4
-    {
-        type = "recipe",
-        name = "algae-farm-4",
-        normal = {
-            energy_required = 5,
-            enabled = false,
-            ingredients = {
-                {"algae-farm-3", 1},
-                {"t5-plate", 11},
-                {"t5-circuit", 4},
-                {"titanium-concrete-brick", 11},
-                {"t5-pipe", 18},
-            },
-            result= "algae-farm-4",
-        },
-        expensive = {
-            energy_required = 5 * buildingtime,
-            enabled = false,
-            ingredients = {
-                {"algae-farm-3", 1},
-                {"t5-plate", 11 * buildingmulti},
-                {"t5-circuit", 4 * buildingmulti},
-                {"titanium-concrete-brick", 11 * buildingmulti},
-                {"t5-pipe", 18 * buildingmulti},
-            },
-            result= "algae-farm-4",
-        },
-    },
-
     -- Temperate tree seed generator 2
     {
         type = "recipe",
@@ -1143,3 +1113,38 @@ angelsmods.functions.RB.build({
         }
     },
 })
+
+-- Angel's Bioprocessing 0.7.20 adds an algae farm 4, defer to Bioprocessing
+if not extangels.migration.is_newer_version("0.7.19", mods["angelsbioprocessing"]) then
+    angelsmods.functions.RB.build({
+        -- Algae farm 4
+        {
+            type = "recipe",
+            name = "algae-farm-4",
+            normal = {
+                energy_required = 5,
+                enabled = false,
+                ingredients = {
+                    {"algae-farm-3", 1},
+                    {"t5-plate", 11},
+                    {"t5-circuit", 4},
+                    {"titanium-concrete-brick", 11},
+                    {"t5-pipe", 18},
+                },
+                result= "algae-farm-4",
+            },
+            expensive = {
+                energy_required = 5 * buildingtime,
+                enabled = false,
+                ingredients = {
+                    {"algae-farm-3", 1},
+                    {"t5-plate", 11 * buildingmulti},
+                    {"t5-circuit", 4 * buildingmulti},
+                    {"titanium-concrete-brick", 11 * buildingmulti},
+                    {"t5-pipe", 18 * buildingmulti},
+                },
+                result= "algae-farm-4",
+            },
+        }
+    })
+end
