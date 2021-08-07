@@ -91,7 +91,7 @@ if mods["angelsindustries"] then
         end
 
         if settings.startup["angels-return-ingredients"].value then
-            add_minable_results()
+            angelsmods.functions.AI.add_minable_results()
             OV.execute()
         end
     end
