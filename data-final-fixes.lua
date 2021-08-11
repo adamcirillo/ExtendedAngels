@@ -23,7 +23,7 @@ end
 
 -- Component/Tech overhaul recipe corrections
 local previous_building = {
-    "algae-farm-4",
+    "algae-farm-5",
     "bio-generator-temperate-2",
     "bio-generator-temperate-3",
     "bio-generator-swamp-2",

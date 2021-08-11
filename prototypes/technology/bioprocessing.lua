@@ -1,6 +1,34 @@
 if not angelsmods.bioprocessing then return end
 
 data:extend({
+    -- Advanced angel's bioprocessing
+    {
+        type = "technology",
+        name = "angels-advanced-bio-processing",
+        icon = "__angelsbioprocessing__/graphics/technology/algae-farm-tech.png",
+        icon_size = 128,
+        prerequisites = {
+            "bio-processing-blue",
+        },
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "algae-farm-5"
+            },
+        },
+        unit = {
+            count = 150,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+            },
+            time = 30
+        },
+    },
+
     -- Bio farm 3
     {
         type = "technology",
@@ -31,7 +59,7 @@ data:extend({
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
             },
-            time = 15
+            time = 30
         },
     },
 
@@ -257,36 +285,3 @@ data:extend({
         }
     },
 })
-
--- Angel's Bioprocessing 0.7.20 adds an algae farm 4, defer to Bioprocessing
-if not extangels.migration.is_newer_version("0.7.19", mods["angelsbioprocessing"]) then
-    data:extend({
-        -- Advanced angel's bioprocessing
-        {
-            type = "technology",
-            name = "angels-advanced-bio-processing",
-            icon = "__angelsbioprocessing__/graphics/technology/algae-farm-tech.png",
-            icon_size = 128,
-            prerequisites = {
-                "bio-processing-red",
-            },
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "algae-farm-4"
-                },
-            },
-            unit = {
-                count = 150,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1},
-                    {"utility-science-pack", 1},
-                },
-                time = 15
-            },
-        },
-    })
-end

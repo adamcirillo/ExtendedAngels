@@ -1,8 +1,5 @@
 if angelsmods.bioprocessing then
-	-- Angel's Bioprocessing 0.7.20 adds an algae farm 4, defer to Bioprocessing
-	if not extangels.migration.is_newer_version("0.7.19", mods["angelsbioprocessing"]) then
-		data.raw["assembling-machine"]["algae-farm-3"].next_upgrade = "algae-farm-4"
-	end
+	data.raw["assembling-machine"]["algae-farm-4"].next_upgrade = "algae-farm-5"
 	data.raw["assembling-machine"]["bio-arboretum-1"].next_upgrade = "bio-arboretum-2"
 	data.raw["assembling-machine"]["bio-generator-temperate-1"].next_upgrade = "bio-generator-temperate-2"
 	data.raw["assembling-machine"]["bio-generator-swamp-1"].next_upgrade = "bio-generator-swamp-2"
