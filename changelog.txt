@@ -2,6 +2,9 @@
 Version: 0.5.1
 Date: ????
   Changes:
+    - Changed icon for Oil refinery 3 to align with changes in Angel's Refining
+  Locale:
+    - Fixed that Flotation cell 4 was spelled incorrectly
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2021-08-13
