@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
-Date: ????
+Date: 2021-08-13
   Features:
     - Recipes have been reworked to be in-line with current Angel's recipes, and make use of higher tier materials where appropriate
     - Technologies have had their time requirements updated to be more in-line with current Angel's technologies (15s -> 30s)
