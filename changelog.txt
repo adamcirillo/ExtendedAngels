@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.5
-Date: ????
+Date: 2022-03-19
   Locale:
     - Added partial localization for Ukrainian
     - Updated localization for French
