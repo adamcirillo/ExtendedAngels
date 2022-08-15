@@ -10,7 +10,7 @@
         "flib",
         "? angelsaddons-storage",
         "? bobtech",
-        "? angelsbioprocessing >= 0.7.21",
+        "? angelsbioprocessing >= 0.7.23",
         "? Clowns-Processing"
     ]
 }
