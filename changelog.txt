@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.8
-Date: ????
+Date: 2023-01-01
   Changes:
     - Adjusted the ingredients tiers for the following structures to align with changes to Angel's Bioprocessing in version 0.7.23
       - Oil press 2/3 ingredients increased from tiers 2/3 to tiers 3/4
