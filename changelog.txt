@@ -14,6 +14,8 @@ Date: ????
     - Moved Desert, Swamp, and Temperate farm 2 unlocks into their respective Farming 2 technologies
     - Removed technology "Advanced farm upgrades 2", and moved Desert, Swamp and Temperate farm 3 unlocks into "Advanced farm upgrades"
     - Minimum version of Angel's Bioprocessing has been incremented to version 0.7.23
+    - Removed Air filter 3, Crystallizer 3 and Filtration Unit 3 as added by this mod; buildings are now native to Angel's Petrochem and Angel's Refining
+    - Minimum version of Angel's Smelting has been incremented to version 0.6.20
   Locale:
     - Added partial localization for Korean
 ---------------------------------------------------------------------------------------------------
