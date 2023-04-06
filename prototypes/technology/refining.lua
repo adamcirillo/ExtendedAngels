@@ -22,10 +22,10 @@ if not mods["Clowns-Extended-Minerals"] then
                 unit = {
                     count = 100,
                     ingredients = {
-                        {"automation-science-pack", 1},
-                        {"logistic-science-pack", 1},
-                        {"chemical-science-pack", 1},
-                        {"production-science-pack", 1},
+                        { "automation-science-pack", 1 },
+                        { "logistic-science-pack",   1 },
+                        { "chemical-science-pack",   1 },
+                        { "production-science-pack", 1 },
                     },
                     time = 15
                 },
@@ -62,11 +62,11 @@ if not mods["Clowns-Processing"] then
                 unit = {
                     count = 100,
                     ingredients = {
-                        {"automation-science-pack", 1},
-                        {"logistic-science-pack", 1},
-                        {"chemical-science-pack", 1},
-                        {"production-science-pack", 1},
-                        {"utility-science-pack", 1},
+                        { "automation-science-pack", 1 },
+                        { "logistic-science-pack",   1 },
+                        { "chemical-science-pack",   1 },
+                        { "production-science-pack", 1 },
+                        { "utility-science-pack",    1 },
                     },
                     time = 15
                 },
@@ -100,11 +100,11 @@ if prerequisite then
             unit = {
                 count = 150,
                 ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1},
-                    {"utility-science-pack", 1},
+                    { "automation-science-pack", 1 },
+                    { "logistic-science-pack",   1 },
+                    { "chemical-science-pack",   1 },
+                    { "production-science-pack", 1 },
+                    { "utility-science-pack",    1 },
                 },
                 time = 15
             },
@@ -148,11 +148,11 @@ if prerequisite then
             unit = {
                 count = 150,
                 ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"chemical-science-pack", 1},
-                    {"production-science-pack", 1},
-                    {"utility-science-pack", 1},
+                    { "automation-science-pack", 1 },
+                    { "logistic-science-pack",   1 },
+                    { "chemical-science-pack",   1 },
+                    { "production-science-pack", 1 },
+                    { "utility-science-pack",    1 },
                 },
                 time = 15
             },

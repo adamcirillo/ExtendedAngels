@@ -5,7 +5,7 @@ require("prototypes.subgroups")
 -- Setup numeral tint for Angel's warehouses if not already available
 if mods["angelsaddons-storage"] then
     if not angelsmods.addons.storage.number_tint then
-        angelsmods.addons.storage.number_tint = {r = 0.95, g = 0.65, b = 0.25, a = 1}
+        angelsmods.addons.storage.number_tint = { r = 0.95, g = 0.65, b = 0.25, a = 1 }
     end
 end
 

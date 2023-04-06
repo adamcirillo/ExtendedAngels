@@ -11,9 +11,9 @@ for _, recipe in pairs(recipe_list) do
 
     for _, module in pairs(data.raw.module) do
         if module.limitation then
-            for j,limit in pairs(module.limitation) do
+            for j, limit in pairs(module.limitation) do
                 if limit == recipe then
-                    table.remove(module.limitation,j)
+                    table.remove(module.limitation, j)
                     break
                 end
             end

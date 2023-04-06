@@ -1,10 +1,10 @@
 local OV = angelsmods.functions.OV
 
 OV.add_prereq("tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
-OV.disable_recipe({"copper-tungsten-alloy"})
-OV.disable_recipe({"tungsten-carbide"})
-OV.disable_recipe({"tungsten-carbide-2"})
-OV.disable_recipe({"pellet-tungsten-smelting"})
+OV.disable_recipe({ "copper-tungsten-alloy" })
+OV.disable_recipe({ "tungsten-carbide" })
+OV.disable_recipe({ "tungsten-carbide-2" })
+OV.disable_recipe({ "pellet-tungsten-smelting" })
 
 OV.add_unlock("angels-advanced-chemistry-4", "advanced-chemical-plant-3")
 OV.add_unlock("angels-tungsten-smelting-3", "solid-tungsten-trioxide-smelting")
@@ -14,7 +14,7 @@ OV.add_unlock("angels-tungsten-smelting-3", "casting-powder-tungsten-3")
 OV.add_unlock("angels-zinc-smelting-2", "powder-zinc")
 OV.add_unlock("angels-nitrogen-processing-1", "gas-argon")
 OV.add_unlock("angels-nitrogen-processing-3", "angels-air-filter-3")
-OV.add_unlock("angels-nitrogen-processing-4","angels-air-filter-4")
+OV.add_unlock("angels-nitrogen-processing-4", "angels-air-filter-4")
 
 if mods["Clowns-Extended-Minerals"] then
     OV.add_unlock("water-washing-3", "washing-plant-3")
@@ -50,8 +50,8 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-desert-farming-2", "desert-farm-2")
     OV.add_unlock("bio-swamp-farming-2", "swamp-farm-2")
     OV.add_unlock("bio-temperate-farming-2", "temperate-farm-2")
-    OV.add_unlock("gardens-2","seed-extractor-2")
-    OV.add_unlock("gardens-3","seed-extractor-3")
+    OV.add_unlock("gardens-2", "seed-extractor-2")
+    OV.add_unlock("gardens-3", "seed-extractor-3")
 end
 
 if mods["angelsaddons-storage"] then
