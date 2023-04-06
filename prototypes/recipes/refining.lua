@@ -113,7 +113,7 @@ angelsmods.functions.RB.build({
             energy_required = 5 * buildingtime,
             enabled = "false",
             ingredients = {
-                { "washing-plant-2", 1 },
+                { "washing-plant-3", 1 },
                 { "t4-plate",        4 * buildingmulti },
                 { "t4-circuit",      4 * buildingmulti },
                 { "t4-pipe",         9 * buildingmulti },
