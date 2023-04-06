@@ -208,6 +208,11 @@ data.raw.item["hydro-plant-3"].order = "a[hydro-plant]-c[mk3]"
 data.raw.item["washing-plant"].order = "b[washing-plant]-a[mk1]"
 data.raw.item["washing-plant-2"].order = "b[washing-plant]-b[mk2]"
 
+-- Next upgrade fixes, due to util.merge usage
+data.raw["assembling-machine"]["washing-plant-4"].next_upgrade = nil
+data.raw["assembling-machine"]["hydro-plant-4"].next_upgrade = nil
+data.raw["assembling-machine"]["salination-plant-3"].next_upgrade = nil
+
 
 -- Entity icon adjustments
 data.raw["assembling-machine"]["hydro-plant-4"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/hydro-plant.png", icon_size = 64, icon_mipmaps = 4 }, 4, angelsmods.refining.number_tint)

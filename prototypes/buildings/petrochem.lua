@@ -61,6 +61,10 @@ data:extend({
     } },
 })
 
+-- Next upgrade fixes, due to util.merge usage
+data.raw["assembling-machine"]["advanced-chemical-plant-3"].next_upgrade = nil
+data.raw["assembling-machine"]["angels-air-filter-4"].next_upgrade = nil
+
 -- Entity icon adjustments
 data.raw["assembling-machine"]["advanced-chemical-plant-3"].icons = extangels.numeral_tier({ icon = "__angelspetrochem__/graphics/icons/advanced-chemical-plant.png", icon_size = 32 }, 3, angelsmods.petrochem.number_tint)
 -- data.raw["assembling-machine"]["angels-air-filter-3"].icons = extangels.numeral_tier({icon = "__angelspetrochem__/graphics/icons/air-filter.png", icon_size = 32}, 3, angelsmods.petrochem.number_tint)
