@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.9
-Date: ????
+Date: 2023-04-06
   Bugfixes:
     - Fixed that in expensive recipe mode, Washing plant 2 was an ingredient in Washing plant 4
     - Fixed that the upgrade planner would downgrade Salination plant 3, Advanced chemical plant 3, Air filter 4, Washing plant 4, and Hydro plant 4 to a previous tier
