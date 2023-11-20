@@ -36,8 +36,6 @@ if angelsmods.refining then
     data.raw["assembling-machine"]["ore-floatation-cell-3"].next_upgrade = "ore-floatation-cell-4"
     data.raw["assembling-machine"]["ore-leaching-plant-3"].next_upgrade = "ore-leaching-plant-4"
     data.raw["assembling-machine"]["ore-refinery-2"].next_upgrade = "ore-refinery-3"
-    -- data.raw["assembling-machine"]["crystallizer-2"].next_upgrade = "crystallizer-3"
-    -- data.raw["assembling-machine"]["filtration-unit-3"].next_upgrade = "filtration-unit-3"
 end
 
 if (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then
