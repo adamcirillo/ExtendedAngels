@@ -51,10 +51,6 @@ if not mods["Clowns-Processing"] then
                 effects = {
                     {
                         type = "unlock-recipe",
-                        recipe = "hydro-plant-4"
-                    },
-                    {
-                        type = "unlock-recipe",
                         recipe = "salination-plant-3"
                     },
                 },
@@ -126,14 +122,6 @@ if prerequisite then
                 "advanced-ore-refining-4",
             },
             effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "ore-crusher-4"
-                },
-                {
-                    type = "unlock-recipe",
-                    recipe = "ore-floatation-cell-4"
-                },
                 {
                     type = "unlock-recipe",
                     recipe = "ore-leaching-plant-4"

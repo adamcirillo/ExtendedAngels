@@ -7,10 +7,10 @@ script.on_configuration_changed(function(config)
         local recipes = force.recipes
 
         recipes["washing-plant-3"].enabled = technologies["water-washing-3"].researched
-        recipes["advanced-chemical-plant-3"].enabled = technologies["angels-advanced-chemistry-4"].researched
+        recipes["advanced-chemical-plant-3"].enabled = technologies["angels-advanced-chemistry-5"].researched
         recipes["powder-zinc"].enabled = technologies["angels-zinc-smelting-2"].researched
         recipes["gas-argon"].enabled = technologies["angels-nitrogen-processing-1"].researched
-        recipes["angels-air-filter-4"].enabled = technologies["angels-nitrogen-processing-4"].researched
+        recipes["angels-air-filter-4"].enabled = technologies["angels-advanced-chemistry-4"].researched
 
         if game.active_mods["Clowns-Processing"] then
             if technologies["phosphorus-processing-2"].researched then
@@ -19,10 +19,10 @@ script.on_configuration_changed(function(config)
             end
         end
 
-        if technologies["water-treatment-5"].researched then
-            recipes["hydro-plant-4"].enabled = true
-            recipes["salination-plant-3"].enabled = true
-        end
+        recipes["hydro-plant-4"].enabled = technologies["water-treatment-4"].researched
+        recipes["salination-plant-3"].enabled = technologies["water-treatment-5"].researched
+        recipes["ore-crusher-4"].enabled = technologies["advanced-ore-refining-3"].researched
+        recipes["ore-floatation-cell-4"].enabled = technologies["advanced-ore-refining-4"].researched
 
         if technologies["angels-tungsten-smelting-3"].researched then
             recipes["solid-tungsten-trioxide-smelting"].enabled = true
@@ -50,15 +50,8 @@ script.on_configuration_changed(function(config)
                 recipes["bio-butchery-2"].enabled = true
             end
 
-            if technologies["bio-refugium-fish-2"].researched then
-                recipes["bio-refugium-fish-2"].enabled = true
-            end
-
-            if technologies["bio-refugium-puffer-2"].researched then
+            if technologies["bio-refugium-puffer-4"].researched then
                 recipes["bio-refugium-puffer-2"].enabled = true
-            end
-
-            if technologies["bio-refugium-puffer-3"].researched then
                 recipes["bio-refugium-puffer-3"].enabled = true
             end
 

@@ -205,6 +205,10 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
+                recipe = "bio-refugium-fish-2"
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "bio-refugium-fish-3"
             },
         },
