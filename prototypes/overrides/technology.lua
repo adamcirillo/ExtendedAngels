@@ -15,6 +15,26 @@ OV.add_unlock("angels-zinc-smelting-2", "powder-zinc")
 OV.add_unlock("angels-nitrogen-processing-1", "gas-argon")
 OV.add_unlock("angels-nitrogen-processing-3", "angels-air-filter-3")
 OV.add_unlock("angels-nitrogen-processing-4", "angels-air-filter-4")
+OV.add_prereq("angels-tungsten-smelting-3", "angels-manganese-smelting-3")
+OV.add_prereq("angels-tungsten-smelting-3", "angels-zinc-smelting-2")
+OV.add_prereq("angels-tungsten-smelting-3", "sodium-processing-3")
+
+if mods["boblogistics"] then
+  OV.remove_prereq("bob-repair-pack-5", "tungsten-alloy-processing")
+  OV.remove_prereq("bob-robots-3", "tungsten-alloy-processing")
+  OV.add_prereq("bob-repair-pack-5", "angels-tungsten-carbide-smelting-1")
+  OV.add_prereq("bob-robots-3", "angels-tungsten-carbide-smelting-1")
+end
+
+if mods["bobrevamp"] then
+  OV.remove_prereq("heat-shield", "tungsten-alloy-processing")
+  OV.add_prereq("heat-shield", "angels-tungsten-carbide-smelting-1")
+end
+
+if mods["bobwarfare"] then
+  OV.remove_prereq("tankotron", "tungsten-alloy-processing")
+  OV.add_prereq("tankotron", "angels-tungsten-carbide-smelting-1")
+end
 
 if mods["Clowns-Extended-Minerals"] then
     OV.add_unlock("water-washing-3", "washing-plant-3")

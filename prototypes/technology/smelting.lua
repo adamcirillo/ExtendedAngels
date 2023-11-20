@@ -70,6 +70,7 @@ data:extend({
         upgrade = true,
         prerequisites = {
             "angels-stone-smelting-3",
+            "angels-titanium-smelting-1",
         },
         effects = {
             {
