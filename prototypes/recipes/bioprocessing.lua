@@ -14,10 +14,10 @@ angelsmods.functions.RB.build({
             enabled = false,
             ingredients = {
                 { "algae-farm-4", 1 },
-                { "t5-plate",     11 },
-                { "t5-circuit",   4 },
-                { "t5-brick",     11 },
-                { "t5-pipe",      18 },
+                { "t4-plate",     11 },
+                { "t4-circuit",   4 },
+                { "t4-brick",     11 },
+                { "t4-pipe",      18 },
             },
             result = "algae-farm-5",
         },
@@ -26,10 +26,10 @@ angelsmods.functions.RB.build({
             enabled = false,
             ingredients = {
                 { "algae-farm-4", 1 },
-                { "t5-plate",     11 * buildingmulti },
-                { "t5-circuit",   4 * buildingmulti },
-                { "t5-brick",     11 * buildingmulti },
-                { "t5-pipe",      18 * buildingmulti },
+                { "t4-plate",     11 * buildingmulti },
+                { "t4-circuit",   4 * buildingmulti },
+                { "t4-brick",     11 * buildingmulti },
+                { "t4-pipe",      18 * buildingmulti },
             },
             result = "algae-farm-5",
         },
@@ -1063,7 +1063,7 @@ angelsmods.functions.RB.build({
             ingredients = {
                 { "bio-refugium-biter-2", 1 },
                 { "t6-plate",             10 },
-                { "t5-circuit",           4 },
+                { "t6-circuit",           4 },
                 { "t6-brick",             19 },
                 { "t6-pipe",              11 }
             },
@@ -1075,7 +1075,7 @@ angelsmods.functions.RB.build({
             ingredients = {
                 { "bio-refugium-biter-2", 1 },
                 { "t6-plate",             10 * buildingmulti },
-                { "t5-circuit",           4 * buildingmulti },
+                { "t6-circuit",           4 * buildingmulti },
                 { "t6-brick",             19 * buildingmulti },
                 { "t6-pipe",              11 * buildingmulti }
             },
