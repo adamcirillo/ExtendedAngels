@@ -9,6 +9,7 @@ data:extend({
         icon_size = 128,
         prerequisites = {
             "bio-processing-blue",
+            "production-science-pack",
         },
         effects = {
             {
@@ -36,6 +37,7 @@ data:extend({
         icon_size = 128,
         prerequisites = {
             "bio-farm-2",
+            "chemical-science-pack",
         },
         effects = {
             {
@@ -71,6 +73,7 @@ data:extend({
         order = "c-a",
         prerequisites = {
             "bio-refugium-butchery-2",
+            "production-science-pack",
         },
         effects = {
             {
@@ -101,7 +104,8 @@ data:extend({
         prerequisites = {
             "bio-temperate-farming-2",
             "bio-desert-farming-2",
-            "bio-swamp-farming-2"
+            "bio-swamp-farming-2",
+            "utility-science-pack",
         },
         effects = {
             {
@@ -139,7 +143,8 @@ data:extend({
         icon_size = 160,
         order = "c-a",
         prerequisites = {
-            "bio-refugium-hatchery"
+            "bio-refugium-hatchery",
+            "production-science-pack",
         },
         effects = {
             {
@@ -172,7 +177,8 @@ data:extend({
         icon_size = 128,
         order = "c-a",
         prerequisites = {
-            "bio-nutrient-paste"
+            "bio-nutrient-paste",
+            "chemical-science-pack",
         },
         effects = {
             {
@@ -204,6 +210,7 @@ data:extend({
         order = "c-a",
         prerequisites = {
             "bio-refugium-fish-2",
+            "chemical-science-pack",
         },
         effects = {
             {

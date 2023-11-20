@@ -6,6 +6,7 @@ data:extend({
         icon = "__angelspetrochem__/graphics/technology/sodium-tech.png",
         icon_size = 128,
         prerequisites = {
+            "angels-advanced-chemistry-5",
             "angels-lead-smelting-3",
             "sodium-processing-2",
         },

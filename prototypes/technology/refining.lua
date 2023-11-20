@@ -11,6 +11,7 @@ if not mods["Clowns-Extended-Minerals"] then
                 icon_size = util.copy(prerequisite.icon_size),
                 icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
+                    "chemical-science-pack",
                     "water-washing-2",
                 },
                 effects = {
@@ -46,6 +47,7 @@ if not mods["Clowns-Processing"] then
                 icon_size = util.copy(prerequisite.icon_size),
                 icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
+                    "utility-science-pack",
                     "water-treatment-4",
                 },
                 effects = {
@@ -84,6 +86,7 @@ if prerequisite then
             icon_size = util.copy(prerequisite.icon_size),
             icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
             prerequisites = {
+                "production-science-pack",
                 "water-washing-3",
             },
             effects = {

@@ -40,6 +40,7 @@ data:extend({
         icon_size = 128,
         prerequisites = {
             "angels-copper-tungsten-smelting-1",
+            "angels-metallurgy-5",
         },
         effects = {
             {
@@ -71,6 +72,7 @@ data:extend({
         prerequisites = {
             "angels-stone-smelting-3",
             "angels-titanium-smelting-1",
+            "production-science-pack",
         },
         effects = {
             {
