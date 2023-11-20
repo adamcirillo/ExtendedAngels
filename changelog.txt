@@ -3,7 +3,15 @@ Version: 0.5.10
 Date: ????
   Changes:
     - Renamed Sodium Processing 2 to Sodium Processing 3 as Angel's has added a Sodium Processing 2 tech
-    - Added missing prerequisites
+    - Tidied up prerequisites and required science packs
+    - The following buildings now take Tungsten carbide plate instead of Copper tungsten plate to match the other T6 Angel's buildings:
+      - Advanced gas refinery 4
+      - Biter refugium 3
+      - Leaching plant 4
+      - Ore refinery 3
+    - Adjusted the ingredient tiers for the folllowing structures to eliminate a tier gap:
+      - Algae farm 5
+      - Hydro plant 4
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.9
 Date: 2023-04-06
