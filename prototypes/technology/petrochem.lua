@@ -32,11 +32,11 @@ data:extend({
     -- Sodium processing 2
     {
         type = "technology",
-        name = "sodium-processing-2",
+        name = "sodium-processing-3",
         icon = "__angelspetrochem__/graphics/technology/sodium-tech.png",
         icon_size = 128,
         prerequisites = {
-            "sodium-processing",
+            "sodium-processing-2",
         },
         effects = {
             {
