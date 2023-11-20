@@ -25,7 +25,6 @@ end
 if angelsmods.petrochem then
     data.raw["assembling-machine"]["advanced-chemical-plant-2"].next_upgrade = "advanced-chemical-plant-3"
     data.raw["assembling-machine"]["angels-air-filter-3"].next_upgrade = "angels-air-filter-4"
-    data.raw["assembling-machine"]["gas-refinery-3"].next_upgrade = "gas-refinery-4"
 end
 
 if angelsmods.refining then

@@ -3,36 +3,6 @@ local buildingmulti = angelsmods.marathon.buildingmulti
 local buildingtime = angelsmods.marathon.buildingtime
 
 angelsmods.functions.RB.build({
-    -- Advanced gas refinery 4
-    {
-        type = "recipe",
-        name = "gas-refinery-4",
-        normal = {
-            energy_required = 5,
-            enabled = false,
-            ingredients = {
-                { "gas-refinery-3", 1 },
-                { "t6-plate",       10 },
-                { "t6-circuit",     5 },
-                { "t6-brick",       10 },
-                { "t6-pipe",        19 },
-            },
-            result = "gas-refinery-4",
-        },
-        expensive = {
-            energy_required = 5 * buildingtime,
-            enabled = false,
-            ingredients = {
-                { "gas-refinery-3", 1 },
-                { "t6-plate",       10 * buildingmulti },
-                { "t6-circuit",     5 * buildingmulti },
-                { "t6-brick",       10 * buildingmulti },
-                { "t6-pipe",        19 * buildingmulti },
-            },
-            result = "gas-refinery-4",
-        },
-    },
-
     -- Advanced chemical plant 3
     {
         type = "recipe",

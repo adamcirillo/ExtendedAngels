@@ -32,7 +32,6 @@ local previous_building = {
     "bio-generator-desert-3",
     "bio-arboretum-2",
     "bio-arboretum-3",
-    "gas-refinery-4",
     "advanced-chemical-plant-3",
     "angels-air-filter-4",
     "hydro-plant-4",
