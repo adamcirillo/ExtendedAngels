@@ -28,3 +28,6 @@ require("prototypes.technology.smelting")
 require("prototypes.technology.bioprocessing")
 require("prototypes.technology.refining")
 require("prototypes.technology.warehouses")
+
+-- Fallbacks
+require("prototypes.recipe-builder-fallbacks")
