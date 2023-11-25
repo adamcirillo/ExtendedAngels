@@ -98,7 +98,7 @@ data:extend({
     {
         type = "recipe",
         name = "copper-tungsten-smelting-1",
-        category = "induction-smelting",
+        category = "induction-smelting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
@@ -118,7 +118,7 @@ data:extend({
     {
         type = "recipe",
         name = "copper-tungsten-smelting-2",
-        category = "induction-smelting-2",
+        category = "induction-smelting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
@@ -139,7 +139,7 @@ data:extend({
     {
         type = "recipe",
         name = "molten-copper-tungsten-smelting-1",
-        category = "casting",
+        category = "casting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
@@ -173,7 +173,7 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-1",
-        category = "chemical-smelting",
+        category = "chemical-smelting-3",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
         enabled = "false",
@@ -193,7 +193,7 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-2",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
         energy_required = 16,
         enabled = "false",
@@ -215,7 +215,7 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-3",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
         enabled = "false",

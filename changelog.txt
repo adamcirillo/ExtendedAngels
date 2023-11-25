@@ -13,6 +13,7 @@ Date: ????
       - Algae farm 5
       - Hydro plant 4
     - All T5 and T6 buildings should now use Titanium concrete bricks
+    - Set minimum required building tiers for Copper Tungsten and Tungsten Carbide recipes
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.9
 Date: 2023-04-06
