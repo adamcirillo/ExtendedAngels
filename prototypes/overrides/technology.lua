@@ -68,9 +68,6 @@ if angelsmods.bioprocessing then
     OV.add_unlock("bio-farm-2", "bio-processor-2")
     OV.add_unlock("bio-pressing-2", "bio-press-2")
     OV.add_unlock("bio-pressing-2", "bio-press-3")
-    OV.add_unlock("bio-desert-farming-2", "desert-farm-2")
-    OV.add_unlock("bio-swamp-farming-2", "swamp-farm-2")
-    OV.add_unlock("bio-temperate-farming-2", "temperate-farm-2")
     OV.add_unlock("gardens-2", "seed-extractor-2")
     OV.add_unlock("gardens-3", "seed-extractor-3")
 end

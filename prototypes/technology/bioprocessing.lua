@@ -94,10 +94,10 @@ data:extend({
         },
     },
 
-    -- Bio farm advanced upgrade
+    -- Bio farm advanced upgrades
     {
         type = "technology",
-        name = "bio-farm-advanced-upgrade",
+        name = "bio-farm-advanced-upgrade-1",
         icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         order = "c-a",
@@ -105,6 +105,43 @@ data:extend({
             "bio-temperate-farming-2",
             "bio-desert-farming-2",
             "bio-swamp-farming-2",
+            "production-science-pack",
+        },
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "temperate-farm-2"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "desert-farm-2"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "swamp-farm-2"
+            },
+        },
+        unit = {
+            count = 128,
+            ingredients = {
+                { "automation-science-pack", 4 },
+                { "logistic-science-pack",   4 },
+                { "chemical-science-pack",   4 },
+                { "production-science-pack", 4 },
+                { "token-bio",               1 }
+            },
+            time = 30
+        }
+    },
+
+    {
+        type = "technology",
+        name = "bio-farm-advanced-upgrade-2",
+        icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
+        icon_size = 128,
+        order = "c-a",
+        prerequisites = {
+            "bio-farm-advanced-upgrade-1",
             "utility-science-pack",
         },
         effects = {
