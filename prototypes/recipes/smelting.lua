@@ -6,7 +6,7 @@ data:extend({
     {
         type = "recipe",
         name = "solid-tungsten-trioxide-smelting",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten",
         energy_required = 4,
         enabled = "false",
@@ -24,7 +24,7 @@ data:extend({
     {
         type = "recipe",
         name = "pellet-tungsten-smelting-2",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten",
         energy_required = 8,
         enabled = "false",
@@ -43,7 +43,7 @@ data:extend({
     {
         type = "recipe",
         name = "solid-sodium-tungstate-smelting",
-        category = "blast-smelting",
+        category = "blast-smelting-4",
         subgroup = "angels-tungsten",
         energy_required = 4,
         enabled = "false",
@@ -79,7 +79,7 @@ data:extend({
     {
         type = "recipe",
         name = "casting-powder-tungsten-3",
-        category = "powder-mixing",
+        category = "powder-mixing-4",
         subgroup = "angels-tungsten-casting",
         energy_required = 4,
         enabled = "false",
