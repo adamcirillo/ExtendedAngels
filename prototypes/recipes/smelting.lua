@@ -58,23 +58,6 @@ data:extend({
         order = "h[powder-tungsten]-c"
     },
 
-    -- Zinc powder
-    {
-        type = "recipe",
-        name = "powder-zinc",
-        category = "advanced-crafting",
-        subgroup = "angels-zinc-casting",
-        energy_required = 0.5,
-        enabled = "false",
-        ingredients = {
-            { type = "item", name = "ingot-zinc", amount = 1 }
-        },
-        results = {
-            { type = "item", name = "powder-zinc", amount = 1 },
-        },
-        order = "b",
-    },
-
     -- Tungsten powder mixture
     {
         type = "recipe",
