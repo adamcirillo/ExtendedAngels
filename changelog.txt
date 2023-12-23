@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.10
-Date: ????
+Date: 2023-12-23
   Changes:
     - Renamed Sodium Processing 2 to Sodium Processing 3 as Angel's has added a Sodium Processing 2 tech
     - Tidied up prerequisites and required science packs
