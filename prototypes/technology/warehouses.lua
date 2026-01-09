@@ -1,4 +1,5 @@
-if not mods["angelsaddons-storage"] then return end
+if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then return end
+
 data:extend({
     -- Warehouses 2
     {
@@ -20,8 +21,8 @@ data:extend({
         unit = {
             count = 125,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
             },
             time = 20
         },
@@ -48,9 +49,9 @@ data:extend({
         unit = {
             count = 200,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
             },
             time = 20
         },
@@ -77,10 +78,10 @@ data:extend({
         unit = {
             count = 200,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
             },
             time = 20
         },
@@ -124,9 +125,9 @@ data:extend({
         unit = {
             count = 125,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
             },
             time = 20
         },
@@ -171,10 +172,10 @@ data:extend({
         unit = {
             count = 200,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
             },
             time = 25
         },
@@ -219,11 +220,11 @@ data:extend({
         unit = {
             count = 300,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1},
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
+                { "utility-science-pack",    1 },
             },
             time = 30
         },

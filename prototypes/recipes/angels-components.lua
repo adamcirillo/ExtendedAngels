@@ -1,5 +1,5 @@
 if mods["angelsindustries"] then
-    if settings.startup["angels-enable-components"].value or settings.startup["angels-enable-tech"].value then
+    if angelsmods.industries.components then
         -- Final fixes of angels to squeeze in a new construction tier material
         local OV = angelsmods.functions.OV
 
@@ -24,13 +24,13 @@ if mods["angelsindustries"] then
             "gate"
         }
 
-        local block_ingredients={
-            ["block-construction-0"] = {new = "stone", old = "stone"},
-            ["block-construction-1"] = {new = "stone-brick", old = "stone"},
-            ["block-construction-2"] = {new = "clay-brick", old = "stone-brick"},
-            ["block-construction-3"] = {new = "concrete-brick", old = "clay-brick"},
-            ["block-construction-4"] = {new = "reinforced-concrete-brick", old = "concrete-brick"},
-            ["block-construction-5"] = {new = "titanium-concrete-brick", old = "reinforced-concrete-brick"}
+        local block_ingredients = {
+            ["block-construction-0"] = { new = "stone", old = "stone" },
+            ["block-construction-1"] = { new = "stone-brick", old = "stone" },
+            ["block-construction-2"] = { new = "clay-brick", old = "stone-brick" },
+            ["block-construction-3"] = { new = "concrete-brick", old = "clay-brick" },
+            ["block-construction-4"] = { new = "reinforced-concrete-brick", old = "concrete-brick" },
+            ["block-construction-5"] = { new = "titanium-concrete-brick", old = "reinforced-concrete-brick" }
         }
 
         -- Add a 0th tier construction block
@@ -52,11 +52,11 @@ if mods["angelsindustries"] then
                 category = "crafting",
                 energy_required = 5,
                 ingredients = {
-                    {type="item", name = "construction-frame-1", amount = 1},
-                    {type="item", name = "stone", amount = 3},
+                    { type = "item", name = "construction-frame-1", amount = 1 },
+                    { type = "item", name = "stone",                amount = 3 },
                 },
-                results= {
-                    {type="item", name="block-construction-0", amount=1},
+                results = {
+                    { type = "item", name = "block-construction-0", amount = 1 },
                 },
             },
         })
@@ -64,26 +64,26 @@ if mods["angelsindustries"] then
         -- Replace ingredients
         local function change_construction_block_ingredients()
             for block, list in pairs(block_ingredients) do
-            local ingredients = data.raw.recipe[block].ingredients
+                local ingredients = data.raw.recipe[block].ingredients
 
-            if not ingredients then
-                ingredients = data.raw.recipe[block].normal.ingredients
-            end
-
-            for n, _ in pairs(ingredients) do
-                if ingredients[n].name == list.old then
-                    ingredients[n].name = list.new
+                if not ingredients then
+                    ingredients = data.raw.recipe[block].normal.ingredients
                 end
-            end
 
-            -- For Logging
-            -- log(serpent.block(ingredients))
+                for n, _ in pairs(ingredients) do
+                    if ingredients[n].name == list.old then
+                        ingredients[n].name = list.new
+                    end
+                end
+
+                -- For Logging
+                -- log(serpent.block(ingredients))
             end
         end
 
         -- Shifts the construction block ingredients down one tier
         local shift_block_ingredients = function(ingredients)
-            for n,_ in pairs(ingredients) do
+            for n, _ in pairs(ingredients) do
                 if ingredients[n].name == "block-construction-1" then
                     ingredients[n].name = "block-construction-0"
                 end

@@ -11,11 +11,11 @@ data:extend({
         energy_required = 4,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "pellet-tungsten", amount = 4},
-            {type = "fluid", name = "gas-oxygen", amount = 60},
+            { type = "item",  name = "pellet-tungsten", amount = 4 },
+            { type = "fluid", name = "gas-oxygen",      amount = 60 },
         },
         results = {
-            {type = "item", name = "solid-tungsten-trioxide", amount = 12},
+            { type = "item", name = "solid-tungsten-trioxide", amount = 12 },
         },
         order = "i",
     },
@@ -29,12 +29,12 @@ data:extend({
         energy_required = 8,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "solid-salt", amount = 50},
-            {type = "item", name = "solid-tungsten-trioxide", amount = 12},
-            {type = "item", name = "solid-sodium-floride", amount = 6},
+            { type = "item", name = "solid-salt",              amount = 50 },
+            { type = "item", name = "solid-tungsten-trioxide", amount = 12 },
+            { type = "item", name = "solid-sodium-floride",    amount = 6 },
         },
         results = {
-            {type = "item", name = "solid-sodium-tungstate", amount = 12},
+            { type = "item", name = "solid-sodium-tungstate", amount = 12 },
         },
         order = "j",
     },
@@ -48,12 +48,14 @@ data:extend({
         energy_required = 4,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "solid-sodium-tungstate", amount = 16},
-            {type = "item", name = "pellet-manganese", amount = 4},
+            { type = "item", name = "solid-sodium-tungstate", amount = 16 },
+            { type = "item", name = "pellet-manganese",       amount = 4 },
         },
         results = {
-            {type = "item", name = "powder-tungsten", amount = 30},
+            { type = "item", name = "powder-tungsten", amount = 30 },
         },
+        icons = extangels.numeral_tier({ icon = data.raw.item["powder-tungsten"].icon, icon_size = data.raw.item["powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["powder-tungsten"].icon_mipmaps }, 3, angelsmods.smelting.number_tint),
+        order = "h[powder-tungsten]-c"
     },
 
     -- Zinc powder
@@ -65,10 +67,10 @@ data:extend({
         energy_required = 0.5,
         enabled = "false",
         ingredients = {
-
+            { type = "item", name = "ingot-zinc", amount = 1 }
         },
         results = {
-            {type = "item", name = "powder-zinc", amount = 1},
+            { type = "item", name = "powder-zinc", amount = 1 },
         },
         order = "b",
     },
@@ -82,69 +84,72 @@ data:extend({
         energy_required = 4,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "powder-tungsten", amount = 12},
-            {type = "item", name = "powder-zinc", amount = 12},
+            { type = "item", name = "powder-tungsten", amount = 12 },
+            { type = "item", name = "powder-zinc",     amount = 12 },
         },
         results = {
-            {type = "item", name = "casting-powder-tungsten", amount = 24},
+            { type = "item", name = "casting-powder-tungsten", amount = 24 },
         },
-        order = "k",
+        icons = extangels.numeral_tier({ icon = data.raw.item["casting-powder-tungsten"].icon, icon_size = data.raw.item["casting-powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["casting-powder-tungsten"].icon_mipmaps }, 3, angelsmods.smelting.number_tint),
+        order = "i[casting-powder-tungsten]-c",
     },
 
     -- Molten copper tungsten 1
     {
         type = "recipe",
         name = "copper-tungsten-smelting-1",
-        category = "chemical-smelting",
-        subgroup = "angels-copper-tungsten",
+        category = "induction-smelting-4",
+        subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "ingot-copper", amount = 16},
-            {type = "item", name = "powder-tungsten", amount = 12},
-            {type = "fluid", name = "gas-hydrogen", amount = 60},
+            { type = "item",  name = "ingot-copper",    amount = 16 },
+            { type = "item",  name = "powder-tungsten", amount = 12 },
+            { type = "fluid", name = "gas-hydrogen",    amount = 60 },
         },
         results = {
-            {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120},
+            { type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120 },
         },
-        order = "ac",
-    },
-
-    -- Copper tungsten
-    {
-        type = "recipe",
-        name = "molten-copper-tungsten-smelting-1",
-        category = "casting",
-        subgroup = "angels-copper-tungsten-casting",
-        energy_required = 8,
-        enabled = "false",
-        ingredients = {
-            {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 40},
-        },
-        results = {
-            {type = "item", name = "copper-tungsten-alloy", amount = 4},
-        },
-        order = "ac",
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32 }, 1, angelsmods.smelting.number_tint),
+        order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
     },
 
     -- Molten copper tungsten 2
     {
         type = "recipe",
         name = "copper-tungsten-smelting-2",
-        category = "chemical-smelting",
-        subgroup = "angels-copper-tungsten",
+        category = "induction-smelting-4",
+        subgroup = "angels-alloys-casting",
         energy_required = 8,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "ingot-copper", amount = 8},
-            {type = "item", name = "ingot-silver", amount = 8},
-            {type = "item", name = "powder-tungsten", amount = 12},
-            {type = "fluid", name = "gas-hydrogen", amount = 60},
+            { type = "item",  name = "ingot-copper",    amount = 8 },
+            { type = "item",  name = "ingot-silver",    amount = 8 },
+            { type = "item",  name = "powder-tungsten", amount = 12 },
+            { type = "fluid", name = "gas-hydrogen",    amount = 60 },
         },
         results = {
-            {type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120},
+            { type = "fluid", name = "liquid-molten-copper-tungsten", amount = 120 },
         },
-        order = "ad",
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32 }, 2, angelsmods.smelting.number_tint),
+        order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
+    },
+
+    -- Copper tungsten
+    {
+        type = "recipe",
+        name = "molten-copper-tungsten-smelting-1",
+        category = "casting-4",
+        subgroup = "angels-alloys-casting",
+        energy_required = 8,
+        enabled = "false",
+        ingredients = {
+            { type = "fluid", name = "liquid-molten-copper-tungsten", amount = 40 },
+        },
+        results = {
+            { type = "item", name = "copper-tungsten-alloy", amount = 4 },
+        },
+        order = "g[copper-tungsten]-b[copper-tungsten-alloy]",
     },
 
     -- Tungsten hexachloride
@@ -156,11 +161,11 @@ data:extend({
         energy_required = 6,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "solid-tungsten-trioxide", amount = 12},
-            {type = "fluid", name = "gas-hydrogen-chloride", amount = 30},
+            { type = "item",  name = "solid-tungsten-trioxide", amount = 12 },
+            { type = "fluid", name = "gas-hydrogen-chloride",   amount = 30 },
         },
         results = {
-            {type = "fluid", name = "gas-tungsten-hexachloride", amount = 60},
+            { type = "fluid", name = "gas-tungsten-hexachloride", amount = 60 },
         },
     },
 
@@ -168,20 +173,19 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-1",
-        category = "chemical-smelting",
+        category = "chemical-smelting-3",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "solid-tungsten-oxide", amount = 12},
-            {type = "fluid", name = "gas-hydrogen", amount = 60},
-            {type = "fluid", name = "gas-argon", amount = 30},
+            { type = "item",  name = "solid-tungsten-oxide", amount = 12 },
+            { type = "fluid", name = "gas-hydrogen",         amount = 60 },
+            { type = "fluid", name = "gas-argon",            amount = 30 },
         },
         results = {
-            {type = "item", name = "powder-tungsten-carbide", amount = 12},
+            { type = "item", name = "powder-tungsten-carbide", amount = 12 },
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 1, angelsmods.smelting.number_tint),
         order = "aa",
     },
 
@@ -189,22 +193,21 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-2",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
-        energy_required = 8,
+        energy_required = 16,
         enabled = "false",
         ingredients = {
-            {type = "fluid", name = "gas-tungsten-hexafluoride", amount = 80},
-            {type = "fluid", name = "gas-hydrogen", amount = 60},
-            {type = "item", name = "solid-carbon", amount = 5},
+            { type = "fluid", name = "gas-tungsten-hexafluoride", amount = 80 },
+            { type = "fluid", name = "gas-hydrogen",              amount = 60 },
+            { type = "item",  name = "solid-carbon",              amount = 5 },
         },
         results = {
-            {type = "item", name = "powder-tungsten-carbide", amount = 12},
-            {type = "fluid", name = "liquid-hydrofluoric-acid", amount = 60},
-            {type = "fluid", name = "water-purified", amount = 20},
+            { type = "item",  name = "powder-tungsten-carbide",  amount = 24 },
+            { type = "fluid", name = "liquid-hydrofluoric-acid", amount = 60 },
+            { type = "fluid", name = "water-purified",           amount = 20 },
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 2, angelsmods.smelting.number_tint),
         order = "ab",
     },
 
@@ -212,21 +215,20 @@ data:extend({
     {
         type = "recipe",
         name = "tungsten-carbide-smelting-3",
-        category = "chemical-smelting",
+        category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
         enabled = "false",
         ingredients = {
-            {type = "fluid", name = "gas-tungsten-hexachloride", amount = 60},
-            {type = "fluid", name = "gas-hydrogen", amount = 50},
-            {type = "item", name = "solid-carbon", amount = 5},
+            { type = "fluid", name = "gas-tungsten-hexachloride", amount = 60 },
+            { type = "fluid", name = "gas-hydrogen",              amount = 50 },
+            { type = "item",  name = "solid-carbon",              amount = 5 },
         },
         results = {
-            {type = "item", name = "powder-tungsten-carbide", amount = 12},
-            {type = "fluid", name = "gas-hydrogen-chloride", amount = 40},
+            { type = "item",  name = "powder-tungsten-carbide", amount = 12 },
+            { type = "fluid", name = "gas-hydrogen-chloride",   amount = 40 },
         },
-        icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 3, angelsmods.smelting.number_tint),
         order = "ac",
     },
 
@@ -240,20 +242,20 @@ data:extend({
             enabled = "false",
             energy_required = 4,
             ingredients = {
-                {type = "item", name = "powder-tungsten-carbide", amount = 12},
+                { type = "item", name = "powder-tungsten-carbide", amount = 12 },
             },
             results = {
-                {type = "item", name = "tungsten-carbide", amount = 12},
+                { type = "item", name = "tungsten-carbide", amount = 12 },
             },
         },
         expensive = {
             enabled = "false",
             energy_required = 4,
             ingredients = {
-                {type = "item", name = "powder-tungsten-carbide", amount = 15*intermediatemulti},
+                { type = "item", name = "powder-tungsten-carbide", amount = 15 * intermediatemulti },
             },
-            results={
-                {type = "item", name = "tungsten-carbide", amount = 12},
+            results = {
+                { type = "item", name = "tungsten-carbide", amount = 12 },
             },
         },
         order = "ad",
@@ -268,17 +270,17 @@ data:extend({
         energy_required = 4,
         enabled = "false",
         ingredients = {
-            {type = "item", name = "stone-brick", amount = 4},
-            {type = "item", name = "angels-plate-titanium", amount = 4},
-            {type = "fluid", name = "liquid-concrete", amount = 40},
+            { type = "item",  name = "stone-brick",           amount = 4 },
+            { type = "item",  name = "angels-plate-titanium", amount = 4 },
+            { type = "fluid", name = "liquid-concrete",       amount = 40 },
         },
         results = {
-            {type = "item", name = "titanium-concrete-brick", amount = 4},
+            { type = "item", name = "titanium-concrete-brick", amount = 4 },
         },
-        order = "j",
+        order = "k[titanium-concrete-brick]",
     },
 })
 
 if mods["Clowns-Processing"] then
-    bobmods.lib.recipe.add_ingredient("pellet-tungsten-smelting-2", {"solid-tetrasodium-pyrophosphate", 1})
+    bobmods.lib.recipe.add_ingredient("pellet-tungsten-smelting-2", { "solid-tetrasodium-pyrophosphate", 1 })
 end

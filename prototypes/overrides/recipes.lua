@@ -3,6 +3,7 @@ local bioprocessing_recipes = {
     "algae-farm",
     "algae-farm-2",
     "algae-farm-3",
+    "algae-farm-4",
     "bio-arboretum-1",
     "bio-generator-temperate-1",
     "bio-generator-swamp-1",
@@ -26,9 +27,4 @@ local bioprocessing_recipes = {
 for _, name in pairs(bioprocessing_recipes) do
     local recipe = data.raw.recipe[name]
     if recipe then recipe.order = nil end
-end
-
--- Add liquifying crafting category to advanced chemical plant 3
-if angelsmods.refining then
-    table.insert(data.raw["assembling-machine"]["advanced-chemical-plant-3"].crafting_categories, "liquifying")
 end

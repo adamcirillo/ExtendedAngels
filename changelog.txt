@@ -1,4 +1,173 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.12
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 0.5.11
+Date: 2024-08-31
+  Locale:
+    - Updated Ukranian, German and French localizations
+---------------------------------------------------------------------------------------------------
+Version: 0.5.10
+Date: 2023-12-23
+  Changes:
+    - Renamed Sodium Processing 2 to Sodium Processing 3 as Angel's has added a Sodium Processing 2 tech
+    - Tidied up prerequisites and required science packs
+    - The following buildings now take Tungsten carbide plate instead of Copper tungsten plate to match the other T6 Angel's buildings:
+      - Advanced gas refinery 4
+      - Biter refugium 3
+      - Leaching plant 4
+      - Ore refinery 3
+    - Adjusted the ingredient tiers for the folllowing structures to eliminate a tier gap:
+      - Algae farm 5
+      - Hydro plant 4
+    - All T5 and T6 buildings should now use Titanium concrete bricks
+    - Set minimum required building tiers for Copper Tungsten and Tungsten Carbide recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.5.9
+Date: 2023-04-06
+  Bugfixes:
+    - Fixed that in expensive recipe mode, Washing plant 2 was an ingredient in Washing plant 4
+    - Fixed that the upgrade planner would downgrade Salination plant 3, Advanced chemical plant 3, Air filter 4, Washing plant 4, and Hydro plant 4 to a previous tier
+  Locale:
+    - Added localization for Japanese
+---------------------------------------------------------------------------------------------------
+Version: 0.5.8
+Date: 2023-01-01
+  Changes:
+    - Adjusted the ingredients tiers for the following structures to align with changes to Angel's Bioprocessing in version 0.7.23
+      - Oil press 2/3 ingredients increased from tiers 2/3 to tiers 3/4
+      - Butchery 2/3 ingredients increased from tiers 2/3 to tiers 3/4
+      - Basic farm 2/3 ingredients increased from tiers 1/2 to tiers 2/3
+      - Desert, Swamp, and Temperate farm 2/3 ingredients increased from tiers 3/4 to tiers 4/5
+      - Hatchery 2/3 ingredients increased from tiers 2/3 to tiers 4/5
+      - Nutrient extractor 2/3 ingredients increased from tiers 2/3 to tiers 3/4
+      - Fish tank 2/3 ingredients increased from tiers 2/3 to tiers 3/4
+    - Moved Seed extractor 2 and 3 unlocks into technologies Garden Processing 2 and 3 respectively
+    - Moved Desert, Swamp, and Temperate farm 2 unlocks into their respective Farming 2 technologies
+    - Removed technology "Advanced farm upgrades 2", and moved Desert, Swamp and Temperate farm 3 unlocks into "Advanced farm upgrades"
+    - Minimum version of Angel's Bioprocessing has been incremented to version 0.7.23
+    - Removed Air filter 3, Crystallizer 3 and Filtration Unit 3 as added by this mod; buildings are now native to Angel's Petrochem and Angel's Refining
+    - Minimum version of Angel's Smelting has been incremented to version 0.6.20
+  Locale:
+    - Added partial localization for Korean
+---------------------------------------------------------------------------------------------------
+Version: 0.5.7
+Date: 2022-04-03
+  Locale:
+    - Updated localization for Ukrainian
+---------------------------------------------------------------------------------------------------
+Version: 0.5.6
+Date: 2022-03-30
+  Locale:
+    - Updated localization for Ukrainian
+---------------------------------------------------------------------------------------------------
+Version: 0.5.5
+Date: 2022-03-19
+  Locale:
+    - Added partial localization for Ukrainian
+    - Updated localization for French
+---------------------------------------------------------------------------------------------------
+Version: 0.5.4
+Date: 2022-01-04
+  Bugfixes:
+    - Fixed that several technology icons were not sized correctly when playing with the latest versions of Angel's mods
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 2021-12-19
+  Changes:
+    - Minimum versions of Angel's Bioprocessing and Angel's Smelting have been incremented to the latest versions
+  Bugfixes:
+    - Fixed startup errors related to changed icon definitions for several buildings to account for graphics changes in Angel's Refinings 0.12.1
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 2021-10-16
+  Bugfixes:
+    - Fixed that tint assignment for Angel's Refining structures did not validate the existence of the field being called leading to a startup error when Artisanal Reskins: Angel's mods is enabled
+  Locale:
+    - Updated Russian localization
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 2021-09-14
+  Changes:
+    - Changed icon for Oil refinery 3 to align with changes in Angel's Refining
+  Locale:
+    - Fixed that Flotation cell 4 was spelled incorrectly
+    - Added partial localization for Brazilian Portuguese
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2021-08-13
+  Features:
+    - Recipes have been reworked to be in-line with current Angel's recipes, and make use of higher tier materials where appropriate
+    - Technologies have had their time requirements updated to be more in-line with current Angel's technologies (15s -> 30s)
+    - Angel's Bioprocessing minimum required version now 0.7.20
+  Changes:
+    - Angel's Bioprocessing 0.7.20 adds an Algae farm 4; as such the Algae farm 4 added by this mod has been changed to the Algae farm 5
+      - No migration of existing algae farm 4s will be attempted to avoid collisions with Angel's Bioprocessing
+  Bugfixes:
+    - Updated the API call to Angel's Industries for `add_minable_results`, fixing a startup error
+  Locale:
+    - Added localization for Russian
+---------------------------------------------------------------------------------------------------
+Version: 0.4.8
+Date: 2021-06-13
+  Changes:
+    - Angel's Smelting minimum version set to 0.6.15
+    - Angel's Bioprocessing minimum version set to 0.7.18
+    - Removed now-redundant code bits related to supporting older versions of Angel's Smelting and Angel's Bioprocessing
+  Locale:
+    - Renamed Press 2 and Press 3 to Oil press 2 and Oil press 3 reflecting changes in Angel's Bioprocessing
+    - Updated German localization
+---------------------------------------------------------------------------------------------------
+Version: 0.4.7
+Date: 2021-05-28
+  Bugfixes:
+    - Fixed that Filtration unit 3 was missing a crafting category available in Filtration unit 2
+---------------------------------------------------------------------------------------------------
+Version: 0.4.6
+Date: 2021-05-28
+  Bugfixes:
+    - Fixed inconsistent sorting of Warehouses in interface
+    - Fixed overwrite clash in Puffer refugium 3 technology with Angel's Bioprocessing
+  Locale:
+    - Added localization for German, partial localization for Vietnamese
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 2021-04-04
+  Changes:
+    - Doubled the Tungsten carbide powder mixture output from 12 to 24 units, of the second tier of tungsten carbide powder mixture recipe, and increased the processing time from 8 to 16 seconds to bring it into line with the first and third tier recipes; also added tier numerals
+    - Adjusted item and recipe sorting to correct a few issues with tungsten carbide, copper tungsten and a few miscellaneous items
+    - Added an input fluid port on induction furnaces, and moved the recipes for molten copper-tungsten from the chemical furnace to the induction furnace
+    - Added high-res versions of copper tungsten and tungsten carbide items, recipes, and technologies, active when using the upcoming release of Angel's mods
+  Bugfixes:
+    - Fixed that the recipe for zinc powder did not have ingredients; it is now properly crafted from 1 zinc ingot
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2021-03-26
+  Bugfixes:
+    - Fixed that structures were not returning the correct item when deconstructed
+  Locale:
+    - Fixed several typos
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 2021-03-23
+  Features:
+    - Added the setting "Legacy inventory sizes" to enable legacy inventory slot counts for warehouses
+    - Now dependent on Factorio Library
+  Changes:
+    - Adjusted the check for Angel's component mode to use the Angel's component mode trigger
+    - Adjusted the warehouse inventory size defaults for performance reasons; new defaults correspond to a 15%, 30%, and 45% increase for each tier over the defaults from Angel's Addons - Storage Options, down from 147%, 340%, 532%, and 725%
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2021-03-21
+  Bugfixes:
+    - Fixed startup error when no Angel's Addons mods are present.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2021-03-21
+  Bugfixes:
+    - Fixed startup errors related to disabling warehouses while using Angel's Addons - Storage Options
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2021-03-20
   Features:
@@ -7,11 +176,12 @@ Date: 2021-03-20
     - Substantial code cleanup and rework of entity creation
     - Updated how Angel numerals are handled; supports upcoming numeral rework in Angel's mods
     - Technology `bio-pressing-2` now handles upcoming changes in Angel's Bioprocessing
-    - Locale updates to conform to locale changes in Angel's mods
+    - Locale updates to conform to upcoming locale changes in Angel's mods
     - Adjusted pollution for several refining, petrochemical and bioprocessing buildings added by this mod to be in-line with Angel's pollution values
     - Addjusted energy usage for several refining, petrochemical buildings to correct some inconsistencies with scaling
     - Adjusted module slot count for bioprocessing buildings added by this mod to 2 (inherited) to be in line with changes to Angel's Bioprocessing regarding modules
     - Corrected tier color progression for refining structures
+    - Removed version numbers from dependency
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2021-03-20
@@ -77,7 +247,7 @@ Date: 2020-04-20
 Version: 0.3.4
 Date: 2020-04-19
   Changes:
-    - Removed logging for Angels Componets support
+    - Removed logging for Angels Components support
     - Fixed missing Bob's Logistics pack missing from Logistics warehoue 3 & 4
     - Added tress to Mk2 & Mk3 Seed Generators
 ---------------------------------------------------------------------------------------------------

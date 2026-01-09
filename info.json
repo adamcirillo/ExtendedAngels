@@ -1,17 +1,17 @@
 {
-  "name": "extendedangels",
-  "version": "0.4.0",
-  "factorio_version": "1.1",
-  "title": "Extended Angels",
-  "author": "AdamCirillo",
-  "contact": "",
-  "homepage": "",
-  "dependencies":
-    [
-    "angelssmelting",
-    "bobplates",
-    "? angelsaddons-storage",
-    "? bobtech",
-    "? angelsbioprocessing",
-    "? Clowns-Processing"]
+    "name": "extendedangels",
+    "version": "0.5.12",
+    "factorio_version": "1.1",
+    "title": "Extended Angels",
+    "author": "AdamCirillo",
+    "dependencies":[
+        "angelsrefining >= 0.12.5",
+        "angelssmelting >= 0.6.22",
+        "bobplates",
+        "flib",
+        "? angelsaddons-storage",
+        "? bobtech",
+        "? angelsbioprocessing >= 0.7.25",
+        "? Clowns-Processing"
+    ]
 }
