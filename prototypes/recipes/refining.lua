@@ -103,7 +103,7 @@ angelsmods.functions.RB.build({
     -- Ore leaching plant 4
     {
         type = "recipe",
-        name = "ore-leaching-plant-4",
+        name = "angels-ore-leaching-plant-4",
         localised_name = { "entity-name.angels-ore-leaching-plant-4" },
         energy_required = 5,
         enabled = false,

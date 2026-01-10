@@ -9,7 +9,7 @@ data:extend({
         icon_size = 128,
         prerequisites = {
             "angels-warehouses",
-            "angels-zinc-processing",
+            "bob-zinc-processing",
             "angels-invar-smelting-1",
         },
         effects = {
@@ -38,7 +38,7 @@ data:extend({
         prerequisites = {
             "angels-warehouses-2",
             "angels-titanium-smelting-1",
-            "angels-ceramics",
+            "bob-ceramics",
         },
         effects = {
             {
@@ -67,7 +67,7 @@ data:extend({
         prerequisites = {
             "angels-warehouses-3",
             "angels-tungsten-smelting-1",
-            "angels-nitinol-processing",
+            "bob-nitinol-processing",
         },
         effects = {
             {
@@ -97,7 +97,7 @@ data:extend({
         prerequisites = {
             "angels-logistic-warehouses",
             "angels-warehouses-2",
-            "angels-zinc-processing",
+            "bob-zinc-processing",
             "angels-invar-smelting-1",
         },
         effects = {
@@ -144,8 +144,8 @@ data:extend({
             "angels-logistic-warehouses-2",
             "angels-warehouses-3",
             "angels-titanium-smelting-1",
-            "angels-ceramics",
-            "advanced-electronics-2",
+            "bob-ceramics",
+            "processing-unit",
         },
         effects = {
             {
@@ -192,8 +192,8 @@ data:extend({
             "angels-logistic-warehouses-3",
             "angels-warehouses-4",
             "angels-tungsten-smelting-1",
-            "angels-nitinol-processing",
-            "angels-advanced-electronics-3",
+            "bob-nitinol-processing",
+            "bob-advanced-processing-unit",
         },
         effects = {
             {

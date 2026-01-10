@@ -45,7 +45,7 @@ if not mods["Clowns-Processing"] then
                 icon = util.copy(prerequisite.icon),
                 icon_size = util.copy(prerequisite.icon_size),
                 prerequisites = {
-                    "angels-utility-science-pack",
+                    "utility-science-pack",
                     "angels-water-treatment-4",
                 },
                 effects = {
