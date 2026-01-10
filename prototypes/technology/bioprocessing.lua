@@ -88,7 +88,7 @@ data:extend({
                 { "logistic-science-pack",   1 },
                 { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 },
-                { "token-bio",               1 }
+                { "angels-token-bio",        1 }
             },
             time = 30
         },
@@ -128,7 +128,7 @@ data:extend({
                 { "logistic-science-pack",   4 },
                 { "chemical-science-pack",   4 },
                 { "production-science-pack", 4 },
-                { "token-bio",               1 }
+                { "angels-token-bio",        1 }
             },
             time = 30
         }
@@ -166,7 +166,7 @@ data:extend({
                 { "chemical-science-pack",   4 },
                 { "production-science-pack", 4 },
                 { "utility-science-pack",    4 },
-                { "token-bio",               1 }
+                { "angels-token-bio",        1 }
             },
             time = 30
         }
@@ -200,7 +200,7 @@ data:extend({
                 { "logistic-science-pack",   1 },
                 { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 },
-                { "token-bio",               1 }
+                { "angels-token-bio",        1 }
             },
             time = 30
         },

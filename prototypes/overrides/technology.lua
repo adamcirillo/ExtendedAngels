@@ -1,9 +1,9 @@
 local OV = angelsmods.functions.OV
 
-OV.add_prereq("angels-tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
-OV.disable_recipe({ "angels-copper-tungsten-alloy" })
-OV.disable_recipe({ "angels-tungsten-carbide" })
-OV.disable_recipe({ "angels-tungsten-carbide-2" })
+OV.add_prereq("bob-tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
+OV.disable_recipe({ "bob-copper-tungsten-alloy" })
+OV.disable_recipe({ "bob-tungsten-carbide" })
+OV.disable_recipe({ "bob-tungsten-carbide-2" })
 OV.disable_recipe({ "angels-pellet-tungsten-smelting" })
 
 OV.add_unlock("angels-advanced-chemistry-5", "angels-advanced-chemical-plant-3")
@@ -23,20 +23,20 @@ OV.add_unlock("angels-advanced-ore-refining-4", "angels-ore-floatation-cell-4")
 OV.add_unlock("angels-water-treatment-4", "angels-hydro-plant-4")
 
 if mods["boblogistics"] then
-  OV.remove_prereq("bob-repair-pack-5", "tungsten-alloy-processing")
-  OV.remove_prereq("bob-robots-3", "tungsten-alloy-processing")
+  OV.remove_prereq("bob-repair-pack-5", "bob-tungsten-alloy-processing")
+  OV.remove_prereq("bob-robots-3", "bob-tungsten-alloy-processing")
   OV.add_prereq("bob-repair-pack-5", "angels-tungsten-carbide-smelting-1")
   OV.add_prereq("bob-robots-3", "angels-tungsten-carbide-smelting-1")
 end
 
 if mods["bobrevamp"] then
-  OV.remove_prereq("heat-shield", "angels-tungsten-alloy-processing")
-  OV.add_prereq("heat-shield", "angels-tungsten-carbide-smelting-1")
+  OV.remove_prereq("bob-heat-shield", "bob-tungsten-alloy-processing")
+  OV.add_prereq("bob-heat-shield", "angels-tungsten-carbide-smelting-1")
 end
 
 if mods["bobwarfare"] then
-  OV.remove_prereq("tankotron", "angels-tungsten-alloy-processing")
-  OV.add_prereq("tankotron", "angels-tungsten-carbide-smelting-1")
+  OV.remove_prereq("bob-tankotron", "bob-tungsten-alloy-processing")
+  OV.add_prereq("bob-tankotron", "angels-tungsten-carbide-smelting-1")
 end
 
 if mods["Clowns-Extended-Minerals"] then

@@ -8,7 +8,7 @@ data:extend({
         prerequisites = {
             "angels-advanced-chemistry-5",
             "angels-lead-smelting-3",
-            "sodium-processing-2",
+            "angels-sodium-processing-2",
         },
         effects = {
             {

@@ -153,7 +153,7 @@ data:extend({
             { type = "fluid", name = "angels-liquid-molten-copper-tungsten", amount = 40 },
         },
         results = {
-            { type = "item", name = "angels-copper-tungsten-alloy", amount = 4 },
+            { type = "item", name = "bob-copper-tungsten-alloy", amount = 4 },
         },
         order = "g[copper-tungsten]-b[copper-tungsten-alloy]",
     },
@@ -162,7 +162,7 @@ data:extend({
     {
         type = "recipe",
         name = "angels-solid-tungsten-oxide-smelting-2",
-        category = "liquifying",
+        category = "angels-liquifying",
         subgroup = "angels-tungsten-carbide",
         energy_required = 6,
         enabled = false,
@@ -208,7 +208,7 @@ data:extend({
         auto_recycle = false,
         ingredients = {
             { type = "fluid", name = "angels-gas-tungsten-hexafluoride", amount = 80 },
-            { type = "fluid", name = "angeps-gas-hydrogen",              amount = 60 },
+            { type = "fluid", name = "angels-gas-hydrogen",              amount = 60 },
             { type = "item",  name = "angels-solid-carbon",              amount = 5 },
         },
         results = {
@@ -255,7 +255,7 @@ data:extend({
             { type = "item", name = "angels-powder-tungsten-carbide", amount = 12 },
             },
         results = {
-            { type = "item", name = "angels-tungsten-carbide", amount = 12 },
+            { type = "item", name = "bob-tungsten-carbide", amount = 12 },
          },
         order = "ad",
     },
@@ -264,7 +264,7 @@ data:extend({
     {
         type = "recipe",
         name = "angels-titanium-concrete-brick",
-        category = "angels-crafting-with-fluid",
+        category = "crafting-with-fluid",
         subgroup = "angels-stone-casting",
         energy_required = 4,
         enabled = false,

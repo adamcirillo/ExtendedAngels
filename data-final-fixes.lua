@@ -1,9 +1,9 @@
 -- Remove recipes and clear module limitations
 local recipe_list = {
     "angels-pellet-tungsten-smelting",
-    "angels-tungsten-carbide",
-    "angels-tungsten-carbide-2",
-    "angels-copper-tungsten-alloy"
+    "bob-tungsten-carbide",
+    "bob-tungsten-carbide-2",
+    "bob-copper-tungsten-alloy"
 }
 
 for _, recipe in pairs(recipe_list) do
@@ -33,7 +33,7 @@ local previous_building = {
     "angels-bio-arboretum-2",
     "angels-bio-arboretum-3",
     "angels-advanced-chemical-plant-3",
-    "angels-angels-air-filter-4",
+    "angels-air-filter-4",
     "angels-hydro-plant-4",
     "angels-salination-plant-3",
     "angels-washing-plant-3",

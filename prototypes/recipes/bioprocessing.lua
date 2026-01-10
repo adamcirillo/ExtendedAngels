@@ -25,7 +25,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-bio-generator-temperate-1", amount = 1 },
-            { type = "item", name = "temperate-tree", amount = 1 },
+            { type = "item", name = "angels-temperate-tree", amount = 1 },
             { type = "item", name = "t2-plate", amount = 2 },
             { type = "item", name = "t2-circuit", amount = 2 },
             { type = "item", name = "t2-brick", amount = 1 },
@@ -41,8 +41,8 @@ angelsmods.functions.RB.build({
         energy_required = 5,
         enabled = false,
         ingredients = {
-            { type = "item", name = "bio-generator-swamp-1", amount = 1 },
-            { type = "item", name = "swamp-tree", amount = 1 },
+            { type = "item", name = "angels-bio-generator-swamp-1", amount = 1 },
+            { type = "item", name = "angels-swamp-tree", amount = 1 },
             { type = "item", name = "t2-plate", amount = 2 },
             { type = "item", name = "t2-circuit", amount = 2 },
             { type = "item", name = "t2-brick", amount = 1 },
@@ -58,7 +58,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-bio-generator-desert-1", amount = 1 },
-            { type = "item", name = "desert-tree", amount = 1 },
+            { type = "item", name = "angels-desert-tree", amount = 1 },
             { type = "item", name = "t2-plate", amount = 2 },
             { type = "item", name = "t2-circuit", amount = 2 },
             { type = "item", name = "t2-brick", amount = 1 },
@@ -92,7 +92,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-bio-generator-temperate-2", amount = 1 },
-            { type = "item", name = "temperate-tree", amount = 1 },
+            { type = "item", name = "angels-temperate-tree", amount = 1 },
             { type = "item", name = "t3-plate", amount = 2 },
             { type = "item", name = "t3-circuit", amount = 2 },
             { type = "item", name = "t3-brick", amount = 1 },
@@ -109,7 +109,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-bio-generator-swamp-2", amount = 1 },
-            { type = "item", name = "swamp-tree", amount = 1 },
+            { type = "item", name = "angels-swamp-tree", amount = 1 },
             { type = "item", name = "t3-plate", amount = 2 },
             { type = "item", name = "t3-circuit", amount = 2 },
             { type = "item", name = "t3-brick", amount = 1 },
@@ -126,7 +126,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-bio-generator-desert-2", amount = 1 },
-            { type = "item", name = "desert-tree", amount = 1 },
+            { type = "item", name = "angels-desert-tree", amount = 1 },
             { type = "item", name = "t3-plate", amount = 2 },
             { type = "item", name = "t3-circuit", amount = 2 },
             { type = "item", name = "t3-brick", amount = 1 },
@@ -240,7 +240,7 @@ angelsmods.functions.RB.build({
         energy_required = 5,
         enabled = false,
         ingredients = {
-            { type = "item", name = "bio-butchery-2", amount = 1 },
+            { type = "item", name = "angels-bio-butchery-2", amount = 1 },
             { type = "item", name = "t4-plate", amount = 3 },
             { type = "item", name = "t4-circuit", amount = 1 },
             { type = "item", name = "t4-brick", amount = 2 },
@@ -321,7 +321,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-temperate-farm", amount = 1 },
-            { type = "item", name = "temperate-upgrade", amount = 1 },
+            { type = "item", name = "angels-temperate-upgrade", amount = 1 },
             { type = "item", name = "t4-plate", amount = 8 },
             { type = "item", name = "t4-circuit", amount = 2 },
             { type = "item", name = "t4-brick", amount = 9 },
@@ -338,7 +338,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-temperate-farm-2", amount = 1 },
-            { type = "item", name = "temperate-upgrade", amount = 1 },
+            { type = "item", name = "angels-temperate-upgrade", amount = 1 },
             { type = "item", name = "t5-plate", amount = 8 },
             { type = "item", name = "t5-circuit", amount = 2 },
             { type = "item", name = "t5-brick", amount = 9 },
@@ -355,7 +355,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-desert-farm", amount = 1 },
-            { type = "item", name = "desert-upgrade", amount = 1 },
+            { type = "item", name = "angels-desert-upgrade", amount = 1 },
             { type = "item", name = "t4-plate", amount = 8 },
             { type = "item", name = "t4-circuit", amount = 2 },
             { type = "item", name = "t4-brick", amount = 9 },
@@ -372,7 +372,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-desert-farm-2", amount = 1 },
-            { type = "item", name = "desert-upgrade", amount = 1 },
+            { type = "item", name = "angels-desert-upgrade", amount = 1 },
             { type = "item", name = "t5-plate", amount = 8 },
             { type = "item", name = "t5-circuit", amount = 2 },
             { type = "item", name = "t5-brick", amount = 9 },
@@ -389,7 +389,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-swamp-farm", amount = 1 },
-            { type = "item", name = "swamp-upgrade", amount = 1 },
+            { type = "item", name = "angels-swamp-upgrade", amount = 1 },
             { type = "item", name = "t4-plate", amount = 8 },
             { type = "item", name = "t4-circuit", amount = 2 },
             { type = "item", name = "t4-brick", amount = 9 },
@@ -406,7 +406,7 @@ angelsmods.functions.RB.build({
         enabled = false,
         ingredients = {
             { type = "item", name = "angels-swamp-farm-2", amount = 1 },
-            { type = "item", name = "swamp-upgrade", amount = 1 },
+            { type = "item", name = "angels-swamp-upgrade", amount = 1 },
             { type = "item", name = "t5-plate", amount = 8 },
             { type = "item", name = "t5-circuit", amount = 2 },
             { type = "item", name = "t5-brick", amount = 9 },

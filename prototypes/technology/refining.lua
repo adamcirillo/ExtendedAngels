@@ -1,5 +1,5 @@
 if not mods["Clowns-Extended-Minerals"] then
-    local prerequisite = data.raw.technology["water-washing-2"]
+    local prerequisite = data.raw.technology["angels-water-washing-2"]
     if prerequisite then
         data:extend({
             -- Water washing 3
@@ -36,7 +36,7 @@ if not mods["Clowns-Extended-Minerals"] then
 end
 
 if not mods["Clowns-Processing"] then
-    local prerequisite = data.raw.technology["water-treatment-4"]
+    local prerequisite = data.raw.technology["angels-water-treatment-4"]
     if prerequisite then
         data:extend({
             {
@@ -74,7 +74,7 @@ if not mods["Clowns-Processing"] then
 end
 
 
-local prerequisite = data.raw.technology["water-washing-3"]
+local prerequisite = data.raw.technology["angels-water-washing-3"]
 if prerequisite then
     data:extend({
         -- Water washing 4
@@ -110,7 +110,7 @@ if prerequisite then
     })
 end
 
-local prerequisite = data.raw.technology["advanced-ore-refining-4"]
+local prerequisite = data.raw.technology["angels-advanced-ore-refining-4"]
 if prerequisite then
     data:extend({
         -- Advanced ore refining 5
