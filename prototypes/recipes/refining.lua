@@ -80,7 +80,7 @@ angelsmods.functions.RB.build({
             { type = "item", name = "t4-brick", amount = 3 },
             { type = "item", name = "t4-gears", amount = 2 },
             },
-        results = { { type = "item", name = "angels-ore-crusher-3", amount = 1 } },
+        results = { { type = "item", name = "angels-ore-crusher-4", amount = 1 } },
     },
 
     -- Ore floatation cell 4
@@ -97,7 +97,7 @@ angelsmods.functions.RB.build({
             { type = "item", name = "t5-pipe", amount = 4 },
             { type = "item", name = "t5-brick", amount = 8 },
             },
-        results = { { type = "item", name = "angels-ore-floatation-cell-3", amount = 1 } },
+        results = { { type = "item", name = "angels-ore-floatation-cell-4", amount = 1 } },
     },
 
     -- Ore leaching plant 4
@@ -131,7 +131,7 @@ angelsmods.functions.RB.build({
             { type = "item", name = "t6-circuit", amount = 12 },
             { type = "item", name = "t6-brick", amount = 20 },
             },
-        results = { { type = "item", name = "angels-ore-refinery-2", amount = 1 } },
+        results = { { type = "item", name = "angels-ore-refinery-3", amount = 1 } },
     },
 
 })
