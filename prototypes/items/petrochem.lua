@@ -14,7 +14,7 @@ data:extend({
     {
         type = "fluid",
         name = "angels-gas-argon",
-        icons = {{ icon = "__extendedangels__/graphics/icons/gas-argon.png", icon_size = 64 }},
+        icons = {{ icon = "__extendedangels__/graphics/icons/gas-argon.png", icon_size = 32 }},
         default_temperature = 0,
         heat_capacity = "0kJ",
         base_color = { r = 0 / 255, g = 0 / 255, b = 0 / 255 },
