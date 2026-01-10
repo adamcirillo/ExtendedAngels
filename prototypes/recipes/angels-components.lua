@@ -38,7 +38,7 @@ if mods["angelsindustries"] then
             {
                 type = "item",
                 name = "block-construction-0", -- required at start
-                icon = "__angelsindustries__/graphics/icons/block-construction-1.png",
+                icon = "__angelsindustriesgraphics__/graphics/icons/block-construction-1.png",
                 icon_size = 32,
                 subgroup = "blocks-frames",
                 order = "a",

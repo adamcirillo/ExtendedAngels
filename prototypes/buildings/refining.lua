@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item",
         name = "angels-hydro-plant-4",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/hydro-plant.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/hydro-plant.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
         subgroup = "angels-water-treatment-building",
         order = "a[hydro-plant]-d[mk4]",
         place_result = "angels-hydro-plant-4",
@@ -27,7 +27,7 @@ data:extend({
     {
         type = "item",
         name = "angels-salination-plant-3",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/salination-plant.png", icon_size = 64 }, 3, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/salination-plant.png", icon_size = 64 }, 3, angelsmods.refining.number_tint),
         subgroup = "angels-water-treatment-building",
         order = "f[salination-plant3]",
         place_result = "angels-salination-plant-3",
@@ -51,7 +51,7 @@ data:extend({
     {
         type = "item",
         name = "angels-washing-plant-3",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 3, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 3, angelsmods.refining.number_tint),
         subgroup = "angels-washing-building",
         order = "b[washing-plant]-c[mk3]",
         place_result = "angels-washing-plant-3",
@@ -76,7 +76,7 @@ data:extend({
     {
         type = "item",
         name = "angels-washing-plant-4",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 4, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 4, angelsmods.refining.number_tint),
         subgroup = "angels-washing-building",
         order = "b[washing-plant]-d[mk4]",
         place_result = "angels-washing-plant-4",
@@ -100,7 +100,7 @@ data:extend({
     {
         type = "item",
         name = "angels-ore-crusher-4",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-crusher.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-crusher.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
         subgroup = "angels-ore-crusher",
         order = "e[ore-crusher-4]",
         place_result = "angels-ore-crusher-4",
@@ -124,7 +124,7 @@ data:extend({
     {
         type = "item",
         name = "angels-ore-floatation-cell-4",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-floatation-cell.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-floatation-cell.png", icon_size = 64 }, 4, angelsmods.refining.number_tint),
         subgroup = "angels-ore-floatation",
         order = "d[ore-floatation-cell-4]",
         place_result = "angels-ore-floatation-cell-4",
@@ -172,7 +172,7 @@ data:extend({
     {
         type = "item",
         name = "angels-ore-refinery-3",
-        icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-refinery.png", icon_size = 64 }, 3, angelsmods.refining.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-refinery.png", icon_size = 64 }, 3, angelsmods.refining.number_tint),
         subgroup = "angels-ore-refining",
         order = "c[ore-refinery-3]",
         place_result = "angels-ore-refinery-3",
@@ -208,11 +208,11 @@ data.raw["assembling-machine"]["angels-salination-plant-3"].next_upgrade = nil
 
 
 -- Entity icon adjustments
-data.raw["assembling-machine"]["angels-hydro-plant-4"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/hydro-plant.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-salination-plant-3"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/salination-plant.png", icon_size = 64 }, 3, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-washing-plant-3"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 3, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-washing-plant-4"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 4, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-ore-crusher-4"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-crusher.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-ore-floatation-cell-4"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-floatation-cell.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-hydro-plant-4"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/hydro-plant.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-salination-plant-3"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/salination-plant.png", icon_size = 64 }, 3, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-washing-plant-3"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 3, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-washing-plant-4"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/washing-plant-ico.png", icon_size = 32 }, 4, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-ore-crusher-4"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-crusher.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-ore-floatation-cell-4"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-floatation-cell.png", icon_size = 64 }, 4, angelsmods.refining.number_tint)
 data.raw["assembling-machine"]["angels-ore-leaching-plant-4"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/ore-leaching-plant-4.png", icon_size = 32 }, 4, angelsmods.refining.number_tint)
-data.raw["assembling-machine"]["angels-ore-refinery-3"].icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-refinery.png", icon_size = 64 }, 3, angelsmods.refining.number_tint)
+data.raw["assembling-machine"]["angels-ore-refinery-3"].icons = extangels.numeral_tier({ icon = "__angelsrefininggraphics__/graphics/icons/ore-refinery.png", icon_size = 64 }, 3, angelsmods.refining.number_tint)

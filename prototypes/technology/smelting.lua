@@ -66,7 +66,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-stone-smelting-4",
-        icon = "__angelssmelting__/graphics/technology/cement-tech.png",
+        icon = "__angelssmeltinggraphics__/graphics/technology/cement-tech.png",
         icon_size = 128,
         upgrade = true,
         prerequisites = {

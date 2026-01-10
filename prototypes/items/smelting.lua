@@ -18,7 +18,7 @@ data:extend({
     {
         type = "item",
         name = "angels-solid-tungsten-trioxide",
-        icon = "__angelssmelting__/graphics/icons/solid-tungsten-oxide.png",
+        icon = "__angelssmeltinggraphics__/graphics/icons/solid-tungsten-oxide.png",
         icon_size = 32,
         subgroup = "angels-tungsten",
         order = "e",

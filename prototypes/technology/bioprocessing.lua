@@ -5,7 +5,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-advanced-bio-processing",
-        icon = "__angelsbioprocessing__/graphics/technology/algae-farm-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/algae-farm-tech.png",
         icon_size = 128,
         prerequisites = {
             "angels-bio-processing-blue",
@@ -33,7 +33,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-farm-3",
-        icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         prerequisites = {
             "angels-bio-farm-2",
@@ -68,7 +68,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-refugium-butchery-3",
-        icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-butchery-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-butchery-tech.png",
         icon_size = 160,
         order = "c-a",
         prerequisites = {
@@ -98,7 +98,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-farm-advanced-upgrade-1",
-        icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
@@ -137,7 +137,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-farm-advanced-upgrade-2",
-        icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
@@ -176,7 +176,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-refugium-hatchery-2",
-        icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-hatchery-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-puffer-hatchery-tech.png",
         icon_size = 160,
         order = "c-a",
         prerequisites = {
@@ -210,7 +210,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-nutrient-paste-2",
-        icon = "__angelsbioprocessing__/graphics/technology/nutrient-extractor-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/nutrient-extractor-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
@@ -242,7 +242,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-bio-refugium-fish-3",
-        icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-fish-tech.png",
+        icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-fish-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {

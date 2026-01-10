@@ -3,7 +3,7 @@ data:extend({
     {
         type = "technology",
         name = "angels-sodium-processing-3",
-        icon = "__angelspetrochem__/graphics/technology/sodium-tech.png",
+        icon = "__angelspetrochemgraphics__/graphics/technology/sodium-tech.png",
         icon_size = 128,
         prerequisites = {
             "angels-advanced-chemistry-5",

@@ -3,7 +3,7 @@ data:extend({
     {
         type = "item",
         name = "angels-advanced-chemical-plant-3",
-        icons = extangels.numeral_tier({ icon = "__angelspetrochem__/graphics/icons/advanced-chemical-plant.png", icon_size = 32 }, 3, angelsmods.petrochem.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelspetrochemgraphics__/graphics/icons/advanced-chemical-plant.png", icon_size = 32 }, 3, angelsmods.petrochem.number_tint),
         subgroup = "angels-petrochem-buildings-chemical-plant",
         order = "b[advanced]-c",
         place_result = "angels-advanced-chemical-plant-3",
@@ -27,7 +27,7 @@ data:extend({
     {
         type = "item",
         name = "angels-air-filter-4",
-        icons = extangels.numeral_tier({ icon = "__angelspetrochem__/graphics/icons/air-filter.png", icon_size = 32 }, 4, angelsmods.petrochem.number_tint),
+        icons = extangels.numeral_tier({ icon = "__angelspetrochemgraphics__/graphics/icons/air-filter.png", icon_size = 32 }, 4, angelsmods.petrochem.number_tint),
         subgroup = "angels-petrochem-buildings-electrolyser",
         order = "b[angels-air-filter]-d",
         place_result = "angels-air-filter-4",
@@ -53,5 +53,5 @@ data.raw["assembling-machine"]["angels-advanced-chemical-plant-3"].next_upgrade 
 data.raw["assembling-machine"]["angels-air-filter-4"].next_upgrade = nil
 
 -- Entity icon adjustments
-data.raw["assembling-machine"]["angels-advanced-chemical-plant-3"].icons = extangels.numeral_tier({ icon = "__angelspetrochem__/graphics/icons/advanced-chemical-plant.png", icon_size = 32 }, 3, angelsmods.petrochem.number_tint)
-data.raw["assembling-machine"]["angels-air-filter-4"].icons = extangels.numeral_tier({ icon = "__angelspetrochem__/graphics/icons/air-filter.png", icon_size = 32 }, 4, angelsmods.petrochem.number_tint)
+data.raw["assembling-machine"]["angels-advanced-chemical-plant-3"].icons = extangels.numeral_tier({ icon = "__angelspetrochemgraphics__/graphics/icons/advanced-chemical-plant.png", icon_size = 32 }, 3, angelsmods.petrochem.number_tint)
+data.raw["assembling-machine"]["angels-air-filter-4"].icons = extangels.numeral_tier({ icon = "__angelspetrochemgraphics__/graphics/icons/air-filter.png", icon_size = 32 }, 4, angelsmods.petrochem.number_tint)
