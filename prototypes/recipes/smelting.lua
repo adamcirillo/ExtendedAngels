@@ -1,5 +1,3 @@
--- Fetch marathon mode settings
-local intermediatemulti = angelsmods.marathon.intermediatemulti
 
 data:extend({
     -- Tungsten trioxide
@@ -9,7 +7,8 @@ data:extend({
         category = "chemical-smelting",
         subgroup = "angels-tungsten",
         energy_required = 4,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "pellet-tungsten", amount = 4 },
             { type = "fluid", name = "gas-oxygen",      amount = 60 },
@@ -27,7 +26,8 @@ data:extend({
         category = "chemical-smelting",
         subgroup = "angels-tungsten",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item", name = "solid-salt",              amount = 50 },
             { type = "item", name = "solid-tungsten-trioxide", amount = 12 },
@@ -46,7 +46,8 @@ data:extend({
         category = "blast-smelting",
         subgroup = "angels-tungsten",
         energy_required = 4,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item", name = "solid-sodium-tungstate", amount = 16 },
             { type = "item", name = "pellet-manganese",       amount = 4 },
@@ -65,7 +66,8 @@ data:extend({
         category = "advanced-crafting",
         subgroup = "angels-zinc-casting",
         energy_required = 0.5,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item", name = "ingot-zinc", amount = 1 }
         },
@@ -82,7 +84,8 @@ data:extend({
         category = "powder-mixing",
         subgroup = "angels-tungsten-casting",
         energy_required = 4,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item", name = "powder-tungsten", amount = 12 },
             { type = "item", name = "powder-zinc",     amount = 12 },
@@ -101,7 +104,8 @@ data:extend({
         category = "induction-smelting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "ingot-copper",    amount = 16 },
             { type = "item",  name = "powder-tungsten", amount = 12 },
@@ -121,7 +125,8 @@ data:extend({
         category = "induction-smelting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "ingot-copper",    amount = 8 },
             { type = "item",  name = "ingot-silver",    amount = 8 },
@@ -142,7 +147,8 @@ data:extend({
         category = "casting-4",
         subgroup = "angels-alloys-casting",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "fluid", name = "liquid-molten-copper-tungsten", amount = 40 },
         },
@@ -159,7 +165,8 @@ data:extend({
         category = "liquifying",
         subgroup = "angels-tungsten-carbide",
         energy_required = 6,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "solid-tungsten-trioxide", amount = 12 },
             { type = "fluid", name = "gas-hydrogen-chloride",   amount = 30 },
@@ -176,7 +183,8 @@ data:extend({
         category = "chemical-smelting-3",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "solid-tungsten-oxide", amount = 12 },
             { type = "fluid", name = "gas-hydrogen",         amount = 60 },
@@ -196,7 +204,8 @@ data:extend({
         category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
         energy_required = 16,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "fluid", name = "gas-tungsten-hexafluoride", amount = 80 },
             { type = "fluid", name = "gas-hydrogen",              amount = 60 },
@@ -218,7 +227,8 @@ data:extend({
         category = "chemical-smelting-4",
         subgroup = "angels-tungsten-carbide",
         energy_required = 8,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "fluid", name = "gas-tungsten-hexachloride", amount = 60 },
             { type = "fluid", name = "gas-hydrogen",              amount = 50 },
@@ -238,26 +248,15 @@ data:extend({
         name = "angels-plate-tungsten-carbide",
         category = "sintering",
         subgroup = "angels-tungsten-carbide-casting",
-        normal = {
-            enabled = "false",
-            energy_required = 4,
-            ingredients = {
-                { type = "item", name = "powder-tungsten-carbide", amount = 12 },
+        enabled = false,
+        auto_recycle = false,
+        energy_required = 4,
+        ingredients = {
+            { type = "item", name = "powder-tungsten-carbide", amount = 12 },
             },
-            results = {
-                { type = "item", name = "tungsten-carbide", amount = 12 },
-            },
-        },
-        expensive = {
-            enabled = "false",
-            energy_required = 4,
-            ingredients = {
-                { type = "item", name = "powder-tungsten-carbide", amount = 15 * intermediatemulti },
-            },
-            results = {
-                { type = "item", name = "tungsten-carbide", amount = 12 },
-            },
-        },
+        results = {
+            { type = "item", name = "tungsten-carbide", amount = 12 },
+         },
         order = "ad",
     },
 
@@ -268,7 +267,8 @@ data:extend({
         category = "crafting-with-fluid",
         subgroup = "angels-stone-casting",
         energy_required = 4,
-        enabled = "false",
+        enabled = false,
+        auto_recycle = false,
         ingredients = {
             { type = "item",  name = "stone-brick",           amount = 4 },
             { type = "item",  name = "angels-plate-titanium", amount = 4 },

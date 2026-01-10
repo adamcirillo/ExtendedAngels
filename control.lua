@@ -12,7 +12,7 @@ script.on_configuration_changed(function(config)
         recipes["gas-argon"].enabled = technologies["angels-nitrogen-processing-1"].researched
         recipes["angels-air-filter-4"].enabled = technologies["angels-advanced-chemistry-4"].researched
 
-        if game.active_mods["Clowns-Processing"] then
+        if script.active_mods["Clowns-Processing"] then
             if technologies["phosphorus-processing-2"].researched then
                 recipes["solid-disodium-phosphate"].enabled = true
                 recipes["solid-tetrasodium-pyrophosphate"].enabled = true
@@ -31,7 +31,7 @@ script.on_configuration_changed(function(config)
             recipes["casting-powder-tungsten-3"].enabled = true
         end
 
-        if game.active_mods["angelsbioprocessing"] then
+        if script.active_mods["angelsbioprocessing"] then
             if technologies["bio-arboretum-2"].researched then
                 recipes["bio-generator-temperate-2"].enabled = true
                 recipes["bio-generator-swamp-2"].enabled = true
