@@ -539,7 +539,7 @@ angelsmods.functions.RB.build({
             { type = "item", name = "t5-brick", amount = 3 },
             { type = "item", name = "t5-pipe", amount = 11 }
         },
-        results = { { type = "item", name = "angels-bio-refugium-puffer-2", amount = 1 } },
+        results = { { type = "item", name = "angels-bio-refugium-puffer-3", amount = 1 } },
     },
 
     -- Biter refugium 2
