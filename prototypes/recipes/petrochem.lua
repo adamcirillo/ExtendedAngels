@@ -110,7 +110,7 @@ if mods["Clowns-Processing"] then
             enabled = false,
             ingredients = {
                 { type = "item",  name = "angels-solid-sodium-carbonate", amount = 5 },
-                { type = "fluid", name = "angels-liquid-phosphoric-acid", amount = 50 },
+                { type = "fluid", name = "clowns-liquid-phosphoric-acid", amount = 50 },
             },
             results = {
                 { type = "item", name = "angels-solid-disodium-phosphate", amount = 5 },
@@ -130,7 +130,9 @@ if mods["Clowns-Processing"] then
             ingredients = {
                 { type= "item", name = "angels-solid-disodium-phosphate", amount = 1 }
             },
-            result = "solid-tetrasodium-pyrophosphate",
+            results = {
+                { type = "item", name = "angels-solid-tetrasodium-pyrophosphate", amount = 1 },
+            },
             order = "n",
         },
     })

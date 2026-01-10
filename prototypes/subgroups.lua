@@ -39,19 +39,19 @@ if mods["angelsaddons-storage"] then
             type = "item-subgroup",
             name = "angels-warehouses-2",
             group = "logistics",
-            order = "zf",
+            order = "af",
         },
         {
             type = "item-subgroup",
             name = "angels-warehouses-3",
             group = "logistics",
-            order = "zg",
+            order = "ag",
         },
         {
             type = "item-subgroup",
             name = "angels-warehouses-4",
             group = "logistics",
-            order = "zh",
+            order = "ah",
         },
     })
 end
