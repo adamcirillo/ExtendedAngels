@@ -120,7 +120,7 @@ local warehouse_buildings = {
         tier = 3,
         order = "b[warehouse-passive-provider-mk3]",
         subgroup = "angels-warehouses-3",
-        next_upgrade = "warehouse-passive-provider-mk4",
+        next_upgrade = "angels-warehouse-passive-provider-mk4",
         inventory_size = inventory_sizes[3].passive_provider,
     },
     -- Warehouse passive provider 4

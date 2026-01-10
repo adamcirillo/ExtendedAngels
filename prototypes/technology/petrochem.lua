@@ -2,7 +2,7 @@ data:extend({
     -- Sodium processing 2
     {
         type = "technology",
-        name = "sodium-processing-3",
+        name = "angels-sodium-processing-3",
         icon = "__angelspetrochem__/graphics/technology/sodium-tech.png",
         icon_size = 128,
         prerequisites = {
@@ -13,11 +13,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "solid-sodium-floride-1"
+                recipe = "angels-solid-sodium-floride-1"
             },
             {
                 type = "unlock-recipe",
-                recipe = "solid-sodium-floride-2"
+                recipe = "angels-solid-sodium-floride-2"
             },
         },
         unit = {

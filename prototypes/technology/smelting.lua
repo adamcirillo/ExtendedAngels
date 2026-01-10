@@ -12,11 +12,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "copper-tungsten-smelting-1"
+                recipe = "angels-copper-tungsten-smelting-1"
             },
             {
                 type = "unlock-recipe",
-                recipe = "molten-copper-tungsten-smelting-1"
+                recipe = "angels-molten-copper-tungsten-smelting-1"
             },
         },
         unit = {
@@ -45,7 +45,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "copper-tungsten-smelting-2"
+                recipe = "angels-copper-tungsten-smelting-2"
             },
         },
         unit = {
@@ -105,7 +105,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "tungsten-carbide-smelting-1"
+                recipe = "angels-tungsten-carbide-smelting-1"
             },
             {
                 type = "unlock-recipe",
@@ -138,7 +138,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "tungsten-carbide-smelting-2"
+                recipe = "angels-tungsten-carbide-smelting-2"
             },
         },
         unit = {
@@ -168,11 +168,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "tungsten-carbide-smelting-3"
+                recipe = "angels-tungsten-carbide-smelting-3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "solid-tungsten-oxide-smelting-2"
+                recipe = "angels-solid-tungsten-oxide-smelting-2"
             },
         },
         unit = {

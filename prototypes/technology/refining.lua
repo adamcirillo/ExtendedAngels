@@ -5,19 +5,19 @@ if not mods["Clowns-Extended-Minerals"] then
             -- Water washing 3
             {
                 type = "technology",
-                name = "water-washing-3",
+                name = "angels-water-washing-3",
                 icons = util.copy(prerequisite.icons),
                 icon = util.copy(prerequisite.icon),
                 icon_size = util.copy(prerequisite.icon_size),
                 icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
                     "chemical-science-pack",
-                    "water-washing-2",
+                    "angels-water-washing-2",
                 },
                 effects = {
                     {
                         type = "unlock-recipe",
-                        recipe = "washing-plant-3"
+                        recipe = "angels-washing-plant-3"
                     },
                 },
                 unit = {
@@ -41,19 +41,19 @@ if not mods["Clowns-Processing"] then
         data:extend({
             {
                 type = "technology",
-                name = "water-treatment-5",
+                name = "angels-water-treatment-5",
                 icons = util.copy(prerequisite.icons),
                 icon = util.copy(prerequisite.icon),
                 icon_size = util.copy(prerequisite.icon_size),
                 icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
-                    "utility-science-pack",
-                    "water-treatment-4",
+                    "angels-utility-science-pack",
+                    "angels-water-treatment-4",
                 },
                 effects = {
                     {
                         type = "unlock-recipe",
-                        recipe = "salination-plant-3"
+                        recipe = "angels-salination-plant-3"
                     },
                 },
                 unit = {
@@ -80,19 +80,19 @@ if prerequisite then
         -- Water washing 4
         {
             type = "technology",
-            name = "water-washing-4",
+            name = "angels-water-washing-4",
             icons = util.copy(prerequisite.icons),
             icon = util.copy(prerequisite.icon),
             icon_size = util.copy(prerequisite.icon_size),
             icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
             prerequisites = {
                 "production-science-pack",
-                "water-washing-3",
+                "angels-water-washing-3",
             },
             effects = {
                 {
                     type = "unlock-recipe",
-                    recipe = "washing-plant-4"
+                    recipe = "angels-washing-plant-4"
                 },
             },
             unit = {
@@ -116,22 +116,22 @@ if prerequisite then
         -- Advanced ore refining 5
         {
             type = "technology",
-            name = "advanced-ore-refining-5",
+            name = "angels-advanced-ore-refining-5",
             icons = util.copy(prerequisite.icons),
             icon = util.copy(prerequisite.icon),
             icon_size = util.copy(prerequisite.icon_size),
             icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
             prerequisites = {
-                "advanced-ore-refining-4",
+                "angels-advanced-ore-refining-4",
             },
             effects = {
                 {
                     type = "unlock-recipe",
-                    recipe = "ore-leaching-plant-4"
+                    recipe = "angels-ore-leaching-plant-4"
                 },
                 {
                     type = "unlock-recipe",
-                    recipe = "ore-refinery-3"
+                    recipe = "angels-ore-refinery-3"
                 },
             },
             unit = {

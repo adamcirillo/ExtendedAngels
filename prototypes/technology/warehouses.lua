@@ -4,18 +4,18 @@ data:extend({
     -- Warehouses 2
     {
         type = "technology",
-        name = "warehouses-2",
+        name = "angels-warehouses-2",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
         icon_size = 128,
         prerequisites = {
             "angels-warehouses",
-            "zinc-processing",
+            "angels-zinc-processing",
             "angels-invar-smelting-1",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-mk2"
+                recipe = "angels-warehouse-mk2"
             },
         },
         unit = {
@@ -32,18 +32,18 @@ data:extend({
     -- Warehouses 3
     {
         type = "technology",
-        name = "warehouses-3",
+        name = "angels-warehouses-3",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
         icon_size = 128,
         prerequisites = {
-            "warehouses-2",
+            "angels-warehouses-2",
             "angels-titanium-smelting-1",
-            "ceramics",
+            "angels-ceramics",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-mk3"
+                recipe = "angels-warehouse-mk3"
             },
         },
         unit = {
@@ -61,18 +61,18 @@ data:extend({
     -- Warehouses 4
     {
         type = "technology",
-        name = "warehouses-4",
+        name = "angels-warehouses-4",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses.png",
         icon_size = 128,
         prerequisites = {
-            "warehouses-3",
+            "angels-warehouses-3",
             "angels-tungsten-smelting-1",
-            "nitinol-processing",
+            "angels-nitinol-processing",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-mk4"
+                recipe = "angels-warehouse-mk4"
             },
         },
         unit = {
@@ -91,35 +91,35 @@ data:extend({
     -- Logisitic warehouses 2
     {
         type = "technology",
-        name = "logistic-warehouses-2",
+        name = "angels-logistic-warehouses-2",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
         icon_size = 128,
         prerequisites = {
             "angels-logistic-warehouses",
-            "warehouses-2",
-            "zinc-processing",
+            "angels-warehouses-2",
+            "angels-zinc-processing",
             "angels-invar-smelting-1",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-passive-provider-mk2"
+                recipe = "angels-warehouse-passive-provider-mk2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-active-provider-mk2"
+                recipe = "angels-warehouse-active-provider-mk2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-storage-mk2"
+                recipe = "angels-warehouse-storage-mk2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-requester-mk2"
+                recipe = "angels-warehouse-requester-mk2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-buffer-mk2"
+                recipe = "angels-warehouse-buffer-mk2"
             },
         },
         unit = {
@@ -137,36 +137,36 @@ data:extend({
     -- Logistic warehouses 3
     {
         type = "technology",
-        name = "logistic-warehouses-3",
+        name = "angels-logistic-warehouses-3",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
         icon_size = 128,
         prerequisites = {
-            "logistic-warehouses-2",
-            "warehouses-3",
+            "angels-logistic-warehouses-2",
+            "angels-warehouses-3",
             "angels-titanium-smelting-1",
-            "ceramics",
+            "angels-ceramics",
             "advanced-electronics-2",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-passive-provider-mk3"
+                recipe = "angels-warehouse-passive-provider-mk3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-active-provider-mk3"
+                recipe = "angels-warehouse-active-provider-mk3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-storage-mk3"
+                recipe = "angels-warehouse-storage-mk3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-requester-mk3"
+                recipe = "angels-warehouse-requester-mk3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-buffer-mk3"
+                recipe = "angels-warehouse-buffer-mk3"
             },
         },
         unit = {
@@ -185,36 +185,36 @@ data:extend({
     -- Logistic warehouses 4
     {
         type = "technology",
-        name = "logistic-warehouses-4",
+        name = "angels-logistic-warehouses-4",
         icon = "__angelsaddons-storage__/graphics/technology/warehouses-logistics.png",
         icon_size = 128,
         prerequisites = {
-            "logistic-warehouses-3",
-            "warehouses-4",
+            "angels-logistic-warehouses-3",
+            "angels-warehouses-4",
             "angels-tungsten-smelting-1",
-            "nitinol-processing",
-            "advanced-electronics-3",
+            "angels-nitinol-processing",
+            "angels-advanced-electronics-3",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-passive-provider-mk4"
+                recipe = "angels-warehouse-passive-provider-mk4"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-active-provider-mk4"
+                recipe = "angels-warehouse-active-provider-mk4"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-storage-mk4"
+                recipe = "angels-warehouse-storage-mk4"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-requester-mk4"
+                recipe = "angels-warehouse-requester-mk4"
             },
             {
                 type = "unlock-recipe",
-                recipe = "warehouse-buffer-mk4"
+                recipe = "angels-warehouse-buffer-mk4"
             },
         },
         unit = {

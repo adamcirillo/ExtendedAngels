@@ -14,24 +14,24 @@ local prerequisite_map = {
     ["angels-warehouse-buffer"] = "angels-warehouse",
     ["angels-warehouse-storage"] = "angels-warehouse",
     ["angels-warehouse-requester"] = "angels-warehouse",
-    ["warehouse-mk2"] = "angels-warehouse",
-    ["warehouse-passive-provider-mk2"] = "angels-warehouse-passive-provider",
-    ["warehouse-active-provider-mk2"] = "angels-warehouse-active-provider",
-    ["warehouse-buffer-mk2"] = "angels-warehouse-buffer",
-    ["warehouse-storage-mk2"] = "angels-warehouse-storage",
-    ["warehouse-requester-mk2"] = "angels-warehouse-requester",
-    ["warehouse-mk3"] = "warehouse-mk2",
-    ["warehouse-passive-provider-mk3"] = "warehouse-passive-provider-mk2",
-    ["warehouse-active-provider-mk3"] = "warehouse-active-provider-mk2",
-    ["warehouse-buffer-mk3"] = "warehouse-buffer-mk2",
-    ["warehouse-storage-mk3"] = "warehouse-storage-mk2",
-    ["warehouse-requester-mk3"] = "warehouse-requester-mk2",
-    ["warehouse-mk4"] = "warehouse-mk3",
-    ["warehouse-passive-provider-mk4"] = "warehouse-passive-provider-mk3",
-    ["warehouse-active-provider-mk4"] = "warehouse-active-provider-mk3",
-    ["warehouse-buffer-mk4"] = "warehouse-buffer-mk3",
-    ["warehouse-storage-mk4"] = "warehouse-storage-mk3",
-    ["warehouse-requester-mk4"] = "warehouse-requester-mk3",
+    ["angels-warehouse-mk2"] = "angels-warehouse",
+    ["angels-warehouse-passive-provider-mk2"] = "angels-warehouse-passive-provider",
+    ["angels-warehouse-active-provider-mk2"] = "angels-warehouse-active-provider",
+    ["angels-warehouse-buffer-mk2"] = "angels-warehouse-buffer",
+    ["angels-warehouse-storage-mk2"] = "angels-warehouse-storage",
+    ["angels-warehouse-requester-mk2"] = "angels-warehouse-requester",
+    ["angels-warehouse-mk3"] = "warehouse-mk2",
+    ["angels-warehouse-passive-provider-mk3"] = "warehouse-passive-provider-mk2",
+    ["angels-warehouse-active-provider-mk3"] = "warehouse-active-provider-mk2",
+    ["angels-warehouse-buffer-mk3"] = "warehouse-buffer-mk2",
+    ["angels-warehouse-storage-mk3"] = "warehouse-storage-mk2",
+    ["angels-warehouse-requester-mk3"] = "warehouse-requester-mk2",
+    ["angels-warehouse-mk4"] = "warehouse-mk3",
+    ["angels-warehouse-passive-provider-mk4"] = "warehouse-passive-provider-mk3",
+    ["angels-warehouse-active-provider-mk4"] = "warehouse-active-provider-mk3",
+    ["angels-warehouse-buffer-mk4"] = "warehouse-buffer-mk3",
+    ["angels-warehouse-storage-mk4"] = "warehouse-storage-mk3",
+    ["angels-warehouse-requester-mk4"] = "warehouse-requester-mk3",
 }
 
 local standard_ingredients = {
@@ -91,20 +91,20 @@ for n = 2, 4 do
     -- Setup standard warehouse subtype
     data:extend({
         util.merge { data.raw.recipe["angels-warehouse"], {
-            name = "warehouse-mk" .. n,
-            result = "warehouse-mk" .. n,
+            name = "angels-warehouse-mk" .. n,
+            results = {{ type = "item", name = "angels-warehouse-mk" .. n}},
             subgroup = "angels-warehouses-" .. n,
         } }
     })
 
-    data.raw.recipe["warehouse-mk" .. n].ingredients = util.copy(standard_ingredients[n])
+    data.raw.recipe["angels-warehouse-mk" .. n].ingredients = util.copy(standard_ingredients[n])
 
     -- Setup logistics warehouse subtypes
     for _, prefix in pairs(logistic_warehouses) do
         data:extend({
             util.merge { data.raw.recipe["angels-" .. prefix], {
                 name = prefix .. "-mk" .. n,
-                result = prefix .. "-mk" .. n,
+                results = {{ type = "item", name = prefix .. "-mk" .. n}},
                 subgroup = "angels-warehouses-" .. n,
             } }
         })

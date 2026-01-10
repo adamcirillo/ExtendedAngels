@@ -2,14 +2,13 @@ data:extend({
     -- Molten copper tungsten
     {
         type = "fluid",
-        name = "liquid-molten-copper-tungsten",
-        icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png",
-        icon_size = 32,
-        default_temperature = 100,
-        heat_capacity = "0KJ",
+        name = "angels-liquid-molten-copper-tungsten",
+        icons = {{ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 64 }},
+        default_temperature = 3422,
+        heat_capacity = "0kJ",
         base_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
         flow_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
-        max_temperature = 100,
+        max_temperature = 3422,
         pressure_to_speed_ratio = 0.4,
         flow_to_energy_ratio = 0.59,
         auto_barrel = false
@@ -18,7 +17,7 @@ data:extend({
     -- Tungsten trioxide
     {
         type = "item",
-        name = "solid-tungsten-trioxide",
+        name = "angels-solid-tungsten-trioxide",
         icon = "__angelssmelting__/graphics/icons/solid-tungsten-oxide.png",
         icon_size = 32,
         subgroup = "angels-tungsten",
@@ -29,14 +28,14 @@ data:extend({
     -- Tungsten hexachloride
     {
         type = "fluid",
-        name = "gas-tungsten-hexachloride",
+        name = "angels-gas-tungsten-hexachloride",
         icon = "__extendedangels__/graphics/icons/gas-tungsten-hexachloride.png",
         icon_size = 32,
-        default_temperature = 100,
-        heat_capacity = "0KJ",
+        default_temperature = 0,
+        heat_capacity = "0kJ",
         base_color = { r = 138 / 255, g = 20 / 255, b = 230 / 255 },
         flow_color = { r = 138 / 255, g = 20 / 255, b = 230 / 255 },
-        max_temperature = 100,
+        max_temperature = 0,
         pressure_to_speed_ratio = 0.4,
         flow_to_energy_ratio = 0.59,
     },
@@ -44,7 +43,7 @@ data:extend({
     -- Sodium tungstate
     {
         type = "item",
-        name = "solid-sodium-tungstate",
+        name = "angels-solid-sodium-tungstate",
         icon = "__extendedangels__/graphics/icons/solid-sodium-tungstate.png",
         icon_size = 32,
         subgroup = "angels-tungsten",
@@ -55,7 +54,7 @@ data:extend({
     -- Tungsten carbide powder mixture
     {
         type = "item",
-        name = "powder-tungsten-carbide",
+        name = "angels-powder-tungsten-carbide",
         icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
         icon_size = 32,
         subgroup = "angels-tungsten-carbide",
@@ -66,7 +65,7 @@ data:extend({
     -- Titanium concrete brick
     {
         type = "item",
-        name = "titanium-concrete-brick",
+        name = "angels-titanium-concrete-brick",
         icon = "__extendedangels__/graphics/icons/brick-titanium.png",
         icon_size = 32,
         subgroup = "angels-stone",
@@ -76,7 +75,7 @@ data:extend({
         {
             result = "concrete",
             condition_size = 4,
-            condition = { "water-tile" }
+            condition = {layers = {water_tile = true}},
         }
     },
 })

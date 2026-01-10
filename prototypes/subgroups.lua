@@ -97,9 +97,27 @@ if settings.startup["extangels-adjust-ordering"].value then
             -- Bioprocessing building sorting
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-nauvis-b",
+                name = "bio-processing-buildings-nauvis-a",
                 group = "bio-processing-nauvis",
                 order = "za",
+            },
+            {
+                type = "item-subgroup",
+                name = "bio-processing-buildings-nauvis-b",
+                group = "bio-processing-nauvis",
+                order = "zb",
+            },
+            {
+                type = "item-subgroup",
+                name = "bio-processing-buildings-vegetabilis-a",
+                group = "bio-processing-vegetables",
+                order = "z[buildings]-a",
+            },
+            {
+                type = "item-subgroup",
+                name = "bio-processing-buildings-vegetabilis-b",
+                group = "bio-processing-vegetables",
+                order = "z[buildings]-b",
             },
             {
                 type = "item-subgroup",
@@ -121,9 +139,15 @@ if settings.startup["extangels-adjust-ordering"].value then
             },
             {
                 type = "item-subgroup",
+                name = "bio-processing-buildings-alien-a",
+                group = "bio-processing-alien",
+                order = "zc",
+            },
+            {
+                type = "item-subgroup",
                 name = "bio-processing-buildings-alien-b",
                 group = "bio-processing-alien",
-                order = "zb",
+                order = "zd",
             },
         })
     end

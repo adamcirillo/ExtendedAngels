@@ -1,4 +1,4 @@
-angelsmods.functions.RB.build({
+data:extend({
     -- Hydro plant 4
     {
         type = "item",
@@ -15,7 +15,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-hydro-plant-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 4,
-        energy_source = { emissions_per_minute = 0.06 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.06 * 60 },
+        },
         energy_usage = "300kW",
     } },
 
@@ -35,7 +39,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-salination-plant-3" },
         module_specification = { module_slots = 3 },
         crafting_speed = 3,
-        energy_source = { emissions_per_minute = 0.05 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.05 * 60 },
+        },
         energy_usage = "300kW",
     } },
 
@@ -56,7 +64,11 @@ angelsmods.functions.RB.build({
         next_upgrade = "angels-washing-plant-4",
         module_specification = { module_slots = 3 },
         crafting_speed = 3,
-        energy_source = { emissions_per_minute = 0.05 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.05 * 60 },
+        },
         energy_usage = "200kW",
     } },
 
@@ -76,7 +88,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-washing-plant-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 4,
-        energy_source = { emissions_per_minute = 0.06 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.06 * 60 },
+        },
         energy_usage = "250kW",
     } },
 
@@ -96,7 +112,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-ore-crusher-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 4,
-        energy_source = { emissions_per_minute = 0.06 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.06 * 60 },
+        },
         energy_usage = "175kW",
     } },
 
@@ -116,7 +136,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-ore-floatation-cell-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 2,
-        energy_source = { emissions_per_minute = 0.05 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.05 * 60 },
+        },
         energy_usage = "350kW",
     } },
 
@@ -136,7 +160,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-ore-leaching-plant-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 2,
-        energy_source = { emissions_per_minute = 0.07 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.07 * 60 },
+        },
         energy_usage = "350kW",
     } },
 
@@ -145,7 +173,7 @@ angelsmods.functions.RB.build({
         type = "item",
         name = "angels-ore-refinery-3",
         icons = extangels.numeral_tier({ icon = "__angelsrefining__/graphics/icons/ore-refinery.png", icon_size = 64, icon_mipmaps = 4 }, 3, angelsmods.refining.number_tint),
-        subgroup = "angels-angels-ore-refining",
+        subgroup = "angels-ore-refining",
         order = "c[ore-refinery-3]",
         place_result = "angels-ore-refinery-3",
         stack_size = 10,
@@ -156,7 +184,11 @@ angelsmods.functions.RB.build({
         minable = { result = "angels-ore-refinery-3" },
         module_specification = { module_slots = 3 },
         crafting_speed = 2,
-        energy_source = { emissions_per_minute = 0.04 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.04 * 60 },
+        },
         energy_usage = "400kW",
     } },
 

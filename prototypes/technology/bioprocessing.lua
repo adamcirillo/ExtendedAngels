@@ -8,13 +8,13 @@ data:extend({
         icon = "__angelsbioprocessing__/graphics/technology/algae-farm-tech.png",
         icon_size = 128,
         prerequisites = {
-            "bio-processing-blue",
+            "angels-bio-processing-blue",
             "production-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "algae-farm-5"
+                recipe = "angels-algae-farm-5"
             },
         },
         unit = {
@@ -32,25 +32,25 @@ data:extend({
     -- Bio farm 3
     {
         type = "technology",
-        name = "bio-farm-3",
+        name = "angels-bio-farm-3",
         icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         prerequisites = {
-            "bio-farm-2",
+            "angels-bio-farm-2",
             "chemical-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "crop-farm-3"
+                recipe = "angels-crop-farm-3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "composter-3"
+                recipe = "angels-composter-3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "bio-processor-3"
+                recipe = "angels-bio-processor-3"
             },
         },
         unit = {
@@ -67,18 +67,18 @@ data:extend({
     -- Bio refugium butchery 3
     {
         type = "technology",
-        name = "bio-refugium-butchery-3",
+        name = "angels-bio-refugium-butchery-3",
         icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-butchery-tech.png",
         icon_size = 160,
         order = "c-a",
         prerequisites = {
-            "bio-refugium-butchery-2",
+            "angels-bio-refugium-butchery-2",
             "production-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "bio-butchery-3"
+                recipe = "angels-bio-butchery-3"
             },
         },
         unit = {
@@ -97,28 +97,28 @@ data:extend({
     -- Bio farm advanced upgrades
     {
         type = "technology",
-        name = "bio-farm-advanced-upgrade-1",
+        name = "angels-bio-farm-advanced-upgrade-1",
         icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
-            "bio-temperate-farming-2",
-            "bio-desert-farming-2",
-            "bio-swamp-farming-2",
+            "angels-bio-temperate-farming-2",
+            "angels-bio-desert-farming-2",
+            "angels-bio-swamp-farming-2",
             "production-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "temperate-farm-2"
+                recipe = "angels-temperate-farm-2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "desert-farm-2"
+                recipe = "angels-desert-farm-2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "swamp-farm-2"
+                recipe = "angels-swamp-farm-2"
             },
         },
         unit = {
@@ -136,26 +136,26 @@ data:extend({
 
     {
         type = "technology",
-        name = "bio-farm-advanced-upgrade-2",
+        name = "angels-bio-farm-advanced-upgrade-2",
         icon = "__angelsbioprocessing__/graphics/technology/base-farm-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
-            "bio-farm-advanced-upgrade-1",
+            "angels-bio-farm-advanced-upgrade-1",
             "utility-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "temperate-farm-3"
+                recipe = "angels-temperate-farm-3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "desert-farm-3"
+                recipe = "angels-desert-farm-3"
             },
             {
                 type = "unlock-recipe",
-                recipe = "swamp-farm-3"
+                recipe = "angels-swamp-farm-3"
             },
         },
         unit = {
@@ -175,22 +175,22 @@ data:extend({
     -- Bio refugium hatchery 2
     {
         type = "technology",
-        name = "bio-refugium-hatchery-2",
+        name = "angels-bio-refugium-hatchery-2",
         icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-puffer-hatchery-tech.png",
         icon_size = 160,
         order = "c-a",
         prerequisites = {
-            "bio-refugium-hatchery",
+            "angels-bio-refugium-hatchery",
             "production-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "bio-hatchery-2"
+                recipe = "angels-bio-hatchery-2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "bio-hatchery-3"
+                recipe = "angels-bio-hatchery-3"
             },
         },
         unit = {
@@ -209,22 +209,22 @@ data:extend({
     -- Bio nutrient paste 2
     {
         type = "technology",
-        name = "bio-nutrient-paste-2",
+        name = "angels-bio-nutrient-paste-2",
         icon = "__angelsbioprocessing__/graphics/technology/nutrient-extractor-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
-            "bio-nutrient-paste",
+            "angels-bio-nutrient-paste",
             "chemical-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "nutrient-extractor-2"
+                recipe = "angels-nutrient-extractor-2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "nutrient-extractor-3"
+                recipe = "angels-nutrient-extractor-3"
             }
         },
         unit = {
@@ -241,22 +241,22 @@ data:extend({
     -- Bio refugium fish 3
     {
         type = "technology",
-        name = "bio-refugium-fish-3",
+        name = "angels-bio-refugium-fish-3",
         icon = "__angelsbioprocessing__/graphics/technology/bio-refugium-fish-tech.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {
-            "bio-refugium-fish-2",
+            "angels-bio-refugium-fish-2",
             "chemical-science-pack",
         },
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "bio-refugium-fish-2"
+                recipe = "angels-bio-refugium-fish-2"
             },
             {
                 type = "unlock-recipe",
-                recipe = "bio-refugium-fish-3"
+                recipe = "angels-bio-refugium-fish-3"
             },
         },
         unit = {

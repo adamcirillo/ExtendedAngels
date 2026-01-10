@@ -15,7 +15,11 @@ data:extend({
         minable = { result = "angels-advanced-chemical-plant-3" },
         module_specification = { module_slots = 4 },
         crafting_speed = 3.5,
-        energy_source = { emissions_per_minute = 0.1 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = 0.01 * 60 },
+        },
         energy_usage = "500kW",
     } },
 
@@ -35,7 +39,11 @@ data:extend({
         minable = { result = "angels-air-filter-4" },
         module_specification = { module_slots = 4 },
         crafting_speed = 4,
-        energy_source = { emissions_per_minute = -0.16 * 60 },
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+             emissions_per_minute = { pollution = -0.16 * 60 },
+        },
         energy_usage = "300kW",
     } },
 })

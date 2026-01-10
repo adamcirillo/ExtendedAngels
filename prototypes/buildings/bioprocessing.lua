@@ -6,8 +6,8 @@ local tint = angelsmods.bioprocessing.number_tint
 -- Create list of buildings with parameters different from source entity
 local bioprocessing_buildings = {
     -- Algae farms
-    ["algae-farm-5"] = {
-        source = "algae-farm-4",
+    ["angels-algae-farm-5"] = {
+        source = "angels-algae-farm-4",
         icon = "__angelsbioprocessing__/graphics/icons/algae-farm.png",
         tier = 5,
         order = "a[algae]-e",
@@ -18,20 +18,20 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Arboretums
-    ["bio-arboretum-2"] = {
-        source = "bio-arboretum-1",
+    ["angels-bio-arboretum-2"] = {
+        source = "angels-bio-arboretum-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-arboretum.png",
         tier = 2,
         order = "c[arboretum]-ab",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 4,
-        next_upgrade = "bio-arboretum-3",
+        next_upgrade = "angels-bio-arboretum-3",
         crafting_speed = 1,
         emissions_per_minute = -200,
         energy_usage = "200kW",
     },
-    ["bio-arboretum-3"] = {
-        source = "bio-arboretum-1",
+    ["angels-bio-arboretum-3"] = {
+        source = "angels-bio-arboretum-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-arboretum.png",
         tier = 3,
         order = "c[arboretum]-ac",
@@ -42,20 +42,20 @@ local bioprocessing_buildings = {
         energy_usage = "400kW",
     },
     -- Seed generators
-    ["bio-generator-temperate-2"] = {
-        source = "bio-generator-temperate-1",
+    ["angels-bio-generator-temperate-2"] = {
+        source = "angels-bio-generator-temperate-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-temperate-generator.png",
         tier = 2,
         order = "b[generator]-aa",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 4,
-        next_upgrade = "bio-generator-temperate-3",
+        next_upgrade = "angels-bio-generator-temperate-3",
         crafting_speed = 1,
         emissions_per_minute = -150,
         energy_usage = "200kW",
     },
-    ["bio-generator-temperate-3"] = {
-        source = "bio-generator-temperate-1",
+    ["angels-bio-generator-temperate-3"] = {
+        source = "angels-bio-generator-temperate-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-temperate-generator.png",
         tier = 3,
         order = "b[generator]-ab",
@@ -65,43 +65,43 @@ local bioprocessing_buildings = {
         emissions_per_minute = -300,
         energy_usage = "400kW",
     },
-    ["bio-generator-swamp-2"] = {
-        source = "bio-generator-swamp-1",
+    ["angels-bio-generator-swamp-2"] = {
+        source = "angels-bio-generator-swamp-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-swamp-generator.png",
         tier = 2,
         order = "b[generator]-ba",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 4,
-        next_upgrade = "bio-generator-swamp-3",
+        next_upgrade = "angels-bio-generator-swamp-3",
         crafting_speed = 1,
         emissions_per_minute = -150,
         energy_usage = "200kW",
     },
-    ["bio-generator-swamp-3"] = {
-        source = "bio-generator-swamp-1",
+    ["angels-bio-generator-swamp-3"] = {
+        source = "angels-bio-generator-swamp-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-swamp-generator.png",
         tier = 3,
         order = "b[generator]-bb",
-        subgroup = "bio-processing-buildings-nauvis-a",
+        subgroup = "angels-bio-processing-buildings-nauvis-a",
         -- module_slots = 6,
         crafting_speed = 2,
         emissions_per_minute = -300,
         energy_usage = "400kW",
     },
-    ["bio-generator-desert-2"] = {
-        source = "bio-generator-desert-1",
+    ["angels-bio-generator-desert-2"] = {
+        source = "angels-bio-generator-desert-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-desert-generator.png",
         tier = 2,
         order = "b[generator]-ca",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 4,
-        next_upgrade = "bio-generator-desert-3",
+        next_upgrade = "angels-bio-generator-desert-3",
         crafting_speed = 1,
         emissions_per_minute = -150,
         energy_usage = "200kW",
     },
-    ["bio-generator-desert-3"] = {
-        source = "bio-generator-desert-1",
+    ["angels-bio-generator-desert-3"] = {
+        source = "angels-bio-generator-desert-1",
         icon = "__angelsbioprocessing__/graphics/icons/bio-desert-generator.png",
         tier = 3,
         order = "b[generator]-cb",
@@ -112,20 +112,20 @@ local bioprocessing_buildings = {
         energy_usage = "400kW",
     },
     -- Presses
-    ["bio-press-2"] = {
-        source = "bio-press",
+    ["angels-bio-press-2"] = {
+        source = "angels-bio-press",
         icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
         tier = 2,
         order = "d[bio-press]-b[mk2]",
         subgroup = "bio-processing-buildings-nauvis-a",
         -- module_slots = 3,
-        next_upgrade = "bio-press-3",
+        next_upgrade = "angels-bio-press-3",
         crafting_speed = 1.5,
         emissions_per_minute = 0.04 * 60,
         energy_usage = "190kW",
     },
-    ["bio-press-3"] = {
-        source = "bio-press",
+    ["angels-bio-press-3"] = {
+        source = "angels-bio-press",
         icon = "__angelsbioprocessing__/graphics/icons/bio-press.png",
         tier = 3,
         order = "d[bio-press]-c[mk3]",
@@ -136,20 +136,20 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Processors
-    ["bio-processor-2"] = {
-        source = "bio-processor",
+    ["angels-bio-processor-2"] = {
+        source = "angels-bio-processor",
         icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png",
         tier = 2,
         order = "ca",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 3,
-        next_upgrade = "bio-processor-3",
+        next_upgrade = "angels-bio-processor-3",
         crafting_speed = 1.5,
         emissions_per_minute = 0.04 * 60,
         energy_usage = "190kW",
     },
-    ["bio-processor-3"] = {
-        source = "bio-processor",
+    ["angels-bio-processor-3"] = {
+        source = "angels-bio-processor",
         icon = "__angelsbioprocessing__/graphics/icons/bio-processor.png",
         tier = 3,
         order = "cb",
@@ -160,21 +160,21 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Butcheries
-    ["bio-butchery-2"] = {
-        source = "bio-butchery",
+    ["angels-bio-butchery-2"] = {
+        source = "angels-bio-butchery",
         type = "furnace",
         icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png",
         tier = 2,
         order = "ba",
         subgroup = "bio-processing-buildings-alien-a",
         -- module_slots = 3,
-        next_upgrade = "bio-butchery-3",
+        next_upgrade = "angels-bio-butchery-3",
         crafting_speed = 3,
         emissions_per_minute = 0.02 * 60,
         energy_usage = "190kW",
     },
-    ["bio-butchery-3"] = {
-        source = "bio-butchery",
+    ["angels-bio-butchery-3"] = {
+        source = "angels-bio-butchery",
         type = "furnace",
         icon = "__angelsbioprocessing__/graphics/icons/bio-butchery.png",
         tier = 3,
@@ -186,21 +186,21 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Composters
-    ["composter-2"] = {
-        source = "composter",
+    ["angels-composter-2"] = {
+        source = "angels-composter",
         type = "furnace",
         icon = "__angelsbioprocessing__/graphics/icons/composter.png",
         tier = 2,
         order = "ba",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 3,
-        next_upgrade = "composter-3",
+        next_upgrade = "angels-composter-3",
         crafting_speed = 3,
         emissions_per_minute = 0.02 * 60,
         energy_usage = "40kW",
     },
-    ["composter-3"] = {
-        source = "composter",
+    ["angels-composter-3"] = {
+        source = "angels-composter",
         type = "furnace",
         icon = "__angelsbioprocessing__/graphics/icons/composter.png",
         tier = 3,
@@ -212,20 +212,20 @@ local bioprocessing_buildings = {
         energy_usage = "45kW",
     },
     -- Crop farms
-    ["crop-farm-2"] = {
-        source = "crop-farm",
+    ["angels-crop-farm-2"] = {
+        source = "angels-crop-farm",
         icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png",
         tier = 2,
         order = "aa",
         subgroup = "bio-processing-buildings-vegetabilis-a",
         -- module_slots = 3,
-        next_upgrade = "crop-farm-3",
+        next_upgrade = "angels-crop-farm-3",
         crafting_speed = 1.5,
         emissions_per_minute = -60,
         energy_usage = "125kW",
     },
-    ["crop-farm-3"] = {
-        source = "crop-farm",
+    ["angels-crop-farm-3"] = {
+        source = "angels-crop-farm",
         icon = "__angelsbioprocessing__/graphics/icons/basic-farm.png",
         tier = 3,
         order = "ab",
@@ -235,20 +235,20 @@ local bioprocessing_buildings = {
         emissions_per_minute = -80,
         energy_usage = "150kW",
     },
-    ["temperate-farm-2"] = {
-        source = "temperate-farm",
+    ["angels-temperate-farm-2"] = {
+        source = "angels-temperate-farm",
         icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png",
         tier = 2,
         order = "baa",
         subgroup = "bio-processing-buildings-vegetabilis-a",
         -- module_slots = 3,
-        next_upgrade = "temperate-farm-3",
+        next_upgrade = "angels-temperate-farm-3",
         crafting_speed = 3,
         emissions_per_minute = -120,
         energy_usage = "155kW",
     },
-    ["temperate-farm-3"] = {
-        source = "temperate-farm",
+    ["angels-temperate-farm-3"] = {
+        source = "angels-temperate-farm",
         icon = "__angelsbioprocessing__/graphics/icons/temperate-farm.png",
         tier = 3,
         order = "bab",
@@ -258,20 +258,20 @@ local bioprocessing_buildings = {
         emissions_per_minute = -160,
         energy_usage = "190kW",
     },
-    ["swamp-farm-2"] = {
-        source = "swamp-farm",
+    ["angels-swamp-farm-2"] = {
+        source = "angels-swamp-farm",
         icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png",
         tier = 2,
         order = "bba",
         subgroup = "bio-processing-buildings-vegetabilis-a",
         -- module_slots = 3,
-        next_upgrade = "swamp-farm-3",
+        next_upgrade = "angels-swamp-farm-3",
         crafting_speed = 3,
         emissions_per_minute = -120,
         energy_usage = "155kW",
     },
-    ["swamp-farm-3"] = {
-        source = "swamp-farm",
+    ["angels-swamp-farm-3"] = {
+        source = "angels-swamp-farm",
         icon = "__angelsbioprocessing__/graphics/icons/swamp-farm.png",
         tier = 3,
         order = "bbc",
@@ -281,20 +281,20 @@ local bioprocessing_buildings = {
         emissions_per_minute = -160,
         energy_usage = "190kW",
     },
-    ["desert-farm-2"] = {
-        source = "desert-farm",
+    ["angels-desert-farm-2"] = {
+        source = "angels-desert-farm",
         icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png",
         tier = 2,
         order = "bca",
         subgroup = "bio-processing-buildings-vegetabilis-a",
         -- module_slots = 3,
-        next_upgrade = "desert-farm-3",
+        next_upgrade = "angels-desert-farm-3",
         crafting_speed = 3,
         emissions_per_minute = -120,
         energy_usage = "155kW",
     },
-    ["desert-farm-3"] = {
-        source = "desert-farm",
+    ["angels-desert-farm-3"] = {
+        source = "angels-desert-farm",
         icon = "__angelsbioprocessing__/graphics/icons/desert-farm.png",
         tier = 3,
         order = "bcb",
@@ -305,22 +305,22 @@ local bioprocessing_buildings = {
         energy_usage = "190kW",
     },
     -- Hatcheries
-    ["bio-hatchery-2"] = {
+    ["angels-bio-hatchery-2"] = {
         type = "furnace",
-        source = "bio-hatchery",
+        source = "angels-bio-hatchery",
         icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png",
         tier = 2,
         order = "ca",
         subgroup = "bio-processing-buildings-alien-a",
         -- module_slots = 3,
-        next_upgrade = "bio-hatchery-3",
+        next_upgrade = "angels-bio-hatchery-3",
         crafting_speed = 3,
         emissions_per_minute = 0.02 * 60,
         energy_usage = "190kW",
     },
-    ["bio-hatchery-3"] = {
+    ["angels-bio-hatchery-3"] = {
         type = "furnace",
-        source = "bio-hatchery",
+        source = "angels-bio-hatchery",
         icon = "__angelsbioprocessing__/graphics/icons/bio-hatchery.png",
         tier = 3,
         order = "cb",
@@ -331,20 +331,20 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Nutrient extractors
-    ["nutrient-extractor-2"] = {
-        source = "nutrient-extractor",
+    ["angels-nutrient-extractor-2"] = {
+        source = "angels-nutrient-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
         tier = 2,
         order = "d[nutrient-extractor]-b[mk2]",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 3,
-        next_upgrade = "nutrient-extractor-3",
+        next_upgrade = "angels-nutrient-extractor-3",
         crafting_speed = 1.5,
         emissions_per_minute = 0.04 * 60,
         energy_usage = "190kW",
     },
-    ["nutrient-extractor-3"] = {
-        source = "nutrient-extractor",
+    ["angels-nutrient-extractor-3"] = {
+        source = "angels-nutrient-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
         tier = 3,
         order = "d[nutrient-extractor]-c[mk3]",
@@ -355,8 +355,8 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Refugiums
-    ["bio-refugium-fish-2"] = {
-        source = "bio-refugium-fish",
+    ["angels-bio-refugium-fish-2"] = {
+        source = "angels-bio-refugium-fish",
         icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png",
         tier = 2,
         order = "aa",
@@ -367,8 +367,8 @@ local bioprocessing_buildings = {
         emissions_per_minute = -60,
         energy_usage = "190kW",
     },
-    ["bio-refugium-fish-3"] = {
-        source = "bio-refugium-fish",
+    ["angels-bio-refugium-fish-3"] = {
+        source = "angels-bio-refugium-fish",
         icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-fish.png",
         tier = 3,
         order = "ab",
@@ -378,20 +378,20 @@ local bioprocessing_buildings = {
         emissions_per_minute = -100,
         energy_usage = "225kW",
     },
-    ["bio-refugium-puffer-2"] = {
-        source = "bio-refugium-puffer",
+    ["angels-bio-refugium-puffer-2"] = {
+        source = "angels-bio-refugium-puffer",
         icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png",
         tier = 2,
         order = "da",
         subgroup = "bio-processing-buildings-alien-a",
         -- module_slots = 3,
-        next_upgrade = "bio-refugium-puffer-3",
+        next_upgrade = "angels-bio-refugium-puffer-3",
         crafting_speed = 1.25,
         emissions_per_minute = -60,
         energy_usage = "190kW",
     },
-    ["bio-refugium-puffer-3"] = {
-        source = "bio-refugium-puffer",
+    ["angels-bio-refugium-puffer-3"] = {
+        source = "angels-bio-refugium-puffer",
         icon = "__angelsbioprocessing__/graphics/icons/bio-refugium-puffer.png",
         tier = 3,
         order = "db",
@@ -401,20 +401,20 @@ local bioprocessing_buildings = {
         emissions_per_minute = -100,
         energy_usage = "225kW",
     },
-    ["bio-refugium-biter-2"] = {
-        source = "bio-refugium-biter",
+    ["angels-bio-refugium-biter-2"] = {
+        source = "angels-bio-refugium-biter",
         icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png",
         tier = 2,
         order = "ea",
         subgroup = "bio-processing-buildings-alien-a",
         -- module_slots = 3,
-        next_upgrade = "bio-refugium-biter-3",
+        next_upgrade = "angels-bio-refugium-biter-3",
         crafting_speed = 3,
         emissions_per_minute = -40,
         energy_usage = "190kW",
     },
-    ["bio-refugium-biter-3"] = {
-        source = "bio-refugium-biter",
+    ["angels-bio-refugium-biter-3"] = {
+        source = "angels-bio-refugium-biter",
         icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png",
         tier = 3,
         order = "eb",
@@ -425,20 +425,20 @@ local bioprocessing_buildings = {
         energy_usage = "225kW",
     },
     -- Seed extractors
-    ["seed-extractor-2"] = {
-        source = "seed-extractor",
+    ["angels-seed-extractor-2"] = {
+        source = "angels-seed-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png",
         tier = 2,
         order = "aa",
         subgroup = "bio-processing-buildings-vegetabilis-b",
         -- module_slots = 3,
-        next_upgrade = "seed-extractor-3",
+        next_upgrade = "angels-seed-extractor-3",
         crafting_speed = 1.25,
         emissions_per_minute = 0.04 * 60,
         energy_usage = "180kW",
     },
-    ["seed-extractor-3"] = {
-        source = "seed-extractor",
+    ["angels-seed-extractor-3"] = {
+        source = "angels-seed-extractor",
         icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png",
         tier = 3,
         order = "ab",
@@ -477,7 +477,11 @@ for name, params in pairs(bioprocessing_buildings) do
             next_upgrade = params.next_upgrade or nil,
             module_specification = params.module_slots and { module_slots = params.module_slots } or nil,
             crafting_speed = params.crafting_speed or nil,
-            energy_source = params.emissions_per_minute and { emissions_per_minute = params.emissions_per_minute } or nil,
+            energy_source = params.emissions_per_minute and { 
+                emissions_per_minute = {
+                    pollution = params.emissions_per_minute,
+                },
+            } or nil,
             energy_usage = params.energy_usage or nil,
         } },
     })
@@ -491,28 +495,28 @@ end
 
 -- Fix properties for Angel buildings
 local buildings = {
-    ["algae-farm"] = { prototype = "assembling-machine", tier = 1 },
-    ["algae-farm-2"] = { prototype = "assembling-machine", tier = 2 },
-    ["algae-farm-3"] = { prototype = "assembling-machine", tier = 3 },
-    ["algae-farm-4"] = { prototype = "assembling-machine", tier = 4 },
-    ["bio-arboretum-1"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-generator-temperate-1"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-generator-swamp-1"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-generator-desert-1"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-press"] = { prototype = "assembling-machine", tier = 1, order = "d[bio-press]-a[mk1]" },
-    ["bio-processor"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-butchery"] = { prototype = "furnace", tier = 1 },
-    ["composter"] = { prototype = "furnace", tier = 1 },
-    ["crop-farm"] = { prototype = "assembling-machine", tier = 1 },
-    ["temperate-farm"] = { prototype = "assembling-machine", tier = 1 },
-    ["swamp-farm"] = { prototype = "assembling-machine", tier = 1 },
-    ["desert-farm"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-hatchery"] = { prototype = "furnace", tier = 1 },
-    ["nutrient-extractor"] = { prototype = "assembling-machine", tier = 1, order = "d[nutrient-extractor]-a[mk1]" },
-    ["bio-refugium-fish"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-refugium-puffer"] = { prototype = "assembling-machine", tier = 1 },
-    ["bio-refugium-biter"] = { prototype = "assembling-machine", tier = 1 },
-    ["seed-extractor"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-algae-farm"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-algae-farm-2"] = { prototype = "assembling-machine", tier = 2 },
+    ["angels-algae-farm-3"] = { prototype = "assembling-machine", tier = 3 },
+    ["angels-algae-farm-4"] = { prototype = "assembling-machine", tier = 4 },
+    ["angels-bio-arboretum-1"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-generator-temperate-1"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-generator-swamp-1"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-generator-desert-1"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-press"] = { prototype = "assembling-machine", tier = 1, order = "d[bio-press]-a[mk1]" },
+    ["angels-bio-processor"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-butchery"] = { prototype = "furnace", tier = 1 },
+    ["angels-composter"] = { prototype = "furnace", tier = 1 },
+    ["angels-crop-farm"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-temperate-farm"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-swamp-farm"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-desert-farm"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-hatchery"] = { prototype = "furnace", tier = 1 },
+    ["angels-nutrient-extractor"] = { prototype = "assembling-machine", tier = 1, order = "d[nutrient-extractor]-a[mk1]" },
+    ["angels-bio-refugium-fish"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-refugium-puffer"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-bio-refugium-biter"] = { prototype = "assembling-machine", tier = 1 },
+    ["angels-seed-extractor"] = { prototype = "assembling-machine", tier = 1 },
 }
 
 for name, params in pairs(buildings) do
