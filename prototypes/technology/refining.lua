@@ -9,7 +9,6 @@ if not mods["Clowns-Extended-Minerals"] then
                 icons = util.copy(prerequisite.icons),
                 icon = util.copy(prerequisite.icon),
                 icon_size = util.copy(prerequisite.icon_size),
-                icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
                     "chemical-science-pack",
                     "angels-water-washing-2",
@@ -45,7 +44,6 @@ if not mods["Clowns-Processing"] then
                 icons = util.copy(prerequisite.icons),
                 icon = util.copy(prerequisite.icon),
                 icon_size = util.copy(prerequisite.icon_size),
-                icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
                 prerequisites = {
                     "angels-utility-science-pack",
                     "angels-water-treatment-4",
@@ -84,7 +82,6 @@ if prerequisite then
             icons = util.copy(prerequisite.icons),
             icon = util.copy(prerequisite.icon),
             icon_size = util.copy(prerequisite.icon_size),
-            icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
             prerequisites = {
                 "production-science-pack",
                 "angels-water-washing-3",
@@ -120,7 +117,6 @@ if prerequisite then
             icons = util.copy(prerequisite.icons),
             icon = util.copy(prerequisite.icon),
             icon_size = util.copy(prerequisite.icon_size),
-            icon_mipmaps = util.copy(prerequisite.icon_mipmaps),
             prerequisites = {
                 "angels-advanced-ore-refining-4",
             },

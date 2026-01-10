@@ -55,7 +55,7 @@ data:extend({
         results = {
             { type = "item", name = "angels-powder-tungsten", amount = 30 },
         },
-        icons = extangels.numeral_tier({ icon = data.raw.item["angels-powder-tungsten"].icon, icon_size = data.raw.item["angels-powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["angels-powder-tungsten"].icon_mipmaps }, 3, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = data.raw.item["angels-powder-tungsten"].icon, icon_size = data.raw.item["angels-powder-tungsten"].icon_size }, 3, angelsmods.smelting.number_tint),
         order = "h[powder-tungsten]-c"
     },
 
@@ -93,7 +93,7 @@ data:extend({
         results = {
             { type = "item", name = "angels-casting-powder-tungsten", amount = 24 },
         },
-        icons = extangels.numeral_tier({ icon = data.raw.item["angels-casting-powder-tungsten"].icon, icon_size = data.raw.item["angels-casting-powder-tungsten"].icon_size, icon_mipmaps = data.raw.item["angels-casting-powder-tungsten"].icon_mipmaps }, 3, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = data.raw.item["angels-casting-powder-tungsten"].icon, icon_size = data.raw.item["angels-casting-powder-tungsten"].icon_size }, 3, angelsmods.smelting.number_tint),
         order = "i[casting-powder-tungsten]-c",
     },
 
