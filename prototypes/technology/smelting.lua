@@ -97,7 +97,7 @@ data:extend({
   {
     type = "technology",
     name = "angels-tungsten-carbide-smelting-1",
-    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png",
     icon_size = 256,
     prerequisites = {
       "angels-tungsten-smelting-1",
@@ -129,7 +129,7 @@ data:extend({
   {
     type = "technology",
     name = "angels-tungsten-carbide-smelting-2",
-    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png",
     icon_size = 256,
     prerequisites = {
       "angels-tungsten-smelting-2",
@@ -159,7 +159,7 @@ data:extend({
   {
     type = "technology",
     name = "angels-tungsten-carbide-smelting-3",
-    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+    icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png",
     icon_size = 256,
     prerequisites = {
       "angels-tungsten-smelting-3",
