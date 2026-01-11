@@ -66,13 +66,11 @@ if mods["angelsindustries"] then
       for block, list in pairs(block_ingredients) do
         local ingredients = data.raw.recipe[block].ingredients
 
-        if not ingredients then
-          ingredients = data.raw.recipe[block].normal.ingredients
-        end
-
-        for n, _ in pairs(ingredients) do
-          if ingredients[n].name == list.old then
-            ingredients[n].name = list.new
+        if ingredients then
+          for n, _ in pairs(ingredients) do
+            if ingredients[n].name == list.old then
+              ingredients[n].name = list.new
+            end
           end
         end
 
@@ -122,17 +120,7 @@ if mods["angelsindustries"] then
       for name, _ in pairs(data.raw[prototype]) do
         if data.raw.recipe[name] then
           local recipe = data.raw.recipe[name]
-
-          if recipe.normal then
-            local ingredients = recipe.normal.ingredients
-            shift_block_ingredients(ingredients)
-
-            local expensive_ingredients = recipe.expensive.ingredients
-            shift_block_ingredients(expensive_ingredients)
-          else
-            local ingredients = recipe.ingredients
-            shift_block_ingredients(ingredients)
-          end
+          shift_block_ingredients(recipe.ingredients)
         end
       end
       change_construction_block_ingredients()
