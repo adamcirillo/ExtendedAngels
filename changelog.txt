@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.2
-Date: ????
+Date: 2026-01-11
   Features:
     - Added setting "Warehouses require previous tier" to toggle on/off the inclusion of previous tiers of warehouses in warehouse recipes
   Changes:
