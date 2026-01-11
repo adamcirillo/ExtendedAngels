@@ -4,11 +4,12 @@ Date: ????
   Features:
     - Added migrations for prototype name changes 
   Changes:
-    - Switched over to using Agnel's Zinc Powder
+    - Switched over to using Angel's Zinc Powder
   Bugfixes:
     - Fixed crash when loading old saves
     - Fixed incorrect technology name for Mad Clown's
-    - Fixed ingrendients not being added by bob's add recipe
+    - Fixed ingredients not being added by bob's add recipe
+    - Fixed copper tungsten smelting's technology icon having the wrong size
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2026-01-10

@@ -3,8 +3,8 @@ data:extend({
     {
         type = "technology",
         name = "angels-copper-tungsten-smelting-1",
-        icon = "__extendedangels__/graphics/technology/smelting-copper-tungsten.png",
-        icon_size = 128,
+        icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png",
+        icon_size = 256,
         prerequisites = {
             "angels-copper-smelting-1",
             "angels-tungsten-smelting-1",
@@ -36,8 +36,8 @@ data:extend({
     {
         type = "technology",
         name = "angels-copper-tungsten-smelting-2",
-        icon = "__extendedangels__/graphics/technology/smelting-copper-tungsten.png",
-        icon_size = 128,
+        icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png",
+        icon_size = 256,
         prerequisites = {
             "angels-copper-tungsten-smelting-1",
             "angels-metallurgy-5",
@@ -97,8 +97,8 @@ data:extend({
     {
         type = "technology",
         name = "angels-tungsten-carbide-smelting-1",
-        icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
-        icon_size = 128,
+        icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+        icon_size = 256,
         prerequisites = {
             "angels-tungsten-smelting-1",
         },
@@ -129,8 +129,8 @@ data:extend({
     {
         type = "technology",
         name = "angels-tungsten-carbide-smelting-2",
-        icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
-        icon_size = 128,
+        icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+        icon_size = 256,
         prerequisites = {
             "angels-tungsten-smelting-2",
             "angels-tungsten-carbide-smelting-1",
@@ -159,8 +159,8 @@ data:extend({
     {
         type = "technology",
         name = "angels-tungsten-carbide-smelting-3",
-        icon = "__extendedangels__/graphics/technology/smelting-tungsten-carbide.png",
-        icon_size = 128,
+        icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting-carbide.png",
+        icon_size = 256,
         prerequisites = {
             "angels-tungsten-smelting-3",
             "angels-tungsten-carbide-smelting-2",

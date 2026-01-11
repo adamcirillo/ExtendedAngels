@@ -26,5 +26,5 @@ data.raw.technology["angels-tungsten-carbide-smelting-3"].icons = {{ icon = "__e
 data.raw.fluid["angels-liquid-molten-copper-tungsten"].icons = {{ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }}
 data.raw.recipe["angels-copper-tungsten-smelting-1"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
 data.raw.recipe["angels-copper-tungsten-smelting-2"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }, 2, angelsmods.smelting.number_tint)
-data.raw.technology["angels-copper-tungsten-smelting-1"].icons = {{ icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png", icon_size = 64 }}
-data.raw.technology["angels-copper-tungsten-smelting-2"].icons = {{ icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png", icon_size = 64 }}
+data.raw.technology["angels-copper-tungsten-smelting-1"].icons = {{ icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png", icon_size = 256 }}
+data.raw.technology["angels-copper-tungsten-smelting-2"].icons = {{ icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png", icon_size = 256 }}
