@@ -2,6 +2,8 @@
 Version: 0.6.2
 Date: ????
   Changes:
+    - Added productivity to Copper Tungsten & Tungsten Carbide Plates
+    - Updated Tungsten Carbide Smelting 3 to produce less Hydrogen Gas
   Bugfixes:
     - Fixed molten copper tungsten locale
     - Fixed tungsten powder number tiers

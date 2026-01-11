@@ -28,3 +28,7 @@ for _, name in pairs(bioprocessing_recipes) do
     local recipe = data.raw.recipe[name]
     if recipe then recipe.order = nil end
 end
+
+--Productivity Overides
+angelsmods.functions.allow_productivity("angels-plate-tungsten-carbide")
+angelsmods.functions.allow_productivity("angels-molten-copper-tungsten-smelting-1")

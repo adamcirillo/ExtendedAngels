@@ -218,7 +218,7 @@ data:extend({
         },
         results = {
             { type = "item",  name = "angels-powder-tungsten-carbide", amount = 12 },
-            { type = "fluid", name = "angels-gas-hydrogen-chloride",   amount = 40 },
+            { type = "fluid", name = "angels-gas-hydrogen-chloride",   amount = 30 },
         },
         icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 3, angelsmods.smelting.number_tint),
         order = "ac",
