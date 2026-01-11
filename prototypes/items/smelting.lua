@@ -56,7 +56,7 @@ data:extend({
         type = "item",
         name = "angels-powder-tungsten-carbide",
         icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-        icon_size = 32,
+        icon_size = 64,
         subgroup = "angels-tungsten-carbide",
         order = "a",
         stack_size = 200

@@ -17,10 +17,10 @@ require("prototypes.overrides.warehouses")
 data.raw.recipe["angels-powder-tungsten"].icons = extangels.numeral_tier({ icon = "__angelssmeltinggraphics__/graphics/icons/powder-tungsten.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
 
 -- Tungsten carbide powder
-data.raw.item["angels-powder-tungsten-carbide"].icons = {{ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }}
-data.raw.recipe["angels-tungsten-carbide-smelting-1"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
-data.raw.recipe["angels-tungsten-carbide-smelting-2"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }, 2, angelsmods.smelting.number_tint)
-data.raw.recipe["angels-tungsten-carbide-smelting-3"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }, 3, angelsmods.smelting.number_tint)
+data.raw.item["angels-powder-tungsten-carbide"].icons = {{ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }}
+data.raw.recipe["angels-tungsten-carbide-smelting-1"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
+data.raw.recipe["angels-tungsten-carbide-smelting-2"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 2, angelsmods.smelting.number_tint)
+data.raw.recipe["angels-tungsten-carbide-smelting-3"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 3, angelsmods.smelting.number_tint)
 data.raw.technology["angels-tungsten-carbide-smelting-1"].icons = {{ icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png", icon_size = 256 }}
 data.raw.technology["angels-tungsten-carbide-smelting-2"].icons = {{ icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png", icon_size = 256 }}
 data.raw.technology["angels-tungsten-carbide-smelting-3"].icons = {{ icon = "__extendedangels__/graphics/technology/tungsten-carbide-smelting-and-casting.png", icon_size = 256 }}

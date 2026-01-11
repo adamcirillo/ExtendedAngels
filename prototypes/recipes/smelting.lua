@@ -39,7 +39,7 @@ data:extend({
         order = "j",
     },
 
-    -- Tunsgten powder
+    -- Tungsten powder
     {
         type = "recipe",
         name = "angels-solid-sodium-tungstate-smelting",
@@ -175,7 +175,7 @@ data:extend({
         results = {
             { type = "item", name = "angels-powder-tungsten-carbide", amount = 12 },
         },
-        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 1, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint),
         order = "aa",
     },
 
@@ -198,7 +198,7 @@ data:extend({
             { type = "fluid", name = "angels-liquid-hydrofluoric-acid", amount = 60 },
             { type = "fluid", name = "angels-water-purified",           amount = 20 },
         },
-        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 2, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 2, angelsmods.smelting.number_tint),
         order = "ab",
     },
 
@@ -220,7 +220,7 @@ data:extend({
             { type = "item",  name = "angels-powder-tungsten-carbide", amount = 12 },
             { type = "fluid", name = "angels-gas-hydrogen-chloride",   amount = 30 },
         },
-        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 32 }, 3, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png", icon_size = 64 }, 3, angelsmods.smelting.number_tint),
         order = "ac",
     },
 
@@ -238,7 +238,7 @@ data:extend({
             },
         results = {
             { type = "item", name = "bob-tungsten-carbide", amount = 12 },
-         },
+        },
         order = "ad",
     },
 
