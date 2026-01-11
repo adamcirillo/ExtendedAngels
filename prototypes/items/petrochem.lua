@@ -20,8 +20,6 @@ data:extend({
     base_color = { r = 0 / 255, g = 0 / 255, b = 0 / 255 },
     flow_color = { r = 30 / 255, g = 143 / 255, b = 216 / 255 },
     max_temperature = 0,
-    pressure_to_speed_ratio = 0.4,
-    flow_to_energy_ratio = 0.59,
   },
 })
 

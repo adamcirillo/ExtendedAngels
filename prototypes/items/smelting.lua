@@ -14,8 +14,6 @@ data:extend({
     base_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
     flow_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
     max_temperature = 3422,
-    pressure_to_speed_ratio = 0.4,
-    flow_to_energy_ratio = 0.59,
     auto_barrel = false,
   },
 
@@ -41,8 +39,6 @@ data:extend({
     base_color = { r = 138 / 255, g = 20 / 255, b = 230 / 255 },
     flow_color = { r = 138 / 255, g = 20 / 255, b = 230 / 255 },
     max_temperature = 0,
-    pressure_to_speed_ratio = 0.4,
-    flow_to_energy_ratio = 0.59,
   },
 
   -- Sodium tungstate
