@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.2
 Date: ????
+  Features:
+    - Added setting "Warehouses require previous tier" to toggle on/off the inclusion of previous tiers of warehouses in warehouse recipes
   Changes:
     - Added productivity to Copper Tungsten & Tungsten Carbide Plates
     - Updated Tungsten Carbide Smelting 3 to produce less Hydrogen Gas
@@ -9,6 +11,8 @@ Date: ????
   Bugfixes:
     - Fixed molten copper tungsten locale
     - Fixed tungsten powder number tiers
+    - Fixed that Angel's Warehouse recipes mk1 were not included the basic warehouse as in ingredient
+    - Fixed that Angel's Warehouse recipes mk2-mk4 were not correctly including the previous tier as an ingredient
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 2026-01-10

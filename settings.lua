@@ -11,4 +11,10 @@ data:extend({
     setting_type = "startup",
     default_value = false,
   },
+  {
+    type = "bool-setting",
+    name = "extangels-warehouses-require-previous",
+    setting_type = "startup",
+    default_value = true,
+  }
 })

@@ -30,7 +30,7 @@ local prerequisite_map = {
   ["angels-warehouse-requester-mk3"] = "angels-warehouse-requester-mk2",
   ["angels-warehouse-mk4"] = "angels-warehouse-mk3",
   ["angels-warehouse-passive-provider-mk4"] = "angels-warehouse-passive-provider-mk3",
-  ["angels-warehouse-active-provider-mk4"] = "wangels-arehouse-active-provider-mk3",
+  ["angels-warehouse-active-provider-mk4"] = "angels-warehouse-active-provider-mk3",
   ["angels-warehouse-buffer-mk4"] = "angels-warehouse-buffer-mk3",
   ["angels-warehouse-storage-mk4"] = "angels-warehouse-storage-mk3",
   ["angels-warehouse-requester-mk4"] = "angels-warehouse-requester-mk3",
@@ -122,6 +122,9 @@ for n = 2, 4 do
 end
 
 -- Add all the prerequisites
-for name, prerequisite in pairs(prerequisite_map) do
-  bobmods.lib.recipe.add_ingredient(name, prerequisite)
+if settings.startup["extangels-warehouses-require-previous"].value then
+  for name, prerequisite in pairs(prerequisite_map) do
+    local item_in = { type = "item", name = prerequisite, amount = 1 }
+    bobmods.lib.recipe.add_ingredient(name, item_in)
+  end
 end
