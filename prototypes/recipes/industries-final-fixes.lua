@@ -63,10 +63,6 @@ for _, n in pairs(previous_building) do
 end
 
 if settings.startup["angels-return-ingredients"].value then
-  if not extangels.migration.is_newer_version("0.14.13", mods["angelsindustries"]) then
-    angelsmods.functions.AI.add_minable_results()
-  else
-    add_minable_results()
-  end
+  angelsmods.functions.AI.add_minable_results()
   OV.execute()
 end
