@@ -59,8 +59,7 @@ extangels.replace_construction_materials()
 OV.execute()
 
 for _, n in pairs(previous_building) do
-  table.remove(data.raw["recipe"][n]["normal"].ingredients, 1)
-  table.remove(data.raw["recipe"][n]["expensive"].ingredients, 1)
+  table.remove(data.raw["recipe"][n].ingredients, 1)
 end
 
 if settings.startup["angels-return-ingredients"].value then
