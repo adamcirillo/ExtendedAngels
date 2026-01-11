@@ -1,3 +1,6 @@
+if not (mods["angelsindustries"] and angelsmods.industries.components) then
+  return
+end
 
 -- Component/Tech overhaul recipe corrections
 local previous_building = {
@@ -50,26 +53,21 @@ local previous_building = {
   "angels-seed-extractor-3",
 }
 
+local OV = angelsmods.functions.OV
 
-if mods["angelsindustries"] then
-  if angelsmods.industries.components then
-    local OV = angelsmods.functions.OV
+extangels.replace_construction_materials()
+OV.execute()
 
-    extangels.replace_construction_materials()
-    OV.execute()
+for _, n in pairs(previous_building) do
+  table.remove(data.raw["recipe"][n]["normal"].ingredients, 1)
+  table.remove(data.raw["recipe"][n]["expensive"].ingredients, 1)
+end
 
-    for _, n in pairs(previous_building) do
-      table.remove(data.raw["recipe"][n]["normal"].ingredients, 1)
-      table.remove(data.raw["recipe"][n]["expensive"].ingredients, 1)
-    end
-
-    if settings.startup["angels-return-ingredients"].value then
-      if not extangels.migration.is_newer_version("0.14.13", mods["angelsindustries"]) then
-        angelsmods.functions.AI.add_minable_results()
-      else
-        add_minable_results()
-      end
-      OV.execute()
-    end
+if settings.startup["angels-return-ingredients"].value then
+  if not extangels.migration.is_newer_version("0.14.13", mods["angelsindustries"]) then
+    angelsmods.functions.AI.add_minable_results()
+  else
+    add_minable_results()
   end
+  OV.execute()
 end
