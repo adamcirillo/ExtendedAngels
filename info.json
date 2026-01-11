@@ -13,5 +13,8 @@
         "? bobtech",
         "? angelsbioprocessing >= 2.0.0",
         "? Clowns-Processing"
-    ]
+    ],
+    "package": {
+        "git_publish_branch": "master"
+    }
 }
