@@ -4,9 +4,9 @@ Date: ????
   Features:
     - Added setting "Warehouses require previous tier" to toggle on/off the inclusion of previous tiers of warehouses in warehouse recipes
   Changes:
-    - Added productivity to Copper Tungsten & Tungsten Carbide Plates
-    - Updated Tungsten Carbide Smelting 3 to produce less Hydrogen Gas
-    - Updated Copper Tungsten Smelting to use powder instead of ingots
+    - Added productivity to Copper Tungsten and Tungsten Carbide plate recipes
+    - Changed recipe Tungsten Carbide Smelting 3 to produce less hydrogen gas
+    - Changed recipe Copper Tungsten Smelting to use copper powder instead of copper ingots
     - Corrected spelling of internal item and recipe names 'angels-solid-sodium-floride[-#]' to 'angels-solid-sodium-fluoride[-#]'
   Bugfixes:
     - Fixed molten copper tungsten locale
