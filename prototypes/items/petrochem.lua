@@ -32,7 +32,7 @@ if mods["Clowns-Processing"] then
         {
             type = "item",
             name = "angels-solid-disodium-phosphate",
-            icons = {{ icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png", icon_size = 64 }},
+            icons = {{ icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png", icon_size = 32 }},
             subgroup = "angels-petrochem-sodium",
             order = "k",
             stack_size = 200
@@ -42,7 +42,7 @@ if mods["Clowns-Processing"] then
         {
             type = "item",
             name = "angels-solid-tetrasodium-pyrophosphate",
-            icons = {{ icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png", icon_size = 64 }},
+            icons = {{ icon = "__Clowns-Processing__/graphics/icons/solid-white-phosphorus.png", icon_size = 32 }},
             subgroup = "angels-petrochem-sodium",
             order = "l",
             stack_size = 200
