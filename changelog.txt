@@ -4,6 +4,7 @@ Date: ????
   Changes:
   Bugfixes:
     - Fixed crash when loading old saves
+    - Fixed incorrect technology name for Mad Clown's
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2026-01-10
