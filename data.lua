@@ -11,6 +11,7 @@ end
 
 -- Enable Angel's Zinc Powder
 angelsmods.trigger.smelting_products["zinc"].powder = true
+angelsmods.trigger.smelting_products["silver"].powder = true
 
 -- Buildings
 require("prototypes.buildings.petrochem")

@@ -89,7 +89,7 @@ data:extend({
         enabled = false,
         auto_recycle = false,
         ingredients = {
-            { type = "item",  name = "angels-ingot-copper",    amount = 16 },
+            { type = "item",  name = "angels-powder-copper",    amount = 16 },
             { type = "item",  name = "angels-powder-tungsten", amount = 12 },
             { type = "fluid", name = "angels-gas-hydrogen",    amount = 60 },
         },
@@ -110,8 +110,8 @@ data:extend({
         enabled = false,
         auto_recycle = false,
         ingredients = {
-            { type = "item",  name = "angels-ingot-copper",    amount = 8 },
-            { type = "item",  name = "angels-ingot-silver",    amount = 8 },
+            { type = "item",  name = "angels-powder-copper",    amount = 8 },
+            { type = "item",  name = "angels-powder-silver",    amount = 8 },
             { type = "item",  name = "angels-powder-tungsten", amount = 12 },
             { type = "fluid", name = "angels-gas-hydrogen",    amount = 60 },
         },

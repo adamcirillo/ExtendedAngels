@@ -4,6 +4,7 @@ Date: ????
   Changes:
     - Added productivity to Copper Tungsten & Tungsten Carbide Plates
     - Updated Tungsten Carbide Smelting 3 to produce less Hydrogen Gas
+    - Updated Copper Tungsten Smelting to use powder instead of ingots
   Bugfixes:
     - Fixed molten copper tungsten locale
     - Fixed tungsten powder number tiers
