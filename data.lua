@@ -20,10 +20,12 @@ require("prototypes.buildings.refining")
 require("prototypes.buildings.warehouses")
 
 -- Items
+require("prototypes.items.industries-components")
 require("prototypes.items.petrochem")
 require("prototypes.items.smelting")
 
 -- Recipes
+require("prototypes.recipes.industries-components")
 require("prototypes.recipes.smelting")
 
 -- Technologies
