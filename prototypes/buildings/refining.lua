@@ -18,7 +18,7 @@ data:extend({
     {
       name = "angels-hydro-plant-4",
       minable = { result = "angels-hydro-plant-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 4,
       energy_source = {
         type = "electric",
@@ -48,7 +48,7 @@ data:extend({
     {
       name = "angels-salination-plant-3",
       minable = { result = "angels-salination-plant-3" },
-      module_specification = { module_slots = 3 },
+      module_slots = 3,
       crafting_speed = 3,
       energy_source = {
         type = "electric",
@@ -79,7 +79,7 @@ data:extend({
       name = "angels-washing-plant-3",
       minable = { result = "angels-washing-plant-3" },
       next_upgrade = "angels-washing-plant-4",
-      module_specification = { module_slots = 3 },
+      module_slots = 3,
       crafting_speed = 3,
       energy_source = {
         type = "electric",
@@ -109,7 +109,7 @@ data:extend({
     {
       name = "angels-washing-plant-4",
       minable = { result = "angels-washing-plant-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 4,
       energy_source = {
         type = "electric",
@@ -139,7 +139,7 @@ data:extend({
     {
       name = "angels-ore-crusher-4",
       minable = { result = "angels-ore-crusher-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 4,
       energy_source = {
         type = "electric",
@@ -169,7 +169,7 @@ data:extend({
     {
       name = "angels-ore-floatation-cell-4",
       minable = { result = "angels-ore-floatation-cell-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 2,
       energy_source = {
         type = "electric",
@@ -199,7 +199,7 @@ data:extend({
     {
       name = "angels-ore-leaching-plant-4",
       minable = { result = "angels-ore-leaching-plant-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 2,
       energy_source = {
         type = "electric",
@@ -229,7 +229,7 @@ data:extend({
     {
       name = "angels-ore-refinery-3",
       minable = { result = "angels-ore-refinery-3" },
-      module_specification = { module_slots = 3 },
+      module_slots = 3,
       crafting_speed = 2,
       energy_source = {
         type = "electric",

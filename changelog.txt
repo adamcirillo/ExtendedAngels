@@ -13,6 +13,7 @@ Date: ????
     - Fixed tungsten powder number tiers
     - Fixed that Angel's Warehouse recipes mk1 were not included the basic warehouse as in ingredient
     - Fixed that Angel's Warehouse recipes mk2-mk4 were not correctly including the previous tier as an ingredient
+    - Fixed that numerous buildings were not correctly getting the intended number of module slots
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 2026-01-10

@@ -18,7 +18,7 @@ data:extend({
     {
       name = "angels-advanced-chemical-plant-3",
       minable = { result = "angels-advanced-chemical-plant-3" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 3.5,
       energy_source = {
         type = "electric",
@@ -48,7 +48,7 @@ data:extend({
     {
       name = "angels-air-filter-4",
       minable = { result = "angels-air-filter-4" },
-      module_specification = { module_slots = 4 },
+      module_slots = 4,
       crafting_speed = 4,
       energy_source = {
         type = "electric",
