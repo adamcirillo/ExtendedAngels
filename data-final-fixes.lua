@@ -8,17 +8,6 @@ local recipe_list = {
 
 for _, recipe in pairs(recipe_list) do
   data.raw.recipe[recipe] = nil
-
-  for _, module in pairs(data.raw.module) do
-    if module.limitation then
-      for j, limit in pairs(module.limitation) do
-        if limit == recipe then
-          table.remove(module.limitation, j)
-          break
-        end
-      end
-    end
-  end
 end
 
 -- Component/Tech overhaul recipe corrections
