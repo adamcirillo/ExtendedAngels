@@ -36,10 +36,10 @@ angelsmods.functions.RB.build({
 
 
 data:extend({
-    -- Sodium flouride 1
+    -- Sodium fluoride 1
     {
         type = "recipe",
-        name = "angels-solid-sodium-floride-1",
+        name = "angels-solid-sodium-fluoride-1",
         category = "chemistry",
         subgroup = "angels-petrochem-sodium",
         energy_required = 2,
@@ -49,18 +49,18 @@ data:extend({
             { type = "fluid", name = "angels-liquid-hydrofluoric-acid", amount = 50 },
         },
         results = {
-            { type = "item",  name = "angels-solid-sodium-floride", amount = 5 },
+            { type = "item",  name = "angels-solid-sodium-fluoride", amount = 5 },
             { type = "fluid", name = "angels-water-purified",       amount = 50 },
         },
-        icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
+        icon = "__extendedangels__/graphics/icons/solid-sodium-fluoride.png",
         icon_size = 32,
         order = "k",
     },
 
-    -- Sodium flouride 2
+    -- Sodium fluoride 2
     {
         type = "recipe",
-        name = "angels-solid-sodium-floride-2",
+        name = "angels-solid-sodium-fluoride-2",
         category = "chemistry",
         subgroup = "angels-petrochem-sodium",
         energy_required = 2,
@@ -70,10 +70,10 @@ data:extend({
             { type = "fluid", name = "angels-liquid-hexafluorosilicic-acid", amount = 25 },
         },
         results = {
-            { type = "item",  name = "angels-solid-sodium-floride", amount = 5 },
+            { type = "item",  name = "angels-solid-sodium-fluoride", amount = 5 },
             { type = "fluid", name = "angels-water-purified",       amount = 25 },
         },
-        icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
+        icon = "__extendedangels__/graphics/icons/solid-sodium-fluoride.png",
         icon_size = 32,
         order = "l",
     },

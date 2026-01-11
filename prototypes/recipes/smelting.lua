@@ -31,7 +31,7 @@ data:extend({
         ingredients = {
             { type = "item", name = "angels-solid-salt",              amount = 50 },
             { type = "item", name = "angels-solid-tungsten-trioxide", amount = 12 },
-            { type = "item", name = "angels-solid-sodium-floride",    amount = 6 },
+            { type = "item", name = "angels-solid-sodium-fluoride",    amount = 6 },
         },
         results = {
             { type = "item", name = "angels-solid-sodium-tungstate", amount = 12 },

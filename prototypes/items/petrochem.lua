@@ -1,9 +1,9 @@
 data:extend({
-    -- Sodium flouride
+    -- Sodium fluoride
     {
         type = "item",
-        name = "angels-solid-sodium-floride",
-        icon = "__extendedangels__/graphics/icons/solid-sodium-floride.png",
+        name = "angels-solid-sodium-fluoride",
+        icon = "__extendedangels__/graphics/icons/solid-sodium-fluoride.png",
         icon_size = 32,
         subgroup = "angels-petrochem-sodium",
         order = "j",

@@ -5,6 +5,7 @@ Date: ????
     - Added productivity to Copper Tungsten & Tungsten Carbide Plates
     - Updated Tungsten Carbide Smelting 3 to produce less Hydrogen Gas
     - Updated Copper Tungsten Smelting to use powder instead of ingots
+    - Corrected spelling of internal item and recipe names 'angels-solid-sodium-floride[-#]' to 'angels-solid-sodium-fluoride[-#]'
   Bugfixes:
     - Fixed molten copper tungsten locale
     - Fixed tungsten powder number tiers
@@ -224,13 +225,13 @@ Date: 2020-06-07
 Version: 0.3.11
 Date: 2020-06-07
   Changes:
-    - Fixed crash when loading without Madclowns processing loaded
+    - Fixed crash when loading without MadClown's Processing loaded
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 2020-05-31
   Changes:
     - Fixed error on loading save game without Angel's Bioprocessing
-    - Fixed error with tech name change in bio processing 0.7.9
+    - Fixed error with tech name change in Angel's Bioprocessing 0.7.9
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.9
 Date: 2020-05-10
@@ -306,7 +307,7 @@ Version: 0.3.0
 Date: N/A
   Changes:
     - Update to 0.18
-    - Fixed overwriting Madclown's Processing Water Treatment 5 Tech
+    - Fixed overwriting MadClown's Processing Water Treatment 5 Tech
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: N/A
@@ -333,7 +334,7 @@ Date: N/A
 Version: 0.1.6
 Date: N/A
   Changes:
-    - Fixed warehouse icons being the same in the quickbar
+    - Fixed warehouse icons being the same in the quick-bar
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: N/A

@@ -13,11 +13,11 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "angels-solid-sodium-floride-1"
+                recipe = "angels-solid-sodium-fluoride-1"
             },
             {
                 type = "unlock-recipe",
-                recipe = "angels-solid-sodium-floride-2"
+                recipe = "angels-solid-sodium-fluoride-2"
             },
         },
         unit = {
