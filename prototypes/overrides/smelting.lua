@@ -186,13 +186,8 @@ for name, insert_fluid_box in pairs(furnace_names) do
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        base_level = -1,
         pipe_connections = {
-            {
-                flow_direction = "input",
-                position = { -2, 2 },
-                direction = defines.direction.south
-            }
+            { flow_direction = "input", position = { -2, 2 }, direction = defines.direction.south }
         },
     })
 
