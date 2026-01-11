@@ -3,7 +3,7 @@ data:extend({
     {
         type = "fluid",
         name = "angels-liquid-molten-copper-tungsten",
-        icons = {{ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 64 }},
+        icons = {{ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }},
         default_temperature = 3422,
         heat_capacity = "0kJ",
         base_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },

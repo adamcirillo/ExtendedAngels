@@ -96,7 +96,7 @@ data:extend({
         results = {
             { type = "fluid", name = "angels-liquid-molten-copper-tungsten", amount = 120 },
         },
-        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32 }, 1, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint),
         order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
     },
 
@@ -118,7 +118,7 @@ data:extend({
         results = {
             { type = "fluid", name = "angels-liquid-molten-copper-tungsten", amount = 120 },
         },
-        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/molten-copper-tungsten.png", icon_size = 32 }, 2, angelsmods.smelting.number_tint),
+        icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png", icon_size = 64 }, 2, angelsmods.smelting.number_tint),
         order = "g[copper-tungsten]-a[liquid-molten-copper-tungsten]",
     },
 
