@@ -27,10 +27,10 @@ if mods["angelsindustries"] then
         local block_ingredients = {
             ["block-construction-0"] = { new = "stone", old = "stone" },
             ["block-construction-1"] = { new = "stone-brick", old = "stone" },
-            ["block-construction-2"] = { new = "clay-brick", old = "stone-brick" },
-            ["block-construction-3"] = { new = "concrete-brick", old = "clay-brick" },
-            ["block-construction-4"] = { new = "reinforced-concrete-brick", old = "concrete-brick" },
-            ["block-construction-5"] = { new = "titanium-concrete-brick", old = "reinforced-concrete-brick" }
+            ["block-construction-2"] = { new = "angels-clay-brick", old = "stone-brick" },
+            ["block-construction-3"] = { new = "concrete-brick", old = "angels-clay-brick" },
+            ["block-construction-4"] = { new = "angels-reinforced-concrete-brick", old = "concrete-brick" },
+            ["block-construction-5"] = { new = "angels-titanium-concrete-brick", old = "angels-reinforced-concrete-brick" }
         }
 
         -- Add a 0th tier construction block
@@ -38,7 +38,7 @@ if mods["angelsindustries"] then
             {
                 type = "item",
                 name = "block-construction-0", -- required at start
-                icon = "__angelsindustries__/graphics/icons/block-construction-1.png",
+                icon = "__angelsindustriesgraphics__/graphics/icons/block-construction-1.png",
                 icon_size = 32,
                 subgroup = "blocks-frames",
                 order = "a",
@@ -104,7 +104,7 @@ if mods["angelsindustries"] then
                     ingredients[n].name = "block-construction-4"
                 end
 
-                if ingredients[n].name == "titanium-concrete-brick" then
+                if ingredients[n].name == "angels-titanium-concrete-brick" then
                     ingredients[n].name = "block-construction-5"
                 end
             end

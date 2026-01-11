@@ -14,8 +14,8 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "petrochem-argon",
-        group = "petrochem-refining",
+        name = "angels-petrochem-argon",
+        group = "angels-petrochem-refining",
         order = "cab",
     },
     {
@@ -39,19 +39,19 @@ if mods["angelsaddons-storage"] then
             type = "item-subgroup",
             name = "angels-warehouses-2",
             group = "logistics",
-            order = "zf",
+            order = "af",
         },
         {
             type = "item-subgroup",
             name = "angels-warehouses-3",
             group = "logistics",
-            order = "zg",
+            order = "ag",
         },
         {
             type = "item-subgroup",
             name = "angels-warehouses-4",
             group = "logistics",
-            order = "zh",
+            order = "ah",
         },
     })
 end
@@ -62,32 +62,32 @@ if settings.startup["extangels-adjust-ordering"].value then
         -- Petrochem building sorting
         {
             type = "item-subgroup",
-            name = "petrochem-buildings-air-filter",
-            group = "petrochem-refining",
+            name = "angels-petrochem-buildings-air-filter",
+            group = "angels-petrochem-refining",
             order = "za[buildings]-aa",
         },
         {
             type = "item-subgroup",
-            name = "petrochem-buildings-liquifier",
-            group = "petrochem-refining",
+            name = "angels-petrochem-buildings-liquifier",
+            group = "angels-petrochem-refining",
             order = "za[buildings]-ab",
         },
         {
             type = "item-subgroup",
-            name = "petrochem-buildings-advanced-chemical-plant",
-            group = "petrochem-refining",
+            name = "angels-petrochem-buildings-advanced-chemical-plant",
+            group = "angels-petrochem-refining",
             order = "za[buildings]-ba",
         },
         {
             type = "item-subgroup",
-            name = "petrochem-buildings-advanced-gas-refinery",
-            group = "petrochem-refining",
+            name = "angels-petrochem-buildings-advanced-gas-refinery",
+            group = "angels-petrochem-refining",
             order = "za[buildings]-ca",
         },
         {
             type = "item-subgroup",
-            name = "petrochem-buildings-separator",
-            group = "petrochem-refining",
+            name = "angels-petrochem-buildings-separator",
+            group = "angels-petrochem-refining",
             order = "za[buildings]-da",
         },
     })
@@ -97,33 +97,57 @@ if settings.startup["extangels-adjust-ordering"].value then
             -- Bioprocessing building sorting
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-nauvis-b",
-                group = "bio-processing-nauvis",
+                name = "angels-bio-processing-buildings-nauvis-a",
+                group = "angels-bio-processing-nauvis",
                 order = "za",
             },
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-vegetabilis-c",
-                group = "bio-processing-vegetables",
+                name = "angels-bio-processing-buildings-nauvis-b",
+                group = "angels-bio-processing-nauvis",
+                order = "zb",
+            },
+            {
+                type = "item-subgroup",
+                name = "angels-bio-processing-buildings-vegetabilis-a",
+                group = "angels-bio-processing-vegetables",
+                order = "z[buildings]-a",
+            },
+            {
+                type = "item-subgroup",
+                name = "angels-bio-processing-buildings-vegetabilis-b",
+                group = "angels-bio-processing-vegetables",
+                order = "z[buildings]-b",
+            },
+            {
+                type = "item-subgroup",
+                name = "angels-bio-processing-buildings-vegetabilis-c",
+                group = "angels-bio-processing-vegetables",
                 order = "z[buildings]-c",
             },
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-vegetabilis-d",
-                group = "bio-processing-vegetables",
+                name = "angels-bio-processing-buildings-vegetabilis-d",
+                group = "angels-bio-processing-vegetables",
                 order = "z[buildings]-d",
             },
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-vegetabilis-e",
-                group = "bio-processing-vegetables",
+                name = "angels-bio-processing-buildings-vegetabilis-e",
+                group = "angels-bio-processing-vegetables",
                 order = "z[buildings]-e",
             },
             {
                 type = "item-subgroup",
-                name = "bio-processing-buildings-alien-b",
-                group = "bio-processing-alien",
-                order = "zb",
+                name = "angels-bio-processing-buildings-alien-a",
+                group = "angels-bio-processing-alien",
+                order = "zc",
+            },
+            {
+                type = "item-subgroup",
+                name = "angels-bio-processing-buildings-alien-b",
+                group = "angels-bio-processing-alien",
+                order = "zd",
             },
         })
     end
