@@ -59,24 +59,6 @@ data:extend({
         order = "h[powder-tungsten]-c"
     },
 
-    -- Zinc powder
-    {
-        type = "recipe",
-        name = "angels-powder-zinc",
-        category = "advanced-crafting",
-        subgroup = "angels-zinc-casting",
-        energy_required = 0.5,
-        enabled = false,
-        auto_recycle = false,
-        ingredients = {
-            { type = "item", name = "angels-ingot-zinc", amount = 1 }
-        },
-        results = {
-            { type = "item", name = "angels-powder-zinc", amount = 1 },
-        },
-        order = "b",
-    },
-
     -- Tungsten powder mixture
     {
         type = "recipe",
@@ -282,5 +264,5 @@ data:extend({
 })
 
 if mods["Clowns-Processing"] then
-    bobmods.lib.recipe.add_ingredient("angels-pellet-tungsten-smelting-2", { "angels-solid-tetrasodium-pyrophosphate", 1 })
+    bobmods.lib.recipe.add_ingredient("angels-pellet-tungsten-smelting-2", { type = "item", name = "angels-solid-tetrasodium-pyrophosphate", amount = 1 })
 end

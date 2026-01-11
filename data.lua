@@ -9,6 +9,9 @@ if mods["angelsaddons-storage"] then
     end
 end
 
+-- Enable Angel's Zinc Powder
+angelsmods.trigger.smelting_products["zinc"].powder = true
+
 -- Buildings
 require("prototypes.buildings.petrochem")
 require("prototypes.buildings.bioprocessing")
