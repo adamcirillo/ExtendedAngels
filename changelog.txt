@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
-Date: ????
+Date: 2026-01-10
   Features:
     - Added migrations for prototype name changes 
   Changes:
