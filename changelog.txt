@@ -3,7 +3,8 @@ Version: 0.6.2
 Date: ????
   Changes:
   Bugfixes:
-    - Fixed Molten Copper Tungsten Locale
+    - Fixed molten copper tungsten locale
+    - Fixed tungsten powder number tiers
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: 2026-01-10

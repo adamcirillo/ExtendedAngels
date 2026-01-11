@@ -13,6 +13,9 @@ require("prototypes.overrides.smelting")
 require("prototypes.overrides.technology")
 require("prototypes.overrides.warehouses")
 
+--Tungsten powder
+data.raw.recipe["angels-powder-tungsten"].icons = extangels.numeral_tier({ icon = "__angelssmeltinggraphics__/graphics/icons/powder-tungsten.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
+
 -- Tungsten carbide powder
 data.raw.item["angels-powder-tungsten-carbide"].icons = {{ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }}
 data.raw.recipe["angels-tungsten-carbide-smelting-1"].icons = extangels.numeral_tier({ icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide-hr.png", icon_size = 64 }, 1, angelsmods.smelting.number_tint)
