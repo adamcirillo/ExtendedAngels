@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 Date: ????
+  Features:
+    - Added migrations for prototype name changes 
   Changes:
   Bugfixes:
     - Fixed crash when loading old saves
