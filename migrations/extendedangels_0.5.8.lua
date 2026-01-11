@@ -4,12 +4,12 @@ local technology_unlocks = {
 }
 
 for _, force in pairs(game.forces) do
-    local technologies = force.technologies
-    local recipes = force.recipes
+    for technology_name, recipe_name in pairs(technology_unlocks) do
+        local technology = force.technologies[technology_name]
+        local recipe = force.recipes[recipe_name]
 
-    for technology, recipe in pairs(technology_unlocks) do
-        if technologies[technology].researched then
-            recipes[recipe].enabled = true
+        if technology and recipe and technology.researched then
+            recipe.enabled = true
         end
     end
 end

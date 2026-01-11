@@ -2,6 +2,8 @@
 Version: 0.6.1
 Date: ????
   Changes:
+  Bugfixes:
+    - Fixed crash when loading old saves
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2026-01-10
