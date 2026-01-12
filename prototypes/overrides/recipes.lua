@@ -40,3 +40,4 @@ OV.disable_recipe({ "angels-pellet-tungsten-smelting" })
 --Productivity Overrides
 angelsmods.functions.allow_productivity("angels-plate-tungsten-carbide")
 angelsmods.functions.allow_productivity("angels-molten-copper-tungsten-smelting-1")
+angelsmods.functions.allow_productivity("angels-titanium-concrete-brick")
