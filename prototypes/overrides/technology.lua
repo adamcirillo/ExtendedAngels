@@ -1,10 +1,6 @@
 local OV = angelsmods.functions.OV
 
 OV.add_prereq("bob-tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
-OV.disable_recipe({ "bob-copper-tungsten-alloy" })
-OV.disable_recipe({ "bob-tungsten-carbide" })
-OV.disable_recipe({ "bob-tungsten-carbide-2" })
-OV.disable_recipe({ "angels-pellet-tungsten-smelting" })
 
 OV.add_unlock("angels-advanced-chemistry-5", "angels-advanced-chemical-plant-3")
 OV.add_unlock("angels-tungsten-smelting-3", "angels-solid-tungsten-trioxide-smelting")
