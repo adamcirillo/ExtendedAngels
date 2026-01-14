@@ -36,7 +36,8 @@ local prerequisite_map = {
   ["angels-warehouse-requester-mk4"] = "angels-warehouse-requester-mk3",
 }
 
-local standard_ingredients = {
+if mods["bobplates"] then
+local bob_standard_ingredients = {
   [1] = {
     { type = "item", name = "iron-plate", amount = 500 },
     { type = "item", name = "stone-brick", amount = 100 },
@@ -56,7 +57,7 @@ local standard_ingredients = {
   },
 }
 
-local logistic_ingredients = {
+local bob_logistic_ingredients = {
   [1] = {
     { type = "item", name = "steel-plate", amount = 250 },
     { type = "item", name = "electronic-circuit", amount = 100 },
@@ -76,6 +77,85 @@ local logistic_ingredients = {
     { type = "item", name = "bob-tungsten-plate", amount = 1000 },
     { type = "item", name = "bob-nitinol-bearing", amount = 250 },
     { type = "item", name = "bob-advanced-processing-unit", amount = 200 },
+  },
+}
+
+-- Revise Angel's warehouses
+data.raw.recipe["angels-warehouse"].energy_required = 20
+data.raw.recipe["angels-warehouse"].ingredients = util.copy(bob_standard_ingredients[1])
+
+for _, warehouse in pairs(logistic_warehouses) do
+  data.raw.recipe["" .. warehouse].energy_required = 20
+  data.raw.recipe["" .. warehouse].ingredients = util.copy(bob_logistic_ingredients[1])
+end
+
+-- Iterate through warehouse types and make all the requisite recipes
+for n = 2, 4 do
+  -- Setup standard warehouse subtype
+  data:extend({
+    util.merge({
+      data.raw.recipe["angels-warehouse"],
+      {
+        name = "angels-warehouse-mk" .. n,
+        results = { { type = "item", name = "angels-warehouse-mk" .. n } },
+        subgroup = "angels-warehouses-" .. n,
+      },
+    }),
+  })
+
+  data.raw.recipe["angels-warehouse-mk" .. n].ingredients = util.copy(bob_standard_ingredients[n])
+
+  -- Setup logistics warehouse subtypes
+  for _, prefix in pairs(logistic_warehouses) do
+    data:extend({
+      util.merge({
+        data.raw.recipe["" .. prefix],
+        {
+          name = prefix .. "-mk" .. n,
+          results = { { type = "item", name = prefix .. "-mk" .. n } },
+          subgroup = "angels-warehouses-" .. n,
+        },
+      }),
+    })
+
+    data.raw.recipe[prefix .. "-mk" .. n].ingredients = util.copy(bob_logistic_ingredients[n])
+  end
+end
+
+else
+
+local standard_ingredients = {
+  [1] = {
+    { type = "item", name = "iron-plate", amount = 500 },
+    { type = "item", name = "stone-brick", amount = 100 },
+  },
+  [2] = {
+    { type = "item", name = "angels-plate-aluminium", amount = 400 },
+  },
+  [3] = {
+    { type = "item", name = "angels-plate-titanium", amount = 800 },
+  },
+  [4] = {
+    { type = "item", name = "angels-plate-tungsten", amount = 1000 },
+  },
+}
+
+local logistic_ingredients = {
+  [1] = {
+    { type = "item", name = "steel-plate", amount = 250 },
+    { type = "item", name = "electronic-circuit", amount = 100 },
+    { type = "item", name = "advanced-circuit", amount = 40 },
+  },
+  [2] = {
+    { type = "item", name = "angels-plate-aluminium", amount = 400 },
+  },
+  [3] = {
+    { type = "item", name = "angels-plate-titanium", amount = 800 },
+    { type = "item", name = "processing-unit", amount = 200 },
+  },
+  [4] = {
+    { type = "item", name = "angels-plate-tungsten", amount = 1000 },
+    { type = "item", name = "processing-unit", amount = 200 },
   },
 }
 
@@ -121,6 +201,7 @@ for n = 2, 4 do
   end
 end
 
+end
 -- Add all the prerequisites
 if settings.startup["extangels-warehouses-require-previous"].value then
   for name, prerequisite in pairs(prerequisite_map) do

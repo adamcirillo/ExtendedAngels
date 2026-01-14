@@ -1,3 +1,4 @@
+if mods["bobplates"] then
 data:extend({
   -- Angels copper tungsten smelting 1
   {
@@ -189,3 +190,5 @@ data:extend({
     order = "c-a",
   },
 })
+
+end

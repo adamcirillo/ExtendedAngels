@@ -7,10 +7,11 @@
     "dependencies": [
         "angelsrefining >= 2.0.0",
         "angelssmelting >= 2.0.0",
-        "bobplates",
+        "boblibrary",
         "flib",
         "? angelsaddons-storage",
         "? bobtech",
+        "? bobplates",
         "? angelsbioprocessing >= 2.0.0",
         "? Clowns-Processing"
     ],

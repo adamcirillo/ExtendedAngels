@@ -1,7 +1,5 @@
 local OV = angelsmods.functions.OV
 
-OV.add_prereq("bob-tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
-
 OV.add_unlock("angels-advanced-chemistry-5", "angels-advanced-chemical-plant-3")
 OV.add_unlock("angels-tungsten-smelting-3", "angels-solid-tungsten-trioxide-smelting")
 OV.add_unlock("angels-tungsten-smelting-3", "angels-pellet-tungsten-smelting-2")
@@ -17,6 +15,29 @@ OV.add_prereq("angels-tungsten-smelting-3", "angels-sodium-processing-3")
 OV.add_unlock("angels-advanced-ore-refining-3", "angels-ore-crusher-4")
 OV.add_unlock("angels-advanced-ore-refining-4", "angels-ore-floatation-cell-4")
 OV.add_unlock("angels-water-treatment-4", "angels-hydro-plant-4")
+
+if mods["bobplates"] then
+OV.add_prereq("bob-tungsten-alloy-processing", "angels-copper-tungsten-smelting-1")
+OV.add_prereq("angels-warehouses-2","bob-zinc-processing")
+OV.add_prereq("angels-warehouses-2","angels-invar-smelting-1")
+OV.add_prereq("angels-warehouses-3","bob-ceramics")
+OV.add_prereq("angels-warehouses-4","bob-nitinol-processing")
+OV.add_prereq("angels-logistic-warehouses-2","bob-zinc-processing")
+OV.add_prereq("angels-logistic-warehouses-2","angels-invar-smelting-1")
+OV.add_prereq("angels-logistic-warehouses-3","bob-ceramics")
+OV.add_prereq("angels-logistic-warehouses-4","bob-nitinol-processing")
+OV.add_prereq("angels-logistic-warehouses-4","bob-advanced-processing-unit")
+
+else
+OV.add_prereq("angels-warehouses-2","angels-aluminium-smelting-1")
+OV.add_prereq("angels-warehouses-3","angels-titanium-smelting-1")
+OV.add_prereq("angels-warehouses-4","angels-tungsten-smelting-1")
+OV.add_prereq("angels-logistic-warehouses-2","angels-aluminium-smelting-1")
+OV.add_prereq("angels-logistic-warehouses-3","angels-titanium-smelting-1")
+OV.add_prereq("angels-logistic-warehouses-3","processing-unit") 
+OV.add_prereq("angels-logistic-warehouses-4","angels-tungsten-smelting-1")
+OV.add_prereq("angels-logistic-warehouses-4","processing-unit") 
+end
 
 if mods["boblogistics"] then
   OV.remove_prereq("bob-repair-pack-5", "bob-tungsten-alloy-processing")
