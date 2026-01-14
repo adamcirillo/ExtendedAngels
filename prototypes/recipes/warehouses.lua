@@ -1,3 +1,4 @@
+local OV = angelsmods.functions.OV
 if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) then
   return
 end
@@ -206,6 +207,7 @@ end
 if settings.startup["extangels-warehouses-require-previous"].value then
   for name, prerequisite in pairs(prerequisite_map) do
     local item_in = { type = "item", name = prerequisite, amount = 1 }
-    bobmods.lib.recipe.add_ingredient(name, item_in)
+    OV.patch_recipes({{name = name, ingredients = {item_in},}})
   end
 end
+

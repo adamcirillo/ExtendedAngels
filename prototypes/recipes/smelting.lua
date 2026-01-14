@@ -1,3 +1,5 @@
+local OV = angelsmods.functions.OV
+
 data:extend({
   -- Tungsten trioxide
   {
@@ -288,8 +290,12 @@ data:extend({
 end
 
 if mods["Clowns-Processing"] then
-  bobmods.lib.recipe.add_ingredient(
-    "angels-pellet-tungsten-smelting-2",
-    { type = "item", name = "angels-solid-tetrasodium-pyrophosphate", amount = 1 }
-  )
+OV.patch_recipes({
+    {
+      name = "angels-pellet-tungsten-smelting-2",
+      ingredients = {
+        { type = "item", name = "angels-solid-tetrasodium-pyrophosphate", amount = 1 }
+      },
+    },
+  })
 end
