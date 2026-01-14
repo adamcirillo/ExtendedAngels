@@ -6,6 +6,7 @@ Date: ????
   Bugfixes:
     - Fixed recipes that are nil to fix conflicts with other mods
     - Titanium concrete brick fixes
+    - Locale fixes for angels-solid-sodium-floride
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.2
 Date: 2026-01-11
