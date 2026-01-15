@@ -69,7 +69,7 @@ data:extend({
     name = "angels-titanium-concrete-brick",
     icon = "__extendedangels__/graphics/icons/brick-titanium.png",
     icon_size = 32,
-    subgroup = "angels-stone",
+    subgroup = "angels-stone-casting",
     order = "k",
     stack_size = 1000,
     place_as_tile = {

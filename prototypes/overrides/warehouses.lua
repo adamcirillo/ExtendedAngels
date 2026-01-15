@@ -3,10 +3,11 @@ if not (mods["angelsaddons-storage"] and angelsmods.addons.storage.warehouses) t
 end
 
 -- Tech overhaul recipe adjustments
+--[[ Angels industries already has replacements for these as far as i can tell
 if angelsmods.industries and settings.startup["angels-enable-tech"].value == true then
   bobmods.lib.recipe.replace_ingredient_in_all("brass-gear-wheel", "angels-roller-chain")
   bobmods.lib.recipe.replace_ingredient_in_all("advanced-processing-unit", "circuit-yellow-loaded")
-end
+end]]
 
 -- Group with Industries logistics tab
 if angelsmods.industries then
