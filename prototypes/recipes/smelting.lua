@@ -102,6 +102,7 @@ data:extend({
     results = {
       { type = "fluid", name = "angels-gas-tungsten-hexachloride", amount = 60 },
     },
+    crafting_machine_tint = angelsmods.functions.get_fluid_recipe_tint("angels-gas-hydrogen-chloride"),
   },
 
   -- Titanium concrete brick

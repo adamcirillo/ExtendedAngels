@@ -51,6 +51,7 @@ data:extend({
       { type = "item", name = "angels-solid-sodium-fluoride", amount = 5 },
       { type = "fluid", name = "angels-water-purified", amount = 50 },
     },
+    crafting_machine_tint = angelsmods.functions.get_fluid_recipe_tint("angels-liquid-hydrofluoric-acid"),
     icon = "__extendedangels__/graphics/icons/solid-sodium-fluoride.png",
     icon_size = 32,
     order = "k",
@@ -72,6 +73,7 @@ data:extend({
       { type = "item", name = "angels-solid-sodium-fluoride", amount = 5 },
       { type = "fluid", name = "angels-water-purified", amount = 25 },
     },
+    crafting_machine_tint = angelsmods.functions.get_fluid_recipe_tint("angels-liquid-hexafluorosilicic-acid"),
     icon = "__extendedangels__/graphics/icons/solid-sodium-fluoride.png",
     icon_size = 32,
     order = "l",
@@ -91,6 +93,7 @@ data:extend({
     results = {
       { type = "fluid", name = "angels-gas-argon", amount = 50 },
     },
+    crafting_machine_tint = angelsmods.functions.get_fluid_recipe_tint("gels-gas-compressed-air"),
     icon = "__extendedangels__/graphics/icons/gas-argon.png",
     icon_size = 32,
     order = "a",

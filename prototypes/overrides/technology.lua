@@ -90,21 +90,26 @@ if angelsmods.bioprocessing then
 end
 
 if mods["angelsaddons-storage"] then
-  if data.raw.tool["advanced-logistic-science-pack"] then
+  if data.raw.tool["bob-advanced-logistic-science-pack"] then
+    bobmods.lib.tech.replace_science_pack(
+      "angels-logistic-warehouses-2",
+      "utility-science-pack",
+      "bob-advanced-logistic-science-pack"
+    )
     bobmods.lib.tech.replace_science_pack(
       "angels-logistic-warehouses-3",
       "production-science-pack",
-      "advanced-logistic-science-pack"
+      "bob-advanced-logistic-science-pack"
     )
     bobmods.lib.tech.replace_science_pack(
       "angels-logistic-warehouses-4",
       "production-science-pack",
-      "advanced-logistic-science-pack"
+      "bob-advanced-logistic-science-pack"
     )
     bobmods.lib.tech.replace_science_pack(
       "angels-warehouses-4",
       "production-science-pack",
-      "advanced-logistic-science-pack"
+      "bob-advanced-logistic-science-pack"
     )
   end
 end
