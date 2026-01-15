@@ -18,7 +18,7 @@ Date: 2026-01-15
     - Fixed recipes that are nil to fix conflicts with other mods
     - Titanium concrete brick fixes
     - Locale fixes for angels-solid-sodium-floride
-    - Fixed several techs mising higher tech packs from pervious tech
+    - Fixed several techs missing higher tech packs from pervious tech
     - Fixed several recipes missing crafting tints 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.2
