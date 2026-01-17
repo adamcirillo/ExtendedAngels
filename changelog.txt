@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
-Date: ????
+Date: 2026-01-17
   Changes:
     - Tech tree overhaul
     - Changed Molten Copper tungsten to Copper tungsten powder in Chemical furnace & Sterning oven
