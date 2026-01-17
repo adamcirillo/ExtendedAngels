@@ -3,6 +3,7 @@ Version: 0.6.5
 Date: ????
   Changes:
     - Tech tree overhaul
+    - Changed Molten Copper tungsten to Copper tungsten powder in Chemical furnace & Sterning oven
   Bugfixes:
     - Fixed typos in changelog
     - Fixed missing items/recipes/techs from only when running with Angel's Mods
