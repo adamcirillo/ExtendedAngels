@@ -1,3 +1,35 @@
+data:extend({
+  -- Angels stone smelting 4
+  {
+    type = "technology",
+    name = "angels-stone-smelting-4",
+    icon = "__angelssmeltinggraphics__/graphics/technology/cement-tech.png",
+    icon_size = 128,
+    upgrade = true,
+    prerequisites = {
+      "angels-stone-smelting-3",
+      "angels-titanium-smelting-1",
+      "production-science-pack",
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "angels-titanium-concrete-brick",
+      },
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
+      },
+      time = 30,
+    },
+    order = "c-a",
+  },
+})
 if mods["bobplates"] then
 data:extend({
   -- Angels copper tungsten smelting 1
@@ -7,8 +39,9 @@ data:extend({
     icon = "__extendedangels__/graphics/technology/copper-tungsten-smelting-and-casting.png",
     icon_size = 256,
     prerequisites = {
-      "angels-copper-smelting-1",
       "angels-tungsten-smelting-1",
+      "angels-copper-casting-2",
+      "angels-copper-smelting-2",
     },
     effects = {
       {
@@ -41,6 +74,7 @@ data:extend({
     icon_size = 256,
     prerequisites = {
       "angels-copper-tungsten-smelting-1",
+      "angels-silver-smelting-2",
       "angels-metallurgy-5",
     },
     effects = {
@@ -57,37 +91,6 @@ data:extend({
         { "chemical-science-pack", 1 },
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
-      },
-      time = 30,
-    },
-    order = "c-a",
-  },
-
-  -- Angels stone smelting 4
-  {
-    type = "technology",
-    name = "angels-stone-smelting-4",
-    icon = "__angelssmeltinggraphics__/graphics/technology/cement-tech.png",
-    icon_size = 128,
-    upgrade = true,
-    prerequisites = {
-      "angels-stone-smelting-3",
-      "angels-titanium-smelting-1",
-      "production-science-pack",
-    },
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "angels-titanium-concrete-brick",
-      },
-    },
-    unit = {
-      count = 100,
-      ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
-        { "chemical-science-pack", 1 },
-        { "production-science-pack", 1 },
       },
       time = 30,
     },
@@ -191,5 +194,4 @@ data:extend({
     order = "c-a",
   },
 })
-
 end

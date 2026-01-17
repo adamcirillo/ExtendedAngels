@@ -1,22 +1,4 @@
 data:extend({
-  -- Molten copper tungsten
-  {
-    type = "fluid",
-    name = "angels-liquid-molten-copper-tungsten",
-    icons = {
-      {
-        icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png",
-        icon_size = 64,
-      },
-    },
-    default_temperature = 3422,
-    heat_capacity = "0kJ",
-    base_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
-    flow_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
-    max_temperature = 3422,
-    auto_barrel = false,
-  },
-
   -- Tungsten trioxide
   {
     type = "item",
@@ -52,17 +34,6 @@ data:extend({
     stack_size = 200,
   },
 
-  -- Tungsten carbide powder mixture
-  {
-    type = "item",
-    name = "angels-powder-tungsten-carbide",
-    icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
-    icon_size = 64,
-    subgroup = "angels-tungsten-carbide",
-    order = "a",
-    stack_size = 200,
-  },
-
   -- Titanium concrete brick
   {
     type = "item",
@@ -79,3 +50,35 @@ data:extend({
     },
   },
 })
+if mods["bobplates"] then
+data:extend({
+    -- Molten copper tungsten
+  {
+    type = "fluid",
+    name = "angels-liquid-molten-copper-tungsten",
+    icons = {
+      {
+        icon = "__extendedangels__/graphics/icons/liquid-molten-copper-tungsten.png",
+        icon_size = 64,
+      },
+    },
+    default_temperature = 3422,
+    heat_capacity = "0kJ",
+    base_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
+    flow_color = { r = 152 / 255, g = 74 / 255, b = 58 / 255 },
+    max_temperature = 3422,
+    auto_barrel = false,
+  },
+    -- Tungsten carbide powder mixture
+  {
+    type = "item",
+    name = "angels-powder-tungsten-carbide",
+    icon = "__extendedangels__/graphics/icons/powder-tungsten-carbide.png",
+    icon_size = 64,
+    subgroup = "angels-tungsten-carbide",
+    order = "a",
+    stack_size = 200,
+  },
+
+})
+end

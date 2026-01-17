@@ -2,8 +2,10 @@
 Version: 0.6.5
 Date: ????
   Changes:
+    - Tech tree overhaul
   Bugfixes:
     - Fixed typos in changelog
+    - Fixed missing items/recipes/techs from only when running with Angel's Mods
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.4
 Date: 2026-01-15

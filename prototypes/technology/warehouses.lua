@@ -142,6 +142,7 @@ data:extend({
       "angels-warehouses-3",
       "angels-titanium-smelting-1",
       "processing-unit",
+      "utility-science-pack",
     },
     effects = {
       {

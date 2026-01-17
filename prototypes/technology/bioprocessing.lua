@@ -12,6 +12,7 @@ data:extend({
     prerequisites = {
       "angels-bio-processing-blue",
       "production-science-pack",
+      "angels-stone-smelting-3",
     },
     effects = {
       {
@@ -40,6 +41,8 @@ data:extend({
     prerequisites = {
       "angels-bio-farm-2",
       "chemical-science-pack",
+      "angels-aluminium-smelting-1",
+      "angels-stone-smelting-2",
     },
     effects = {
       {
@@ -76,6 +79,7 @@ data:extend({
     prerequisites = {
       "angels-bio-refugium-butchery-2",
       "production-science-pack",
+      "angels-stone-smelting-3",
     },
     effects = {
       {
@@ -108,6 +112,8 @@ data:extend({
       "angels-bio-desert-farming-2",
       "angels-bio-swamp-farming-2",
       "production-science-pack",
+      "angels-stone-smelting-3",
+      
     },
     effects = {
       {
@@ -144,6 +150,7 @@ data:extend({
     order = "c-a",
     prerequisites = {
       "angels-bio-farm-advanced-upgrade-1",
+      "angels-stone-smelting-4",
       "utility-science-pack",
     },
     effects = {
@@ -184,12 +191,41 @@ data:extend({
     prerequisites = {
       "angels-bio-refugium-hatchery",
       "production-science-pack",
+      "angels-stone-smelting-3",
     },
     effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-bio-hatchery-2",
       },
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
+        { "angels-token-bio", 1 },
+      },
+      time = 30,
+    },
+  },
+
+  -- Bio refugium hatchery 3
+  {
+    type = "technology",
+    name = "angels-bio-refugium-hatchery-3",
+    icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-puffer-hatchery-tech.png",
+    icon_size = 160,
+    order = "c-a",
+    prerequisites = {
+      "angels-bio-refugium-hatchery-2",
+      "angels-stone-smelting-4",
+      "production-science-pack",
+      "utility-science-pack",
+    },
+    effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-bio-hatchery-3",
@@ -202,6 +238,7 @@ data:extend({
         { "logistic-science-pack", 1 },
         { "chemical-science-pack", 1 },
         { "production-science-pack", 1 },
+        { "utility-science-pack", 1 },
         { "angels-token-bio", 1 },
       },
       time = 30,
@@ -218,12 +255,39 @@ data:extend({
     prerequisites = {
       "angels-bio-nutrient-paste",
       "chemical-science-pack",
+      "angels-aluminium-smelting-1",
+      "angels-stone-smelting-2",
     },
     effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-nutrient-extractor-2",
       },
+    },
+    unit = {
+      count = 80,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+      },
+      time = 30,
+    },
+  },
+
+  -- Bio nutrient paste 3
+  {
+    type = "technology",
+    name = "angels-bio-nutrient-paste-3",
+    icon = "__angelsbioprocessinggraphics__/graphics/technology/nutrient-extractor-tech.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {
+      "angels-bio-nutrient-paste-2",
+      "production-science-pack",
+      "angels-stone-smelting-3",
+    },
+    effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-nutrient-extractor-3",
@@ -235,6 +299,7 @@ data:extend({
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
         { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
       },
       time = 30,
     },
@@ -250,12 +315,39 @@ data:extend({
     prerequisites = {
       "angels-bio-refugium-fish-2",
       "chemical-science-pack",
+      "angels-aluminium-smelting-1",
+      "angels-stone-smelting-2",
     },
     effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-bio-refugium-fish-2",
       },
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+      },
+      time = 30,
+    },
+  },
+
+  -- Bio refugium fish 4
+  {
+    type = "technology",
+    name = "angels-bio-refugium-fish-4",
+    icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-fish-tech.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {
+      "angels-bio-refugium-fish-3",
+      "production-science-pack",
+      "angels-stone-smelting-3",
+    },
+    effects = {
       {
         type = "unlock-recipe",
         recipe = "angels-bio-refugium-fish-3",
@@ -267,6 +359,71 @@ data:extend({
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
         { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
+      },
+      time = 30,
+    },
+  },
+
+  -- Bio refugium puffer 5
+  {
+    type = "technology",
+    name = "angels-bio-refugium-puffer-5",
+    icon = "__angelsbioprocessinggraphics__/graphics/technology/bio-refugium-puffer-breeding-tech.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {
+      "angels-bio-refugium-puffer-4",
+      "angels-stone-smelting-4",
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "angels-bio-refugium-puffer-2",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "angels-bio-refugium-puffer-3",
+      },
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "angels-token-bio", 1 },
+        { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
+      },
+      time = 30,
+    },
+  },
+
+    -- Bio Press 3
+  {
+    type = "technology",
+    name = "angels-bio-pressing-3",
+    icon = "__angelsbioprocessinggraphics__/graphics/technology/press-tech.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {
+      "angels-bio-pressing-2",
+      "production-science-pack",
+      "angels-stone-smelting-3",
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "angels-bio-press-3",
+      },
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+        { "production-science-pack", 1 },
       },
       time = 30,
     },

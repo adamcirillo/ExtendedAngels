@@ -12,6 +12,9 @@ if not mods["Clowns-Extended-Minerals"] then
         prerequisites = {
           "chemical-science-pack",
           "angels-water-washing-2",
+          "angels-aluminium-smelting-1",
+          "angels-stone-smelting-2",
+          "production-science-pack",
         },
         effects = {
           {
@@ -25,6 +28,7 @@ if not mods["Clowns-Extended-Minerals"] then
             { "automation-science-pack", 1 },
             { "logistic-science-pack", 1 },
             { "chemical-science-pack", 1 },
+            { "production-science-pack", 1 },
           },
           time = 15,
         },
@@ -45,8 +49,10 @@ if not mods["Clowns-Processing"] then
         icon = util.copy(prerequisite.icon),
         icon_size = util.copy(prerequisite.icon_size),
         prerequisites = {
-          "utility-science-pack",
+          "angels-stone-smelting-4",
           "angels-water-treatment-4",
+          "utility-science-pack",          
+          
         },
         effects = {
           {
@@ -82,8 +88,9 @@ if prerequisite then
       icon = util.copy(prerequisite.icon),
       icon_size = util.copy(prerequisite.icon_size),
       prerequisites = {
-        "production-science-pack",
         "angels-water-washing-3",
+        "processing-unit",
+        "angels-stone-smelting-3",
       },
       effects = {
         {

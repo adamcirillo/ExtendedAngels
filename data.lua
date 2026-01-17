@@ -9,9 +9,15 @@ if mods["angelsaddons-storage"] then
   end
 end
 
--- Enable Angel's Zinc Powder
+-- Enable Angel's Hidden Items
 angelsmods.trigger.smelting_products["zinc"].powder = true
+if mods["bobplates"] then
 angelsmods.trigger.smelting_products["silver"].powder = true
+else
+angelsmods.trigger.ores["zinc"] = true
+angelsmods.trigger.ores["lead"] = true
+angelsmods.trigger.smelting_products["lead"].plate = true
+end
 
 -- Buildings
 require("prototypes.buildings.petrochem")
