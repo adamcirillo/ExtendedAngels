@@ -2,6 +2,10 @@
 Version: 0.6.6
 Date: ????
   Changes:
+  Bugfixes:
+    - Fixed Transport Sp being added without Bobtech
+    - Fixed wrong Tech tree costs
+    - Fixed Madclowns compact
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
 Date: 2026-01-17
