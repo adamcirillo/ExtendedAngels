@@ -66,6 +66,10 @@ if mods["Clowns-Processing"] then
   OV.add_prereq("angels-tungsten-smelting-3", "phosphorus-processing-2")
 end
 
+if  mods["Clowns-Extended-Minerals"] then
+   OV.add_unlock("angels-water-washing-3", "angels-washing-plant-3")
+end
+
 if angelsmods.bioprocessing then
   OV.add_unlock("angels-bio-arboretum-2", "angels-bio-generator-temperate-2")
   OV.add_unlock("angels-bio-arboretum-2", "angels-bio-generator-swamp-2")
