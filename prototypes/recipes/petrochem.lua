@@ -129,6 +129,7 @@ if mods["Clowns-Processing"] then
       category = "smelting",
       subgroup = "angels-petrochem-sodium",
       energy_required = 3.5,
+      enabled = false,
       ingredients = {
         { type = "item", name = "angels-solid-disodium-phosphate", amount = 1 },
       },

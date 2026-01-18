@@ -30,7 +30,6 @@ OV.add_prereq("angels-warehouses-2","bob-zinc-processing")
 OV.add_prereq("angels-warehouses-2","angels-invar-smelting-1")
 OV.add_prereq("angels-warehouses-3","bob-ceramics")
 OV.add_prereq("angels-warehouses-4","bob-nitinol-processing")
-OV.add_prereq("angels-warehouses-4","bob-advanced-logistic-science-pack")
 OV.add_prereq("angels-logistic-warehouses-2","bob-zinc-processing")
 OV.add_prereq("angels-logistic-warehouses-2","angels-invar-smelting-1")
 OV.add_prereq("angels-logistic-warehouses-3","bob-ceramics")
@@ -60,10 +59,11 @@ OV.add_prereq("angels-water-washing-4","angels-titanium-smelting-1")
 OV.add_prereq("angels-water-treatment-5", "angels-tungsten-smelting-1")
 end
 if mods["Clowns-Processing"] then
-  OV.add_unlock("angels-phosphorus-processing-2", "angels-solid-disodium-phosphate")
-  OV.add_unlock("angels-phosphorus-processing-2", "angels-solid-tetrasodium-pyrophosphate")
+  OV.add_unlock("phosphorus-processing-2", "angels-solid-disodium-phosphate")
+  OV.add_unlock("phosphorus-processing-2", "angels-solid-tetrasodium-pyrophosphate")
   OV.add_unlock("angels-water-treatment-5", "angels-salination-plant-3")
   OV.add_prereq("angels-water-treatment-5", "angels-stone-smelting-4")
+  OV.add_prereq("angels-tungsten-smelting-3", "phosphorus-processing-2")
 end
 
 if angelsmods.bioprocessing then
