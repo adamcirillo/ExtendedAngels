@@ -2,18 +2,18 @@
 Version: 0.6.6
 Date: ????
   Changes:
-    - Titanum now places reinforced conrete instead of concrete
+    - Titanium now places reinforced concrete instead of concrete
   Bugfixes:
     - Fixed Transport Sp being added without Bobtech
     - Fixed wrong Tech tree costs
-    - Fixed Madclowns compact
-    - Mising Washing Plant Mk3 when Clowns Extended Minerals is added
+    - Fixed MadClown's compact
+    - Missing Washing Plant Mk3 when Clowns Extended Minerals is added
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.5
 Date: 2026-01-17
   Changes:
     - Tech tree overhaul
-    - Changed Molten Copper tungsten to Copper tungsten powder in Chemical furnace & Sterning oven
+    - Changed Molten Copper tungsten to Copper tungsten powder in Chemical furnace & Sintering oven
   Bugfixes:
     - Fixed typos in changelog
     - Fixed missing items/recipes/techs from only when running with Angel's Mods
@@ -26,11 +26,11 @@ Date: 2026-01-15
 Version: 0.6.3
 Date: 2026-01-15
   Changes:
-    - Made Bob Plates an optional dependcy
+    - Made Bob Plates an optional dependency
   Bugfixes:
     - Fixed recipes that are nil to fix conflicts with other mods
     - Titanium concrete brick fixes
-    - Locale fixes for angels-solid-sodium-floride
+    - Locale fixes for angels-solid-sodium-fluoride
     - Fixed several techs missing higher tech packs from pervious tech
     - Fixed several recipes missing crafting tints 
 ---------------------------------------------------------------------------------------------------
