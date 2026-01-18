@@ -5,7 +5,6 @@ data:extend({
     name = "angels-stone-smelting-4",
     icon = "__angelssmeltinggraphics__/graphics/technology/cement-tech.png",
     icon_size = 128,
-    upgrade = true,
     prerequisites = {
       "angels-stone-smelting-3",
       "angels-titanium-smelting-1",
