@@ -2,6 +2,7 @@
 Version: 0.6.6
 Date: ????
   Changes:
+    - Titanum now places reinforced conrete instead of concrete
   Bugfixes:
     - Fixed Transport Sp being added without Bobtech
     - Fixed wrong Tech tree costs

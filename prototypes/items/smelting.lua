@@ -44,8 +44,8 @@ data:extend({
     order = "k",
     stack_size = 1000,
     place_as_tile = {
-      result = "concrete",
-      condition_size = 4,
+      result = "angels-tile-reinforced-concrete-brick",
+      condition_size = 2,
       condition = { layers = { water_tile = true } },
     },
   },
