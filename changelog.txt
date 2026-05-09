@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.8
-Date: ????
+Date: 2026-05-08
   Bugfixes:
     - Fixed that the additional tiers of algae farms, arboretums, crop farms, temperate farms, desert farms, swamp farms and refugiums did not accept agricultural modules
 ---------------------------------------------------------------------------------------------------
