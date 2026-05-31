@@ -177,7 +177,7 @@ if mods["angelsaddons-storage"] then
       "bob-advanced-logistic-science-pack"
     )
     bobmods.lib.tech.add_science_pack(
-      "ngels-logistic-warehouses-4",
+      "angels-logistic-warehouses-4",
       "bob-advanced-logistic-science-pack",
       1
     )
