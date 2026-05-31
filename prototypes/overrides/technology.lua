@@ -165,7 +165,7 @@ if angelsmods.bioprocessing then
 end
 
 if mods["angelsaddons-storage"] then
-  if data.raw.tool["bob-advanced-logistic-science-pack"] then
+  if data.raw.tool["bob-advanced-logistic-science-pack"] and not mods["angelsindustries"] then
     bobmods.lib.tech.replace_science_pack(
       "angels-logistic-warehouses-2",
       "utility-science-pack",
