@@ -9,6 +9,7 @@
         "angelssmelting >= 2.0.0",
         "flib",
         "? angelsaddons-storage",
+        "? boblibrary >= 2.1.0",
         "? bobtech",
         "? bobplates",
         "? angelsbioprocessing >= 2.0.0",
