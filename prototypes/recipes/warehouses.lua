@@ -50,7 +50,7 @@ local bob_standard_ingredients = {
   },
   [3] = {
     { type = "item", name = "bob-titanium-plate", amount = 800 },
-    { type = "item", name = "bob-brass-bearing", amount = 200 },
+    { type = "item", name = "bob-titanium-bearing", amount = 200 },
   },
   [4] = {
     { type = "item", name = "tungsten-plate", amount = 1000 },
@@ -71,7 +71,7 @@ local bob_logistic_ingredients = {
   },
   [3] = {
     { type = "item", name = "bob-titanium-plate", amount = 800 },
-    { type = "item", name = "bob-brass-bearing", amount = 200 },
+    { type = "item", name = "bob-titanium-bearing", amount = 200 },
     { type = "item", name = "processing-unit", amount = 200 },
   },
   [4] = {
