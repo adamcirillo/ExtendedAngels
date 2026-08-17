@@ -1,5 +1,3 @@
---local migration = require("__flib__.migration")
-
 script.on_configuration_changed(function(config)
   -- Check recipe and technology states and make corrections as needed
   for _, force in pairs(game.forces) do
@@ -78,12 +76,12 @@ script.on_configuration_changed(function(config)
 
   -- Notify about inventory change if migrating from a version prior to the change
   if
-      config.mod_changes
-      and config.mod_changes["extendedangels"]
-      and config.mod_changes["extendedangels"].old_version
+    config.mod_changes
+    and config.mod_changes["extendedangels"]
+    and config.mod_changes["extendedangels"].old_version
   then
     -- 0.4.3 update
-    if not migration.is_newer_version("0.4.2", config.mod_changes["extendedangels"].old_version) then
+    if helpers.compare_versions("0.4.2", config.mod_changes["extendedangels"].old_version) >= 0 then
       game.print({
         "",
         "[",

@@ -7,7 +7,6 @@
     "dependencies": [
         "angelsrefining >= 2.1.0",
         "angelssmelting >= 2.1.0",
-        "flib",
         "? angelsaddons-storage",
         "? boblibrary >= 3.0.0",
         "? bobtech",
