@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.0
-Date: 2026-08-17
+Date: 2026-08-16
   Changes:
     - Factorio 2.1 Update
     - Fixed several techs require Bob's Zinc Processing as this has been replaced by Bob's Brass Processing
