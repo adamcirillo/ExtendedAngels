@@ -26,11 +26,9 @@ OV.add_prereq("angels-strand-casting-4", "angels-stone-smelting-4")
 
 if mods["bobplates"] then
   OV.add_prereq("bob-tungsten-processing", "angels-copper-tungsten-smelting-1")
-  OV.add_prereq("angels-warehouses-2", "bob-zinc-processing")
   OV.add_prereq("angels-warehouses-2", "angels-invar-smelting-1")
   OV.add_prereq("angels-warehouses-3", "bob-ceramics")
   OV.add_prereq("angels-warehouses-4", "bob-nitinol-processing")
-  OV.add_prereq("angels-logistic-warehouses-2", "bob-zinc-processing")
   OV.add_prereq("angels-logistic-warehouses-2", "angels-invar-smelting-1")
   OV.add_prereq("angels-logistic-warehouses-3", "bob-ceramics")
   OV.add_prereq("angels-logistic-warehouses-4", "bob-nitinol-processing")
@@ -165,7 +163,7 @@ if angelsmods.bioprocessing then
 end
 
 if mods["angelsaddons-storage"] then
-  if data.raw.tool["bob-advanced-logistic-science-pack"] and not mods["angelsindustries"] then
+  if data.raw.technology["bob-advanced-logistic-science-pack"] and not mods["angelsindustries"] then
     bobmods.lib.tech.replace_science_pack(
       "angels-logistic-warehouses-2",
       "utility-science-pack",
