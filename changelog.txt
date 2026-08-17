@@ -3,7 +3,7 @@ Version: 0.7.0
 Date: 2026-08-17
   Changes:
     - Factorio 2.1 Update
-    - Fixed Warehouse 2 and Logistics Warehouse 2 require Bob's Zinc Processing as this is not there
+    - Fixed Serveral techs require Bob's Zinc Processing as this has been replaced by Bob's Brass Prcoessing
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.9
 Date: 2026-06-14

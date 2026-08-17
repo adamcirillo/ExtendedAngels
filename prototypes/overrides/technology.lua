@@ -27,13 +27,15 @@ OV.add_prereq("angels-strand-casting-4", "angels-stone-smelting-4")
 if mods["bobplates"] then
   OV.add_prereq("bob-tungsten-processing", "angels-copper-tungsten-smelting-1")
   OV.add_prereq("angels-warehouses-2", "angels-invar-smelting-1")
+  OV.add_prereq("angels-warehouses-2", "bob-brass-processing")
   OV.add_prereq("angels-warehouses-3", "bob-ceramics")
+  OV.add_prereq("angels-warehouses-3", "bob-titanium-processing")
   OV.add_prereq("angels-warehouses-4", "bob-nitinol-processing")
   OV.add_prereq("angels-logistic-warehouses-2", "angels-invar-smelting-1")
   OV.add_prereq("angels-logistic-warehouses-3", "bob-ceramics")
   OV.add_prereq("angels-logistic-warehouses-4", "bob-nitinol-processing")
   OV.add_prereq("angels-logistic-warehouses-4", "bob-advanced-processing-unit")
-  OV.add_prereq("angels-water-washing-3", "bob-zinc-processing")
+  OV.add_prereq("angels-water-washing-3", "bob-brass-processing")
   OV.add_prereq("angels-water-washing-4", "bob-titanium-processing")
   OV.add_prereq("angels-advanced-ore-refining-5", "bob-tungsten-processing")
   OV.add_prereq(
@@ -109,7 +111,7 @@ if angelsmods.bioprocessing then
         "angels-bio-nutrient-paste-2",
         "angels-bio-refugium-fish-3",
       },
-      "bob-zinc-processing"
+      "bob-brass-processing"
     )
     OV.add_prereq({
         "angels-bio-refugium-biter-2",
