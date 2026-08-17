@@ -61,7 +61,7 @@ end
 local function try_remap_block_ingredients(type_name)
   for prototype_name, _ in pairs(data.raw[type_name]) do
     local recipe = data.raw.recipe[prototype_name]
-    if recipe then
+    if recipe and recipe.ingredients then
       for _, ingredient in pairs(recipe.ingredients) do
         try_remap_block_ingredient(ingredient)
       end

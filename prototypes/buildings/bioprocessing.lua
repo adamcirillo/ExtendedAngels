@@ -508,7 +508,7 @@ for name, params in pairs(buildings) do
 
     if item and (item.icons or item.icon) then
         local item_icon, item_icon_size
-        if item.icons then
+        if item.icons and item.icons[1] then
             item_icon = item.icons[1].icon
             item_icon_size = item.icons[1].icon_size or item.icon_size or 32
         elseif item.icon then
@@ -521,7 +521,7 @@ for name, params in pairs(buildings) do
 
     if entity and (entity.icons or entity.icon) then
         local entity_icon, entity_icon_size
-        if entity.icons then
+        if entity.icons and entity.icons[1] then
             entity_icon = entity.icons[1].icon
             entity_icon_size = entity.icons[1].icon_size or entity.icon_size or 32
         elseif entity.icon then
